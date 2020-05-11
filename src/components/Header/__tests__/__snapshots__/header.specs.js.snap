@@ -2,6 +2,7 @@
 
 exports[`Header renders correctly 1`] = `
 <header>
+  Header - 
   Default Starter
 </header>
 `;
