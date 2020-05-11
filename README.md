@@ -1,8 +1,6 @@
-<p  align="center">
-	<a  href="https://mavennet.com/">
+<a  href="https://mavennet.com/">
 	<img  alt="Mavennet"  src="https://mavennet.com/graphics/branding/Mavennet_left_mark_logo.png"  width="300" />
-	</a>
-</p>
+</a>
 
 # Mavennet Website
 
