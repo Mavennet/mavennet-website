@@ -1,20 +1,31 @@
+identifier: solutions
 title: Solutions Page
 subtitle: This is the solutions page
-identifier: "solutions"
 solutions:
   - title: The Neoflow Solution
     description: The best solution for tracking oil
     image: /assets/screen-shot-2020-05-12-at-11.56.59.png
     ctaImage: /assets/screen-shot-2020-05-12-at-11.57.52.png
     slug: solutions/neoflow
+    solutionSlug: solutions/neoflow
   - title: The metal Trail Solution
     description: The best solution for tracking metal
     image: /assets/screen-shot-2020-05-12-at-11.57.03.png
     ctaImage: /assets/screen-shot-2020-05-12-at-11.57.59.png
     slug: solutions/metaltrail
+    solutionSlug: solutions/metaltrail
+  - title: The MavenStamp solution
+    description: The best solution for time-stamping
+    image: /assets/screen-shot-2020-05-12-at-15.23.05.png
+    ctaImage: /assets/screen-shot-2020-05-12-at-15.23.09.png
+    solutionSlug: solutions/mavennestamp
 previousWork:
   title: Previous Work
   previousWorkList:
     - title: VIVO PAGO - DIGITAL Media Tokenization
       link: https://www.google.com
+      image: /assets/screen-shot-2020-05-12-at-12.00.13.png
+  previousWorksList:
+    - title: VIVO PAGO
+      link: https://google.com
       image: /assets/screen-shot-2020-05-12-at-12.00.13.png
