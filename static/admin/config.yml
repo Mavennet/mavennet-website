@@ -1,0 +1,79 @@
+backend:
+  name: github
+  repo: Mavennet/mavennet-website
+  branch: develop
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Solutions Page"
+        name: "solutions-page"
+        file: "site/pages/solutions.yml"
+        fields:
+          - {
+              label: "Identifier",
+              name: "identifier",
+              widget: "hidden",
+              default: "solutions",
+            }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Page Subtitle", name: "subtitle", widget: "string" }
+          - label: "Solutions List"
+            name: "solutions"
+            widget: "list"
+            fields:
+              - { label: "Solution Title", name: "title", widget: "string" }
+              - {
+                  label: "Solution Description",
+                  name: "description",
+                  widget: "string",
+                }
+              - {
+                  label: "Solution Image",
+                  name: "image",
+                  widget: "image",
+                  media_library: { config: { multiple: false } },
+                }
+              - {
+                  label: "Solution CTA Image",
+                  name: "ctaImage",
+                  widget: "image",
+                  media_library: { config: { multiple: false } },
+                }
+              - {
+                  label: "Select the solution",
+                  name: "solutionSlug",
+                  widget: "relation",
+                  collection: "solutions",
+                  searchFields: ["title", "{{slug}}"],
+                  valueField: "solutions/{{slug}}",
+                }
+          - label: "Previous Work"
+            name: "previousWork"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Previous Work list"
+                name: "previousWorksList"
+                widget: "list"
+                fields:
+                  - { label: "Item title", name: "title", widget: "string" }
+                  - { label: "Item Link", name: "link", widget: "string" }
+                  - label: "Item image"
+                    name: "image"
+                    widget: "image"
+                    media_library:
+                      config:
+                        multiple: false
+
+  - label: "Solutions"
+    name: "solutions"
+    folder: "site/content/solutions"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
