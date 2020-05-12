@@ -6,12 +6,12 @@ solutions:
     description: The best solution for tracking oil
     image: /assets/screen-shot-2020-05-12-at-11.56.59.png
     ctaImage: /assets/screen-shot-2020-05-12-at-11.57.52.png
-    slug: neoflow
+    slug: solutions/neoflow
   - title: The metal Trail Solution
     description: The best solution for tracking metal
     image: /assets/screen-shot-2020-05-12-at-11.57.03.png
     ctaImage: /assets/screen-shot-2020-05-12-at-11.57.59.png
-    slug: metaltrail
+    slug: solutions/metaltrail
 previousWork:
   title: Previous Work
   previousWorkList:

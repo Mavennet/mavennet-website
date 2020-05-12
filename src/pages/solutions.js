@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 const Solutions = ({ data }) => {
   const { title, subtitle, solutions, previousWork } = data.pagesYaml
@@ -11,6 +11,9 @@ const Solutions = ({ data }) => {
         <h3>{title}</h3>
         <p>{description}</p>
         <img src={image} alt={title} />
+        <Link to={slug}>
+          <img src={ctaImage} alt={`${title} CTA`} />
+        </Link>
       </li>
     )
   }

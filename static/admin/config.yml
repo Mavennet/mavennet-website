@@ -50,7 +50,7 @@ collections:
                   widget: "relation",
                   collection: "solutions",
                   searchFields: ["title", "{{slug}}"],
-                  valueField: "{{slug}}",
+                  valueField: "solutions/{{slug}}",
                 }
           - label: "Previous Work"
             name: "previousWork"
