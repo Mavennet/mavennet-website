@@ -10,10 +10,26 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/site/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/site/content/`,
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-yaml`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
     // {
