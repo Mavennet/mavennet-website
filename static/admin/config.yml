@@ -58,7 +58,7 @@ collections:
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - label: "Previous Work list"
-                name: "previousWorksList"
+                name: "previousWorkList"
                 widget: "list"
                 fields:
                   - { label: "Item title", name: "title", widget: "string" }
