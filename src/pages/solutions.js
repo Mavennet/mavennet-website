@@ -2,15 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 
 const Solutions = ({ data }) => {
-  const {
-    page_title: pageTitle,
-    page_subtitle: pageSubtitle,
-    previous_work: previousWork,
-    solution_list: solutionList,
-  } = data.allPagesYaml.nodes[0]
+  const { title, subtitle, solutions, previousWork } = data.pagesYaml
 
   const SolutionItem = ({ item }) => {
-    const { title, description, image, slug, cta_image: ctaImage } = item
+    const { title, description, image, slug, ctaImage } = item
     return (
       <li>
         <h3>{title}</h3>
@@ -20,9 +15,9 @@ const Solutions = ({ data }) => {
     )
   }
 
-  const SolutionList = ({ solutionList }) => (
+  const SolutionList = ({ solutions }) => (
     <ul>
-      {solutionList.map(item => (
+      {solutions.map(item => (
         <SolutionItem key={item.title} item={item} />
       ))}
     </ul>
@@ -40,9 +35,9 @@ const Solutions = ({ data }) => {
     )
   }
 
-  const PreviousWorkList = ({ previousWorkList }) => (
+  const PreviousWorkList = ({ previousWork }) => (
     <ul>
-      {previousWorkList.map(item => (
+      {previousWork.map(item => (
         <PreviousWorkItem key={item.title} item={item} />
       ))}
     </ul>
@@ -51,18 +46,16 @@ const Solutions = ({ data }) => {
   return (
     <>
       <div className="jumbotron">
-        <h1>{pageTitle}</h1>
-        <h2>{pageSubtitle}</h2>
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
       </div>
       <main>
         <section className="solutions">
-          <SolutionList solutionList={solutionList} />
+          <SolutionList solutions={solutions} />
         </section>
         <section className="previous-work">
           <h3>{previousWork.title}</h3>
-          <PreviousWorkList
-            previousWorkList={previousWork.previous_work_list}
-          />
+          <PreviousWorkList previousWork={previousWork.previousWorkList} />
         </section>
       </main>
     </>
@@ -71,25 +64,23 @@ const Solutions = ({ data }) => {
 
 export const query = graphql`
   query {
-    allPagesYaml {
-      nodes {
-        page_title
-        page_subtitle
-        previous_work {
-          previous_work_list {
-            image
-            link
-            title
-          }
-          title
-        }
-        solution_list {
-          cta_image
-          description
+    pagesYaml(identifier: { eq: "solutions" }) {
+      title
+      subtitle
+      previousWork {
+        title
+        previousWorkList {
           image
-          slug
+          link
           title
         }
+      }
+      solutions {
+        ctaImage
+        description
+        image
+        slug
+        title
       }
     }
   }

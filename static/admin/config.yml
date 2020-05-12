@@ -14,10 +14,16 @@ collections:
         name: "solutions-page"
         file: "site/pages/solutions.yml"
         fields:
-          - { label: "Page Title", name: "page-title", widget: "string" }
-          - { label: "Page Subtitle", name: "page-subtitle", widget: "string" }
+          - {
+              label: "Identifier",
+              name: "identifier",
+              widget: "hidden",
+              default: "solutions",
+            }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Page Subtitle", name: "subtitle", widget: "string" }
           - label: "Solutions List"
-            name: "solution-list"
+            name: "solutions"
             widget: "list"
             fields:
               - { label: "Solution Title", name: "title", widget: "string" }
@@ -34,25 +40,25 @@ collections:
                 }
               - {
                   label: "Solution CTA Image",
-                  name: "cta-image",
+                  name: "ctaImage",
                   widget: "image",
                   media_library: { config: { multiple: false } },
                 }
               - {
                   label: "Select the solution",
-                  name: "slug",
+                  name: "solutionSlug",
                   widget: "relation",
                   collection: "solutions",
                   searchFields: ["title", "{{slug}}"],
                   valueField: "{{slug}}",
                 }
           - label: "Previous Work"
-            name: "previous-work"
+            name: "previousWork"
             widget: "object"
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - label: "Previous Work list"
-                name: "previous-work-list"
+                name: "previousWorksList"
                 widget: "list"
                 fields:
                   - { label: "Item title", name: "title", widget: "string" }
