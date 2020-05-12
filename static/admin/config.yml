@@ -46,7 +46,7 @@ collections:
                 }
               - {
                   label: "Select the solution",
-                  name: "solutionSlug",
+                  name: "slug",
                   widget: "relation",
                   collection: "solutions",
                   searchFields: ["title", "{{slug}}"],
