@@ -3,6 +3,8 @@ backend:
   repo: Mavennet/mavennet-website
   branch: develop
 
+local_backend: true
+
 media_folder: static/assets
 public_folder: /assets
 
@@ -77,3 +79,116 @@ collections:
     identifier_field: name
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - label: "Main Section"
+        name: "mainSection"
+        widget: "object"
+        collapsed: "true"
+        fields:
+          - { label: "Solution Image", name: "image", widget: "image" }
+          - { label: "Solution Logo", name: "logo", widget: "image" }
+          - { label: "Solution Text", name: "text", widget: "text" }
+      - label: "First Section"
+        name: "firstSection"
+        widget: "list"
+        types:
+          - label: "Growth Numbers Section"
+            name: "growthSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "image", widget: "text" }
+              - label: "Growth Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Numbers", name: "numbers", widget: "string" }
+                  - {
+                      label: "Description",
+                      name: "description",
+                      widget: "string",
+                    }
+          - label: "Summary Section"
+            name: "summarySection"
+            widget: "list"
+            fields:
+              - label: "Summary Type"
+                name: "summaryType"
+                widget: "select"
+                options: ["regular", "pictureItems"]
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - {
+                  label: "Image",
+                  name: "image",
+                  widget: "image",
+                  required: false,
+                }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                required: false
+                field: { label: "Text", name: "text", widget: "string" }
+      - label: "Featured Items Section"
+        name: "featuredSection"
+        widget: "object"
+        collapsed: "true"
+        fields:
+          - label: "Feature Type"
+            name: "featureType"
+            widget: "select"
+            options: ["regular", "banner", "imageOnly"]
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Image", name: "image", widget: "image" }
+          - label: "Items"
+            name: "items"
+            required: false
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+      - label: "Features Section"
+        name: "featuresSection"
+        widget: "object"
+        collapsed: "true"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Feature List"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+      - label: "Demo Section"
+        name: "demoSection"
+        widget: "object"
+        collapsed: "true"
+        fields:
+          - { label: "Title", name: "title", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "CTA Text", name: "ctaText", widget: "string" }
+      - label: "Testimonial Section"
+        name: "testimonialSection"
+        widget: "list"
+        collapsed: "true"
+        field:
+          label: "Testimony"
+          name: "testimony"
+          widget: "object"
+          fields:
+            - { label: "Author", name: "author", widget: "string" }
+            - { label: "Position", name: "position", widget: "string" }
+            - { label: "Company Logo", name: "companyLogo", widget: "image" }
+            - { label: "Message", name: "message", widget: "text" }
+      - label: "News Section"
+        name: "newsSection"
+        widget: "list"
+        collapsed: "true"
+        field:
+          label: "News"
+          name: "news"
+          widget: "object"
+          max: "1"
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
+            - { label: "Link", name: "link", widget: "string" }
