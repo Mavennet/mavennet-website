@@ -25,7 +25,7 @@ featuredSection:
   title: Nice title Bro
 featuresSection:
   title: Nice Features
-  list:
+  items:
     - title: "Feature #1"
       description: >
         consectetuer adipiscing elit, sed diam nonummy nibh , amet consectetuer

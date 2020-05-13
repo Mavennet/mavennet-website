@@ -152,7 +152,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Feature List"
-            name: "list"
+            name: "items"
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
