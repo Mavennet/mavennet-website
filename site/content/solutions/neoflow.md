@@ -55,6 +55,13 @@ demoSection:
     consectetuer adip
   image: /assets/screen-shot-2020-05-13-at-12.31.08.png
   ctaText: Request a Demo
+newsSection:
+  title: Related News
+  news:
+    - item:
+        title: Canada Forges $130,000 Development Deal for Steel-Tracking Blockchain
+        image: /assets/screen-shot-2020-05-13-at-13.48.16.png
+        link: google.com
 testimonialSection:
   - testimony:
       author: Jane Doe
@@ -65,9 +72,4 @@ testimonialSection:
         , amet consectetuer adipiscing elit, sed diam nonummy, amet consectetuer
         adipiscing elit, sed diam nonummy, consectetuer adipiscing elit, sed
         diam nonummy nibh  “
-newsSection:
-  - news:
-      title: Canada Forges $130,000 Development Deal for Steel-Tracking Blockchain
-      image: /assets/screen-shot-2020-05-13-at-13.48.16.png
-      link: google.com
 ---

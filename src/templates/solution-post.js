@@ -3,13 +3,8 @@ import { graphql } from "gatsby"
 
 const SolutionPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
-  console.log(post)
 
-  return (
-    <>
-      <h1>{post.title}</h1>
-    </>
-  )
+  return <pre>{JSON.stringify(post, null, 2)}</pre>
 }
 
 export const query = graphql`
@@ -54,10 +49,13 @@ export const query = graphql`
           text
         }
         newsSection {
+          title
           news {
-            title
-            image
-            link
+            item {
+              title
+              image
+              link
+            }
           }
         }
         testimonialSection {
