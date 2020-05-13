@@ -96,7 +96,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "image", widget: "text" }
+              - { label: "Description", name: "description", widget: "text" }
               - label: "Growth Items"
                 name: "items"
                 widget: "list"
@@ -187,7 +187,6 @@ collections:
           label: "News"
           name: "news"
           widget: "object"
-          max: "1"
           fields:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }

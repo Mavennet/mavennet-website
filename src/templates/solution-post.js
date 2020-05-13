@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 
 const SolutionPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
+  console.log(post)
 
   return (
     <>
@@ -40,6 +41,12 @@ export const query = graphql`
           title
           description
           image
+          items {
+            image
+            numbers
+            description
+            text
+          }
         }
         mainSection {
           image
