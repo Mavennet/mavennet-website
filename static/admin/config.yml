@@ -112,48 +112,37 @@ collections:
             name: "summarySection"
             widget: "list"
             fields:
-              - label: "Type"
-                name: "type"
+              - label: "Summary Type"
+                name: "summaryType"
                 widget: "select"
-                options:
-                  - { label: "Default", value: "default" }
-                  - { label: "With Picture and Items", value: "pictureItems" }
+                options: ["regular", "pictureItems"]
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - {
                   label: "Image",
                   name: "image",
                   widget: "image",
-                  required: "false",
+                  required: false,
                 }
               - label: "Items"
                 name: "items"
                 widget: "list"
-                required: "false"
+                required: false
                 field: { label: "Text", name: "text", widget: "string" }
       - label: "Featured Items Section"
         name: "featuredSection"
         widget: "object"
         collapsed: "true"
         fields:
-          - label: "Type"
-            name: "type"
+          - label: "Feature Type"
+            name: "featureType"
             widget: "select"
-            options:
-              - { label: "Default", value: "default" }
-              - { label: "Banner", value: "banner" }
-              - { label: "Image Only", value: "imageOnly" }
-            default: ["default"]
-          - {
-              label: "Title",
-              name: "title",
-              widget: "string",
-              required: "false",
-            }
+            options: ["regular", "banner", "imageOnly"]
+          - { label: "Title", name: "title", widget: "string", required: false }
           - { label: "Image", name: "image", widget: "image" }
           - label: "Items"
             name: "items"
-            required: "false"
+            required: false
             widget: "list"
             field: { label: "Item", name: "item", widget: "string" }
       - label: "Features Section"
