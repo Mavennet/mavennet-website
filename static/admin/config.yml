@@ -71,7 +71,70 @@ collections:
                     media_library:
                       config:
                         multiple: false
-
+      - label: "Industries Page"
+        name: "industries-page"
+        file: "site/pages/industries.yml"
+        fields:
+          - {
+              label: "Identifier",
+              name: "identifier",
+              widget: "hidden",
+              default: "industries",
+            }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Page Subtitle", name: "subtitle", widget: "string" }
+          - label: "Industries List"
+            name: "industries"
+            widget: "list"
+            fields:
+              - { label: "Industry Title", name: "title", widget: "string" }
+              - {
+                  label: "Industry Description",
+                  name: "description",
+                  widget: "string",
+                }
+              - {
+                  label: "Industry Image",
+                  name: "image",
+                  widget: "image",
+                  media_library: { config: { multiple: false } },
+                }
+              - {
+                  label: "Industry CTA Text",
+                  name: "ctaText",
+                  widget: "string",
+                }
+              - {
+                  label: "Select the industry",
+                  name: "slug",
+                  widget: "relation",
+                  collection: "industries",
+                  searchFields: ["title", "{{slug}}"],
+                  valueField: "industries/{{slug}}",
+                }
+          - label: "Industry Solutions Section"
+            name: "industrySolutionsSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+              - label: "Industry Solutions list"
+                name: "industrySolutionsList"
+                widget: "list"
+                fields:
+                  - { label: "Item title", name: "title", widget: "string" }
+                  - label: "Select the Solution"
+                    name: "slug"
+                    widget: "relation"
+                    collection: "solutions"
+                    searchFields: ["title", "{{slug}}"]
+                    valueField: "solutions/{{slug}}"
+                  - label: "Item image"
+                    name: "image"
+                    widget: "image"
+                    media_library:
+                      config:
+                        multiple: false
   - label: "Solutions"
     name: "solutions"
     folder: "site/content/solutions"
@@ -181,13 +244,129 @@ collections:
             - { label: "Message", name: "message", widget: "text" }
       - label: "News Section"
         name: "newsSection"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "News List"
+            name: "news"
+            widget: "list"
+            field:
+              label: "News"
+              name: "item"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Link", name: "link", widget: "string" }
+  - label: "Industries"
+    name: "industries"
+    folder: "site/content/industries"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Main Section"
+        name: "mainSection"
+        widget: "object"
+        fields:
+          - { label: "Name", name: "industry", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
+      - label: "Opportunity Section"
+        name: "opportunitySection"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Opportunities List"
+            name: "items"
+            widget: "list"
+            field:
+              label: "Opportunity Item"
+              name: "item"
+              widget: "object"
+              fields:
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Numbers", name: "number", widget: "string" }
+                - { label: "Description", name: "description", widget: "text" }
+      - label: "Solutions Section"
+        name: "solutionsSection"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Solutions List"
+            name: "items"
+            widget: "list"
+            field:
+              label: "Solution Item"
+              name: "item"
+              widget: "object"
+              fields:
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Description", name: "description", widget: "text" }
+                - { label: "CTA Text", name: "ctaText", widget: "string" }
+                - {
+                    label: "Select the solution",
+                    name: "slug",
+                    widget: "relation",
+                    collection: "solutions",
+                    searchFields: ["title", "{{slug}}"],
+                    valueField: "solutions/{{slug}}",
+                  }
+      - label: "Impact Section"
+        name: "impactSection"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Title", name: "title" }
+          - label: "Impact List"
+            name: "items"
+            widget: "list"
+            field:
+              label: "Impact Item"
+              name: "item"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Description", name: "description", widget: "text" }
+      - label: "Get In Touch Section"
+        name: "getInTouchSection"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Title", name: "title", widget: "text" }
+          - { label: CTA Text, name: "ctaText", widget: "string" }
+      - label: "Testimonial Section"
+        name: "testimonialSection"
         widget: "list"
-        collapsed: "true"
+        collapsed: true
         field:
-          label: "News"
-          name: "news"
+          label: "Testimony"
+          name: "testimony"
           widget: "object"
           fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Image", name: "image", widget: "image" }
-            - { label: "Link", name: "link", widget: "string" }
+            - { label: "Author", name: "author", widget: "string" }
+            - { label: "Position", name: "position", widget: "string" }
+            - { label: "Company Logo", name: "companyLogo", widget: "image" }
+            - { label: "Message", name: "message", widget: "text" }
+      - label: "News Section"
+        name: "newsSection"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "News List"
+            name: "news"
+            widget: "list"
+            field:
+              label: "News"
+              name: "item"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Link", name: "link", widget: "string" }
