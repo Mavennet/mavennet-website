@@ -12,6 +12,123 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
+      - label: "Home Page"
+        name: "home-page"
+        file: "site/pages/home.yml"
+        fields:
+          - {
+              label: "Identifier",
+              name: "identifier",
+              widget: "hidden",
+              default: "home",
+            }
+          - { label: "Page Title", name: "title", widget: string }
+          - label: "Main Section"
+            name: "homeMainSection"
+            widget: "object"
+            fields:
+              - { label: "Slogan", name: "slogan", widget: "string" }
+              - {
+                  label: "Solutions CTA Text",
+                  name: "ctaText",
+                  widget: "string",
+                }
+          - label: "Service Section"
+            name: "homeServiceSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Solution Steps"
+                name: "steps"
+                widget: "list"
+                field:
+                  label: "Step Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Image", name: "image", widget: "image" }
+                    - { label: "Title", name: "title", widget: "string" }
+                    - {
+                        label: "Description",
+                        name: "description",
+                        widget: "text",
+                      }
+              - {
+                  label: "Services CTA Text",
+                  name: "ctaText",
+                  widget: "string",
+                }
+          - label: "Solutions Section"
+            name: "homeSolutionsSection"
+            widget: "list"
+            field:
+              label: "Solution Item"
+              name: "item"
+              widget: "object"
+              fields:
+                - { label: "Solution Title", name: "title", widget: "string" }
+                - { label: "Solution Image", name: "image", widget: "image" }
+                - {
+                    label: "Solution Description",
+                    name: "description",
+                    widget: "text",
+                  }
+                - {
+                    label: "Select the solution",
+                    name: "slug",
+                    widget: "relation",
+                    collection: "solutions",
+                    searchFields: ["title", "{{slug}}"],
+                    valueField: "solutions/{{slug}}",
+                  }
+                - {
+                    label: "Solutions CTA Text",
+                    name: "ctaText",
+                    widget: "string",
+                  }
+          - label: "Partners Section"
+            name: "homePartnersSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - {
+                  label: "Partners CTA Text",
+                  name: "ctaText",
+                  widget: "string",
+                }
+              - label: "Partners List"
+                name: "partners"
+                widget: "list"
+                field:
+                  label: "Partner"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Partner Name", name: "title", widget: "string" }
+                    - { label: "Partner Logo", name: "image", widget: "image" }
+                    - {
+                        label: "Partner Website",
+                        name: "link",
+                        widget: "string",
+                      }
+          - label: "News Section"
+            name: "homeNewsSection"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "News CTA Text", name: "ctaText", widget: "string" }
+              - label: "News List"
+                name: "news"
+                widget: "list"
+                field:
+                  label: "News"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Title", name: "title", widget: "string" }
+                    - { label: "Image", name: "image", widget: "image" }
+                    - { label: "Link", name: "link", widget: "string" }
       - label: "Solutions Page"
         name: "solutions-page"
         file: "site/pages/solutions.yml"
