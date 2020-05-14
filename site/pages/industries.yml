@@ -1,0 +1,21 @@
+identifier: industries
+title: Industries
+subtitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  nonummy nibh  "
+industries:
+  - title: Oil & Gas
+    description:
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+      nonummy nibh. consectetuer adipiscing elit, sed diam nonummy nibh.  Lorem
+      ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+      consectetuer adipiscing elit, sed diam nonummy nibh
+    ctaText: Learn More
+    slug: industries/oil-and-gas
+    image: /assets/screen-shot-2020-05-13-at-16.26.18.png
+industrySolutionsSection:
+  title: Our Industry Solutions
+  ctaText: View All Our Solutions
+  industrySolutionsList:
+    - slug: solutions/neoflow
+      title: NEOFLOW - Oil Traceability
+      image: /assets/screen-shot-2020-05-12-at-11.56.59.png

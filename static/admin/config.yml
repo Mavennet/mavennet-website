@@ -71,7 +71,70 @@ collections:
                     media_library:
                       config:
                         multiple: false
-
+      - label: "Industries Page"
+        name: "industries-page"
+        file: "site/pages/industries.yml"
+        fields:
+          - {
+              label: "Identifier",
+              name: "identifier",
+              widget: "hidden",
+              default: "industries",
+            }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Page Subtitle", name: "subtitle", widget: "string" }
+          - label: "Industries List"
+            name: "industries"
+            widget: "list"
+            fields:
+              - { label: "Industry Title", name: "title", widget: "string" }
+              - {
+                  label: "Industry Description",
+                  name: "description",
+                  widget: "string",
+                }
+              - {
+                  label: "Industry Image",
+                  name: "image",
+                  widget: "image",
+                  media_library: { config: { multiple: false } },
+                }
+              - {
+                  label: "Industry CTA Text",
+                  name: "ctaText",
+                  widget: "string",
+                }
+              - {
+                  label: "Select the industry",
+                  name: "slug",
+                  widget: "relation",
+                  collection: "industries",
+                  searchFields: ["title", "{{slug}}"],
+                  valueField: "industries/{{slug}}",
+                }
+          - label: "Industry Solutions Section"
+            name: "industrySolutionsSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+              - label: "Industry Solutions list"
+                name: "industrySolutionsList"
+                widget: "list"
+                fields:
+                  - { label: "Item title", name: "title", widget: "string" }
+                  - label: "Select the Solution"
+                    name: "slug"
+                    widget: "relation"
+                    collection: "solutions"
+                    searchFields: ["title", "{{slug}}"]
+                    valueField: "solutions/{{slug}}"
+                  - label: "Item image"
+                    name: "image"
+                    widget: "image"
+                    media_library:
+                      config:
+                        multiple: false
   - label: "Solutions"
     name: "solutions"
     folder: "site/content/solutions"
