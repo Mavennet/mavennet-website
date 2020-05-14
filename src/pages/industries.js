@@ -1,13 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-const Industries = ({ data }) => {
+const IndustriesPage = ({ data }) => {
   const post = data.pagesYaml
 
   return <pre>{JSON.stringify(post, null, 2)}</pre>
 }
 
-export default Industries
+export default IndustriesPage
 
 export const query = graphql`
   query {

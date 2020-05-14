@@ -129,6 +129,57 @@ collections:
                     - { label: "Title", name: "title", widget: "string" }
                     - { label: "Image", name: "image", widget: "image" }
                     - { label: "Link", name: "link", widget: "string" }
+      - label: "Service Page"
+        name: "service-page"
+        file: "site/pages/service.yml"
+        fields:
+          - {
+              label: "Identifier",
+              name: "identifier",
+              widget: "hidden",
+              default: "service",
+            }
+          - { label: "Page Title", name: "title", widget: "string" }
+          - label: "Main Section"
+            name: "serviceMainSection"
+            widget: "object"
+            fields:
+              - { label: "Slogan", name: "slogan", widget: "string" }
+          - label: "Steps Section"
+            name: "serviceStepsSection"
+            widget: "list"
+            field:
+              label: "Step Item"
+              name: "item"
+              widget: "object"
+              fields:
+                - { label: "Step Title", name: "title", widget: "string" }
+                - {
+                    label: "Step Description",
+                    name: "description",
+                    widget: "text",
+                  }
+                - label: "Steps List"
+                  name: "stepsList"
+                  widget: "list"
+                  field: { label: "List Item", name: "item", widget: "string" }
+                - label: "CTA"
+                  name: "cta"
+                  widget: "object"
+                  fields:
+                    - { label: "CTA Text", name: "ctaText", widget: "string" }
+                    - {
+                        label: "CTA Type",
+                        name: "ctaType",
+                        widget: "select",
+                        options: ["solutionsCta", "contactUs"],
+                      }
+          - label: "Contact Us Section"
+            name: "serviceContactUsSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
       - label: "Solutions Page"
         name: "solutions-page"
         file: "site/pages/solutions.yml"

@@ -1,7 +1,5 @@
 import React from "react"
 
-import Header from "../components/Header/Header"
-
 const IndexPage = ({ data }) => {
   const post = data.pagesYaml
 

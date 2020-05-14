@@ -1,0 +1,34 @@
+identifier: service
+title: Service
+serviceMainSection:
+  slogan: Mavennet Catchy Slogan
+serviceStepsSection:
+  - item:
+      title: "Strategy: Lorem ipsum dolor sit amet, consectetuer "
+      description:
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing  "
+      stepsList:
+        - Lorem ipsum dolor sit
+        - "- Lorem ipsum dolor sit"
+        - "- Lorem ipsum dolor sit"
+        - "- Lorem ipsum dolor sit"
+      cta:
+        ctaText: Talk to us to learn more
+        ctaType: contactUs
+  - item:
+      title: "Design: Lorem ipsum dolor sit amet, consectetuer "
+      description:
+        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing  "
+      stepsList:
+        - "- Lorem ipsum dolor sit"
+        - "- Lorem ipsum dolor sit"
+        - "- Lorem ipsum dolor sit"
+        - "- Lorem ipsum dolor sit"
+      cta:
+        ctaText: View Our Solutions
+        ctaType: solutionsCta
+serviceContactUsSection:
+  title: "Lorem ipsum dolor sit amet, consectetuer ipsum dolor sit  "
+  ctaText: Let's Talk

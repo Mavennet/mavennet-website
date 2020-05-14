@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
-const Solutions = ({ data }) => {
+const SolutionsPage = ({ data }) => {
   const { title, subtitle, solutions, previousWork } = data.pagesYaml
 
   const SolutionItem = ({ item }) => {
@@ -89,4 +89,4 @@ export const query = graphql`
   }
 `
 
-export default Solutions
+export default SolutionsPage
