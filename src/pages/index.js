@@ -1,10 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/Layout/Layout"
+
 const IndexPage = ({ data }) => {
   const post = data.pagesYaml
 
-  return <pre>{JSON.stringify(post, null, 2)}</pre>
+  return (
+    <Layout>
+      <h1>Ue</h1>
+      <pre>{JSON.stringify(post, null, 2)}</pre>
+    </Layout>
+  )
 }
 
 export default IndexPage
