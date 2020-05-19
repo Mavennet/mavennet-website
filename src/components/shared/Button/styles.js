@@ -1,0 +1,28 @@
+import { Link } from "gatsby"
+import styled from "styled-components"
+
+export const Button = styled(Link)`
+  color: var(--c-p-selago);
+
+  padding: 0.59375em 1.75em;
+  border: 2px solid var(--c-p-royal-purple);
+  background-color: var(--c-p-royal-purple);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--c-p-royal-purple-dark);
+    border-color: var(--c-p-royal-purple-dark);
+  }
+
+  ${({ outline }) =>
+    outline &&
+    `
+      color: var(--c-p-royal-purple);
+      background-color: transparent;
+
+      &:hover {
+        background-color: var(--c-p-royal-purple);
+        color: var(--c-p-selago);
+      }
+    `};
+`

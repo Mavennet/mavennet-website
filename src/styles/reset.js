@@ -82,7 +82,8 @@ const reset = css`
   time,
   mark,
   audio,
-  video {
+  video,
+  button {
     margin: 0;
     padding: 0;
     border: 0;
@@ -129,6 +130,13 @@ const reset = css`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+  button {
+    outline: none;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
   }
 `
 export default reset

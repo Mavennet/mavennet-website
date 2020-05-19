@@ -1,8 +1,9 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import styled from "styled-components"
 
-import GlobalStyle from "../../styles/globalStyle"
+import GenericButton from "../../shared/Button/Button"
+
+import GlobalStyle from "../../../styles/globalStyle"
 
 export default function Layout({ children }) {
   return (
@@ -13,6 +14,7 @@ export default function Layout({ children }) {
           rel="stylesheet"
         />
       </Helmet>
+      <GenericButton />
       <GlobalStyle />
       {children}
     </>

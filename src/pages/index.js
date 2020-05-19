@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout/Layout"
+import Layout from "../components/base/Layout/Layout"
 
 const IndexPage = ({ data }) => {
   const post = data.pagesYaml
