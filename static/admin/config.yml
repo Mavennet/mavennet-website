@@ -507,6 +507,120 @@ collections:
                         name: "description",
                         widget: "text",
                       }
+      - label: "Career Page"
+        name: "career-page"
+        file: "site/pages/career.yml"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+          - label: "Main Section"
+            name: "careerMainSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - {
+                  label: "Section Description",
+                  name: "description",
+                  widget: "text",
+                }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - label: "Our Story Section"
+            name: "careerOurStorySection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Section Image", name: "image", widget: "image" }
+              - label: "Timeline"
+                name: "timeline"
+                widget: "list"
+                field:
+                  label: "Timeline Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Year", name: "year", widget: "number" }
+                    - {
+                        label: "Description",
+                        name: "description",
+                        widget: "text",
+                      }
+          - label: "Who Should Join Section"
+            name: "careerWhoSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Reasons list"
+                name: "reasonsList"
+                widget: "list"
+                field:
+                  label: "Reason Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - {
+                        label: "Description",
+                        name: "description",
+                        widget: "text",
+                      }
+                    - { label: "Image", name: "image", widget: "image" }
+          - label: "A Day of a Maven Section"
+            name: "careerDaySection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title" }
+              - label: "Testimonials List"
+                name: "testimonialsList"
+                widget: "list"
+                field:
+                  label: "Testimonial Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Member Name", name: "name", widget: "string" }
+                    - {
+                        label: "Member Position",
+                        name: "position",
+                        widget: "string",
+                      }
+                    - {
+                        label: "Member Testimonial",
+                        name: "testimony",
+                        widget: "text",
+                      }
+                    - { label: "Member Image", name: "image", widget: "image" }
+          - label: "Opportunities Section"
+            name: "careerOppotunitySection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Opportunities List"
+                name: "opportunitiesList"
+                widget: "list"
+                field:
+                  label: "Opportunity Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Job Title", name: "title", widget: "string" }
+                    - {
+                        label: "Job Location",
+                        name: "location",
+                        widget: "string",
+                      }
+                    - { label: "Start Date", name: "date", widget: "date" }
+          - label: "Apply for other opportunities Section"
+            name: "careerOtherOpportunitiesSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - {
+                  label: "Section Content",
+                  name: "content",
+                  widget: "markdown",
+                }
   - label: "Solutions"
     name: "solutions"
     folder: "site/content/solutions"
