@@ -1,0 +1,66 @@
+meta:
+  title: Partnership
+partnersMainSection:
+  title: Partnership
+  description: We Partner with Industry Leader to deliver more value
+    ...consectetuer adipiscing elit
+  ctaText: Partner With Us
+partnersPartnersSection:
+  partnersList:
+    - item:
+        name: Homeland
+        link: google.com
+        logo: /assets/screen-shot-2020-05-14-at-11.00.19.png
+    - item:
+        name: Ontario
+        link: google.com
+        logo: /assets/screen-shot-2020-05-14-at-11.00.21.png
+partnersModelSection:
+  title: Our Partnership Model
+  modelList:
+    - item:
+        title: Technology Partners
+        description: >
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
+          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam no
+        image: /assets/screen-shot-2020-05-13-at-13.47.49.png
+    - item:
+        title: Industry Partners
+        description: >
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
+          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam no
+        image: /assets/screen-shot-2020-05-13-at-13.47.49.png
+    - item:
+        title: Venture Partners
+        description: >
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
+          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam no
+        image: /assets/screen-shot-2020-05-13-at-13.47.49.png
+partnersWhySection:
+  title: Headling of Why Parnter With Us
+  whyList:
+    - item:
+        title: Benefit#1
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh. consectetuer adipiscing elit, sed diam nonummy nibh.  "
+    - item:
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh. consectetuer adipiscing elit, sed diam nonummy nibh.  "
+        title: Benefit#2
+    - item:
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh. consectetuer adipiscing elit, sed diam nonummy nibh.  "
+        title: Benefit#3
+    - item:
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh. consectetuer adipiscing elit, sed diam nonummy nibh.  "
+        title: Benefit#4

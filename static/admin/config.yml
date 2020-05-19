@@ -425,6 +425,88 @@ collections:
                         widget: "text",
                       }
                     - { label: "Website Link", name: "link", widget: "string" }
+      - label: "Partners Page"
+        name: "partners-page"
+        file: "site/pages/partners.yml"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+          - label: "Main Section"
+            name: "partnersMainSection"
+            widget: "object"
+            fields:
+              - { label: "Section title", name: "title", widget: "string" }
+              - {
+                  label: "Section description",
+                  name: "description",
+                  widget: "text",
+                }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - label: "Partners Section"
+            name: "partnersPartnersSection"
+            widget: "object"
+            fields:
+              - label: "Partners list"
+                name: "partnersList"
+                widget: "list"
+                field:
+                  label: "Partner Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Partner Name", name: "name", widget: "string" }
+                    - {
+                        label: "Partner Website",
+                        name: "link",
+                        widget: "string",
+                      }
+                    - { label: "Partner Logo", name: "logo", widget: "image" }
+          - label: "Partnership Model Section"
+            name: "partnersModelSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Model List"
+                name: "modelList"
+                widget: "list"
+                field:
+                  label: "Model Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Model Title", name: "title", widget: "string" }
+                    - {
+                        label: "Model Description",
+                        name: "description",
+                        widget: "text",
+                      }
+                    - { label: "Model Image", name: "image", widget: "image" }
+          - label: "Why Partner With Us Section"
+            name: "partnersWhySection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Why List"
+                name: "whyList"
+                widget: "list"
+                field:
+                  label: "Why Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - {
+                        label: "Benefit Title",
+                        name: "title",
+                        widget: "string",
+                      }
+                    - {
+                        label: "Benefit Description",
+                        name: "description",
+                        widget: "text",
+                      }
   - label: "Solutions"
     name: "solutions"
     folder: "site/content/solutions"
