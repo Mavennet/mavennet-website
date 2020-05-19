@@ -303,6 +303,128 @@ collections:
                     media_library:
                       config:
                         multiple: false
+      - label: "About Page"
+        name: "about-page"
+        file: "site/pages/about.yml"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+          - label: "Main Section"
+            name: "aboutMainSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Summary Section"
+            name: "aboutSummarySection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Principles Section"
+            name: "aboutPrinciplesSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", object: "string" }
+              - label: "Principles List"
+                name: "principlesList"
+                widget: "list"
+                field:
+                  label: "Principle Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Title", name: "title", widget: "string" }
+                    - {
+                        label: "Description",
+                        name: "description",
+                        widget: "text",
+                      }
+                    - { label: "Image", name: "image", widget: "image" }
+          - label: "Clients and Partners Section"
+            name: "aboutPartnersSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: string }
+              - label: "Partners List"
+                name: "partnersList"
+                widget: "list"
+                field:
+                  label: "Partner Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Partner Name", name: "name", widget: "string" }
+                    - {
+                        label: "Partner Website",
+                        name: "link",
+                        widget: "string",
+                      }
+                    - { label: "Partner Logo", name: "logo", widget: "image" }
+              - label: "CTA Text"
+                name: "ctaText"
+                wiget: "string"
+          - label: "Awards Section"
+            name: "aboutAwardsSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Awards List"
+                name: "awardsList"
+                widget: "list"
+                field:
+                  label: "Award Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Award Title", name: "title", widget: string }
+                    - { label: "Award Image", name: "image", widget: "image" }
+                    - {
+                        label: "Award link",
+                        name: "link",
+                        widget: "string",
+                        optional: true,
+                      }
+          - label: "Team Section"
+            name: "aboutTeamSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Team List"
+                name: "teamList"
+                widget: "list"
+                field:
+                  label: "Team member"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Name", name: "name", widget: "string" }
+                    - { label: "Position", name: "position", widget: "string" }
+                    - { label: "Image", name: "image", widget: "image" }
+                    - { label: "Link", name: "link", widget: "string" }
+          - label: "Learn More Section"
+            name: "aboutLearnSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Links list"
+                name: "linksList"
+                widget: "list"
+                field:
+                  label: "Link item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "CTA Text", name: "ctaText", widget: "string" }
+                    - {
+                        label: "Link Description",
+                        name: "description",
+                        widget: "text",
+                      }
+                    - { label: "Website Link", name: "link", widget: "string" }
   - label: "Solutions"
     name: "solutions"
     folder: "site/content/solutions"

@@ -1,0 +1,110 @@
+meta:
+  title: About
+aboutMainSection:
+  title: About us
+  description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+    nonummy nibh  "
+aboutSummarySection:
+  title: Who We Are
+  description: >
+    consectetuer adipiscing elit, sed diam nonummy nibh , amet consectetuer
+    adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet, consectetuer
+    adipiscing elit, sed diam nonummy nibh. consectetuer adipiscing elit, sed
+    diam nonummy nibh , amet consectetuer adipiscing elit, sed diam nonummy.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    nibh  diam nonummy nibh , amet consectetuer adipiscing elit, sed diam
+    nonummy. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+    nonummy nibh  
+aboutPrinciplesSection:
+  title: Our Principles
+  principlesList:
+    - item:
+        title: Ownership
+        description: >
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
+          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam no
+        image: /assets/screen-shot-2020-05-19-at-07.39.56.png
+    - item:
+        title: Integrity
+        description: >
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
+          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam no
+        image: /assets/screen-shot-2020-05-19-at-07.40.05.png
+    - item:
+        title: Impact
+        description: >
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
+          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam no
+        image: /assets/screen-shot-2020-05-19-at-07.40.00.png
+    - item:
+        title: Resilience
+        description: >
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
+          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+          consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit, sed diam no
+        image: /assets/screen-shot-2020-05-19-at-07.40.09.png
+aboutPartnersSection:
+  title: Our Clients and Partners
+  ctaText: Learn More About Partnership
+  partnersList:
+    - item:
+        name: Homeland Security
+        link: google.com
+        logo: /assets/screen-shot-2020-05-13-at-13.48.13.png
+    - item:
+        logo: /assets/screen-shot-2020-05-14-at-11.00.21.png
+        name: Ontario
+        link: google.com
+aboutAwardsSection:
+  title: Awards & Recognition
+  awardsList:
+    - item:
+        title: "Award #1"
+        image: /assets/screen-shot-2020-05-14-at-11.00.11.png
+        link: google.com
+    - item:
+        title: "Award #2"
+        image: /assets/screen-shot-2020-05-14-at-11.00.11.png
+        link: google.com
+aboutTeamSection:
+  title: Our Team
+  teamList:
+    - item:
+        name: Patrick Mandic
+        position: CEO
+        image: /assets/screen-shot-2020-05-19-at-07.43.36.png
+        link: google.com
+    - item:
+        name: Kesem Frank
+        position: President
+        image: /assets/screen-shot-2020-05-19-at-07.43.52.png
+        link: google.com
+aboutLearnSection:
+  title: Learn More About Mavennet
+  linksList:
+    - item:
+        ctaText: Career
+        description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit.
+        link: career
+    - item:
+        ctaText: Newsroom
+        description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit.
+        link: newsroom
+    - item:
+        ctaText: Partners
+        description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
+          consectetuer adipiscing elit.
+        link: partners

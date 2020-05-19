@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 const ServicePage = ({ data }) => {
   const post = data.pagesYaml
