@@ -621,6 +621,49 @@ collections:
                   name: "content",
                   widget: "markdown",
                 }
+      - label: "Newsroom Page"
+        name: "news-room"
+        file: "site/pages/newsroom.yml"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+          - label: "Main Section"
+            name: "newsRoomMainSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - {
+                  label: "Section Description",
+                  name: "description",
+                  widget: "text",
+                }
+              - { label: "Section Image", name: "image", widget: "image" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - label: "Announcement Section"
+            name: "newsRoomAnnouncementSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - label: "Media Release Section"
+            name: "newsRoomMediaSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - label: "Awards Section"
+            name: "newsRoomAwardsSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+          - label: "Professional Association Section"
+            name: "newsRoomProfessionalSection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
   - label: "Solutions"
     name: "solutions"
     folder: "site/content/solutions"
