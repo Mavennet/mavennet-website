@@ -1,17 +1,17 @@
 import React from "react"
-import { createGlobalStyle } from "styled-components"
+import styled from "styled-components"
 
-import reset from "../../styles/reset"
+import GlobalStyle from "../../styles/globalStyle"
 
-const GlobalStyle = createGlobalStyle`
-  ${reset}
+const Div = styled.div`
+  color: var(--c-a-plum);
 `
 
 export default function Layout({ children }) {
   return (
     <>
       <GlobalStyle />
-      <div>{children}</div>
+      <Div>{children}</Div>
     </>
   )
 }

@@ -131,5 +131,4 @@ const reset = css`
     border-spacing: 0;
   }
 `
-
 export default reset
