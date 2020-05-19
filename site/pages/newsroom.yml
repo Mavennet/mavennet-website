@@ -1,0 +1,17 @@
+meta:
+  title: Newsroom
+newsRoomMainSection:
+  title: Newsroom
+  description: Mavennet was nominated a finalist for the Industry Solutions Award
+  image: /assets/screen-shot-2020-05-19-at-11.19.28.png
+  ctaText: Read More
+newsRoomAnnouncementSection:
+  title: Our Latest Announcement
+  ctaText: View More Announcements
+newsRoomMediaSection:
+  title: Mavennet In Media Release
+  ctaText: View More Media Release
+newsRoomAwardsSection:
+  title: We Are Winning Awards
+newsRoomProfessionalSection:
+  title: We Are Selected by Professional Associations
