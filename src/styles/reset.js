@@ -133,6 +133,7 @@ const reset = css`
   }
   button {
     outline: none;
+    background: none;
   }
   a {
     text-decoration: none;

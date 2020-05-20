@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
+import { Link } from "gatsby"
+
 export const SideDrawer = styled.aside`
+  overflow-y: auto;
   height: 100%;
   position: fixed;
   top: 0;
@@ -13,7 +16,12 @@ export const SideDrawer = styled.aside`
 `
 
 export const Container = styled.div`
-  padding: 23px 30px 0px 42px;
+  padding: 23px 30px 42px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 `
 
 export const Header = styled.header`
@@ -21,6 +29,10 @@ export const Header = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  padding-bottom: 13px;
+
+  border-bottom: 1px solid var(--c-p-selago-dark);
 `
 
 export const Logo = styled.img`
@@ -49,4 +61,32 @@ export const CloseButton = styled.button`
   &:after {
     transform: rotate(-45deg);
   }
+`
+export const NavBar = styled.nav`
+  padding-top: 27px;
+`
+
+export const NavList = styled.ul``
+
+export const NavItem = styled.li`
+  border-bottom: 1px solid var(--c-p-selago-dark);
+  padding: 1.25em 0;
+`
+
+export const NavLink = styled(Link)`
+  color: var(--c-p-haiti);
+  font-family: Barlow;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -0.08px;
+  line-height: 29px;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0 0.33em;
+`
+export const ButtonContainer = styled.div`
+  width: auto;
+  margin: 4em auto 0;
 `
