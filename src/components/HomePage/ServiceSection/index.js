@@ -9,7 +9,7 @@ import * as S from "./styles"
 const ServiceSection = ({ title, ctaText, steps }) => {
   const getItems = itemObj => {
     return itemObj.map(item => (
-      <S.ListItem>
+      <S.ListItem key={item.item.title}>
         <StepItem {...item.item} />
       </S.ListItem>
     ))
@@ -19,7 +19,7 @@ const ServiceSection = ({ title, ctaText, steps }) => {
       <Container>
         <S.Title>{title}</S.Title>
         <S.ItemsList>{getItems(steps)}</S.ItemsList>
-        <TextArrowCta text={ctaText} to="service" />
+        <TextArrowCta text={ctaText} to="/service" />
       </Container>
     </S.Section>
   )

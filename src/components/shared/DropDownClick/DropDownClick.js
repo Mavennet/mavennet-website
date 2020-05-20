@@ -18,7 +18,7 @@ const DropDownClick = ({ item, isDrawerClosed }) => {
       return (
         <S.ContentList isOpen={isOpen}>
           {list.map(item => (
-            <S.ListItem>
+            <S.ListItem key={item.name}>
               <S.ItemLink to={item.to}>{item.name}</S.ItemLink>
             </S.ListItem>
           ))}

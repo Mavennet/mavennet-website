@@ -11,6 +11,7 @@ export const Parent = styled.button`
   letter-spacing: -0.08px;
   line-height: 29px;
   text-align: left;
+  cursor: pointer;
 
   width: 100%;
   height: 100%;

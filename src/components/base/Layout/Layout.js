@@ -1,4 +1,6 @@
 import React from "react"
+
+import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Header from "../Header/Header"
@@ -6,6 +8,35 @@ import Header from "../Header/Header"
 import GlobalStyle from "../../../styles/globalStyle"
 
 export default function Layout({ children }) {
+  const data = useStaticQuery(graphql`
+    query HeaderFooterQuery {
+      solutions: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/^/solutions/.*$/" } } }
+      ) {
+        nodes {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
+      }
+      industries: allMarkdownRemark(
+        filter: { fields: { slug: { regex: "/^/industries/.*$/" } } }
+      ) {
+        nodes {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <>
       <Helmet>
@@ -15,7 +46,7 @@ export default function Layout({ children }) {
         />
       </Helmet>
       <GlobalStyle />
-      <Header />
+      <Header menuItems={{ ...data }} />
       {children}
     </>
   )

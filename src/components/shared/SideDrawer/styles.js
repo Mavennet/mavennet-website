@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const SideDrawer = styled.aside`
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 100%;
   position: fixed;
   top: 0;
@@ -13,6 +13,10 @@ export const SideDrawer = styled.aside`
   background-color: #ffffff;
   transition: transform 0.3s ease-out;
   transform: ${props => (props.isOpen ? "translateX(0)" : "translateX(100%)")};
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 
 export const Container = styled.div`
