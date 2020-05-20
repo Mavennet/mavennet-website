@@ -14,12 +14,12 @@ export const Header = styled.header`
   align-items: center;
 `
 
-export const LogoLink = styled(Link)``
+export const LogoLink = styled(Link)`
 
-export const Logo = styled.div`
-  background-color: black;
+`
+
+export const Logo = styled.img`
   width: 158px;
-  height: 38px;
 `
 
 export const Navbar = styled.nav`

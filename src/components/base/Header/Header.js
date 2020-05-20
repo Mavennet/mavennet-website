@@ -1,15 +1,24 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Hamburguer from "../../shared/Hamburguer/Hamburger"
+import SideDrawer from "../../shared/SideDrawer/SideDrawer"
 
 import * as S from "./styles"
 
+import logoWhite from "../../../assets/images/logo_white.png"
+
 const Header = () => {
+  const [isDrawerOpen, setDrawerState] = useState(false)
+
+  const handleDrawerState = state => {
+    setDrawerState(state)
+  }
+
   return (
     <>
       <S.Header>
         <S.LogoLink>
-          <S.Logo />
+          <S.Logo src={logoWhite} alt="Mavennet logo" />
         </S.LogoLink>
         <S.Navbar>
           <S.NavList>
@@ -50,8 +59,12 @@ const Header = () => {
             <S.NavLink></S.NavLink>
           </S.NavList>
         </S.Navbar>
-        <Hamburguer />
+        <Hamburguer handleClick={handleDrawerState} />
       </S.Header>
+      <SideDrawer
+        isOpen={isDrawerOpen}
+        closeDrawer={() => handleDrawerState(false)}
+      />
     </>
   )
 }

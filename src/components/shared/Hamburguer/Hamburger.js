@@ -2,9 +2,9 @@ import React from "react"
 
 import * as S from "./styles"
 
-const Hamburguer = () => {
+const Hamburguer = ({ handleClick }) => {
   return (
-    <S.Hamburguer>
+    <S.Hamburguer onClick={() => handleClick(true)}>
       <S.Bar />
       <S.Bar />
       <S.Bar />
