@@ -13,7 +13,7 @@ const MainSection = ({ slogan, ctaText }) => {
       <Container>
         <S.Slogan>{slogan}</S.Slogan>
         <S.ButtonContainer>
-          <Button title={ctaText} to="solutions" />
+          <Button text={ctaText} to="solutions" />
         </S.ButtonContainer>
       </Container>
     </S.MainSection>

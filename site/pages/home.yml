@@ -8,35 +8,30 @@ homeServiceSection:
   ctaText: Learn more about our service
   steps:
     - item:
-        image: /assets/screen-shot-2020-05-14-at-11.00.05.png
+        image: /assets/strategy.png
         title: Strategy
-        description:
-          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
           nonummy nibh
     - item:
-        image: /assets/screen-shot-2020-05-14-at-11.00.07.png
+        image: /assets/design.png
         title: Design
-        description:
-          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
           nonummy nibh
     - item:
-        image: /assets/screen-shot-2020-05-14-at-11.00.09.png
+        image: /assets/implementation.png
         title: Implementation
-        description:
-          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
           nonummy nibh
     - item:
-        image: /assets/screen-shot-2020-05-14-at-11.00.11.png
+        image: /assets/support.png
         title: Support
-        description:
-          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
           nonummy nibh
 homeSolutionsSection:
   - item:
       title: Lorem ipsum dolor site amet, consectetuer
       image: /assets/screen-shot-2020-05-12-at-11.56.59.png
-      description:
-        Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+      description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
         nonummy nibh. Lorem ipsum dolor site amet, consectetuer adipiscing elit,
         sed diam nonummy nibh
       slug: solutions/neoflow
