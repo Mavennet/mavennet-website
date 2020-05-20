@@ -14,15 +14,29 @@ export const Button = styled(Link)`
     border-color: var(--c-p-royal-purple-dark);
   }
 
-  ${({ outline }) =>
-    outline &&
+  ${({ reverse }) =>
+    reverse &&
     `
       color: var(--c-p-royal-purple);
       background-color: transparent;
+      border-color: var(--c-p-royal-purple) !important;
 
       &:hover {
         background-color: var(--c-p-royal-purple);
         color: var(--c-p-selago);
+      }
+    `};
+
+  ${({ outline }) =>
+    outline &&
+    `
+      color: #FFFFFF;
+      background-color: transparent;
+      border-color: #FFFFFF !important;
+
+      &:hover {
+        background-color: var(--c-p-royal-purple);
+        border-color: var(--c-p-royal-purple);
       }
     `};
 `

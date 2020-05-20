@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 
 import { Button } from "./styles"
 
-const GenericButton = ({ text, outline, to }) => {
+const GenericButton = ({ text, reverse, outline, to }) => {
   return (
-    <Button to={to} outline={outline}>
+    <Button to={to} reverse={reverse} outline={outline}>
       {text}
     </Button>
   )
@@ -13,12 +13,14 @@ const GenericButton = ({ text, outline, to }) => {
 
 GenericButton.propTypes = {
   text: PropTypes.string,
+  reverse: PropTypes.bool,
   outline: PropTypes.bool,
   to: PropTypes.string,
 }
 
 GenericButton.defaultProps = {
   text: "Click Me!",
+  reverse: false,
   outline: false,
   to: "#",
 }
