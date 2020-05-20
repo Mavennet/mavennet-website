@@ -1,6 +1,10 @@
 import { css } from "styled-components"
 
 const reset = css`
+  html {
+    overflow-y: auto;
+  }
+
   html,
   body,
   div,

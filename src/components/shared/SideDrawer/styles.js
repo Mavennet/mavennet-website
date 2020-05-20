@@ -44,6 +44,7 @@ export const CloseButton = styled.button`
   width: 21px;
   position: relative;
   background: none;
+  cursor: pointer;
 
   &:before,
   &:after {

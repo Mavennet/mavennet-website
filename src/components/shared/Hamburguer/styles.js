@@ -7,7 +7,7 @@ export const Hamburguer = styled.div`
 
 export const Bar = styled.div`
   width: 100%;
-  height: 5px;
+  height: 3px;
   background-color: #ffffff;
-  margin: 3px 0;
+  margin: 5px 0;
 `

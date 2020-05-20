@@ -4,6 +4,7 @@ const typography = css`
   html {
     font-family: "Barlow", sans-serif;
     font-size: 16px;
+    color: var(--c-p-haiti);
   }
 
   h1 {
