@@ -1,7 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-import GenericButton from "../../shared/Button/Button"
+import Header from "../Header/Header"
 
 import GlobalStyle from "../../../styles/globalStyle"
 
@@ -14,8 +14,8 @@ export default function Layout({ children }) {
           rel="stylesheet"
         />
       </Helmet>
-      <GenericButton />
       <GlobalStyle />
+      <Header />
       {children}
     </>
   )

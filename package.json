@@ -56,11 +56,6 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm test && lint-staged"
-    }
-  },
   "lint-staged": {
     "*.{js,jsx,json,md}": "prettier --write"
   }

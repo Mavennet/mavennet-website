@@ -6,12 +6,7 @@ import Layout from "../components/base/Layout/Layout"
 const IndexPage = ({ data }) => {
   const post = data.pagesYaml
 
-  return (
-    <Layout>
-      <h1>Ue</h1>
-      <pre>{JSON.stringify(post, null, 2)}</pre>
-    </Layout>
-  )
+  return <Layout></Layout>
 }
 
 export default IndexPage
