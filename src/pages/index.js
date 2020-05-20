@@ -3,10 +3,18 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout/Layout"
 
+import MainSection from "../components/HomePage/MainSection/MainSection"
+
 const IndexPage = ({ data }) => {
   const post = data.pagesYaml
 
-  return <Layout></Layout>
+  const { homeMainSection } = post
+
+  return (
+    <Layout>
+      <MainSection {...homeMainSection} />
+    </Layout>
+  )
 }
 
 export default IndexPage

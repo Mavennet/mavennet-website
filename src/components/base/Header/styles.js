@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const Header = styled.header`
+  z-index: 100;
   position: absolute;
   top: 0;
   right: 0;
@@ -14,12 +15,11 @@ export const Header = styled.header`
   align-items: center;
 `
 
-export const LogoLink = styled(Link)`
-
-`
+export const LogoLink = styled(Link)``
 
 export const Logo = styled.img`
   width: 158px;
+  display: block;
 `
 
 export const Navbar = styled.nav`
