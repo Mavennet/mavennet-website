@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { device } from "../../../consts/deviceSizes"
+
 export const ContactUsFooter = styled.section`
   overflow-x: hidden;
   position: relative;
@@ -26,11 +28,19 @@ export const ContactUsFooter = styled.section`
   &:before {
     left: 0;
     border-right: 400px solid transparent;
+
+    @media ${device.tablet} {
+      border-right: 550px solid transparent;
+    }
   }
 
   &:after {
     right: 0;
     border-left: 400px solid transparent;
+
+    @media ${device.tablet} {
+      border-left: 550px solid transparent;
+    }
   }
 `
 

@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { device } from "../../../consts/deviceSizes"
+
 export const MainSection = styled.section`
   position: relative;
   padding: 13.5625em 0;
@@ -30,11 +32,19 @@ export const MainSection = styled.section`
   &:before {
     left: 0;
     border-right: 400px solid transparent;
+
+    @media ${device.tablet} {
+      border-right: 550px solid transparent;
+    }
   }
 
   &:after {
     right: 0;
     border-left: 400px solid transparent;
+
+    @media ${device.tablet} {
+      border-left: 550px solid transparent;
+    }
   }
 `
 export const Slogan = styled.h1`

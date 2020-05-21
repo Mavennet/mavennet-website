@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { device } from "../../../consts/deviceSizes"
+
 export const PartnersSection = styled.section`
   padding: 4.0625em 0 2.1875em;
 `
@@ -22,6 +24,10 @@ export const PartnersItem = styled.li`
   margin: 1.625em 1em 0;
 
   width: 80px;
+
+  @media ${device.tablet} {
+    width: 100px;
+  }
 `
 
 export const PartnerLink = styled.a``
