@@ -3,6 +3,8 @@ import { Link } from "gatsby"
 
 import Container from "../../base/Container"
 
+import { device } from "../../../consts/deviceSizes"
+
 export const Header = styled.header`
   z-index: 100;
   position: ${props => props.theme.position};
@@ -33,14 +35,68 @@ export const Logo = styled.img`
 
 export const Navbar = styled.nav`
   display: none;
+
+  @media ${device.laptop} {
+    display: flex;
+    align-items: center;
+  }
 `
 
 export const NavList = styled.ul``
 
-export const ListItem = styled.li``
+export const ListItem = styled.li`
+  display: inline-block;
+`
 
-export const NavLink = styled(Link)``
+export const NavLink = styled(Link)`
+  color: ${props => props.theme.color};
 
-export const DropdownWrapper = styled.div``
+  margin: 0 1em;
 
-export const DropdownList = styled.ul``
+  ${({ header }) =>
+    header &&
+    `
+      display:flex;
+      align-items: center;
+
+      svg {
+        width: 12px;
+        margin-left: .3em;
+        margin-top: 3px;
+      }
+    `}
+`
+
+export const DropdownList = styled.ul`
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  padding: 1em 0;
+  min-width: max-content;
+`
+
+export const DropdownListItem = styled.li`
+  padding: 0.5em 0;
+  position: relative;
+  width: 100%;
+
+  & ${NavLink} {
+    color: var(--c-p-haiti);
+  }
+`
+
+export const DropdownWrapper = styled.div`
+  position: relative;
+  display: inline-block;
+
+  &:hover ${DropdownList} {
+    display: block;
+  }
+`
+
+export const ButtonContainer = styled.div`
+  margin-left: 2em;
+`

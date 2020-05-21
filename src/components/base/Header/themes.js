@@ -5,7 +5,7 @@ const primary = {
   logo: logoWhite,
   color: "#FFFFFF",
   background: "transparent",
-  button: "reverse",
+  button: "outline",
   position: "absolute",
   boxShadow: "none",
 }

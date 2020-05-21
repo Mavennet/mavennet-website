@@ -57,6 +57,8 @@ export const Logo = styled.img`
 `
 
 export const SocialList = styled.ul`
+  display: flex;
+  align-items: center;
   @media ${device.laptop} {
     margin-top: 2.5em;
   }

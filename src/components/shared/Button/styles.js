@@ -27,12 +27,12 @@ export const Button = styled(Link)`
       }
     `};
 
-  ${({ outline }) =>
-    outline &&
+  ${({ outline, theme }) =>
+    (outline || theme.button == "outline") &&
     `
       color: #FFFFFF;
       background-color: transparent;
-      border-color: #FFFFFF !important;
+      border-color: #FFFFFF;
 
       &:hover {
         background-color: var(--c-p-royal-purple);

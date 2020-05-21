@@ -31,14 +31,14 @@ export const getHeaderItems = items => {
   const { industries, solutions } = getMenuItems(items)
 
   const headerItems = {
-    solutions,
+    solutions: { ...solutions, to: "/solutions" },
     service: {
       name: SERVICE.name,
       to: "/service",
       children: [],
     },
-    industries,
-    company: { ...COMPANY },
+    industries: { ...industries, to: "/industries" },
+    company: { ...COMPANY, to: "/about" },
     career: {
       name: "Career",
       to: "/career",

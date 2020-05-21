@@ -1,24 +1,21 @@
 import React, { useState, useEffect } from "react"
-
 import { ThemeProvider } from "styled-components"
 
+import Button from "../../shared/Button"
 import Hamburguer from "../../shared/Hamburguer/Hamburger"
 import SideDrawer from "../../shared/SideDrawer/SideDrawer"
 
+import { getHeaderItems, getSideDrawerItems } from "../../../helpers/menuItems"
+
+import arrowDown from "../../../assets/icons/chevron-down-solid.svg"
+
 import themes from "./themes"
-
-import {
-  /*getHeaderItems,*/ getSideDrawerItems,
-} from "../../../helpers/menuItems"
-
 import * as S from "./styles"
-
-import logoWhite from "../../../assets/images/logo_white.svg"
 
 const Header = ({ menuItems }) => {
   const [currentTheme, setCurrentTheme] = useState(themes.primary)
 
-  // const [menuItemsState, setMenuItemsState] = useState([])
+  const [menuItemsState, setMenuItemsState] = useState([])
   const [drawerItemsState, setDrawerItemsState] = useState([])
 
   const [isDrawerOpen, setDrawerState] = useState(false)
@@ -31,9 +28,9 @@ const Header = ({ menuItems }) => {
   })
 
   useEffect(() => {
-    // const headerItems = getHeaderItems(menuItems)
-    // const headerList = Object.values(headerItems)
-    // setMenuItemsState(headerList)
+    const headerItems = getHeaderItems(menuItems)
+    const headerList = Object.values(headerItems)
+    setMenuItemsState(headerList)
 
     const sideDrawerItems = getSideDrawerItems(menuItems)
     const drawerList = Object.values(sideDrawerItems)
@@ -49,6 +46,54 @@ const Header = ({ menuItems }) => {
     setDrawerState(state)
   }
 
+  const getDropdown = item => {
+    return (
+      <S.DropdownWrapper>
+        <S.NavLink to={item.to} header>
+          {item.name}
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="chevron-down"
+            class="svg-inline--fa fa-chevron-down fa-w-14"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill={currentTheme.color}
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+            ></path>
+          </svg>
+        </S.NavLink>
+        <S.DropdownList>
+          {item.children.map(child => (
+            <S.DropdownListItem key={child.name}>
+              <S.NavLink to={item.to}>{child.name}</S.NavLink>
+            </S.DropdownListItem>
+          ))}
+        </S.DropdownList>
+      </S.DropdownWrapper>
+    )
+  }
+
+  const getNavList = items => {
+    return (
+      <S.NavList>
+        {items.map(item => (
+          <S.ListItem key={item.name}>
+            {item.children.length > 0 ? (
+              getDropdown(item)
+            ) : (
+              <S.NavLink to={item.to}>{item.name}</S.NavLink>
+            )}
+          </S.ListItem>
+        ))}
+      </S.NavList>
+    )
+  }
+
   return (
     <ThemeProvider theme={currentTheme}>
       <S.Header>
@@ -56,7 +101,12 @@ const Header = ({ menuItems }) => {
           <S.LogoLink to="/">
             <S.Logo src={currentTheme.logo} alt="Mavennet logo" />
           </S.LogoLink>
-          <S.Navbar></S.Navbar>
+          <S.Navbar>
+            {getNavList(menuItemsState)}
+            <S.ButtonContainer>
+              <Button text="Get in Touch" to="/about" />
+            </S.ButtonContainer>
+          </S.Navbar>
           <Hamburguer handleClick={handleDrawerState} />
         </S.HeaderContainer>
       </S.Header>
