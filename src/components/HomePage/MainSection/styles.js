@@ -19,6 +19,14 @@ export const MainSection = styled.section`
 
   text-align: center;
 
+  @media ${device.laptopL} {
+    padding: 17em 0;
+  }
+
+  @media ${device.desktop} {
+    padding: 20em 0;
+  }
+
   &:before,
   &:after {
     content: "";

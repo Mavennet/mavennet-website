@@ -26,3 +26,8 @@ export const NewsList = styled.ul`
 export const NewsItem = styled.li`
   margin-top: 3.4375em;
 `
+
+export const CTAContainer = styled.div`
+  margin: 0 auto;
+  width: fit-content;
+`

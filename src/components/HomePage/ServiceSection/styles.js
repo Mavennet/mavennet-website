@@ -37,3 +37,9 @@ export const ListItem = styled.li`
     margin-top: 0 !important;
   }
 `
+
+export const CTAContainer = styled.div`
+  margin: 2em auto 0 auto;
+
+  width: fit-content;
+`

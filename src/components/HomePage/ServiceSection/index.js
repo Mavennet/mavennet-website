@@ -19,7 +19,9 @@ const ServiceSection = ({ title, ctaText, steps }) => {
       <Container>
         <S.Title>{title}</S.Title>
         <S.ItemsList>{getItems(steps)}</S.ItemsList>
-        <TextArrowCTA text={ctaText} to="/service" />
+        <S.CTAContainer>
+          <TextArrowCTA text={ctaText} to="/service" />
+        </S.CTAContainer>
       </Container>
     </S.Section>
   )

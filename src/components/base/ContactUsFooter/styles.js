@@ -15,6 +15,10 @@ export const ContactUsFooter = styled.section`
 
   padding: 10em 0 4.46875em;
 
+  @media ${device.desktop} {
+    padding: 12em 0 8.46875em;
+  }
+
   &:before,
   &:after {
     content: "";
@@ -49,5 +53,6 @@ export const ButtonContainer = styled.div`
 `
 
 export const Text = styled.h3`
+  font-size: 3rem;
   color: #ffffff;
 `

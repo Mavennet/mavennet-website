@@ -14,11 +14,15 @@ export const Footer = styled.footer`
   &:after {
     content: "";
     position: absolute;
-    width: 90%;
+    width: 85%;
     top: 0;
     right: 5%;
     height: 0.5px;
     background-color: var(--c-s-rum);
+
+    @media ${device.laptop} {
+      width: 83%;
+    }
   }
 
   @media ${device.laptop} {
@@ -83,6 +87,10 @@ export const NavigationContainer = styled.div`
 
   @media ${device.laptop} {
     flex: 0.8;
+  }
+
+  @media ${device.laptopL} {
+    flex: 0.6;
   }
 `
 

@@ -28,7 +28,7 @@ export const Button = styled(Link)`
     `};
 
   ${({ outline, theme }) =>
-    (outline || theme.button == "outline") &&
+    (outline || theme.button === "outline") &&
     `
       color: #FFFFFF;
       background-color: transparent;

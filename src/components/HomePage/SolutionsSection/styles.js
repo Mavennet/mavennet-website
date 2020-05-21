@@ -34,7 +34,7 @@ export const SolutionItem = styled.div`
     top: 8.5%;
     left: -50%;
     transform: rotate(6deg);
-    background-color: var(--c-p-selago-dark);
+    background-color: var(--c-p-selago);
 
     @media ${device.tablet} {
       width: 300%;
@@ -63,10 +63,16 @@ export const Image = styled.img`
   @media ${device.laptop} {
     margin-right: -30%;
   }
+
+  @media ${device.laptopL} {
+    margin-right: -42%;
+  }
 `
 
 export const ContentWrapper = styled.div`
   margin-top: 1.2em;
+
+  max-width: 600px;
 `
 
 export const Title = styled.h3``
