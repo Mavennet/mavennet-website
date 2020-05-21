@@ -39,8 +39,14 @@ export const SolutionItem = styled.div`
     @media ${device.tablet} {
       width: 300%;
       height: 77%;
-
       top: 23%;
+    }
+
+    @media ${device.laptop} {
+      height: 70%;
+      top: 28%;
+
+      transform: rotate(5deg);
     }
   }
 `
@@ -52,6 +58,10 @@ export const Image = styled.img`
 
   @media ${device.tablet} {
     margin-right: -46%;
+  }
+
+  @media ${device.laptop} {
+    margin-right: -30%;
   }
 `
 
