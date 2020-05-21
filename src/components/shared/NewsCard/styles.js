@@ -1,5 +1,3 @@
-import { Link } from "gatsby"
-
 import styled from "styled-components"
 
 export const NewsCard = styled.article`
@@ -8,7 +6,7 @@ export const NewsCard = styled.article`
   padding-bottom: 0.3125em;
 `
 
-export const CardLink = styled(Link)`
+export const CardLink = styled.a`
   widht: 100%;
 `
 

@@ -2,7 +2,7 @@ import React from "react"
 
 import Container from "../../base/Container"
 import StepItem from "../../shared/StepItem"
-import TextArrowCta from "../../shared/TextArrowCta"
+import TextArrowCTA from "../../shared/TextArrowCTA"
 
 import * as S from "./styles"
 
@@ -19,7 +19,7 @@ const ServiceSection = ({ title, ctaText, steps }) => {
       <Container>
         <S.Title>{title}</S.Title>
         <S.ItemsList>{getItems(steps)}</S.ItemsList>
-        <TextArrowCta text={ctaText} to="/service" />
+        <TextArrowCTA text={ctaText} to="/service" />
       </Container>
     </S.Section>
   )

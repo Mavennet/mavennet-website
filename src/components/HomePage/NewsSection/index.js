@@ -11,7 +11,7 @@ const NewsSection = ({ title, ctaText, news }) => {
     return (
       <S.NewsList>
         {items.map(item => (
-          <S.NewsItem>
+          <S.NewsItem key={item.item.title}>
             <NewsCard {...item.item} />
           </S.NewsItem>
         ))}

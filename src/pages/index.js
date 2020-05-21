@@ -5,17 +5,27 @@ import Layout from "../components/base/Layout/Layout"
 
 import MainSection from "../components/HomePage/MainSection/MainSection"
 import ServiceSection from "../components/HomePage/ServiceSection"
+import PartnersSection from "../components/HomePage/PartnersSection"
 import NewsSection from "../components/HomePage/NewsSection"
+
+import { usePartnersData } from "../hooks/use-partners-data"
 
 const IndexPage = ({ data }) => {
   const post = data.pagesYaml
+  const partnersData = usePartnersData()
 
-  const { homeMainSection, homeServiceSection, homeNewsSection } = post
+  const {
+    homeMainSection,
+    homeServiceSection,
+    homeNewsSection,
+    homePartnersSection,
+  } = post
 
   return (
     <Layout>
       <MainSection {...homeMainSection} />
       <ServiceSection {...homeServiceSection} />
+      <PartnersSection {...homePartnersSection} partners={partnersData} />
       <NewsSection {...homeNewsSection} />
     </Layout>
   )
@@ -52,13 +62,8 @@ export const query = graphql`
         }
       }
       homePartnersSection {
-        partners {
-          item {
-            title
-            image
-            link
-          }
-        }
+        title
+        ctaText
       }
       homeNewsSection {
         title

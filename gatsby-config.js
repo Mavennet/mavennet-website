@@ -35,6 +35,13 @@ module.exports = {
         path: `${__dirname}/site/content/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `other`,
+        path: `${__dirname}/site/other/`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,

@@ -14,8 +14,6 @@ const Footer = ({ menuItems }) => {
 
   const [footerItemsState, setFooterItemsState] = useState([])
 
-  const [isDrawerOpen, setDrawerState] = useState(false)
-
   useEffect(() => {
     const footerItems = getFooterItems(menuItems)
     const footerList = Object.values(footerItems)

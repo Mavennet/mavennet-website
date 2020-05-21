@@ -899,3 +899,14 @@ collections:
                 - { label: "Title", name: "title", widget: "string" }
                 - { label: "Image", name: "image", widget: "image" }
                 - { label: "Link", name: "link", widget: "string" }
+  
+  
+  - label: "Partners"
+    name: "partners"
+    folder: "site/other/partners"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Company name", name: "title", widget: "string" }
+      - { label: "Company Logo", name: "logo", widget: "image" }
+      - { label: "Company Link", name: "link", widget: "string" }
