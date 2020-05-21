@@ -1,5 +1,19 @@
 import styled from "styled-components"
 
+import Container from "../../base/Container"
+
+import { device } from "../../../consts/deviceSizes"
+
+export const ItemContainer = styled(Container)`
+  position: relative;
+  @media ${device.tablet} {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+`
+
 export const SolutionsSection = styled.section`
   padding: 2em 0 3em;
   overflow-x: hidden;
@@ -21,17 +35,31 @@ export const SolutionItem = styled.div`
     left: -50%;
     transform: ${props => (props.reverse ? "rotate(-7deg)" : "rotate(6deg)")};
     background-color: var(--c-p-selago-dark);
+
+    @media ${device.tablet} {
+      width: 300%;
+      height: 77%;
+
+      top: ${props => (props.reverse ? "2%" : "23%")};
+    }
   }
 `
 
 export const Image = styled.img`
   width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
+
+  @media ${device.tablet} {
+    margin-right: -46%;
+  }
 `
 
-export const Title = styled.h3`
+export const ContentWrapper = styled.div`
   margin-top: 1.2em;
 `
+
+export const Title = styled.h3``
 
 export const Description = styled.p`
   margin-top: 1.875em;

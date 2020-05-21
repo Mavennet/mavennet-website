@@ -2,7 +2,6 @@ import React from "react"
 
 import Slider from "react-slick"
 
-import Container from "../../base/Container"
 import Button from "../../shared/Button"
 
 import * as S from "./styles"
@@ -12,7 +11,7 @@ const SolutionsSection = ({ solutions }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     activeClassName: "slick-active",
     slidesToShow: 1,
@@ -28,14 +27,16 @@ const SolutionsSection = ({ solutions }) => {
     return newItems.map(
       ({ title, image, description, slug, ctaText }, index) => (
         <S.SolutionItem key={title} reverse={index % 2 === 0}>
-          <Container>
+          <S.ItemContainer>
             <S.Image src={image} alt={`${title} image`} />
-            <S.Title>{title}</S.Title>
-            <S.Description>{description}</S.Description>
-            <S.ButtonWrapper>
-              <Button text={ctaText} to={slug} />
-            </S.ButtonWrapper>
-          </Container>
+            <S.ContentWrapper>
+              <S.Title>{title}</S.Title>
+              <S.Description>{description}</S.Description>
+              <S.ButtonWrapper>
+                <Button text={ctaText} to={slug} />
+              </S.ButtonWrapper>
+            </S.ContentWrapper>
+          </S.ItemContainer>
         </S.SolutionItem>
       )
     )
