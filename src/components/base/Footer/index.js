@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 
 import SocialNetLink from "../../shared/SocialNetLink"
-import Container from "../../base/Container"
 
 import { getFooterItems } from "../../../helpers/menuItems"
 
@@ -62,20 +61,23 @@ const Footer = ({ menuItems }) => {
 
   return (
     <S.Footer>
-      <Container>
-        <S.Header>
-          <S.LogoLink to="/">
-            <S.Logo src={logoWhite} />
-          </S.LogoLink>
-          {getSocialList(metaData.siteMetadata.social)}
-        </S.Header>
-        {getNavigationGroups(footerItemsState)}
-
-        <S.Copyright>
-          &copy;{new Date().getFullYear()} {metaData.siteMetadata.companyName}.
-          All rights reserved.
-        </S.Copyright>
-      </Container>
+      <S.FooterContainer>
+        <S.Row>
+          <S.Header>
+            <S.LogoLink to="/">
+              <S.Logo src={logoWhite} />
+            </S.LogoLink>
+            {getSocialList(metaData.siteMetadata.social)}
+          </S.Header>
+          {getNavigationGroups(footerItemsState)}
+        </S.Row>
+        <S.Row>
+          <S.Copyright>
+            &copy;{new Date().getFullYear()} {metaData.siteMetadata.companyName}
+            . All rights reserved.
+          </S.Copyright>
+        </S.Row>
+      </S.FooterContainer>
     </S.Footer>
   )
 }

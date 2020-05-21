@@ -28,6 +28,10 @@ export const PartnersItem = styled.li`
   @media ${device.tablet} {
     width: 100px;
   }
+
+  @media ${device.laptop} {
+    width: 160px;
+  }
 `
 
 export const PartnerLink = styled.a``
