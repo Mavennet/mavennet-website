@@ -41,7 +41,7 @@ const typography = css`
 
   small {
     font-weight: 400;
-    font-size: 0.9375rem;
+    font-size: 0.75rem;
     line-height: 15px;
   }
 `

@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
 import Header from "../Header/Header"
+import Footer from "../Footer"
 
 import GlobalStyle from "../../../styles/globalStyle"
 
@@ -34,6 +35,16 @@ export default function Layout({ children }) {
           }
         }
       }
+      metaData: site {
+        siteMetadata {
+          companyName
+          social {
+            twitter
+            medium
+            linkedin
+          }
+        }
+      }
     }
   `)
 
@@ -48,6 +59,7 @@ export default function Layout({ children }) {
       <GlobalStyle />
       <Header menuItems={{ ...data }} />
       {children}
+      <Footer menuItems={{ ...data }} />
     </>
   )
 }

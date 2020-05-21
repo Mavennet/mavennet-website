@@ -1,6 +1,6 @@
 import React from "react"
 
-import Container from "../../base/Container/Container"
+import Container from "../../base/Container"
 import Button from "../../shared/Button/Button"
 
 import mobileBackground from "../../../assets/images/Home/mobile_background.png"

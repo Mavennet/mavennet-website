@@ -1,6 +1,6 @@
 import React from "react"
 
-import Container from "../../base/Container/Container"
+import Container from "../../base/Container"
 import StepItem from "../../shared/StepItem"
 import TextArrowCta from "../../shared/TextArrowCta"
 

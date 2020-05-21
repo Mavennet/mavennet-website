@@ -3,6 +3,13 @@ module.exports = {
     title: `Mavennet`,
     description: `Mavennet Website`,
     author: `@Mavennet`,
+    companyName: `Mavennet System Inc`,
+    social: {
+      twitter: `Mavennet_`,
+      medium: `mavennet`,
+      linkedin: `company/mavennet`,
+      // angellist: `company/mavennet`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -71,4 +71,49 @@ export const getSideDrawerItems = items => {
   return headerItems
 }
 
-export const getFooterItems = items => {}
+export const getFooterItems = items => {
+  const { industries, solutions } = getMenuItems(items)
+  const company = { ...COMPANY }
+  const service = { ...SERVICE }
+
+  solutions.children = [
+    {
+      name: "Solutions",
+      to: "/solutions",
+    },
+    ...solutions.children,
+  ]
+
+  industries.children = [
+    {
+      name: "Industries",
+      to: "/industries",
+    },
+    ...industries.children,
+  ]
+
+  company.children = [
+    {
+      name: "Company",
+      to: "/about",
+    },
+    ...company.children,
+  ]
+
+  service.children = [
+    {
+      name: "Service",
+      to: "/service",
+    },
+    ...service.children,
+  ]
+
+  const footerItems = {
+    solutions,
+    service,
+    industries,
+    company,
+  }
+
+  return footerItems
+}
