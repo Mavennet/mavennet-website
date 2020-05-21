@@ -52,11 +52,13 @@ const Header = ({ menuItems }) => {
   return (
     <ThemeProvider theme={currentTheme}>
       <S.Header>
-        <S.LogoLink to="/">
-          <S.Logo src={currentTheme.logo} alt="Mavennet logo" />
-        </S.LogoLink>
-        <S.Navbar></S.Navbar>
-        <Hamburguer handleClick={handleDrawerState} />
+        <S.HeaderContainer>
+          <S.LogoLink to="/">
+            <S.Logo src={currentTheme.logo} alt="Mavennet logo" />
+          </S.LogoLink>
+          <S.Navbar></S.Navbar>
+          <Hamburguer handleClick={handleDrawerState} />
+        </S.HeaderContainer>
       </S.Header>
       <SideDrawer
         menuItems={drawerItemsState}

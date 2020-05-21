@@ -11,6 +11,8 @@ export const Item = styled.div`
 
 export const Image = styled.img`
   width: 180px;
+  height: 180px;
+  object-fit: cover;
 `
 
 export const Title = styled.h4`

@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { device } from "../../../consts/deviceSizes"
+
 export const Section = styled.section`
   text-align: center;
 
@@ -17,10 +19,21 @@ export const ItemsList = styled.ul`
   align-items: center;
 
   margin-top: 3.4375em;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 4.3125em;
+  }
 `
 
 export const ListItem = styled.li`
   & + & {
     margin-top: 4.375em;
+  }
+
+  @media ${device.laptop} {
+    margin-top: 0 !important;
   }
 `
