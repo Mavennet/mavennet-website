@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const SolutionsSection = styled.section`
   padding: 2em 0 3em;
+  overflow-x: hidden;
 `
 
 export const SolutionItem = styled.div`
