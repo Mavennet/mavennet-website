@@ -5,6 +5,13 @@ const reset = css`
     overflow-y: auto;
   }
 
+  ::-webkit-scrollbar-thumb {
+    background-color: #964beb !important;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
   html,
   body,
   div,

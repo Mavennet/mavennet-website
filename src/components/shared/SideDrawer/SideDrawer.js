@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 import DropDownClick from "../DropDownClick/DropDownClick"
 import Button from "../Button"
@@ -8,13 +8,6 @@ import * as S from "./styles"
 import logoDark from "../../../assets/images/logo_dark.png"
 
 const SideDrawer = ({ isOpen, closeDrawer, menuItems }) => {
-  useEffect(() => {
-    const body = document.getElementsByTagName("BODY")[0]
-
-    isOpen
-      ? body.setAttribute("style", "position:fixed;")
-      : body.setAttribute("style", "position:relative;")
-  }, [isOpen])
   const getNavItem = item => {
     if (item.children.length > 0) {
       return (
