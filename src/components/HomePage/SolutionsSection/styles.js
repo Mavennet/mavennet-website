@@ -9,17 +9,17 @@ export const SolutionItem = styled.div`
   position: relative;
   overflow: hidden;
 
-  padding: 4em 0;
+  padding: 4em 0 5em;
 
   &:before {
     z-index: -1;
     content: "";
     position: absolute;
     width: 300%;
-    height: 88%;
-    top: ${props => (props.reverse ? "2%" : "11%")};
+    height: 91%;
+    top: ${props => (props.reverse ? "2%" : "8.5%")};
     left: -50%;
-    transform: ${props => (props.reverse ? "rotate(-7deg)" : "rotate(7deg)")};
+    transform: ${props => (props.reverse ? "rotate(-7deg)" : "rotate(6deg)")};
     background-color: var(--c-p-selago-dark);
   }
 `
