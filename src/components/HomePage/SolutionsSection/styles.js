@@ -25,7 +25,7 @@ export const SolutionItem = styled.div`
 `
 
 export const Image = styled.img`
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 `
 
