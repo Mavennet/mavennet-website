@@ -4,7 +4,9 @@ export const PartnersSection = styled.section`
   padding: 4.0625em 0 2.1875em;
 `
 
-export const Title = styled.h2``
+export const Title = styled.h2`
+  text-align: center;
+`
 
 export const PartnersList = styled.ul`
   width: 100%;
@@ -17,8 +19,9 @@ export const PartnersList = styled.ul`
 `
 
 export const PartnersItem = styled.li`
-  margin-top: 1.625em;
-  margin-right: 1em;
+  margin: 1.625em 1em 0;
+
+  width: 80px;
 `
 
 export const PartnerLink = styled.a``
