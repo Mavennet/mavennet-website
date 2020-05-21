@@ -10,31 +10,45 @@ homeServiceSection:
     - item:
         image: /assets/strategy.png
         title: Strategy
-        description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        description:
+          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
           nonummy nibh
     - item:
         image: /assets/design.png
         title: Design
-        description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        description:
+          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
           nonummy nibh
     - item:
         image: /assets/implementation.png
         title: Implementation
-        description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        description:
+          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
           nonummy nibh
     - item:
         image: /assets/support.png
         title: Support
-        description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        description:
+          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
           nonummy nibh
 homeSolutionsSection:
   - item:
       title: Lorem ipsum dolor site amet, consectetuer
-      image: /assets/screen-shot-2020-05-12-at-11.56.59.png
-      description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+      image: /assets/neoflow-map.gif
+      description:
+        Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
         nonummy nibh. Lorem ipsum dolor site amet, consectetuer adipiscing elit,
         sed diam nonummy nibh
-      slug: solutions/neoflow
+      slug: /solutions/neoflow
+      ctaText: View Solution
+  - item:
+      title: Lorem ipsum dolor site amet, consectetuer
+      image: /assets/neoflow-map.gif
+      description:
+        Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh. Lorem ipsum dolor site amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh
+      slug: /solutions/metaltrail
       ctaText: View Solution
 homePartnersSection:
   title: Who We Work With

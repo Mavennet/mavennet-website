@@ -5,6 +5,7 @@ import Layout from "../components/base/Layout/Layout"
 
 import MainSection from "../components/HomePage/MainSection/MainSection"
 import ServiceSection from "../components/HomePage/ServiceSection"
+import SolutionsSection from "../components/HomePage/SolutionsSection"
 import PartnersSection from "../components/HomePage/PartnersSection"
 import NewsSection from "../components/HomePage/NewsSection"
 
@@ -17,6 +18,7 @@ const IndexPage = ({ data }) => {
   const {
     homeMainSection,
     homeServiceSection,
+    homeSolutionsSection,
     homeNewsSection,
     homePartnersSection,
   } = post
@@ -25,6 +27,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <MainSection {...homeMainSection} />
       <ServiceSection {...homeServiceSection} />
+      <SolutionsSection solutions={homeSolutionsSection} />
       <PartnersSection {...homePartnersSection} partners={partnersData} />
       <NewsSection {...homeNewsSection} />
     </Layout>
