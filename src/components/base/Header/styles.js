@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export const Header = styled.header`
   z-index: 100;
-  position: absolute;
+  position: ${props => props.theme.position};
   top: 0;
   right: 0;
   left: 0;
@@ -13,6 +13,11 @@ export const Header = styled.header`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  background-color: ${props => props.theme.background};
+  box-shadow: ${props => props.theme.boxShadow};
+
+  transition: 0.2s;
 `
 
 export const LogoLink = styled(Link)``

@@ -8,6 +8,6 @@ export const Hamburguer = styled.div`
 export const Bar = styled.div`
   width: 100%;
   height: 3px;
-  background-color: #ffffff;
+  background-color: ${props => props.theme.color};
   margin: 5px 0;
 `
