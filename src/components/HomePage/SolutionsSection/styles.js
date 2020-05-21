@@ -31,16 +31,16 @@ export const SolutionItem = styled.div`
     position: absolute;
     width: 300%;
     height: 91%;
-    top: ${props => (props.reverse ? "2%" : "8.5%")};
+    top: 8.5%;
     left: -50%;
-    transform: ${props => (props.reverse ? "rotate(-7deg)" : "rotate(6deg)")};
+    transform: rotate(6deg);
     background-color: var(--c-p-selago-dark);
 
     @media ${device.tablet} {
       width: 300%;
       height: 77%;
 
-      top: ${props => (props.reverse ? "2%" : "23%")};
+      top: 23%;
     }
   }
 `

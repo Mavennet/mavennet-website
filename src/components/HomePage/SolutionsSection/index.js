@@ -26,7 +26,7 @@ const SolutionsSection = ({ solutions }) => {
 
     return newItems.map(
       ({ title, image, description, slug, ctaText }, index) => (
-        <S.SolutionItem key={title} reverse={index % 2 === 0}>
+        <S.SolutionItem key={title}>
           <S.ItemContainer>
             <S.Image src={image} alt={`${title} image`} />
             <S.ContentWrapper>
