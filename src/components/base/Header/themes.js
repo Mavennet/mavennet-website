@@ -1,5 +1,5 @@
-import logoWhite from "../../../assets/images/logo_white.png"
-import logoDark from "../../../assets/images/logo_dark.png"
+import logoWhite from "../../../assets/images/logo_white.svg"
+import logoDark from "../../../assets/images/logo_dark.svg"
 
 const primary = {
   logo: logoWhite,

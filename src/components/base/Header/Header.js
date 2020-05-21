@@ -13,7 +13,7 @@ import {
 
 import * as S from "./styles"
 
-import logoWhite from "../../../assets/images/logo_white.png"
+import logoWhite from "../../../assets/images/logo_white.svg"
 
 const Header = ({ menuItems }) => {
   const [currentTheme, setCurrentTheme] = useState(themes.primary)

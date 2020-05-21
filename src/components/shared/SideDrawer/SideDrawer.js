@@ -5,7 +5,7 @@ import Button from "../Button"
 
 import * as S from "./styles"
 
-import logoDark from "../../../assets/images/logo_dark.png"
+import logoDark from "../../../assets/images/logo_dark.svg"
 
 const SideDrawer = ({ isOpen, closeDrawer, menuItems }) => {
   const getNavItem = item => {

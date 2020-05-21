@@ -5,7 +5,7 @@ import Container from "../../base/Container"
 
 import { getFooterItems } from "../../../helpers/menuItems"
 
-import logoWhite from "../../../assets/images/logo_white.png"
+import logoWhite from "../../../assets/images/logo_white.svg"
 
 import * as S from "./styles"
 
