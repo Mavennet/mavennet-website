@@ -3,9 +3,20 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const Footer = styled.footer`
+  position: relative;
   background-color: var(--c-p-haiti);
 
   padding: 2.5em 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    top: 0;
+    right: 5%;
+    height: 0.5px;
+    background-color: var(--c-s-rum);
+  }
 `
 
 export const Header = styled.header`

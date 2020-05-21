@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet"
 
 import Header from "../Header/Header"
 import Footer from "../Footer"
+import ContactUsFooter from "../ContactUsFooter"
 
 import GlobalStyle from "../../../styles/globalStyle"
 
@@ -59,6 +60,7 @@ export default function Layout({ children }) {
       <GlobalStyle />
       <Header menuItems={{ ...data }} />
       {children}
+      <ContactUsFooter />
       <Footer menuItems={{ ...data }} />
     </>
   )

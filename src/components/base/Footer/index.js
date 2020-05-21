@@ -38,7 +38,7 @@ const Footer = ({ menuItems }) => {
     return (
       <S.GroupList>
         {items.map(item => (
-          <S.GroupListItem>
+          <S.GroupListItem key={item.name}>
             <S.GroupItem to={item.to}>{item.name}</S.GroupItem>
           </S.GroupListItem>
         ))}
@@ -52,7 +52,7 @@ const Footer = ({ menuItems }) => {
         {groups.map(group => {
           const [main, ...items] = group.children
           return (
-            <S.NavigationGroups>
+            <S.NavigationGroups key={main.name}>
               <S.GroupMain to={main.to}>{main.name}</S.GroupMain>
               {getGroupList(items)}
             </S.NavigationGroups>
@@ -66,7 +66,7 @@ const Footer = ({ menuItems }) => {
     <S.Footer>
       <Container>
         <S.Header>
-          <S.LogoLink>
+          <S.LogoLink to="/">
             <S.Logo src={logoWhite} />
           </S.LogoLink>
           {getSocialList(metaData.siteMetadata.social)}

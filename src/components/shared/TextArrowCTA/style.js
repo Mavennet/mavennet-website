@@ -18,6 +18,7 @@ export const Cta = styled(Link)`
 
 export const Text = styled.h4`
   margin-right: 0.33em;
+  font-size: 1rem;
 `
 
 export const Arrow = styled.svg`

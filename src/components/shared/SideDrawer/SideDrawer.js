@@ -1,68 +1,11 @@
 import React from "react"
 
 import DropDownClick from "../DropDownClick/DropDownClick"
-import Button from "../Button/Button"
+import Button from "../Button"
 
 import * as S from "./styles"
 
 import logoDark from "../../../assets/images/logo_dark.png"
-
-// const menuItems = [
-//   {
-//     name: "Solutions",
-//     children: [
-//       {
-//         name: "Solutions",
-//         to: "/solutions",
-//       },
-//       {
-//         name: "Neoflow",
-//         to: "/solutions/neflow",
-//       },
-//       {
-//         name: "MetalTrail",
-//         to: "/solutions/metaltrail",
-//       },
-//       {
-//         name: "QCAD",
-//         to: "/solutions/qcad",
-//       },
-
-//       {
-//         name: "Mavenstamp",
-//         to: "/solutions/mavenstamp",
-//       },
-//     ],
-//   },
-//   {
-//     name: "Service",
-//     children: [],
-//     to: "/service",
-//   },
-//   {
-//     name: "Industries",
-//     children: [
-//       {
-//         name: "Oil and Gas",
-//         to: "/industries/oil-and-gas",
-//       },
-//     ],
-//   },
-//   {
-//     name: "Company",
-//     children: [
-//       {
-//         name: "About Us",
-//         to: "/about",
-//       },
-//     ],
-//   },
-//   {
-//     name: "Career",
-//     children: [],
-//     to: "/career",
-//   },
-// ]
 
 const SideDrawer = ({ isOpen, closeDrawer, menuItems }) => {
   const getNavItem = item => {
