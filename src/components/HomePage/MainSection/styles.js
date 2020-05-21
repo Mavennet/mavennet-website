@@ -34,7 +34,7 @@ export const MainSection = styled.section`
     border-right: 400px solid transparent;
 
     @media ${device.tablet} {
-      border-right: 550px solid transparent;
+      border-right: 50vw solid transparent;
     }
   }
 
@@ -43,7 +43,7 @@ export const MainSection = styled.section`
     border-left: 400px solid transparent;
 
     @media ${device.tablet} {
-      border-left: 550px solid transparent;
+      border-left: 50vw solid transparent;
     }
   }
 `

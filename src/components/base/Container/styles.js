@@ -4,6 +4,7 @@ import { device } from "../../../consts/deviceSizes"
 
 export const Container = styled.div`
   width: 85%;
+  max-width: 1250px;
   margin: 0 auto;
 
   ${({ center }) =>
