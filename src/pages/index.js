@@ -5,16 +5,18 @@ import Layout from "../components/base/Layout/Layout"
 
 import MainSection from "../components/HomePage/MainSection/MainSection"
 import ServiceSection from "../components/HomePage/ServiceSection"
+import NewsSection from "../components/HomePage/NewsSection"
 
 const IndexPage = ({ data }) => {
   const post = data.pagesYaml
 
-  const { homeMainSection, homeServiceSection } = post
+  const { homeMainSection, homeServiceSection, homeNewsSection } = post
 
   return (
     <Layout>
       <MainSection {...homeMainSection} />
       <ServiceSection {...homeServiceSection} />
+      <NewsSection {...homeNewsSection} />
     </Layout>
   )
 }
@@ -59,6 +61,8 @@ export const query = graphql`
         }
       }
       homeNewsSection {
+        title
+        ctaText
         news {
           item {
             title
