@@ -664,6 +664,19 @@ collections:
             widget: "object"
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
+      - label: "NotFound Page"
+        name: "notfound-page"
+        file: "site/pages/not-found.yml"
+        fields:
+          - { label: "Page Title", name: "title", widget: string }
+          - label: "Main Section"
+            name: "notFoundMainSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Home CTA Text", name: "ctaText", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
   - label: "Solutions"
     name: "solutions"
     folder: "site/content/solutions"
@@ -899,8 +912,7 @@ collections:
                 - { label: "Title", name: "title", widget: "string" }
                 - { label: "Image", name: "image", widget: "image" }
                 - { label: "Link", name: "link", widget: "string" }
-  
-  
+
   - label: "Partners"
     name: "partners"
     folder: "site/other/partners"

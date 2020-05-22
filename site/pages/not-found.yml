@@ -1,0 +1,6 @@
+title: not-found
+notFoundMainSection:
+  title: "404"
+  description: Looks like you are lost in the space
+  ctaText: Back To Home
+  image: /assets/error-page-graphic.png
