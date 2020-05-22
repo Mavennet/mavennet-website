@@ -3,8 +3,18 @@ import PropTypes from "prop-types"
 
 import * as S from "./styles"
 
-const Button = ({ text, reverse, outline, to, className }) => {
-  return (
+const Button = ({ text, reverse, outline, to, type, className }) => {
+  return type ? (
+    <S.Button
+      as="button"
+      type={type}
+      reverse={reverse ? 1 : undefined}
+      outline={outline ? 1 : undefined}
+      className={className}
+    >
+      {text}
+    </S.Button>
+  ) : (
     <S.Button
       to={to}
       reverse={reverse ? 1 : undefined}
@@ -21,6 +31,7 @@ Button.propTypes = {
   reverse: PropTypes.bool,
   outline: PropTypes.bool,
   to: PropTypes.string,
+  handleClick: PropTypes.func,
 }
 
 Button.defaultProps = {
