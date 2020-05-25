@@ -9,6 +9,8 @@ export const Button = styled(Link)`
   background-color: var(--c-p-royal-purple);
   cursor: pointer;
 
+  width: ${props => props.width};
+
   &:hover {
     background-color: var(--c-p-royal-purple-dark);
     border-color: var(--c-p-royal-purple-dark);

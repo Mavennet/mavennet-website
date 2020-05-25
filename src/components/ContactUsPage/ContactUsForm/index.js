@@ -100,7 +100,7 @@ const ContactUsForm = ({ onSubmit }) => {
         <S.InputContainer>
           <TextFieldFormik
             name="message"
-            label="Tell us a bit more about your inquiries ?"
+            label="Tell us a bit more about your inquiries?"
             touched={touched.message}
             errors={errors.message}
             formikProps={getFieldProps("message")}
@@ -109,7 +109,7 @@ const ContactUsForm = ({ onSubmit }) => {
           />
         </S.InputContainer>
       </S.Row>
-      <S.SubmitButton text="Submit" type="submit" />
+      <S.SubmitButton text="Submit" type="submit" width="180px" />
     </S.ContactUsForm>
   )
 }

@@ -5,7 +5,17 @@ import { device } from "../../../consts/deviceSizes"
 export const GenericMainSection = styled.section`
   position: relative;
   padding: 13.5625em 0;
-  background-image: url(${props => props.background});
+  ${({ background }) =>
+    background &&
+    `
+    background-image: url(${background});
+  `}
+
+  ${({ backgroundColor }) =>
+    backgroundColor &&
+    `
+    background-color: var(${backgroundColor});
+  `}
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
