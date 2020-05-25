@@ -16,12 +16,11 @@ collections:
         name: "home-page"
         file: "site/pages/home.yml"
         fields:
-          - {
-              label: "Identifier",
-              name: "identifier",
-              widget: "hidden",
-              default: "home",
-            }
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: string }
           - label: "Main Section"
             name: "homeMainSection"
@@ -133,12 +132,11 @@ collections:
         name: "service-page"
         file: "site/pages/service.yml"
         fields:
-          - {
-              label: "Identifier",
-              name: "identifier",
-              widget: "hidden",
-              default: "service",
-            }
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: "string" }
           - label: "Main Section"
             name: "serviceMainSection"
@@ -184,12 +182,11 @@ collections:
         name: "solutions-page"
         file: "site/pages/solutions.yml"
         fields:
-          - {
-              label: "Identifier",
-              name: "identifier",
-              widget: "hidden",
-              default: "solutions",
-            }
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Page Subtitle", name: "subtitle", widget: "string" }
           - label: "Solutions List"
@@ -243,12 +240,11 @@ collections:
         name: "industries-page"
         file: "site/pages/industries.yml"
         fields:
-          - {
-              label: "Identifier",
-              name: "identifier",
-              widget: "hidden",
-              default: "industries",
-            }
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Page Subtitle", name: "subtitle", widget: "string" }
           - label: "Industries List"

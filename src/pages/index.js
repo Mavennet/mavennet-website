@@ -38,7 +38,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    pagesYaml(identifier: { eq: "home" }) {
+    pagesYaml(meta: { title: { eq: "Home" } }) {
       title
       homeMainSection {
         ctaText

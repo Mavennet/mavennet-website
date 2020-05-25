@@ -11,7 +11,7 @@ export default IndustriesPage
 
 export const query = graphql`
   query {
-    pagesYaml(identifier: { eq: "industries" }) {
+    pagesYaml(meta: { title: { eq: "Industries" } }) {
       title
       subtitle
       industries {

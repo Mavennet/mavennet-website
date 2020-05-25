@@ -1,4 +1,5 @@
-identifier: solutions
+meta:
+  title: Solutions
 title: Solutions Page
 subtitle: This is the solutions page
 solutions:

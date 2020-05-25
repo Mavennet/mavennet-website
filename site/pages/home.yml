@@ -1,4 +1,5 @@
-identifier: home
+meta:
+  title: Home
 title: Home
 homeMainSection:
   slogan: Mavennet Catchy Slogan

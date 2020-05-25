@@ -67,7 +67,7 @@ const SolutionsPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    pagesYaml(identifier: { eq: "solutions" }) {
+    pagesYaml(meta: { title: { eq: "Solutions" } }) {
       title
       subtitle
       previousWork {

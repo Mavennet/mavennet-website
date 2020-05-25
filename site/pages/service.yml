@@ -1,4 +1,5 @@
-identifier: service
+meta:
+  title: Service
 title: Service
 serviceMainSection:
   slogan: Mavennet Catchy Slogan

@@ -11,7 +11,7 @@ export default ServicePage
 
 export const query = graphql`
   query {
-    pagesYaml(identifier: { eq: "service" }) {
+    pagesYaml(meta: { title: { eq: "Service" } }) {
       title
       serviceMainSection {
         slogan
