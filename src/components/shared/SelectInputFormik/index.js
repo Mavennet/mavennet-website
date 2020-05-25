@@ -5,6 +5,7 @@ import InputLabel from "@material-ui/core/InputLabel"
 
 import Select from "@material-ui/core/Select"
 import MenuItem from "@material-ui/core/MenuItem"
+import FormHelperText from "@material-ui/core/FormHelperText"
 
 const SelectInputFormik = ({
   name,
@@ -13,22 +14,22 @@ const SelectInputFormik = ({
   errors,
   options,
   formikProps,
-  className,
 }) => {
   return (
-    <FormControl fullWidth variant="outlined">
-      <InputLabel>{label}</InputLabel>
+    <FormControl fullWidth error={touched && !!errors} variant="outlined">
+      <InputLabel id="select-label">{label}</InputLabel>
 
       <Select
-        error={touched && errors}
         name={name}
+        labelId="select-label"
+        labelWidth={170}
         {...formikProps}
-        helperText={errors}
       >
         <MenuItem value={10}>Ten</MenuItem>
         <MenuItem value={20}>Twenty</MenuItem>
         <MenuItem value={30}>Thirty</MenuItem>
       </Select>
+      <FormHelperText>{touched && errors}</FormHelperText>
     </FormControl>
   )
 }

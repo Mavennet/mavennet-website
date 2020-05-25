@@ -9,18 +9,22 @@ const TextInputFormik = ({
   errors,
   multiline,
   formikProps,
+  rows,
 }) => {
   return (
-    <TextField
-      error={touched && errors}
-      label={label}
-      name={name}
-      {...formikProps}
-      variant="outlined"
-      fullWidth
-      helperText={errors}
-      multiline={multiline}
-    />
+    <>
+      <TextField
+        error={touched && !!errors}
+        label={label}
+        name={name}
+        {...formikProps}
+        variant="outlined"
+        fullWidth
+        helperText={touched && errors}
+        multiline={multiline}
+        rows={rows}
+      />
+    </>
   )
 }
 

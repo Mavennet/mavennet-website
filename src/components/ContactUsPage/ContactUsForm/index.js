@@ -9,7 +9,7 @@ import SelectInputFormik from "../../shared/SelectInputFormik"
 import * as S from "./styles"
 
 const ContactUsForm = ({ onSubmit }) => {
-  const formik = useFormik({
+  const { errors, touched, handleSubmit, getFieldProps } = useFormik({
     initialValues: {
       firstName: "",
       lastName: "",
@@ -26,31 +26,31 @@ const ContactUsForm = ({ onSubmit }) => {
       lastName: Yup.string().max(15, "Must be 15 characters or less"),
       email: Yup.string().email("Invalid email address").required("Required"),
       company: Yup.string(),
-      company: Yup.string(),
-      contactReason: Yup.string(),
+      jobTitle: Yup.string(),
+      contactReason: Yup.string().required("Contact Reason is Required"),
       message: Yup.string(),
     }),
     onSubmit: onSubmit,
   })
   return (
-    <S.ContactUsForm onSubmit={formik.handleSubmit}>
+    <S.ContactUsForm onSubmit={handleSubmit}>
       <S.Row>
         <S.InputContainer column>
           <TextFieldFormik
             name="firstName"
             label="First Name*"
-            touched={formik.touched.firstName}
-            errors={formik.errors.firstName}
-            formikProps={formik.getFieldProps("firstName")}
+            touched={touched.firstName}
+            errors={errors.firstName}
+            formikProps={getFieldProps("firstName")}
           />
         </S.InputContainer>
         <S.InputContainer column>
           <TextFieldFormik
             name="lastName"
             label="Last Name"
-            touched={formik.touched.lastName}
-            errors={formik.errors.lastName}
-            formikProps={formik.getFieldProps("lastName")}
+            touched={touched.lastName}
+            errors={errors.lastName}
+            formikProps={getFieldProps("lastName")}
           />
         </S.InputContainer>
       </S.Row>
@@ -59,9 +59,9 @@ const ContactUsForm = ({ onSubmit }) => {
           <TextFieldFormik
             name="email"
             label="Email*"
-            touched={formik.touched.email}
-            errors={formik.errors.email}
-            formikProps={formik.getFieldProps("email")}
+            touched={touched.email}
+            errors={errors.email}
+            formikProps={getFieldProps("email")}
           />
         </S.InputContainer>
       </S.Row>
@@ -70,18 +70,18 @@ const ContactUsForm = ({ onSubmit }) => {
           <TextFieldFormik
             name="company"
             label="Company"
-            touched={formik.touched.company}
-            errors={formik.errors.company}
-            formikProps={formik.getFieldProps("company")}
+            touched={touched.company}
+            errors={errors.company}
+            formikProps={getFieldProps("company")}
           />
         </S.InputContainer>
         <S.InputContainer column>
           <TextFieldFormik
             name="jobTitle"
             label="Job Title"
-            touched={formik.touched.jobTitle}
-            errors={formik.errors.jobTitle}
-            formikProps={formik.getFieldProps("jobTitle")}
+            touched={touched.jobTitle}
+            errors={errors.jobTitle}
+            formikProps={getFieldProps("jobTitle")}
           />
         </S.InputContainer>
       </S.Row>
@@ -90,9 +90,9 @@ const ContactUsForm = ({ onSubmit }) => {
           <SelectInputFormik
             name="contactReason"
             label="How can we help you?"
-            touched={formik.touched.contactReason}
-            errors={formik.errors.contactReason}
-            formikProps={formik.getFieldProps("contactReason")}
+            touched={touched.contactReason}
+            errors={errors.contactReason}
+            formikProps={getFieldProps("contactReason")}
           />
         </S.InputContainer>
       </S.Row>
@@ -101,10 +101,11 @@ const ContactUsForm = ({ onSubmit }) => {
           <TextFieldFormik
             name="message"
             label="Tell us a bit more about your inquiries ?"
-            touched={formik.touched.message}
-            errors={formik.errors.message}
-            formikProps={formik.getFieldProps("message")}
-            multiline={true}
+            touched={touched.message}
+            errors={errors.message}
+            formikProps={getFieldProps("message")}
+            multiline
+            rows={10}
           />
         </S.InputContainer>
       </S.Row>
