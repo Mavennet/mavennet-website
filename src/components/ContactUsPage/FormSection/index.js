@@ -1,6 +1,5 @@
 import React from "react"
 
-import Container from "../../base/Container"
 import ContactUsForm from "../ContactUsForm"
 
 import * as S from "./styles"
@@ -10,9 +9,13 @@ const FormSection = () => {
 
   return (
     <S.FormSection>
-      <Container center>
+      <S.FormSectionContainer center>
+        <S.ContactUsText>
+          Kindly fill in the form with any questions or suggestions you might
+          have, and our team will get back to you as soon as we can.
+        </S.ContactUsText>
         <ContactUsForm onSubmit={onSubmitForm} />
-      </Container>
+      </S.FormSectionContainer>
     </S.FormSection>
   )
 }
