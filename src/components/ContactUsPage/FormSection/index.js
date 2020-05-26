@@ -28,7 +28,7 @@ const FormSection = () => {
           Kindly fill in the form with any questions or suggestions you might
           have, and our team will get back to you as soon as we can.
         </S.ContactUsText>
-        <ContactUsForm onSubmit={onSubmitForm} />
+        <ContactUsForm onSubmit={onSubmit} />
       </S.FormSectionContainer>
     </S.FormSection>
   )
