@@ -6,6 +6,7 @@
   "author": "Mavennet",
   "dependencies": {
     "@material-ui/core": "^4.9.14",
+    "axios": "^0.19.2",
     "babel-plugin-styled-components": "^1.10.7",
     "formik": "^2.1.4",
     "gatsby": "^2.21.22",

@@ -12,13 +12,20 @@ const FormSection = () => {
   }
 
   const onSubmit = values => {
-    fetch("/", {
-      method: "POST",
+    const formData = {}
+    Object.keys(values).map(key => (formData[key] = values[key]))
+
+    const axiosOptions = {
+      url: this.props.location.pathname,
+      method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", values }),
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error))
+      data: qs.stringify(formData),
+    }
+    axios(axiosOptions)
+      .then(response => {
+        alert(response)
+      })
+      .catch(err => alert(response))
   }
 
   return (
