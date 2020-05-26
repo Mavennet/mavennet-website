@@ -10,7 +10,7 @@ const ContactUsPage = ({ data }) => {
   const meta = data.site.siteMetadata
   return (
     <Layout>
-      <MainSection backgroundColor="--c-p-haiti" meta={meta} />
+      <MainSection meta={meta} />
       <FormSection />
     </Layout>
   )

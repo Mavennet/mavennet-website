@@ -5,6 +5,8 @@ import SocialNetLink from "../../shared/SocialNetLink"
 
 import * as S from "./styles"
 
+import background from "../../../assets/images/contact-us-bg.png"
+
 const MainSection = ({ backgroundColor, meta }) => {
   const { companyName, social } = meta
 
@@ -20,7 +22,7 @@ const MainSection = ({ backgroundColor, meta }) => {
     )
   }
   return (
-    <S.MainSection backgroundColor={backgroundColor}>
+    <S.MainSection background={background}>
       <Container>
         <S.Title>We’d love to hear from you, let’s get in touch!</S.Title>
         <S.InfoList>
