@@ -5,7 +5,21 @@ import ContactUsForm from "../ContactUsForm"
 import * as S from "./styles"
 
 const FormSection = () => {
-  const onSubmitForm = data => alert(JSON.stringify(data, null, 2))
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
+  const onSubmit = values => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", values }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
+  }
 
   return (
     <S.FormSection>
