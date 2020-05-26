@@ -1,31 +1,27 @@
 import React from "react"
+import axios from "axios"
+import * as qs from "query-string"
 
 import ContactUsForm from "../ContactUsForm"
 
 import * as S from "./styles"
 
 const FormSection = () => {
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
-  }
-
   const onSubmit = values => {
     const formData = {}
     Object.keys(values).map(key => (formData[key] = values[key]))
 
     const axiosOptions = {
-      url: this.props.location.pathname,
+      url: "/",
       method: "post",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       data: qs.stringify(formData),
     }
     axios(axiosOptions)
       .then(response => {
-        alert(response)
+        alert(JSON.stringify(response, null, 2))
       })
-      .catch(err => alert(response))
+      .catch(err => alert(JSON.stringify(err, null, 2)))
   }
 
   return (
