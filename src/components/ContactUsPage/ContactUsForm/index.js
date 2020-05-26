@@ -9,7 +9,13 @@ import SelectInputFormik from "../../shared/SelectInputFormik"
 import * as S from "./styles"
 
 const ContactUsForm = ({ onSubmit }) => {
-  const { errors, touched, handleSubmit, getFieldProps } = useFormik({
+  const {
+    errors,
+    touched,
+    handleSubmit,
+    getFieldProps,
+    isSubmitting,
+  } = useFormik({
     initialValues: {
       firstName: "",
       lastName: "",
@@ -114,7 +120,12 @@ const ContactUsForm = ({ onSubmit }) => {
           />
         </S.InputContainer>
       </S.Row>
-      <S.SubmitButton text="Submit" type="submit" width="180px" />
+      <S.SubmitButton
+        text="Submit"
+        type="submit"
+        width="180px"
+        isLoading={isSubmitting}
+      />
     </S.ContactUsForm>
   )
 }

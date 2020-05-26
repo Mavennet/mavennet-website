@@ -1,9 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import Loader from "../Loader"
+
 import * as S from "./styles"
 
-const Button = ({ text, reverse, outline, to, type, className, width }) => {
+const Button = ({
+  text,
+  reverse,
+  outline,
+  to,
+  type,
+  className,
+  width,
+  isLoading,
+}) => {
   return type ? (
     <S.Button
       as="button"
@@ -12,8 +23,9 @@ const Button = ({ text, reverse, outline, to, type, className, width }) => {
       reverse={reverse ? 1 : undefined}
       outline={outline ? 1 : undefined}
       className={className}
+      isLoading={isLoading}
     >
-      {text}
+      {isLoading ? <Loader /> : text}
     </S.Button>
   ) : (
     <S.Button

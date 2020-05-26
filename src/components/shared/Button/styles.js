@@ -41,4 +41,11 @@ export const Button = styled(Link)`
         border-color: var(--c-p-royal-purple);
       }
     `};
+
+  ${({ isLoading }) =>
+    isLoading &&
+    `
+    cursor: not-allowed;
+    pointer-events: none;
+  `}
 `
