@@ -34,7 +34,7 @@ const ContactUsForm = ({ onSubmit }) => {
   })
 
   return (
-    <S.ContactUsForm onSubmit={handleSubmit}>
+    <S.ContactUsForm onSubmit={handleSubmit} netlify>
       <S.Row>
         <S.InputContainer column>
           <TextFieldFormik
