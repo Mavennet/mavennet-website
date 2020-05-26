@@ -1,6 +1,6 @@
 import React from "react"
-import axios from "axios"
-import * as qs from "query-string"
+
+import Swal from "sweetalert2"
 
 import ContactUsForm from "../ContactUsForm"
 
@@ -19,11 +19,20 @@ const FormSection = () => {
       body: encode({ "form-name": "contact-us", ...values }),
     })
       .then(() => {
-        alert("Success")
+        Swal.fire({
+          icon: "success",
+          title: "We have received your contact!",
+          text: "One of the members of our team will contact you soon!",
+          confirmButtonColor: "#964beb",
+        })
         actions.resetForm()
       })
       .catch(() => {
-        alert("Error")
+        Swal.fire({
+          icon: "error",
+          title: "Something went wrong!",
+          text: "Please try again later!",
+        })
       })
       .finally(() => actions.setSubmitting(false))
   }
