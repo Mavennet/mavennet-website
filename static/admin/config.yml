@@ -194,6 +194,10 @@ collections:
             widget: "list"
             fields:
               - { label: "Solution Title", name: "title", widget: "string" }
+              - label: "Section Type"
+                name: "sectionType"
+                widget: "select"
+                options: ["regular", "banner"]
               - {
                   label: "Solution Description",
                   name: "description",

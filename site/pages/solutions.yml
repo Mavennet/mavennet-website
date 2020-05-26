@@ -8,16 +8,19 @@ solutions:
     image: /assets/screen-shot-2020-05-12-at-11.56.59.png
     ctaImage: /assets/screen-shot-2020-05-12-at-11.57.52.png
     slug: solutions/neoflow
+    sectionType: regular
   - title: The metal Trail Solution
     description: The best solution for tracking metal
     image: /assets/screen-shot-2020-05-12-at-11.57.03.png
     ctaImage: /assets/screen-shot-2020-05-12-at-11.57.59.png
     slug: solutions/metaltrail
+    sectionType: regular
   - title: The MavenStamp solution
     description: The best solution for time-stamping
     image: /assets/screen-shot-2020-05-12-at-15.23.05.png
     ctaImage: /assets/screen-shot-2020-05-12-at-15.23.09.png
     slug: solutions/mavennestamp
+    sectionType: banner
 previousWork:
   title: Previous Work
   previousWorkList:
