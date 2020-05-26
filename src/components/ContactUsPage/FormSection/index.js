@@ -7,21 +7,25 @@ import ContactUsForm from "../ContactUsForm"
 import * as S from "./styles"
 
 const FormSection = () => {
-  const onSubmit = values => {
-    const formData = {}
-    Object.keys(values).map(key => (formData[key] = values[key]))
-
-    const axiosOptions = {
-      url: "/",
-      method: "post",
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+  const onSubmit = (values, actions) => {
+    fetch("/", {
+      method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      data: qs.stringify(formData),
-    }
-    axios(axiosOptions)
-      .then(response => {
-        alert(JSON.stringify(response, null, 2))
+      body: encode({ "form-name": "contact-demo", ...values }),
+    })
+      .then(() => {
+        alert("Success")
+        actions.resetForm()
       })
-      .catch(err => alert(JSON.stringify(err, null, 2)))
+      .catch(() => {
+        alert("Error")
+      })
+      .finally(() => actions.setSubmitting(false))
   }
 
   return (
