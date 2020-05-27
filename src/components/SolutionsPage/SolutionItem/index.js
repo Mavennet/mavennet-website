@@ -16,7 +16,7 @@ const SolutionItem = ({ item, backgroundColor, isEven }) => {
           <S.Header isBanner={isBanner}>
             <S.Image src={image} alt={`${title} banner`} isBanner={isBanner} />
           </S.Header>
-          <S.Content isBanner={isBanner}>
+          <S.Content isBanner={isBanner} isEven={isEven}>
             <S.Title>{title}</S.Title>
             <S.Description>{description}</S.Description>
             <ImageArrowCTA to={slug} companyName={title} image={ctaImage} />

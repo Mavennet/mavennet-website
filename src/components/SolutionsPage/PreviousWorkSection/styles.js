@@ -7,6 +7,10 @@ import { device } from "../../../consts/deviceSizes"
 export const PreviousWorkSection = styled.section`
   color: var(--c-p-haiti);
   padding: 3em 0;
+
+  @media ${device.laptopL} {
+    padding: 8em 0 12em;
+  }
 `
 
 export const Title = styled.h2`

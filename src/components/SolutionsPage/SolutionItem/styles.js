@@ -45,6 +45,9 @@ export const ItemContainer = styled(Container)`
 
     justify-content: space-between;
     align-items: flex-start;
+
+    max-width: 1600px;
+
     ${({ isEven }) =>
       isEven &&
       `
@@ -61,6 +64,7 @@ export const ItemContainer = styled(Container)`
 
   @media ${device.laptopL} {
     padding: 7em 0;
+    justify-content: space-evenly;
   }
 `
 export const Wrapper = styled.div`
@@ -85,7 +89,7 @@ export const Header = styled.header`
   }
 
   @media ${device.laptopL} {
-    width: 55%;
+    width: auto;
   }
 `
 
@@ -105,7 +109,7 @@ export const Image = styled.img`
   }
 
   @media ${device.laptopL} {
-    max-width: 600px;
+    max-width: 725px;
   }
 `
 
@@ -119,6 +123,14 @@ export const Content = styled.div`
       `
       align-self: flex-end;
       margin-top: -3em;
+    `}
+  }
+
+  @media ${device.laptopL} {
+    ${({ isEven }) =>
+      isEven &&
+      `
+      width: auto;
     `}
   }
 `
