@@ -23,7 +23,6 @@ export const MainSection = styled(GenericMainSection)`
 export const Title = styled.h1`
   font-size: 2.5rem;
   font-weight: bold;
-  letter-spacing: -0.13px;
   line-height: 48px;
   text-align: center;
 `
@@ -53,14 +52,12 @@ export const InfoItem = styled.li`
 export const ItemTitle = styled.h2`
   font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: -0.08px;
   line-height: 29px;
 `
 
 export const ItemDescription = styled.p`
   color: var(--c-p-medium-purple);
   font-size: 1rem;
-  letter-spacing: -0.05px;
   line-height: 27px;
 
   margin-top: 1em;

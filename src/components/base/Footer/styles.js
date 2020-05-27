@@ -123,6 +123,6 @@ export const GroupMain = styled(Link)`
 export const GroupItem = styled(Link)`
   color: #ffffff;
   font-weight: 400;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   line-height: 17px;
 `

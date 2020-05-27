@@ -138,14 +138,12 @@ export const Content = styled.div`
 export const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: bold;
-  letter-spacing: -0.13px;
   line-height: 48px;
 `
 
 export const Description = styled.p`
   font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: -0.07px;
   line-height: 24px;
 
   margin-top: 1em;

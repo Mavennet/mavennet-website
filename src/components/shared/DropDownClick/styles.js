@@ -8,7 +8,6 @@ export const Parent = styled.button`
   font-family: Barlow;
   font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: -0.08px;
   line-height: 29px;
   text-align: left;
   cursor: pointer;

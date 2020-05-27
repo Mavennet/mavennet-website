@@ -83,7 +83,6 @@ export const NavLink = styled(Link)`
   font-family: Barlow;
   font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: -0.08px;
   line-height: 29px;
 
   width: 100%;

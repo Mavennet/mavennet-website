@@ -22,7 +22,6 @@ export const PreviousWorkContainer = styled(Container)`
 export const Title = styled.h2`
   font-size: 2.4rem;
   font-weight: bold;
-  letter-spacing: -0.13px;
   line-height: 48px;
 
   text-align: center;
@@ -57,7 +56,6 @@ export const Image = styled.img`
 export const Description = styled.p`
   font-size: 1.5rem;
   font-weight: 500;
-  letter-spacing: -0.08px;
   line-height: 29px;
 
   margin-top: 1.3em;

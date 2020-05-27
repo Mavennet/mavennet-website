@@ -21,22 +21,22 @@ export const SectionContainer = styled(Container)`
 `
 
 export const Title = styled.h1`
-  font-size: 5.625em;
+  font-size: 5.625rem;
   font-weight: 600;
   line-height: 168px;
 
   @media ${device.laptop} {
-    font-size: 8.75em;
+    font-size: 8.75rem;
   }
 `
 
 export const Description = styled.p`
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 500;
   line-height: 29px;
 
   @media ${device.laptop} {
-    font-size: 2.125em;
+    font-size: 2.125rem;
   }
 `
 

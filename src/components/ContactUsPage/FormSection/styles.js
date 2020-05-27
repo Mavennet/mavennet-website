@@ -10,7 +10,6 @@ export const FormSectionContainer = styled(Container)`
 
 export const ContactUsText = styled.p`
   font-size: 1rem;
-  letter-spacing: -0.05px;
   line-height: 27px;
   text-align: center;
   color: var(--c-p-haiti);
