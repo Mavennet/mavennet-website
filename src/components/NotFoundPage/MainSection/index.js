@@ -1,6 +1,6 @@
 import React from "react"
 
-import backgroundImage from "../../../assets/images/404Page/background.png"
+import backgroundImage from "../../../assets/images/space_background.png"
 
 import * as S from "./styles"
 

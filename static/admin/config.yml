@@ -71,6 +71,7 @@ collections:
                     label: "Solution Description",
                     name: "description",
                     widget: "text",
+                    required: false,
                   }
                 - {
                     label: "Select the solution",

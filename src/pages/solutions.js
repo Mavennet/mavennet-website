@@ -1,30 +1,13 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 
+import Layout from "../components/base/Layout"
+
+import MainSection from "../components/SolutionsPage/MainSection"
+import SolutionsSection from "../components/SolutionsPage/SolutionsSection"
+
 const SolutionsPage = ({ data }) => {
   const { title, subtitle, solutions, previousWork } = data.pagesYaml
-
-  const SolutionItem = ({ item }) => {
-    const { title, description, image, slug, ctaImage } = item
-    return (
-      <li>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <img src={image} alt={title} />
-        <Link to={slug}>
-          <img src={ctaImage} alt={`${title} CTA`} />
-        </Link>
-      </li>
-    )
-  }
-
-  const SolutionList = ({ solutions }) => (
-    <ul>
-      {solutions.map(item => (
-        <SolutionItem key={item.title} item={item} />
-      ))}
-    </ul>
-  )
 
   const PreviousWorkItem = ({ item }) => {
     const { title, image, link } = item
@@ -47,12 +30,10 @@ const SolutionsPage = ({ data }) => {
   )
 
   return (
-    <>
-      <div className="jumbotron">
-        <h1>{title}</h1>
-        <h2>{subtitle}</h2>
-      </div>
-      <main>
+    <Layout>
+      <MainSection title={title} subtitle={subtitle} />
+      <SolutionsSection solutions={solutions} />
+      {/* <main>
         <section className="solutions">
           <SolutionList solutions={solutions} />
         </section>
@@ -60,8 +41,8 @@ const SolutionsPage = ({ data }) => {
           <h3>{previousWork.title}</h3>
           <PreviousWorkList previousWork={previousWork.previousWorkList} />
         </section>
-      </main>
-    </>
+      </main> */}
+    </Layout>
   )
 }
 
@@ -84,6 +65,7 @@ export const query = graphql`
         image
         slug
         title
+        sectionType
       }
     }
   }

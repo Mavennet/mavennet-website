@@ -12,6 +12,7 @@ const colors = css`
     --c-p-meteorite: #51277b;
     --c-p-haiti: #230f32;
 
+    --c-s-iceberb: #e5f6f7;
     --c-s-rum: #746189;
     --c-s-titan-white: #f1eeff;
     --c-s-fog: #ddd5ff;
