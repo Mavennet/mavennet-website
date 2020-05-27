@@ -4,14 +4,30 @@ import { graphql } from "gatsby"
 import Layout from "../components/base/Layout"
 
 import MainSection from "../components/SolutionPost/MainSection"
+import GrowthSection from "../components/SolutionPost/GrowthSection"
 
 const SolutionPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
-  const { mainSection } = post
+
+  console.log(post)
+  const { mainSection, firstSection } = post
+
+  const getFirstSection = content => {
+    const { type } = content[0]
+
+    switch (type) {
+      case "growthSection":
+        return <GrowthSection {...content[0]} />
+      default:
+        return null
+    }
+  }
 
   return (
     <Layout>
       <MainSection {...mainSection} />
+      {getFirstSection(firstSection)}
+
       {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
     </Layout>
   )

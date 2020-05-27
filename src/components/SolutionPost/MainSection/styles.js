@@ -27,7 +27,9 @@ export const Content = styled.div`
   align-items: flex-start;
 `
 
-export const Logo = styled.img``
+export const Logo = styled.img`
+  width: 80%;
+`
 
 export const Title = styled.h1`
   text-align: left;
