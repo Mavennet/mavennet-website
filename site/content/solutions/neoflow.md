@@ -52,7 +52,7 @@ featuresSection:
 demoSection:
   title: Type consectetuer adipiscing elit, sed diam nonummy nibh , amet
     consectetuer adip
-  image: /assets/screen-shot-2020-05-13-at-12.31.08.png
+  image: /assets/neoflow-working-mockup.png
   ctaText: Request a Demo
 testimonialSection:
   - testimony:
