@@ -8,12 +8,12 @@ export const SolutionItem = styled.div`
   color: var(--c-p-haiti);
 
   position: relative;
-  margin-top: 14.6vw;
+  margin-bottom: 28px;
 
   &::before {
     content: "";
     position: absolute;
-    height: 110%;
+    bottom: 0;
     top: -28px;
     right: 0;
     left: 0;
@@ -21,16 +21,16 @@ export const SolutionItem = styled.div`
     transform: skewY(8.3deg);
   }
 
-  @media ${device.tablet} {
-    margin-top: 7vw;
-  }
-
   @media ${device.laptop} {
-    margin-top: 16vw;
+    margin-bottom: 10em;
     &::before {
       transform: ${props =>
         props.isEven ? "skewY(-8.3deg)" : "skewY(8.3deg)"};
     }
+  }
+
+  @media ${device.laptopL} {
+    margin-bottom: 17em;
   }
 `
 
@@ -94,7 +94,7 @@ export const Header = styled.header`
 `
 
 export const Image = styled.img`
-  width: ${props => (props.isBanner ? "130px" : "100px")};
+  width: ${props => (props.isBanner ? "130%" : "100%")};
   max-width: 450px;
 
   @media ${device.laptop} {

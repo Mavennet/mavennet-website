@@ -2,6 +2,8 @@ import styled from "styled-components"
 
 import { Link } from "gatsby"
 
+import { device } from "../../../consts/deviceSizes"
+
 export const ImageArrowCTA = styled(Link)`
   display: flex;
   justify-content: flex-start;
@@ -12,9 +14,17 @@ export const ImageArrowCTA = styled(Link)`
 
 export const Image = styled.img`
   display: block;
-  width: 100px;
+  max-width: 220px;
+  max-height: 53px;
+
+  object-fit: contain;
 
   margin-right: 1em;
+
+  @media ${device.laptop} {
+    width: auto;
+    max-width: 300px;
+  }
 `
 
 export const Arrow = styled.svg`

@@ -6,24 +6,24 @@ solutions:
   - title: The metal Trail Solution
     description: The best solution for tracking metal
     image: /assets/mt-mockup.png
-    ctaImage: /assets/screen-shot-2020-05-12-at-11.57.59.png
+    ctaImage: /assets/mt-logo.png
     slug: solutions/metaltrail
     sectionType: regular
   - title: The Neoflow Solution
     description: The best solution for tracking oil
     image: /assets/neoflow-mockup.png
-    ctaImage: /assets/screen-shot-2020-05-12-at-11.57.52.png
+    ctaImage: /assets/neoflow_logo.png
     slug: solutions/neoflow
     sectionType: regular
   - title: The first mass market Canadian dollar stablecoin
     sectionType: banner
     image: /assets/qcad.png
-    ctaImage: /assets/screen-shot-2020-05-27-at-01.18.31.png
+    ctaImage: /assets/group-4.png
     slug: solutions/metaltrail
   - title: The MavenStamp solution
     description: The best solution for time-stamping
     image: /assets/mavenstamp-mockup.png
-    ctaImage: /assets/screen-shot-2020-05-12-at-15.23.09.png
+    ctaImage: /assets/group-9.png
     slug: solutions/mavennestamp
     sectionType: regular
 previousWork:

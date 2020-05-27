@@ -6,8 +6,12 @@ export const SolutionsSection = styled.main`
   margin-top: -15em;
   padding-bottom: 5em;
 
+  @media ${device.laptop} {
+    margin-top: -4em;
+  }
+
   @media ${device.laptopL} {
-    margin-top: -28em;
+    margin-top: -9em;
   }
 `
 
