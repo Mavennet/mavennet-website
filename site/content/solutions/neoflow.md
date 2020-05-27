@@ -28,7 +28,7 @@ firstSection:
 featuredSection:
   featureType: regular
   title: "Headling Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet "
-  image: /assets/screen-shot-2020-05-13-at-13.47.55.png
+  image: /assets/neoflow-graphic.png
   items:
     - Immutable Certification of Origins
     - Provable product traceability
@@ -36,20 +36,19 @@ featuredSection:
 featuresSection:
   title: Key Features
   items:
-    - title: "Feature #1"
-      description: >
-        consectetuer adipiscing elit, sed diam nonummy nibh , amet consectetuer
-        adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit, sed diam nonummy nibh. consectetuer
-        adipiscing elit, sed diam nonummy nibh ,
-      image: /assets/screen-shot-2020-05-13-at-13.47.57.png
-    - title: "Feature #2"
-      description: >
-        consectetuer adipiscing elit, sed diam nonummy nibh , amet consectetuer
-        adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet,
-        consectetuer adipiscing elit, sed diam nonummy nibh. consectetuer
-        adipiscing elit, sed diam nonummy nibh ,
-      image: /assets/screen-shot-2020-05-13-at-13.48.01.png
+    - title: Tracking of Events
+      description: End-to-end visibility of the products’ lifecycle, from wellhead
+        production, to upgrading, inspection, transportation import and
+        refinement.
+      image: /assets/nf_f01.png
+    - title: Digitized regulatory reporting and border clearance process
+      description: Import and regulatory reporting processes are automatized, by
+        providing a common and standard framework for data exchange.
+      image: /assets/nf_f02.png
+    - title: Digital Certificate of Origin
+      description: Standardized production record, updated in real-time that
+        establishes the history of ownership, records and lifecycle events.
+      image: /assets/nf_f03.png
 demoSection:
   title: Type consectetuer adipiscing elit, sed diam nonummy nibh , amet
     consectetuer adip

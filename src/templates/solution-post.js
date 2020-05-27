@@ -6,12 +6,13 @@ import Layout from "../components/base/Layout"
 import MainSection from "../components/SolutionPost/MainSection"
 import GrowthSection from "../components/SolutionPost/GrowthSection"
 import SolutionDescriptionSection from "../components/SolutionPost/SolutionDescriptionSection"
+import FeaturesSection from "../components/SolutionPost/FeaturesSection"
 
 const SolutionPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
 
   console.log(post)
-  const { mainSection, firstSection, featuredSection } = post
+  const { mainSection, firstSection, featuredSection, featuresSection } = post
 
   const getFirstSection = content => {
     const { type } = content[0]
@@ -29,6 +30,7 @@ const SolutionPost = ({ data }) => {
       <MainSection {...mainSection} />
       {getFirstSection(firstSection)}
       <SolutionDescriptionSection {...featuredSection} />
+      <FeaturesSection {...featuresSection} />
 
       {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
     </Layout>
