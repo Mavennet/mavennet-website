@@ -2,7 +2,9 @@ import styled from "styled-components"
 
 import { devices } from "../../../consts/deviceSizes"
 
-export const GrowthSection = styled.section``
+export const GrowthSection = styled.section`
+  padding-bottom: 5em;
+`
 
 export const NumbersList = styled.ul``
 
