@@ -30,10 +30,9 @@ featuredSection:
   title: "Headling Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet "
   image: /assets/screen-shot-2020-05-13-at-13.47.55.png
   items:
-    - "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, "
-    - "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, "
-    - "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, "
-    - "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, "
+    - Immutable Certification of Origins
+    - Provable product traceability
+    - Neoflow provides seamless integration with legacy systems
 featuresSection:
   title: Key Features
   items:
