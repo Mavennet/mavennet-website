@@ -19,12 +19,14 @@ collections:
           - label: "Meta"
             name: "meta"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: string }
           - label: "Main Section"
             name: "homeMainSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Slogan", name: "slogan", widget: "string" }
               - {
@@ -35,6 +37,7 @@ collections:
           - label: "Service Section"
             name: "homeServiceSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - label: "Solution Steps"
@@ -64,6 +67,7 @@ collections:
               label: "Solution Item"
               name: "item"
               widget: "object"
+              collapsed: true
               fields:
                 - { label: "Solution Title", name: "title", widget: "string" }
                 - { label: "Solution Image", name: "image", widget: "image" }
@@ -89,6 +93,7 @@ collections:
           - label: "Partners Section"
             name: "homePartnersSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - {
@@ -136,17 +141,20 @@ collections:
           - label: "Meta"
             name: "meta"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: "string" }
           - label: "Main Section"
             name: "serviceMainSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Slogan", name: "slogan", widget: "string" }
           - label: "Steps Section"
             name: "serviceStepsSection"
             widget: "list"
+            collapsed: true
             field:
               label: "Step Item"
               name: "item"
@@ -176,6 +184,7 @@ collections:
           - label: "Contact Us Section"
             name: "serviceContactUsSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "CTA Text", name: "ctaText", widget: "string" }
@@ -186,6 +195,7 @@ collections:
           - label: "Meta"
             name: "meta"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: "string" }
@@ -193,6 +203,7 @@ collections:
           - label: "Solutions List"
             name: "solutions"
             widget: "list"
+            collapsed: true
             fields:
               - { label: "Solution Title", name: "title", widget: "string" }
               - label: "Section Type"
@@ -228,6 +239,7 @@ collections:
           - label: "Previous Work"
             name: "previousWork"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - label: "Previous Work list"

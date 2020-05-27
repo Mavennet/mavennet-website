@@ -130,7 +130,7 @@ export const Content = styled.div`
     ${({ isEven }) =>
       isEven &&
       `
-      width: auto;
+      width: 35%;
     `}
   }
 `

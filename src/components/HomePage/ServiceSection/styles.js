@@ -23,7 +23,7 @@ export const ItemsList = styled.ul`
   @media ${device.laptop} {
     flex-direction: row;
     justify-content: space-between;
-
+    align-items: flex-start;
     margin-top: 4.3125em;
   }
 `

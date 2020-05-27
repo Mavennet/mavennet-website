@@ -2,7 +2,7 @@ meta:
   title: Home
 title: Home
 homeMainSection:
-  slogan: Mavennet Catchy Slogan
+  slogan: Building a World of Trust
   ctaText: View Our Solutions
 homeServiceSection:
   title: What we offer
@@ -11,33 +11,31 @@ homeServiceSection:
     - item:
         image: /assets/strategy.png
         title: Strategy
-        description:
-          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh
+        description: We specialize in enterprise technology strategy and possess deep
+          expertise in implementing blockchain solutions, launching digital
+          assets and building scalable decentralized systems.
     - item:
         image: /assets/design.png
         title: Design
-        description:
-          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh
+        description: Our solutions are built for massive user adoption, considering the
+          latest developments in UX/UI to optimize the user experience.
     - item:
         image: /assets/implementation.png
         title: Implementation
-        description:
-          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh
+        description: Thanks to our accelerators we are able to kickstart and execute
+          complex solutions in a record time, across a wide variety of use
+          cases.
     - item:
         image: /assets/support.png
         title: Support
-        description:
-          Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh
+        description: We accompany our clients end-to-end on the path of digital
+          transformation, this includes ensuring that solutions are well
+          integrated within enterprise environments.
 homeSolutionsSection:
   - item:
       title: Lorem ipsum dolor site amet, consectetuer
       image: /assets/neoflow-map.gif
-      description:
-        Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+      description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
         nonummy nibh. Lorem ipsum dolor site amet, consectetuer adipiscing elit,
         sed diam nonummy nibh
       slug: /solutions/neoflow
@@ -45,8 +43,7 @@ homeSolutionsSection:
   - item:
       title: Lorem ipsum dolor site amet, consectetuer
       image: /assets/neoflow-map.gif
-      description:
-        Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
+      description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
         nonummy nibh. Lorem ipsum dolor site amet, consectetuer adipiscing elit,
         sed diam nonummy nibh
       slug: /solutions/metaltrail

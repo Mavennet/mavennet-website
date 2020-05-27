@@ -1,7 +1,5 @@
 import React from "react"
 
-import Container from "../../base/Container"
-
 import * as S from "./styles"
 
 const PreviousWorkSection = ({ previousWork }) => {
@@ -24,10 +22,10 @@ const PreviousWorkSection = ({ previousWork }) => {
 
   return (
     <S.PreviousWorkSection>
-      <Container center>
+      <S.PreviousWorkContainer center>
         <S.Title>{title}</S.Title>
         {getWorkList(previousWorkList)}
-      </Container>
+      </S.PreviousWorkContainer>
     </S.PreviousWorkSection>
   )
 }

@@ -1,34 +1,41 @@
 meta:
   title: Solutions
-title: Solutions Page
-subtitle: This is the solutions page
+title: Our Solutions
+subtitle: Discover the next generation of technology solutions to industry-wide problems
 solutions:
-  - title: The metal Trail Solution
-    description: The best solution for tracking metal
+  - title: Digital Traceability of Metals’ Lifecycle
+    description: Securely trace products as they are transformed upstream and
+      downstream the supply chain
     image: /assets/mt-mockup.png
     ctaImage: /assets/mt-logo.png
     slug: solutions/metaltrail
     sectionType: regular
-  - title: The Neoflow Solution
-    description: The best solution for tracking oil
+  - title: Oil & Gas Supply Chain Digitization
+    description: Access an end-to-end view of your O&G supply chain, from the
+      wellhead to the refinery
     image: /assets/neoflow-mockup.png
     ctaImage: /assets/neoflow_logo.png
     slug: solutions/neoflow
     sectionType: regular
-  - title: The first mass market Canadian dollar stablecoin
+  - title: First Mass Market Canadian Dollar Stablecoin
     sectionType: banner
     image: /assets/qcad.png
     ctaImage: /assets/group-4.png
     slug: solutions/metaltrail
-  - title: The MavenStamp solution
-    description: The best solution for time-stamping
+    description: Get a transparent and secure stablecoin with 1-to-1 CAD equivalency
+  - title: Immutability-as-a-Service
+    description: Get tamper-proof timestamps for your data, seamlessly and securely
     image: /assets/mavenstamp-mockup.png
     ctaImage: /assets/group-9.png
     slug: solutions/mavennestamp
     sectionType: regular
 previousWork:
-  title: Previous Work
+  title: Select Clients & Work
   previousWorkList:
-    - title: VIVO PAGO - DIGITAL Media Tokenization
+    - title: VIVOPAGO – Open App for Media and Telecoms Payments in Latin America
       link: https://www.google.com
+      image: /assets/screen-shot-2020-05-12-at-12.00.13.png
+    - title: TMX & NGX – Settlement Solution for Natural Gas Transactions, with
+        Blockchain at the core
+      link: https://google.com
       image: /assets/screen-shot-2020-05-12-at-12.00.13.png

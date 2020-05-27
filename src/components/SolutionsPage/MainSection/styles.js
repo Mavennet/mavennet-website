@@ -46,6 +46,8 @@ export const Description = styled.p`
 
   margin-top: 2.3em;
 
+  max-width: 700px;
+
   @media ${device.laptop} {
     font-size: 2.25rem;
     font-weight: 600;

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import { Link } from "gatsby"
+import Container from "../../base/Container"
 
 import { device } from "../../../consts/deviceSizes"
 
@@ -9,8 +10,13 @@ export const PreviousWorkSection = styled.section`
   padding: 3em 0;
 
   @media ${device.laptopL} {
-    padding: 8em 0 12em;
+    margin-top: -3em;
+    padding: 0 0 12em;
   }
+`
+
+export const PreviousWorkContainer = styled(Container)`
+  align-items: stretch;
 `
 
 export const Title = styled.h2`
@@ -18,14 +24,16 @@ export const Title = styled.h2`
   font-weight: bold;
   letter-spacing: -0.13px;
   line-height: 48px;
+
+  text-align: center;
 `
 
 export const WorkList = styled.ul`
-  margin-top: 3em;
+  margin-top: 1em;
 
   @media ${device.laptop} {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -38,6 +46,8 @@ export const WorkCard = styled(Link)`
 
   width: 100%;
   max-width: 354px;
+
+  margin-top: 5em;
 `
 
 export const Image = styled.img`
