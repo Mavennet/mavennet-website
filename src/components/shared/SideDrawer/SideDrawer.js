@@ -32,7 +32,7 @@ const SideDrawer = ({ isOpen, closeDrawer, menuItems }) => {
           <S.NavList>{menuItems.map(item => getNavItem(item))}</S.NavList>
         </S.NavBar>
         <S.ButtonContainer>
-          <Button text="Get In Touch" to="/about" />
+          <Button text="Get In Touch" to="/contact-us" />
         </S.ButtonContainer>
       </S.Container>
     </S.SideDrawer>

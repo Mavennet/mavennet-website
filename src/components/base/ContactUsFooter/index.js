@@ -11,7 +11,7 @@ const ContactUsFooter = () => {
       <Container center>
         <S.Text>Lorem ipsum dolor sit amet</S.Text>
         <S.ButtonContainer>
-          <Button text="Get In Touch" to="/about" />
+          <Button text="Get In Touch" to="/contact-us" />
         </S.ButtonContainer>
       </Container>
     </S.ContactUsFooter>

@@ -102,7 +102,7 @@ const Header = ({ menuItems }) => {
           <S.Navbar>
             {getNavList(menuItemsState)}
             <S.ButtonContainer>
-              <Button text="Get in Touch" to="/about" />
+              <Button text="Get in Touch" to="/contact-us" />
             </S.ButtonContainer>
           </S.Navbar>
           <Hamburguer handleClick={handleDrawerState} />
