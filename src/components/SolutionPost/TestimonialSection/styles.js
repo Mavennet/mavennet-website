@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { device } from "../../../consts/deviceSizes"
+
 export const TestimonialSection = styled.section`
   padding: 4em 0;
 `
@@ -11,4 +13,9 @@ export const Title = styled.h2`
   text-align: center;
 
   margin-bottom: 2.3em;
+`
+
+export const SliderWrapper = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
 `
