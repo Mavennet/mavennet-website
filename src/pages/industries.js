@@ -3,14 +3,16 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
 import MainSection from "../components/IndustriesPage/MainSection"
+import IndustriesSection from "../components/IndustriesPage/IndustriesSection"
 
 const IndustriesPage = ({ data }) => {
   const post = data.pagesYaml
-  const { title, subtitle } = post
+  const { title, subtitle, industries } = post
 
   return (
     <Layout>
       <MainSection title={title} subtitle={subtitle} />
+      <IndustriesSection industries={industries} />
       {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
     </Layout>
   )
