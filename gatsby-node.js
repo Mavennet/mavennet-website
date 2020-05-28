@@ -66,6 +66,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       description: String
       image: String
       items: [Item]
+      itemsText: [String]
     }
 
     type Item implements Node {

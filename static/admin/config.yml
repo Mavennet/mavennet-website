@@ -744,7 +744,7 @@ collections:
                   required: false,
                 }
               - label: "Items"
-                name: "items"
+                name: "itemsText"
                 widget: "list"
                 required: false
                 field: { label: "Text", name: "text", widget: "string" }

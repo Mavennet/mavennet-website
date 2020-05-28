@@ -5,6 +5,7 @@ import Layout from "../components/base/Layout"
 
 import MainSection from "../components/SolutionPost/MainSection"
 import GrowthSection from "../components/SolutionPost/GrowthSection"
+import SummarySection from "../components/SolutionPost/SummarySection"
 import SolutionDescriptionSection from "../components/SolutionPost/SolutionDescriptionSection"
 import FeaturesSection from "../components/SolutionPost/FeaturesSection"
 import DemoSection from "../components/SolutionPost/DemoSection"
@@ -31,6 +32,8 @@ const SolutionPost = ({ data }) => {
     switch (type) {
       case "growthSection":
         return <GrowthSection {...content[0]} />
+      case "summarySection":
+        return <SummarySection {...content[0]} />
       default:
         return null
     }
@@ -95,6 +98,7 @@ export const query = graphql`
             description
             text
           }
+          itemsText
         }
         mainSection {
           image
