@@ -784,6 +784,13 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "text" }
           - { label: "Image", name: "image", widget: "image" }
+          - {
+              label: "Background Image",
+              name: "backgroundImage",
+              widget: "image",
+              required: false,
+            }
+
           - { label: "CTA Text", name: "ctaText", widget: "string" }
       - label: "Testimonial Section"
         name: "testimonialSection"

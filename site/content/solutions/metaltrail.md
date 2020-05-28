@@ -50,8 +50,9 @@ featuresSection:
       image: /assets/nf_f02.png
 demoSection:
   title: "Explore how MetalTrail can make your business more competitive "
-  image: /assets/screen-shot-2020-05-13-at-12.31.08.png
+  image: /assets/mt-mockup.png
   ctaText: Request a Demo
+  backgroundImage: /assets/mt-mock-bg.png
 testimonialSection:
   - testimony:
       author: Jane Doe

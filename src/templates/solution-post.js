@@ -8,6 +8,7 @@ import GrowthSection from "../components/SolutionPost/GrowthSection"
 import SolutionDescriptionSection from "../components/SolutionPost/SolutionDescriptionSection"
 import FeaturesSection from "../components/SolutionPost/FeaturesSection"
 import DemoSection from "../components/SolutionPost/DemoSection"
+import DemoSectionBg from "../components/SolutionPost/DemoSectionBg"
 import TestimonialSection from "../components/SolutionPost/TestimonialSection"
 import NewsSection from "../components/SolutionPost/NewsSection"
 
@@ -35,13 +36,21 @@ const SolutionPost = ({ data }) => {
     }
   }
 
+  const getDemoSection = demoSection => {
+    if (!demoSection.backgroundImage) {
+      return <DemoSection {...demoSection} />
+    }
+
+    return <DemoSectionBg {...demoSection} />
+  }
+
   return (
     <Layout>
       <MainSection {...mainSection} />
       {getFirstSection(firstSection)}
       <SolutionDescriptionSection {...featuredSection} />
       <FeaturesSection {...featuresSection} />
-      <DemoSection {...demoSection} />
+      {getDemoSection(demoSection)}
       <TestimonialSection testimonialList={testimonialSection} />
       <NewsSection {...newsSection} />
 
@@ -58,6 +67,7 @@ export const query = graphql`
           title
           ctaText
           image
+          backgroundImage
         }
         featuredSection {
           featureType

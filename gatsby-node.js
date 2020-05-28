@@ -73,6 +73,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       numbers: String
       description: String
     }
+
+    type MarkdownRemarkFrontmatterDemoSection implements Node {
+      backgroundImage: String
+    }
   `
   createTypes(typeDefs)
 }
