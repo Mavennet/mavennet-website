@@ -294,29 +294,6 @@ collections:
                   searchFields: ["title", "{{slug}}"],
                   valueField: "industries/{{slug}}",
                 }
-          - label: "Industry Solutions Section"
-            name: "industrySolutionsSection"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
-              - { label: "CTA Text", name: "ctaText", widget: "string" }
-              - label: "Industry Solutions list"
-                name: "industrySolutionsList"
-                widget: "list"
-                fields:
-                  - { label: "Item title", name: "title", widget: "string" }
-                  - label: "Select the Solution"
-                    name: "slug"
-                    widget: "relation"
-                    collection: "solutions"
-                    searchFields: ["title", "{{slug}}"]
-                    valueField: "solutions/{{slug}}"
-                  - label: "Item image"
-                    name: "image"
-                    widget: "image"
-                    media_library:
-                      config:
-                        multiple: false
       - label: "About Page"
         name: "about-page"
         file: "site/pages/about.yml"
