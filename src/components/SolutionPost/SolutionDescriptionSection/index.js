@@ -21,10 +21,12 @@ const SolutionDescriptionSection = ({ featureType, title, image, items }) => {
   }
   return (
     <S.SolutionDescriptionSection>
-      <Container>
+      <Container center>
         <S.Title>{title}</S.Title>
         <S.Content>
-          <S.Image src={image} alt={`${title} image`} />
+          <S.ImageContainer>
+            <S.Image src={image} alt={`${title} image`} />
+          </S.ImageContainer>
           {getPointsList(items)}
         </S.Content>
       </Container>
