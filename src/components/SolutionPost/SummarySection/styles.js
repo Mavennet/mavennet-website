@@ -3,7 +3,11 @@ import styled from "styled-components"
 import { device } from "../../../consts/deviceSizes"
 
 export const SummarySection = styled.section`
-  padding: 5em 0;
+  padding-bottom: 5em;
+
+  @media ${device.tablet} {
+    padding-top: 5em;
+  }
 `
 
 export const Header = styled.header`
@@ -16,11 +20,31 @@ export const Header = styled.header`
   }
 `
 
-export const Content = styled.div``
+export const Content = styled.div`
+  ${({ marginTop }) =>
+    marginTop &&
+    `
+      margin-top: ${marginTop};
+    `}
+
+  @media ${device.laptop} {
+    margin-top: 4.12em;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+`
 
 export const Wrapper = styled.div`
+  ${({ marginTop }) =>
+    marginTop &&
+    `
+      margin-top: ${marginTop};
+    `}
+
   @media ${device.laptop} {
     width: ${props => (props.width ? props.width : "100%")};
+    margin-top: 0;
   }
 `
 
@@ -29,6 +53,12 @@ export const TextContent = styled.div`
 
   @media ${device.laptop} {
     margin-top: 0;
+
+    ${({ center }) =>
+      center &&
+      `
+      text-align: center;
+    `}
   }
 `
 
@@ -46,11 +76,15 @@ export const Description = styled.p`
 `
 
 export const ImageWrapper = styled.div`
-  max-width: 229px;
   margin: 0 auto;
 
+  @media ${device.tablet} {
+    max-width: ${props =>
+      props.tabletMaxWidth ? props.tabletMaxWidth : "229px"};
+  }
+
   @media ${device.laptop} {
-    max-width: 268px;
+    max-width: ${props => (props.maxWidth ? props.maxWidth : "268px")};
   }
 `
 
@@ -60,8 +94,6 @@ export const Image = styled.img`
 `
 
 export const ItemsList = styled.ul`
-  margin-top: 3.12em;
-
   @media ${device.laptop} {
     display: flex;
     flex-wrap: wrap;

@@ -42,6 +42,34 @@ const SummarySection = ({
           </S.Content>
         </>
       )
+    } else if (type === "pictureItems") {
+      return (
+        <>
+          <S.Header>
+            <S.TextContent center>
+              <S.Title>{title}</S.Title>
+              <S.Description>{description}</S.Description>
+            </S.TextContent>
+          </S.Header>
+          <S.Content marginTop="3.5em">
+            <S.Wrapper width="45%">
+              <S.ImageWrapper maxWidth="100%" tabletMaxWidth="400px">
+                <S.Image src={image} alt={title} />
+              </S.ImageWrapper>
+            </S.Wrapper>
+
+            <S.Wrapper width="45%" marginTop="4em">
+              <S.ItemsList>
+                {itemsText.map(item => (
+                  <S.ListItem key={item}>
+                    <CheckIconText text={item} />
+                  </S.ListItem>
+                ))}
+              </S.ItemsList>
+            </S.Wrapper>
+          </S.Content>
+        </>
+      )
     }
 
     return null

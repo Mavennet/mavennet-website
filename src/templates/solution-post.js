@@ -51,7 +51,7 @@ const SolutionPost = ({ data }) => {
     <Layout>
       <MainSection {...mainSection} />
       {getFirstSection(firstSection)}
-      <SolutionDescriptionSection {...featuredSection} />
+      {featuredSection && <SolutionDescriptionSection {...featuredSection} />}
       <FeaturesSection {...featuresSection} />
       {getDemoSection(demoSection)}
       <TestimonialSection testimonialList={testimonialSection} />

@@ -752,13 +752,15 @@ collections:
         name: "featuredSection"
         widget: "object"
         collapsed: "true"
+        required: false
         fields:
           - label: "Feature Type"
             name: "featureType"
             widget: "select"
+            required: false
             options: ["regular", "banner", "imageOnly"]
           - { label: "Title", name: "title", widget: "string", required: false }
-          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Image", name: "image", widget: "image", required: false }
           - label: "Items"
             name: "items"
             required: false
@@ -809,8 +811,9 @@ collections:
         name: "newsSection"
         widget: "object"
         collapsed: true
+        required: false
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", required: false }
           - label: "News List"
             name: "news"
             widget: "list"
