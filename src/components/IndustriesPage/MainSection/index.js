@@ -2,7 +2,7 @@ import React from "react"
 
 import Container from "../../base/Container"
 
-import background from "../../../assets/images/Home/mobile_background.png"
+import background from "../../../assets/images/comet_bg.png"
 
 import * as S from "./styles"
 
