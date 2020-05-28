@@ -68,7 +68,7 @@ const Header = ({ menuItems }) => {
         <S.DropdownList>
           {item.children.map(child => (
             <S.DropdownListItem key={child.name}>
-              <S.NavLink to={item.to}>{child.name}</S.NavLink>
+              <S.NavLink to={child.to}>{child.name}</S.NavLink>
             </S.DropdownListItem>
           ))}
         </S.DropdownList>

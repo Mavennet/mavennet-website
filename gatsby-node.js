@@ -65,6 +65,14 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       image: String
+      items: [Item]
+    }
+
+    type Item implements Node {
+      text: String
+      image: String
+      numbers: String
+      description: String
     }
 
     type MarkdownRemarkFrontmatterFirstSectionItems implements Node {

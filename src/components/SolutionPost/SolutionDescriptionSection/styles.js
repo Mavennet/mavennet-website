@@ -17,6 +17,12 @@ export const Title = styled.h2`
   line-height: 41px;
   max-width: 900px;
 
+  ${({ isImageOnly }) =>
+    isImageOnly &&
+    `
+        text-align: center;
+    `}
+
   @media ${device.laptop} {
     font-size: 2.5rem;
     font-weight: bold;
@@ -27,6 +33,14 @@ export const Title = styled.h2`
 
 export const Content = styled.div`
   margin-top: 2.875em;
+
+  ${({ isImageOnly }) =>
+    isImageOnly &&
+    `
+        width: 100%;
+    `}
+
+
   @media ${device.laptop} {
     ${({ isBanner }) =>
       !isBanner &&
@@ -43,9 +57,16 @@ export const ImageContainer = styled.div`
     ${({ isBanner }) =>
       !isBanner &&
       `
-    width: 45%;
-    max-width: 563px;
+        width: 45%;
+        max-width: 563px;
     
+    `}
+
+    ${({ isImageOnly }) =>
+      isImageOnly &&
+      `
+        width: 100%;
+        max-width: 100%;
     `}
   }
 `

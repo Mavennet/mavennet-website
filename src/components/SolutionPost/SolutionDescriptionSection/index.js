@@ -8,7 +8,7 @@ import * as S from "./styles"
 
 const SolutionDescriptionSection = ({ featureType, title, image, items }) => {
   const isBanner = featureType === "banner"
-  console.log(isBanner)
+  const isImageOnly = featureType === "imageOnly"
 
   const getPointsList = points => {
     return (
@@ -25,12 +25,12 @@ const SolutionDescriptionSection = ({ featureType, title, image, items }) => {
   return (
     <S.SolutionDescriptionSection>
       <Container center>
-        <S.Title>{title}</S.Title>
-        <S.Content isBanner={isBanner}>
-          <S.ImageContainer isBanner={isBanner}>
+        <S.Title isImageOnly={isImageOnly}>{title}</S.Title>
+        <S.Content isBanner={isBanner} isImageOnly={isImageOnly}>
+          <S.ImageContainer isBanner={isBanner} isImageOnly={isImageOnly}>
             <S.Image src={image} alt={`${title} image`} />
           </S.ImageContainer>
-          {getPointsList(items)}
+          {!isImageOnly && getPointsList(items)}
         </S.Content>
       </Container>
     </S.SolutionDescriptionSection>

@@ -21,7 +21,7 @@ solutions:
     sectionType: banner
     image: /assets/qcad.png
     ctaImage: /assets/group-4.png
-    slug: solutions/metaltrail
+    slug: solutions/qcad
     description: Get a transparent and secure stablecoin with 1-to-1 CAD equivalency
   - title: Immutability-as-a-Service
     description: Get tamper-proof timestamps for your data, seamlessly and securely
