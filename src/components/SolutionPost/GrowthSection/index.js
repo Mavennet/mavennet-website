@@ -1,7 +1,6 @@
 import React from "react"
 
 import NumberItem from "../../shared/NumberItem"
-import Container from "../../base/Container"
 
 import * as S from "./styles"
 
@@ -28,13 +27,13 @@ const GrowthSection = ({
 
   return (
     <S.GrowthSection>
-      <Container>
+      <S.GrowthContainer>
         {getNumbersItems(items)}
         <S.TextContent>
           <S.Title>{title}</S.Title>
           <S.Description>{description}</S.Description>
         </S.TextContent>
-      </Container>
+      </S.GrowthContainer>
     </S.GrowthSection>
   )
 }

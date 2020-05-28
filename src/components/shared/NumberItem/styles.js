@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { device } from "../../../consts/deviceSizes"
+
 export const NumberItem = styled.div`
   display: flex;
   flex-direction: column;
@@ -12,6 +14,8 @@ export const NumberItem = styled.div`
 export const Image = styled.img`
   display: block;
   width: 80%;
+
+  max-width: 118px;
 `
 
 export const Number = styled.span`
@@ -22,6 +26,10 @@ export const Number = styled.span`
   text-align: center;
 
   margin-top: 0.2em;
+
+  @media ${device.desktop} {
+    font-size: 2.5em;
+  }
 `
 
 export const Description = styled.p`
