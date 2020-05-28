@@ -27,7 +27,7 @@ solutions:
     description: Get tamper-proof timestamps for your data, seamlessly and securely
     image: /assets/mavenstamp-mockup.png
     ctaImage: /assets/group-9.png
-    slug: solutions/mavennestamp
+    slug: solutions/mavenestamp
     sectionType: regular
 previousWork:
   title: Select Clients & Work
