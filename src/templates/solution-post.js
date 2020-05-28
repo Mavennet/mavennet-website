@@ -9,6 +9,7 @@ import SolutionDescriptionSection from "../components/SolutionPost/SolutionDescr
 import FeaturesSection from "../components/SolutionPost/FeaturesSection"
 import DemoSection from "../components/SolutionPost/DemoSection"
 import TestimonialSection from "../components/SolutionPost/TestimonialSection"
+import NewsSection from "../components/SolutionPost/NewsSection"
 
 const SolutionPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
@@ -20,6 +21,7 @@ const SolutionPost = ({ data }) => {
     featuresSection,
     demoSection,
     testimonialSection,
+    newsSection,
   } = post
 
   const getFirstSection = content => {
@@ -41,6 +43,7 @@ const SolutionPost = ({ data }) => {
       <FeaturesSection {...featuresSection} />
       <DemoSection {...demoSection} />
       <TestimonialSection testimonialList={testimonialSection} />
+      <NewsSection {...newsSection} />
 
       {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
     </Layout>
