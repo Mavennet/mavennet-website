@@ -7,7 +7,8 @@ mainSection:
 firstSection:
   - type: growthSection
     title: Opportunity
-    description: Information exchange in the oil industry today is largely manual,
+    description:
+      Information exchange in the oil industry today is largely manual,
       with redundancies in regulatory reporting. Analysis of origins and
       traceability of flows is susceptible to errors, miscommunication and
       misrepresentation. The standard today is for each participant in the value
@@ -20,7 +21,8 @@ firstSection:
         description: of cross-border global oil shipments gets disputed
       - image: /assets/screen-shot-2020-05-13-at-13.47.49.png
         numbers: 50%
-        description: "of back-office costs are spent on documentation and information
+        description:
+          "of back-office costs are spent on documentation and information
           exchange "
       - image: /assets/screen-shot-2020-05-13-at-13.47.49.png
         numbers: $1 bn
@@ -37,7 +39,8 @@ featuresSection:
   title: Key Features
   items:
     - title: Tracking of Events
-      description: End-to-end visibility of the products’ lifecycle, from wellhead
+      description:
+        End-to-end visibility of the products’ lifecycle, from wellhead
         production, to upgrading, inspection, transportation import and
         refinement.
       image: /assets/nf_f01.png
@@ -59,7 +62,17 @@ testimonialSection:
       author: Jane Doe
       position: Title
       companyLogo: /assets/screen-shot-2020-05-13-at-13.48.13.png
-      message: “ Cilent Testimony consectetuer adipiscing elit, sed diam nonummy nibh
+      message:
+        “ Cilent Testimony consectetuer adipiscing elit, sed diam nonummy nibh
+        , amet consectetuer adipiscing elit, sed diam nonummy, amet consectetuer
+        adipiscing elit, sed diam nonummy, consectetuer adipiscing elit, sed
+        diam nonummy nibh  “
+  - testimony:
+      author: Jane Doe
+      position: Title
+      companyLogo: /assets/screen-shot-2020-05-13-at-13.48.13.png
+      message:
+        “ Cilent Testimony consectetuer adipiscing elit, sed diam nonummy nibh
         , amet consectetuer adipiscing elit, sed diam nonummy, amet consectetuer
         adipiscing elit, sed diam nonummy, consectetuer adipiscing elit, sed
         diam nonummy nibh  “
