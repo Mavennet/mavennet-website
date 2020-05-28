@@ -4,7 +4,7 @@ import * as S from "./styles"
 
 const FeatureItems = ({ title, description, image, isEven }) => {
   return (
-    <S.FeatureItem>
+    <S.FeatureItem isEven={isEven}>
       <S.ImageContainer isEven={isEven}>
         <S.Image src={image} alt={`${title} image`} />
       </S.ImageContainer>
