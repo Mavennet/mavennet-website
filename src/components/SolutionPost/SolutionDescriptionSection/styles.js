@@ -28,15 +28,25 @@ export const Title = styled.h2`
 export const Content = styled.div`
   margin-top: 2.875em;
   @media ${device.laptop} {
+    ${({ isBanner }) =>
+      !isBanner &&
+      `
     display: flex;
     justify-content: space-between;
+    
+    `}
   }
 `
 
 export const ImageContainer = styled.div`
   @media ${device.laptop} {
+    ${({ isBanner }) =>
+      !isBanner &&
+      `
     width: 45%;
     max-width: 563px;
+    
+    `}
   }
 `
 
@@ -47,9 +57,24 @@ export const Image = styled.img`
 
 export const PointsList = styled.ul`
   margin-top: 3em;
+
   @media ${device.laptop} {
     margin-top: 0;
     width: 45%;
+
+    ${({ isBanner }) =>
+      isBanner &&
+      `
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3em;
+
+        ${PointsItem} {
+          width: 50%;
+          margin-top: 2em;
+        }
+      `}
   }
 `
 
