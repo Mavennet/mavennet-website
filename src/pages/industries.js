@@ -1,10 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/base/Layout"
+import MainSection from "../components/IndustriesPage/MainSection"
+
 const IndustriesPage = ({ data }) => {
   const post = data.pagesYaml
+  const { title, subtitle } = post
 
-  return <pre>{JSON.stringify(post, null, 2)}</pre>
+  return (
+    <Layout>
+      <MainSection title={title} subtitle={subtitle} />
+      {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
+    </Layout>
+  )
 }
 
 export default IndustriesPage
@@ -20,15 +29,6 @@ export const query = graphql`
         ctaText
         slug
         image
-      }
-      industrySolutionsSection {
-        industrySolutionsList {
-          slug
-          title
-          image
-        }
-        ctaText
-        title
       }
     }
   }

@@ -1,22 +1,46 @@
 meta:
   title: Industries
 title: Industries
-subtitle: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-  nonummy nibh  "
+subtitle: "Cutting-edge technology solutions that are transforming the way we do
+  business "
 industries:
   - title: Oil & Gas
-    description:
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      nonummy nibh. consectetuer adipiscing elit, sed diam nonummy nibh.  Lorem
-      ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-      consectetuer adipiscing elit, sed diam nonummy nibh
+    description: The way that data is exchanged across different parties in the Oil
+      & Gas value chain is not standardized. This leads to digital islands that
+      result in manual processes and inefficiencies. Digitizing assets and
+      processes has the power to connect multiple stakeholders and streamline
+      operations.
     ctaText: Learn More
     slug: industries/oil-and-gas
-    image: /assets/screen-shot-2020-05-13-at-16.26.18.png
-industrySolutionsSection:
-  title: Our Industry Solutions
-  ctaText: View All Our Solutions
-  industrySolutionsList:
-    - slug: solutions/neoflow
-      title: NEOFLOW - Oil Traceability
-      image: /assets/screen-shot-2020-05-12-at-11.56.59.png
+    image: /assets/oil-gas-1.png
+  - title: Metals
+    description: The metal’s supply chain is fragmented. As the industry is
+      struggling with overcapacity and increasing regulations, firms are
+      demanding solutions to transparently track asset provenance from raw
+      materials to end-products and to increase the competitive advantage of
+      their operations.
+    image: /assets/metal-1.png
+    ctaText: Learn More
+    slug: industries/oil-and-gas
+  - title: Financial Services
+    description: The financial services industry is getting disrupted by the digital
+      transformation of processes and assets. Now more than ever it is paramount
+      for enterprises to gain access to streamlined settlement, decentralized
+      exchange platforms and secure data.
+    image: /assets/finance_1.png
+    ctaText: View Solution
+    slug: industries/oil-and-gas
+  - title: Legal Tech
+    description: Decentralized Identity management, digital attestation of data and
+      verifiable credentials have the power to protect user data and audit
+      processes and entities in a seamless way.
+    image: /assets/legal-tech2.png
+    ctaText: View Solution
+    slug: industries/oil-and-gas
+  - title: Digital Media
+    description: The media industry is rapidly evolving, while viewers are demanding
+      rewards for their attention, content providers need a secure and easy way
+      to calculate and distribute royalties instantly.
+    image: /assets/digital-media-copy.png
+    ctaText: View Solution
+    slug: industries/oil-and-gas
