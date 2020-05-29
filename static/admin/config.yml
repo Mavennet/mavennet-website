@@ -698,7 +698,12 @@ collections:
                 widget: "list"
                 fields:
                   - { label: "Image", name: "image", widget: "image" }
-                  - { label: "Numbers", name: "numbers", widget: "string" }
+                  - {
+                      label: "Numbers",
+                      name: "numbers",
+                      widget: "string",
+                      required: false,
+                    }
                   - {
                       label: "Description",
                       name: "description",
@@ -831,7 +836,12 @@ collections:
               widget: "object"
               fields:
                 - { label: "Image", name: "image", widget: "image" }
-                - { label: "Numbers", name: "number", widget: "string" }
+                - {
+                    label: "Numbers",
+                    name: "number",
+                    widget: "string",
+                    required: false,
+                  }
                 - { label: "Description", name: "description", widget: "text" }
       - label: "Solutions Section"
         name: "solutionsSection"

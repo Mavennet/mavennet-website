@@ -1,10 +1,28 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/base/Layout"
+
+import MainSection from "../components/IndustriesPost/MainSection"
+
 const IndustryPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
 
-  return <pre>{JSON.stringify(post, null, 2)}</pre>
+  const {
+    title,
+    mainSection,
+    opportunitySection,
+    solutionsSection,
+    impactSection,
+    getInTouchSection,
+    testimonialSection,
+  } = post
+
+  return (
+    <Layout>
+      <MainSection {...mainSection} />
+    </Layout>
+  )
 }
 
 export const query = graphql`
