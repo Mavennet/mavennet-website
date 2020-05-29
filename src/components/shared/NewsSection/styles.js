@@ -19,6 +19,7 @@ export const NewsList = styled.ul`
   @media ${device.laptop} {
     flex-direction: row;
     justify-content: space-around;
+    align-items: stretch;
     flex-wrap: wrap;
   }
 `

@@ -10,8 +10,8 @@ import SolutionDescriptionSection from "../components/SolutionPost/SolutionDescr
 import FeaturesSection from "../components/SolutionPost/FeaturesSection"
 import DemoSection from "../components/SolutionPost/DemoSection"
 import DemoSectionBg from "../components/SolutionPost/DemoSectionBg"
-import TestimonialSection from "../components/SolutionPost/TestimonialSection"
-import NewsSection from "../components/SolutionPost/NewsSection"
+import TestimonialSection from "../components/shared/TestimonialSection"
+import NewsSection from "../components/shared/NewsSection"
 
 const SolutionPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter

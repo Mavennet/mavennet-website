@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const NewsCard = styled.article`
   width: 100%;
+  height: 100%;
   max-width: 385px;
   padding-bottom: 2em;
 
