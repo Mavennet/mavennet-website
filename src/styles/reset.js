@@ -3,6 +3,7 @@ import { css } from "styled-components"
 const reset = css`
   html {
     overflow-y: auto;
+    scroll-behavior: smooth;
   }
 
   ::-webkit-scrollbar-thumb {
