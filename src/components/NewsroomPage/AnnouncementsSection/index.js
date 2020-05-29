@@ -1,4 +1,4 @@
-import React from "react"
+import React, { forwardRef } from "react"
 
 import Container from "../../base/Container"
 
@@ -6,7 +6,7 @@ import { utcStringToFullMonthDate } from "../../../helpers/dateManipulation"
 
 import * as S from "./styles"
 
-const AnnouncementsSection = ({ announcements, title, ctaText }) => {
+const AnnouncementsSection = ({ announcements, title, ctaText }, ref) => {
   const getAnnouncementsList = announcementsList => {
     return (
       <S.AnnouncementsList>
@@ -35,7 +35,7 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
   }
 
   return (
-    <S.AnnoucementsSection>
+    <S.AnnoucementsSection ref={ref}>
       <Container>
         <S.Title>{title}</S.Title>
         {getAnnouncementsList(announcements)}
@@ -45,4 +45,4 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
   )
 }
 
-export default AnnouncementsSection
+export default forwardRef(AnnouncementsSection)

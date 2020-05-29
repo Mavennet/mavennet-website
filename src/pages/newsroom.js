@@ -56,12 +56,10 @@ const NewsroomPage = ({ data }) => {
       <MainSection {...newsRoomMainSection} featuredNews={featuredNews} />
       <NavigationMenu scrollTo={executeScroll} menuItems={menuItems} />
       <AnnouncementsSection
+        ref={announcementRef}
         announcements={announcements.edges}
         {...newsRoomAnnouncementSection}
       />
-      <div ref={announcementRef} style={{ height: "100vh" }}>
-        Hello from announcements
-      </div>
       <div ref={mediaRef} style={{ height: "100vh" }}>
         Hello from Media
       </div>
