@@ -5,6 +5,7 @@ import Layout from "../components/base/Layout"
 
 import MainSection from "../components/IndustriesPost/MainSection"
 import OpportunitiesSection from "../components/IndustriesPost/OpportunitiesSection"
+import ExploreSection from "../components/IndustriesPost/ExploreSection"
 
 const IndustryPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
@@ -23,6 +24,7 @@ const IndustryPost = ({ data }) => {
     <Layout>
       <MainSection {...mainSection} />
       <OpportunitiesSection {...opportunitySection} />
+      <ExploreSection {...solutionsSection} />
     </Layout>
   )
 }

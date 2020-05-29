@@ -36,6 +36,14 @@ export const Image = styled.img`
 
     max-width: 450px;
   }
+
+  @media ${device.desktop} {
+    ${({ imgMaxWidth }) =>
+      imgMaxWidth &&
+      `
+      max-width: ${imgMaxWidth};
+    `}
+  }
 `
 
 export const TextContent = styled.div``
