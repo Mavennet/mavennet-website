@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/base/Layout"
 
 import MainSection from "../components/IndustriesPost/MainSection"
+import OpportunitiesSection from "../components/IndustriesPost/OpportunitiesSection"
 
 const IndustryPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
@@ -21,6 +22,7 @@ const IndustryPost = ({ data }) => {
   return (
     <Layout>
       <MainSection {...mainSection} />
+      <OpportunitiesSection {...opportunitySection} />
     </Layout>
   )
 }
