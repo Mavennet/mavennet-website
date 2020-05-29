@@ -2,6 +2,8 @@ import React from "react"
 
 import Container from "../../base/Container"
 
+import { utcStringToFullMonthDate } from "../../../helpers/dateManipulation"
+
 import * as S from "./styles"
 
 const AnnouncementsSection = ({ announcements, title, ctaText }) => {
@@ -22,13 +24,7 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
                 </S.Header>
                 <S.Content>
                   <S.CardTitle>{item.title}</S.CardTitle>
-                  <S.CardDate>
-                    {new Date(item.date).toLocaleString("default", {
-                      month: "long",
-                      day: "numeric",
-                      year: "numeric",
-                    })}
-                  </S.CardDate>
+                  <S.CardDate>{utcStringToFullMonthDate(item.date)}</S.CardDate>
                 </S.Content>
               </S.AnnouncementCard>
             </S.AnnouncementItem>
