@@ -7,6 +7,7 @@ import MainSection from "../components/IndustriesPost/MainSection"
 import OpportunitiesSection from "../components/IndustriesPost/OpportunitiesSection"
 import ExploreSection from "../components/IndustriesPost/ExploreSection"
 import GetInTouchSection from "../components/IndustriesPost/GetInTouchSection"
+import ImpactSection from "../components/IndustriesPost/ImpactSection"
 import TestimonialSection from "../components/shared/TestimonialSection"
 import NewsSection from "../components/shared/NewsSection"
 
@@ -29,6 +30,7 @@ const IndustryPost = ({ data }) => {
       <MainSection {...mainSection} />
       <OpportunitiesSection {...opportunitySection} />
       <ExploreSection {...solutionsSection} />
+      <ImpactSection {...impactSection} />
       <GetInTouchSection {...getInTouchSection} />
       <TestimonialSection testimonialList={testimonialSection} />
       <NewsSection {...newsSection} />
