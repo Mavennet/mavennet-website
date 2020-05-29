@@ -13,7 +13,6 @@ const SummarySection = ({
   description,
   itemsText,
 }) => {
-  console.log(image)
   const getSummaryByType = type => {
     if (type === "regular") {
       return (

@@ -46,8 +46,6 @@ export const getHeaderItems = items => {
     },
   }
 
-  console.log(headerItems)
-
   return headerItems
 }
 

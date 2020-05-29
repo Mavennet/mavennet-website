@@ -973,7 +973,7 @@ collections:
     identifier_field: name
     fields:
       - { label: "Announcement Title", name: "title", widget: "string" }
-      - { label: "Announcement Date", name: "data", widget: "date" }
+      - { label: "Announcement Date", name: "date", widget: "date" }
       - { label: "Announcement Image", name: "image", widget: "image" }
       - { label: "Announcement Link", name: "link", widget: "string" }
   - label: "Media"
@@ -983,7 +983,7 @@ collections:
     identifier_field: name
     fields:
       - { label: "Media Title", name: "title", widget: "string" }
-      - { label: "Media Date", name: "data", widget: "date" }
+      - { label: "Media Date", name: "date", widget: "date" }
       - { label: "Media Image", name: "image", widget: "image" }
       - { label: "Media Link", name: "link", widget: "string" }
   - label: "Awards"
@@ -993,7 +993,7 @@ collections:
     identifier_field: name
     fields:
       - { label: "Awards Title", name: "title", widget: "string" }
-      - { label: "Awards Date", name: "data", widget: "date" }
+      - { label: "Awards Date", name: "date", widget: "date" }
       - { label: "Awards Image", name: "image", widget: "image" }
       - { label: "Awards Link", name: "link", widget: "string" }
   - label: "Professional Association"
@@ -1007,7 +1007,7 @@ collections:
           name: "title",
           widget: "string",
         }
-      - { label: "Professional Association Date", name: "data", widget: "date" }
+      - { label: "Professional Association Date", name: "date", widget: "date" }
       - {
           label: "Professional Association Image",
           name: "image",

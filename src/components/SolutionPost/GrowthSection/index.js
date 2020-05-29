@@ -13,7 +13,6 @@ const GrowthSection = ({
   items,
 }) => {
   const getNumbersItems = itemsList => {
-    console.log(itemsList)
     return (
       <S.NumbersList>
         {itemsList.map(item => (

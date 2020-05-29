@@ -5,13 +5,14 @@ import Layout from "../components/base/Layout"
 
 import MainSection from "../components/NewsroomPage/MainSection"
 import NavigationMenu from "../components/NewsroomPage/NavigationMenu"
+import AnnouncementsSection from "../components/NewsroomPage/AnnouncementsSection"
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop - 90)
 
 const NewsroomPage = ({ data }) => {
   const post = data.pagesYaml
-
-  const { newsRoomMainSection } = post
+  const { announcements } = data
+  const { newsRoomMainSection, newsRoomAnnouncementSection } = post
 
   const [featuredNews, setFeaturedNews] = useState({})
   const announcementRef = useRef(null)
@@ -54,6 +55,10 @@ const NewsroomPage = ({ data }) => {
     <Layout>
       <MainSection {...newsRoomMainSection} featuredNews={featuredNews} />
       <NavigationMenu scrollTo={executeScroll} menuItems={menuItems} />
+      <AnnouncementsSection
+        announcements={announcements.edges}
+        {...newsRoomAnnouncementSection}
+      />
       <div ref={announcementRef} style={{ height: "100vh" }}>
         Hello from announcements
       </div>
@@ -100,6 +105,22 @@ export const query = graphql`
       newsRoomAnnouncementSection {
         title
         ctaText
+      }
+    }
+    announcements: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//announcements/" } }
+      limit: 4
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            image
+            title
+            date
+            link
+          }
+        }
       }
     }
   }
