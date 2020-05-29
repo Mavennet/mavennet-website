@@ -627,11 +627,45 @@ collections:
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - {
-                  label: "Section Description",
-                  name: "description",
-                  widget: "text",
+                  label: "Featured Announcement",
+                  name: featuredAnnoucement,
+                  widget: "relation",
+                  required: false,
+                  collapsed: "true",
+                  collection: "announcements",
+                  searchFields: ["title"],
+                  valueField: "title",
                 }
-              - { label: "Section Image", name: "image", widget: "image" }
+              - {
+                  label: "Featured Media",
+                  name: featuredMedia,
+                  widget: "relation",
+                  required: false,
+                  collapsed: "true",
+                  collection: "media",
+                  searchFields: ["title"],
+                  valueField: "title",
+                }
+              - {
+                  label: "Featured Awards",
+                  name: featuredAwards,
+                  widget: "relation",
+                  required: false,
+                  collapsed: "true",
+                  collection: "awards",
+                  searchFields: ["title"],
+                  valueField: "title",
+                }
+              - {
+                  label: "Featured Professional Association",
+                  name: featuredProfessionalAssociation,
+                  widget: "relation",
+                  required: false,
+                  collapsed: "true",
+                  collection: "professionalAssociation",
+                  searchFields: ["title"],
+                  valueField: "title",
+                }
               - { label: "CTA Text", name: "ctaText", widget: "string" }
           - label: "Announcement Section"
             name: "newsRoomAnnouncementSection"
@@ -923,7 +957,6 @@ collections:
                 - { label: "Title", name: "title", widget: "string" }
                 - { label: "Image", name: "image", widget: "image" }
                 - { label: "Link", name: "link", widget: "string" }
-
   - label: "Partners"
     name: "partners"
     folder: "site/other/partners"
@@ -933,3 +966,55 @@ collections:
       - { label: "Company name", name: "title", widget: "string" }
       - { label: "Company Logo", name: "logo", widget: "image" }
       - { label: "Company Link", name: "link", widget: "string" }
+  - label: "Announcements"
+    name: "announcements"
+    folder: "site/news/announcements"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Announcement Title", name: "title", widget: "string" }
+      - { label: "Announcement Date", name: "data", widget: "date" }
+      - { label: "Announcement Image", name: "image", widget: "image" }
+      - { label: "Announcement Link", name: "link", widget: "string" }
+  - label: "Media"
+    name: "media"
+    folder: "site/news/media"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Media Title", name: "title", widget: "string" }
+      - { label: "Media Date", name: "data", widget: "date" }
+      - { label: "Media Image", name: "image", widget: "image" }
+      - { label: "Media Link", name: "link", widget: "string" }
+  - label: "Awards"
+    name: "awards"
+    folder: "site/news/awards"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Awards Title", name: "title", widget: "string" }
+      - { label: "Awards Date", name: "data", widget: "date" }
+      - { label: "Awards Image", name: "image", widget: "image" }
+      - { label: "Awards Link", name: "link", widget: "string" }
+  - label: "Professional Association"
+    name: "professionaAssociation"
+    folder: "site/news/professionaAssociation"
+    create: true
+    identifier_field: name
+    fields:
+      - {
+          label: "Professional Association Title",
+          name: "title",
+          widget: "string",
+        }
+      - { label: "Professional Association Date", name: "data", widget: "date" }
+      - {
+          label: "Professional Association Image",
+          name: "image",
+          widget: "image",
+        }
+      - {
+          label: "Professional Association Link",
+          name: "link",
+          widget: "string",
+        }

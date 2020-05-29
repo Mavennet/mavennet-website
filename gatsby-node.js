@@ -86,6 +86,13 @@ exports.createSchemaCustomization = ({ actions }) => {
     type MarkdownRemarkFrontmatterDemoSection implements Node {
       backgroundImage: String
     }
+
+    type PagesYamlNewsRoomMainSection implements Node {
+      featuredAnnoucement: String
+      featuredMedia: String
+      featuredAwards: String
+      featuredProfessionalAssociation: String
+    }
   `
   createTypes(typeDefs)
 }

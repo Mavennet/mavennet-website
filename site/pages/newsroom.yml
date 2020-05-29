@@ -2,9 +2,9 @@ meta:
   title: Newsroom
 newsRoomMainSection:
   title: Newsroom
-  description: Mavennet was nominated a finalist for the Industry Solutions Award
-  image: /assets/screen-shot-2020-05-19-at-11.19.28.png
   ctaText: Read More
+  featuredAnnoucement: "Newss Release: DHS Awards $182K for Cross-Border Oil
+    Import Tracking Using Blockchain"
 newsRoomAnnouncementSection:
   title: Our Latest Announcement
   ctaText: View More Announcements
