@@ -5,13 +5,14 @@ import NewsCard from "../../shared/NewsCard"
 
 import * as S from "./styles"
 
-const NewsSection = ({ title, news }) => {
+const NewsSection = ({ title, news, noBorder }) => {
   const getNewsList = items => {
+    console.log(items)
     return (
       <S.NewsList>
         {items.map(item => (
           <S.NewsItem key={item.item.title}>
-            <NewsCard {...item.item} />
+            <NewsCard {...item.item} noBorder={noBorder} />
           </S.NewsItem>
         ))}
       </S.NewsList>

@@ -7,19 +7,23 @@ import MainSection from "../components/NewsroomPage/MainSection"
 import NavigationMenu from "../components/NewsroomPage/NavigationMenu"
 import AnnouncementsSection from "../components/NewsroomPage/AnnouncementsSection"
 import MediaSection from "../components/NewsroomPage/MediaSection"
+import NewsSection from "../components/shared/NewsSection"
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop - 90)
 
 const NewsroomPage = ({ data }) => {
   const post = data.pagesYaml
-  const { announcements, media } = data
+  const { announcements, media, professionalAssociation } = data
   const {
     newsRoomMainSection,
     newsRoomAnnouncementSection,
     newsRoomMediaSection,
+    newsRoomProfessionalSection,
   } = post
 
   const [featuredNews, setFeaturedNews] = useState({})
+  const [professionalValues, setProfessionalValues] = useState({})
+
   const announcementRef = useRef(null)
   const mediaRef = useRef(null)
   const awardsRef = useRef(null)
@@ -45,6 +49,7 @@ const NewsroomPage = ({ data }) => {
   ]
 
   useEffect(() => {
+    configProfessionalValues(professionalAssociation)
     setFeaturedNews({
       title:
         "Mavenet was nominated a finalist for the Industry Solutions Award",
@@ -52,7 +57,17 @@ const NewsroomPage = ({ data }) => {
       image: "/assets/screen-shot-2020-05-29-at-13.28.07.png",
       link: "https://google.com",
     })
-  }, [])
+  }, [professionalAssociation])
+
+  const configProfessionalValues = professionalList => {
+    const { edges } = professionalList
+
+    const professionalObj = {
+      news: edges.map(({ node }) => ({ item: { ...node.frontmatter } })),
+    }
+
+    setProfessionalValues(professionalObj)
+  }
 
   const executeScroll = ref => scrollToRef(ref)
 
@@ -69,9 +84,11 @@ const NewsroomPage = ({ data }) => {
       <div ref={awardsRef} style={{ height: "100vh" }}>
         Hello from Awards
       </div>
-      <div ref={professionalAssociationRef} style={{ height: "100vh" }}>
-        Hello from Professional Association
-      </div>
+      <NewsSection
+        {...newsRoomProfessionalSection}
+        {...professionalValues}
+        noBorder={true}
+      />
     </Layout>
   )
 }
@@ -128,6 +145,23 @@ export const query = graphql`
     media: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//media/" } }
       limit: 5
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            image
+            title
+            date
+            link
+          }
+        }
+      }
+    }
+
+    professionalAssociation: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//professionalAssociation/" } }
+      limit: 3
     ) {
       edges {
         node {

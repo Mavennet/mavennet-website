@@ -997,8 +997,8 @@ collections:
       - { label: "Awards Image", name: "image", widget: "image" }
       - { label: "Awards Link", name: "link", widget: "string" }
   - label: "Professional Association"
-    name: "professionaAssociation"
-    folder: "site/news/professionaAssociation"
+    name: "professionalAssociation"
+    folder: "site/news/professionalAssociation"
     create: true
     identifier_field: name
     fields:

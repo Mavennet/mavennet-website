@@ -6,7 +6,11 @@ export const NewsCard = styled.article`
   max-width: 385px;
   padding-bottom: 2em;
 
-  border: 1px solid var(--c-p-medium-purple);
+  ${({ noBorder }) =>
+    !noBorder &&
+    `
+      border: 1px solid var(--c-p-medium-purple);
+  `}
 `
 
 export const CardLink = styled.a`
