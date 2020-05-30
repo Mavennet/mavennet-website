@@ -6,13 +6,18 @@ import Layout from "../components/base/Layout"
 import MainSection from "../components/NewsroomPage/MainSection"
 import NavigationMenu from "../components/NewsroomPage/NavigationMenu"
 import AnnouncementsSection from "../components/NewsroomPage/AnnouncementsSection"
+import MediaSection from "../components/NewsroomPage/MediaSection"
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop - 90)
 
 const NewsroomPage = ({ data }) => {
   const post = data.pagesYaml
-  const { announcements } = data
-  const { newsRoomMainSection, newsRoomAnnouncementSection } = post
+  const { announcements, media } = data
+  const {
+    newsRoomMainSection,
+    newsRoomAnnouncementSection,
+    newsRoomMediaSection,
+  } = post
 
   const [featuredNews, setFeaturedNews] = useState({})
   const announcementRef = useRef(null)
@@ -60,9 +65,7 @@ const NewsroomPage = ({ data }) => {
         announcements={announcements.edges}
         {...newsRoomAnnouncementSection}
       />
-      <div ref={mediaRef} style={{ height: "100vh" }}>
-        Hello from Media
-      </div>
+      <MediaSection ref={mediaRef} media={media} {...newsRoomMediaSection} />
       <div ref={awardsRef} style={{ height: "100vh" }}>
         Hello from Awards
       </div>
@@ -108,6 +111,23 @@ export const query = graphql`
     announcements: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//announcements/" } }
       limit: 4
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            image
+            title
+            date
+            link
+          }
+        }
+      }
+    }
+
+    media: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//media/" } }
+      limit: 5
     ) {
       edges {
         node {
