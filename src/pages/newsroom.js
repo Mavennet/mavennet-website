@@ -65,7 +65,7 @@ const NewsroomPage = ({ data }) => {
     const professionalObj = {
       news: edges.map(({ node }) => ({ item: { ...node.frontmatter } })),
     }
-
+    console.log("Professional Obj ", professionalObj)
     setProfessionalValues(professionalObj)
   }
 

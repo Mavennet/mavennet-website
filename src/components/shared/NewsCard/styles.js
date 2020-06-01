@@ -18,9 +18,10 @@ export const CardLink = styled.a`
 `
 
 export const Image = styled.img`
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   width: 100%;
+  max-height: 185px;
 `
 
 export const Title = styled.h4`
