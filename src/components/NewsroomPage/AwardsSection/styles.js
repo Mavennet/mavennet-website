@@ -4,6 +4,10 @@ import { device } from "../../../consts/deviceSizes"
 
 export const AwardsSection = styled.section`
   padding: 2.8125em 0;
+
+  @media ${device.laptop} {
+    padding: 4em 0 5em;
+  }
 `
 
 export const Title = styled.h2`

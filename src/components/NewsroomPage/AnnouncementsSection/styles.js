@@ -26,9 +26,12 @@ export const CTA = styled(TextArrowCTA)`
 
 export const AnnouncementsList = styled.ul`
   margin-top: 3.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media ${device.laptop} {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;

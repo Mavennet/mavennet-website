@@ -4,7 +4,11 @@ import TextArrowCTA from "../../shared/TextArrowCTA"
 
 import { device } from "../../../consts/deviceSizes"
 
-export const MediaSection = styled.section``
+export const MediaSection = styled.section`
+  @media ${device.laptop} {
+    padding: 4em 0;
+  }
+`
 
 export const Title = styled.h2`
   font-size: 3rem;
