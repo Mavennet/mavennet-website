@@ -42,6 +42,7 @@ export const Description = styled.p`
 
 export const HomeButton = styled(Button)`
   margin-top: 2.5em;
+  z-index: 2;
 
   @media ${device.laptop} {
     margin-top: 2.5625em;

@@ -1,10 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import MainSection from "../components/AboutUsPage/MainSection"
+
 const AboutPage = ({ data }) => {
   const post = data.pagesYaml
 
-  return <pre>{JSON.stringify(post, null, 2)}</pre>
+  return <MainSection />
 }
 
 export default AboutPage

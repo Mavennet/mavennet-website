@@ -93,27 +93,29 @@ const Header = ({ menuItems }) => {
   }
 
   return (
-    <ThemeProvider theme={currentTheme}>
-      <S.Header>
-        <S.HeaderContainer>
-          <S.LogoLink to="/">
-            <S.Logo src={currentTheme.logo} alt="Mavennet logo" />
-          </S.LogoLink>
-          <S.Navbar>
-            {getNavList(menuItemsState)}
-            <S.ButtonContainer>
-              <Button text="Get in Touch" to="/contact-us" />
-            </S.ButtonContainer>
-          </S.Navbar>
-          <Hamburguer handleClick={handleDrawerState} />
-        </S.HeaderContainer>
-      </S.Header>
+    <>
+      <ThemeProvider theme={currentTheme}>
+        <S.Header>
+          <S.HeaderContainer>
+            <S.LogoLink to="/">
+              <S.Logo src={currentTheme.logo} alt="Mavennet logo" />
+            </S.LogoLink>
+            <S.Navbar>
+              {getNavList(menuItemsState)}
+              <S.ButtonContainer>
+                <Button text="Get in Touch" to="/contact-us" />
+              </S.ButtonContainer>
+            </S.Navbar>
+            <Hamburguer handleClick={handleDrawerState} />
+          </S.HeaderContainer>
+        </S.Header>
+      </ThemeProvider>
       <SideDrawer
         menuItems={drawerItemsState}
         isOpen={isDrawerOpen}
         closeDrawer={() => handleDrawerState(false)}
       />
-    </ThemeProvider>
+    </>
   )
 }
 
