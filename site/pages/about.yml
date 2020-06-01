@@ -2,8 +2,7 @@ meta:
   title: About
 aboutMainSection:
   title: About us
-  description:
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
     nonummy nibh  "
 aboutSummarySection:
   title: Who We Are
@@ -29,7 +28,7 @@ aboutPrinciplesSection:
           amet, consectetuer adipiscing elit, sed diam nonummy nibh.
           consectetuer adipiscing elit, sed diam nonummy nibh , amet
           consectetuer adipiscing elit, sed diam no
-        image: /assets/screen-shot-2020-05-19-at-07.39.56.png
+        image: /assets/ownership-1.png
     - item:
         title: Integrity
         description: >
@@ -38,7 +37,7 @@ aboutPrinciplesSection:
           amet, consectetuer adipiscing elit, sed diam nonummy nibh.
           consectetuer adipiscing elit, sed diam nonummy nibh , amet
           consectetuer adipiscing elit, sed diam no
-        image: /assets/screen-shot-2020-05-19-at-07.40.05.png
+        image: /assets/integrity-1.png
     - item:
         title: Impact
         description: >
@@ -47,7 +46,7 @@ aboutPrinciplesSection:
           amet, consectetuer adipiscing elit, sed diam nonummy nibh.
           consectetuer adipiscing elit, sed diam nonummy nibh , amet
           consectetuer adipiscing elit, sed diam no
-        image: /assets/screen-shot-2020-05-19-at-07.40.00.png
+        image: /assets/impact-1.png
     - item:
         title: Resilience
         description: >
@@ -56,7 +55,7 @@ aboutPrinciplesSection:
           amet, consectetuer adipiscing elit, sed diam nonummy nibh.
           consectetuer adipiscing elit, sed diam nonummy nibh , amet
           consectetuer adipiscing elit, sed diam no
-        image: /assets/screen-shot-2020-05-19-at-07.40.09.png
+        image: /assets/resiience.png
 aboutPartnersSection:
   title: Our Clients and Partners
   ctaText: Learn More About Partnership

@@ -5,16 +5,20 @@ import Layout from "../components/base/Layout"
 
 import MainSection from "../components/AboutUsPage/MainSection"
 import WhoWeAre from "../components/AboutUsPage/WhoWeAre"
+import PrinciplesSection from "../components/AboutUsPage/PrinciplesSection"
 
 const AboutPage = ({ data }) => {
   const post = data.pagesYaml
 
-  const { aboutMainSection, aboutSummarySection } = post
+  const { aboutMainSection, aboutSummarySection, aboutPrinciplesSection } = post
 
   return (
     <Layout>
       <MainSection {...aboutMainSection} />
       <WhoWeAre {...aboutSummarySection} />
+      <PrinciplesSection
+        principlesList={aboutPrinciplesSection.principlesList}
+      />
     </Layout>
   )
 }

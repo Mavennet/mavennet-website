@@ -5,7 +5,9 @@ import TextArrowCTA from "../../shared/TextArrowCTA"
 import { device } from "../../../consts/deviceSizes"
 
 export const WhoWeAre = styled.section`
-  @media ${device.laptop} {
+  padding-bottom: 2.375em;
+
+  @media ${device.tablet} {
     padding: 4.375em 0;
   }
 `
@@ -38,7 +40,7 @@ export const SubTitle = styled.h3`
 
 export const Description = styled.p`
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 29px;
 
   margin-top: 2em;
