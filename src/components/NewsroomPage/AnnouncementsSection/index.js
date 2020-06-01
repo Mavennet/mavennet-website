@@ -13,7 +13,7 @@ const AnnouncementsSection = ({ announcements, title, ctaText }, ref) => {
         {announcementsList.map((announcement, index) => {
           const item = announcement.node.frontmatter
           return (
-            <S.AnnouncementItem first={index === 0}>
+            <S.AnnouncementItem key={item.title} first={index === 0}>
               <S.AnnouncementCard
                 href={item.link}
                 target="_blank"

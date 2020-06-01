@@ -1,26 +1,27 @@
-import React from "react"
+import React, { forwardRef } from "react"
 
 import Container from "../../base/Container"
 import NewsCard from "../../shared/NewsCard"
 
 import * as S from "./styles"
 
-const NewsSection = ({ title, news, noBorder }) => {
+const NewsSection = ({ title, news, noBorder }, ref) => {
   const getNewsList = items => {
     console.log(items)
     return (
       <S.NewsList>
-        {items.map(item => (
-          <S.NewsItem key={item.item.title}>
-            <NewsCard {...item.item} noBorder={noBorder} />
-          </S.NewsItem>
-        ))}
+        {items &&
+          items.map(item => (
+            <S.NewsItem key={item.item.title}>
+              <NewsCard {...item.item} noBorder={noBorder} />
+            </S.NewsItem>
+          ))}
       </S.NewsList>
     )
   }
 
   return (
-    <S.NewsSection>
+    <S.NewsSection ref={ref}>
       <Container>
         <S.Title>{title}</S.Title>
         {getNewsList(news)}
@@ -29,4 +30,4 @@ const NewsSection = ({ title, news, noBorder }) => {
   )
 }
 
-export default NewsSection
+export default forwardRef(NewsSection)

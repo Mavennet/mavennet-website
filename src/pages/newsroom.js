@@ -7,17 +7,19 @@ import MainSection from "../components/NewsroomPage/MainSection"
 import NavigationMenu from "../components/NewsroomPage/NavigationMenu"
 import AnnouncementsSection from "../components/NewsroomPage/AnnouncementsSection"
 import MediaSection from "../components/NewsroomPage/MediaSection"
+import AwardsSection from "../components/NewsroomPage/AwardsSection"
 import NewsSection from "../components/shared/NewsSection"
 
 const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop - 90)
 
 const NewsroomPage = ({ data }) => {
   const post = data.pagesYaml
-  const { announcements, media, professionalAssociation } = data
+  const { announcements, media, awards, professionalAssociation } = data
   const {
     newsRoomMainSection,
     newsRoomAnnouncementSection,
     newsRoomMediaSection,
+    newsRoomAwardsSection,
     newsRoomProfessionalSection,
   } = post
 
@@ -65,7 +67,7 @@ const NewsroomPage = ({ data }) => {
     const professionalObj = {
       news: edges.map(({ node }) => ({ item: { ...node.frontmatter } })),
     }
-    console.log("Professional Obj ", professionalObj)
+
     setProfessionalValues(professionalObj)
   }
 
@@ -81,10 +83,13 @@ const NewsroomPage = ({ data }) => {
         {...newsRoomAnnouncementSection}
       />
       <MediaSection ref={mediaRef} media={media} {...newsRoomMediaSection} />
-      <div ref={awardsRef} style={{ height: "100vh" }}>
-        Hello from Awards
-      </div>
+      <AwardsSection
+        ref={awardsRef}
+        awards={awards.edges}
+        {...newsRoomAwardsSection}
+      />
       <NewsSection
+        ref={professionalAssociationRef}
         {...newsRoomProfessionalSection}
         {...professionalValues}
         noBorder={true}
@@ -154,6 +159,23 @@ export const query = graphql`
             title
             date
             link
+          }
+        }
+      }
+    }
+
+    awards: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//awards/" } }
+      sort: { fields: frontmatter___date }
+      limit: 4
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            image
+            title
+            date
           }
         }
       }
