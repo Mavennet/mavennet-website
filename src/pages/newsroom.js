@@ -10,7 +10,12 @@ import MediaSection from "../components/NewsroomPage/MediaSection"
 import AwardsSection from "../components/NewsroomPage/AwardsSection"
 import NewsSection from "../components/shared/NewsSection"
 
-const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop - 90)
+const scrollToRef = ref =>
+  window.scrollTo({
+    left: 0,
+    top: ref.current.offsetTop - 90,
+    behavior: "smooth",
+  })
 
 const NewsroomPage = ({ data }) => {
   const post = data.pagesYaml
