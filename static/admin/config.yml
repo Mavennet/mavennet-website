@@ -314,7 +314,9 @@ collections:
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
+              - { label: "SubTitle", name: "subTitle", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
+              - { label: "CTA Text", name: "ctaText", widget: "text" }
           - label: "Principles Section"
             name: "aboutPrinciplesSection"
             widget: "object"

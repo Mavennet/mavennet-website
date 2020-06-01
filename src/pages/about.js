@@ -1,14 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/base/Layout"
+
 import MainSection from "../components/AboutUsPage/MainSection"
+import WhoWeAre from "../components/AboutUsPage/WhoWeAre"
 
 const AboutPage = ({ data }) => {
   const post = data.pagesYaml
 
-  const { aboutMainSection } = post
+  const { aboutMainSection, aboutSummarySection } = post
 
-  return <MainSection {...aboutMainSection} />
+  return (
+    <Layout>
+      <MainSection {...aboutMainSection} />
+      <WhoWeAre {...aboutSummarySection} />
+    </Layout>
+  )
 }
 
 export default AboutPage
@@ -59,7 +67,9 @@ export const query = graphql`
       }
       aboutSummarySection {
         title
+        subTitle
         description
+        ctaText
       }
       aboutTeamSection {
         teamList {

@@ -2,10 +2,12 @@ meta:
   title: About
 aboutMainSection:
   title: About us
-  description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  description:
+    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
     nonummy nibh  "
 aboutSummarySection:
   title: Who We Are
+  subTitle: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
   description: >
     consectetuer adipiscing elit, sed diam nonummy nibh , amet consectetuer
     adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit amet, consectetuer
@@ -14,7 +16,8 @@ aboutSummarySection:
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
     nibh  diam nonummy nibh , amet consectetuer adipiscing elit, sed diam
     nonummy. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-    nonummy nibh  
+    nonummy nibh
+  ctaText: Meet the Mavennet Team
 aboutPrinciplesSection:
   title: Our Principles
   principlesList:
