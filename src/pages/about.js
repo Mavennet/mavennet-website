@@ -6,7 +6,9 @@ import MainSection from "../components/AboutUsPage/MainSection"
 const AboutPage = ({ data }) => {
   const post = data.pagesYaml
 
-  return <MainSection />
+  const { aboutMainSection } = post
+
+  return <MainSection {...aboutMainSection} />
 }
 
 export default AboutPage
