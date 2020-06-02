@@ -42,5 +42,6 @@ export const MainButton = styled(Button)`
   width: fit-content;
   @media ${device.laptop} {
     margin-top: 2.875em;
+    margin-left: 0;
   }
 `

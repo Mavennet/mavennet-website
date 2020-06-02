@@ -7,6 +7,7 @@ import Layout from "../components/base/Layout"
 import MainSection from "../components/Partnership/MainSection"
 import PartnersSection from "../components/Partnership/PartnersSection"
 import ModelSection from "../components/Partnership/ModelSection"
+import WhySection from "../components/Partnership/WhySection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
 
@@ -15,13 +16,14 @@ const PartnershipPage = ({ data }) => {
 
   const partnersData = usePartnersData()
 
-  const { partnersMainSection, partnersModelSection } = post
+  const { partnersMainSection, partnersModelSection, partnersWhySection } = post
 
   return (
     <Layout>
       <MainSection {...partnersMainSection} />
       <PartnersSection partners={partnersData} />
       <ModelSection {...partnersModelSection} />
+      <WhySection {...partnersWhySection} />
     </Layout>
   )
 }
@@ -36,6 +38,7 @@ export const query = graphql`
         title
       }
       partnersWhySection {
+        title
         whyList {
           item {
             title
