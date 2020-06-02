@@ -3,17 +3,26 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
+import Container from "../components/base/Container"
 
 import MainSection from "../components/Partnership/MainSection"
+import PartnersSection from "../components/Partnership/PartnersSection"
+
+import { usePartnersData } from "../hooks/use-partners-data"
 
 const PartnershipPage = ({ data }) => {
   const post = data.pagesYaml
+
+  const partnersData = usePartnersData()
 
   const { partnersMainSection } = post
 
   return (
     <Layout>
       <MainSection {...partnersMainSection} />
+      <Container>
+        <PartnersSection partners={partnersData} />
+      </Container>
     </Layout>
   )
 }
