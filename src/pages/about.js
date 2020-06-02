@@ -7,6 +7,7 @@ import MainSection from "../components/AboutUsPage/MainSection"
 import WhoWeAre from "../components/AboutUsPage/WhoWeAre"
 import PrinciplesSection from "../components/AboutUsPage/PrinciplesSection"
 import PartnersSection from "../components/shared/PartnersSection"
+import AwardsSection from "../components/AboutUsPage/AwardsSection"
 import OurTeamSection from "../components/AboutUsPage/OurTeamSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
@@ -22,6 +23,7 @@ const AboutPage = ({ data }) => {
     aboutSummarySection,
     aboutPrinciplesSection,
     aboutPartnersSection,
+    aboutAwardsSection,
     aboutTeamSection,
   } = post
 
@@ -33,6 +35,7 @@ const AboutPage = ({ data }) => {
         principlesList={aboutPrinciplesSection.principlesList}
       />
       <PartnersSection {...aboutPartnersSection} partners={partnersData} />
+      <AwardsSection {...aboutAwardsSection} />
       <OurTeamSection {...aboutTeamSection} team={teamData} />
     </Layout>
   )
@@ -45,13 +48,8 @@ export const query = graphql`
     pagesYaml(meta: { title: { eq: "About" } }) {
       id
       aboutAwardsSection {
-        awardsList {
-          item {
-            title
-            image
-            link
-          }
-        }
+        title
+        awardsList
       }
       aboutLearnSection {
         linksList {

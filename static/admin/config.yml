@@ -354,18 +354,11 @@ collections:
                 name: "awardsList"
                 widget: "list"
                 field:
-                  label: "Award Item"
-                  name: "item"
-                  widget: "object"
-                  fields:
-                    - { label: "Award Title", name: "title", widget: string }
-                    - { label: "Award Image", name: "image", widget: "image" }
-                    - {
-                        label: "Award link",
-                        name: "link",
-                        widget: "string",
-                        optional: true,
-                      }
+                  widget: "relation"
+                  collection: "awards"
+                  searchFields: ["title"]
+                  valueField: "image"
+                  displayFields: ["title"]
           - label: "Team Section"
             name: "aboutTeamSection"
             widget: "object"

@@ -2,8 +2,7 @@ meta:
   title: About
 aboutMainSection:
   title: About us
-  description:
-    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
     nonummy nibh  "
 aboutSummarySection:
   title: Who We Are
@@ -63,14 +62,10 @@ aboutPartnersSection:
 aboutAwardsSection:
   title: Awards & Recognition
   awardsList:
-    - item:
-        title: "Award #1"
-        image: /assets/screen-shot-2020-05-14-at-11.00.11.png
-        link: google.com
-    - item:
-        title: "Award #2"
-        image: /assets/screen-shot-2020-05-14-at-11.00.11.png
-        link: google.com
+    - /assets/screen-shot-2020-06-01-at-13.03.25.png
+    - /assets/screen-shot-2020-06-01-at-13.03.29.png
+    - /assets/screen-shot-2020-06-01-at-13.03.29.png
+    - /assets/screen-shot-2020-06-01-at-13.03.29.png
 aboutTeamSection:
   title: Meet the Mavennet Team
   ctaText: Join Our Team
