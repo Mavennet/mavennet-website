@@ -56,7 +56,7 @@ export const TeamList = styled.ul`
     margin-top: 2.1875em;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
   }
@@ -68,12 +68,13 @@ export const ListItem = styled.li`
   }
 
   @media ${device.laptop} {
-    margin-top: 3.125em !important;
+    margin: 3.125em 2.5% 0 2.5% !important;
     width: 30%;
   }
 
   @media ${device.desktop} {
     width: 23%;
+    margin: 3.125em 1% 0 1% !important;
   }
 `
 
