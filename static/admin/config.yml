@@ -342,21 +342,6 @@ collections:
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: string }
-              - label: "Partners List"
-                name: "partnersList"
-                widget: "list"
-                field:
-                  label: "Partner Item"
-                  name: "item"
-                  widget: "object"
-                  fields:
-                    - { label: "Partner Name", name: "name", widget: "string" }
-                    - {
-                        label: "Partner Website",
-                        name: "link",
-                        widget: "string",
-                      }
-                    - { label: "Partner Logo", name: "logo", widget: "image" }
               - label: "CTA Text"
                 name: "ctaText"
                 wiget: "string"
@@ -386,18 +371,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
-              - label: "Team List"
-                name: "teamList"
-                widget: "list"
-                field:
-                  label: "Team member"
-                  name: "item"
-                  widget: "object"
-                  fields:
-                    - { label: "Name", name: "name", widget: "string" }
-                    - { label: "Position", name: "position", widget: "string" }
-                    - { label: "Image", name: "image", widget: "image" }
-                    - { label: "Link", name: "link", widget: "string" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
           - label: "Learn More Section"
             name: "aboutLearnSection"
             widget: "object"
@@ -1019,4 +993,17 @@ collections:
           label: "Professional Association Link",
           name: "link",
           widget: "string",
+        }
+  - label: "Our Team"
+    name: "ourTeam"
+    folder: "site/company/ourTeam"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Professional Association Image",
+          name: "image",
+          widget: "image",
         }

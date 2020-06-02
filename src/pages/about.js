@@ -6,11 +6,24 @@ import Layout from "../components/base/Layout"
 import MainSection from "../components/AboutUsPage/MainSection"
 import WhoWeAre from "../components/AboutUsPage/WhoWeAre"
 import PrinciplesSection from "../components/AboutUsPage/PrinciplesSection"
+import PartnersSection from "../components/shared/PartnersSection"
+import OurTeamSection from "../components/AboutUsPage/OurTeamSection"
+
+import { usePartnersData } from "../hooks/use-partners-data"
+import { useOurTeamData } from "../hooks/use-ourTeam-data"
 
 const AboutPage = ({ data }) => {
   const post = data.pagesYaml
+  const partnersData = usePartnersData()
+  const teamData = useOurTeamData()
 
-  const { aboutMainSection, aboutSummarySection, aboutPrinciplesSection } = post
+  const {
+    aboutMainSection,
+    aboutSummarySection,
+    aboutPrinciplesSection,
+    aboutPartnersSection,
+    aboutTeamSection,
+  } = post
 
   return (
     <Layout>
@@ -19,6 +32,8 @@ const AboutPage = ({ data }) => {
       <PrinciplesSection
         principlesList={aboutPrinciplesSection.principlesList}
       />
+      <PartnersSection {...aboutPartnersSection} partners={partnersData} />
+      <OurTeamSection {...aboutTeamSection} team={teamData} />
     </Layout>
   )
 }
@@ -52,13 +67,8 @@ export const query = graphql`
         description
       }
       aboutPartnersSection {
-        partnersList {
-          item {
-            name
-            link
-            logo
-          }
-        }
+        title
+        ctaText
       }
       aboutPrinciplesSection {
         principlesList {
@@ -76,14 +86,8 @@ export const query = graphql`
         ctaText
       }
       aboutTeamSection {
-        teamList {
-          item {
-            name
-            position
-            image
-            link
-          }
-        }
+        title
+        ctaText
       }
       meta {
         title

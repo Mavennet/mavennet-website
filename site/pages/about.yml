@@ -2,7 +2,8 @@ meta:
   title: About
 aboutMainSection:
   title: About us
-  description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  description:
+    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
     nonummy nibh  "
 aboutSummarySection:
   title: Who We Are
@@ -59,15 +60,6 @@ aboutPrinciplesSection:
 aboutPartnersSection:
   title: Our Clients and Partners
   ctaText: Learn More About Partnership
-  partnersList:
-    - item:
-        name: Homeland Security
-        link: google.com
-        logo: /assets/screen-shot-2020-05-13-at-13.48.13.png
-    - item:
-        logo: /assets/screen-shot-2020-05-14-at-11.00.21.png
-        name: Ontario
-        link: google.com
 aboutAwardsSection:
   title: Awards & Recognition
   awardsList:
@@ -80,18 +72,8 @@ aboutAwardsSection:
         image: /assets/screen-shot-2020-05-14-at-11.00.11.png
         link: google.com
 aboutTeamSection:
-  title: Our Team
-  teamList:
-    - item:
-        name: Patrick Mandic
-        position: CEO
-        image: /assets/screen-shot-2020-05-19-at-07.43.36.png
-        link: google.com
-    - item:
-        name: Kesem Frank
-        position: President
-        image: /assets/screen-shot-2020-05-19-at-07.43.52.png
-        link: google.com
+  title: Meet the Mavennet Team
+  ctaText: Join Our Team
 aboutLearnSection:
   title: Learn More About Mavennet
   linksList:

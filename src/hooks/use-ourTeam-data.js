@@ -1,19 +1,19 @@
 import { useStaticQuery, graphql } from "gatsby"
 
-export const usePartnersData = () => {
+export const useOurTeamData = () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
-      query PartnersData {
+      query OurTeamData {
         allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "//partners/" } }
+          filter: { fileAbsolutePath: { regex: "//ourTeam/" } }
         ) {
           edges {
             node {
               id
               frontmatter {
                 title
-                logo
-                link
+                image
+                name
               }
             }
           }
@@ -24,13 +24,13 @@ export const usePartnersData = () => {
   return allMarkdownRemark.edges.map(item => {
     const { node } = item
     const { id } = node
-    const { title, logo, link } = node.frontmatter
+    const { name, title, image } = node.frontmatter
 
     return {
       id,
+      name,
       title,
-      logo,
-      link,
+      image,
     }
   })
 }
