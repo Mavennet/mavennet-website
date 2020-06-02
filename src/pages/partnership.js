@@ -3,10 +3,10 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
-import Container from "../components/base/Container"
 
 import MainSection from "../components/Partnership/MainSection"
 import PartnersSection from "../components/Partnership/PartnersSection"
+import ModelSection from "../components/Partnership/ModelSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
 
@@ -15,12 +15,13 @@ const PartnershipPage = ({ data }) => {
 
   const partnersData = usePartnersData()
 
-  const { partnersMainSection } = post
+  const { partnersMainSection, partnersModelSection } = post
 
   return (
     <Layout>
       <MainSection {...partnersMainSection} />
       <PartnersSection partners={partnersData} />
+      <ModelSection {...partnersModelSection} />
     </Layout>
   )
 }
@@ -52,6 +53,7 @@ export const query = graphql`
         }
       }
       partnersModelSection {
+        title
         modelList {
           item {
             title
