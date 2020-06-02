@@ -2,14 +2,17 @@ import React from "react"
 
 import TextOnlyMainSection from "../../shared/TextOnlyMainSection"
 
-import Background from "../../../assets/images/contact-us-bg.png"
+import background from "../../../assets/images/space_background.png"
 
-const MainSection = ({ title, description }) => {
+import * as S from "./styles"
+
+const MainSection = ({ title, description, ctaText }) => {
   return (
     <TextOnlyMainSection
       title={title}
       description={description}
-      background={Background}
+      ctaText={ctaText}
+      background={background}
     />
   )
 }

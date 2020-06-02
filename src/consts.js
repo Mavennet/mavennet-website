@@ -38,7 +38,7 @@ export const COMPANY = {
     },
     {
       name: "Partners",
-      to: "/partners",
+      to: "/partnership",
     },
     {
       name: "Career",

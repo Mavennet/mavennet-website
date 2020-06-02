@@ -2,10 +2,20 @@ import React from "react"
 
 import { graphql } from "gatsby"
 
+import Layout from "../components/base/Layout"
+
+import MainSection from "../components/Partnership/MainSection"
+
 const PartnershipPage = ({ data }) => {
   const post = data.pagesYaml
 
-  return <pre>{JSON.stringify(post, null, 2)}</pre>
+  const { partnersMainSection } = post
+
+  return (
+    <Layout>
+      <MainSection {...partnersMainSection} />
+    </Layout>
+  )
 }
 
 export default PartnershipPage
