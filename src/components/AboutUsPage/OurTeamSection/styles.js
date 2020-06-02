@@ -68,7 +68,7 @@ export const ListItem = styled.li`
   }
 
   @media ${device.laptop} {
-    margin: 3.125em 2.5% 0 2.5% !important;
+    margin: 3.125em 1.5% 0 1.5% !important;
     width: 30%;
   }
 
@@ -104,4 +104,7 @@ export const Position = styled.p`
   margin-top: 0.25em;
 `
 
-export const CTA = styled(TextArrowCTA)``
+export const CTA = styled(TextArrowCTA)`
+  margin-left: auto;
+  margin-right: auto;
+`

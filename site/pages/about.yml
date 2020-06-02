@@ -2,7 +2,8 @@ meta:
   title: About
 aboutMainSection:
   title: About us
-  description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  description:
+    "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
     nonummy nibh  "
 aboutSummarySection:
   title: Who We Are
@@ -76,14 +77,14 @@ aboutLearnSection:
         ctaText: Career
         description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
           consectetuer adipiscing elit.
-        link: career
+        link: /career
     - item:
         ctaText: Newsroom
         description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
           consectetuer adipiscing elit.
-        link: newsroom
+        link: /newsroom
     - item:
         ctaText: Partners
         description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
           consectetuer adipiscing elit.
-        link: partners
+        link: /partners

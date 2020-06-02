@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 export const Cta = styled(Link)`
+  width: fit-content;
   color: var(--c-p-royal-purple);
 
   display: flex;
@@ -18,7 +19,7 @@ export const Cta = styled(Link)`
 
 export const Text = styled.h4`
   margin-right: 0.33em;
-  font-size: 1rem !important;
+  font-size: inherit;
 `
 
 export const Arrow = styled.svg`

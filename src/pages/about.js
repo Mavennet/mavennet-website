@@ -9,6 +9,7 @@ import PrinciplesSection from "../components/AboutUsPage/PrinciplesSection"
 import PartnersSection from "../components/shared/PartnersSection"
 import AwardsSection from "../components/AboutUsPage/AwardsSection"
 import OurTeamSection from "../components/AboutUsPage/OurTeamSection"
+import LearnMoreSection from "../components/AboutUsPage/LearnMoreSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
 import { useOurTeamData } from "../hooks/use-ourTeam-data"
@@ -25,6 +26,7 @@ const AboutPage = ({ data }) => {
     aboutPartnersSection,
     aboutAwardsSection,
     aboutTeamSection,
+    aboutLearnSection,
   } = post
 
   return (
@@ -37,6 +39,7 @@ const AboutPage = ({ data }) => {
       <PartnersSection {...aboutPartnersSection} partners={partnersData} />
       <AwardsSection {...aboutAwardsSection} />
       <OurTeamSection {...aboutTeamSection} team={teamData} />
+      <LearnMoreSection {...aboutLearnSection} />
     </Layout>
   )
 }
@@ -52,6 +55,7 @@ export const query = graphql`
         awardsList
       }
       aboutLearnSection {
+        title
         linksList {
           item {
             ctaText
