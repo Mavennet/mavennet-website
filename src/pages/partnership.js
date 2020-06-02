@@ -20,9 +20,7 @@ const PartnershipPage = ({ data }) => {
   return (
     <Layout>
       <MainSection {...partnersMainSection} />
-      <Container>
-        <PartnersSection partners={partnersData} />
-      </Container>
+      <PartnersSection partners={partnersData} />
     </Layout>
   )
 }

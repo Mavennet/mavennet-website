@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 import { device } from "../../../consts/deviceSizes"
 
-export const PartnersSection = styled.section`
+export const GenericPartnersSection = styled.section`
   padding: 4.0625em 0 2.1875em;
 `
 

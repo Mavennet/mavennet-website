@@ -6,7 +6,7 @@ import Layout from "../components/base/Layout"
 import MainSection from "../components/HomePage/MainSection/MainSection"
 import ServiceSection from "../components/HomePage/ServiceSection"
 import SolutionsSection from "../components/HomePage/SolutionsSection"
-import PartnersSection from "../components/shared/PartnersSection"
+import PartnersSection from "../components/shared/GenericPartnersSection"
 import NewsSection from "../components/HomePage/NewsSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"

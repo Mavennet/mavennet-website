@@ -5,7 +5,7 @@ import TextArrowCTA from "../../shared/TextArrowCTA"
 
 import * as S from "./styles"
 
-const PartnersSection = ({ title, ctaText, partners }) => {
+const GenericPartnersSection = ({ title, ctaText, partners, className }) => {
   const getPartnersList = items => {
     return (
       <S.PartnersList>
@@ -21,16 +21,18 @@ const PartnersSection = ({ title, ctaText, partners }) => {
   }
 
   return (
-    <S.PartnersSection>
+    <S.GenericPartnersSection className={className}>
       <Container center>
         <S.Title>{title}</S.Title>
         {getPartnersList(partners)}
-        <S.CTAContainer>
-          <TextArrowCTA text={ctaText} to="/partnership" />
-        </S.CTAContainer>
+        {ctaText && (
+          <S.CTAContainer>
+            <TextArrowCTA text={ctaText} to="/partnership" />
+          </S.CTAContainer>
+        )}
       </Container>
-    </S.PartnersSection>
+    </S.GenericPartnersSection>
   )
 }
 
-export default PartnersSection
+export default GenericPartnersSection
