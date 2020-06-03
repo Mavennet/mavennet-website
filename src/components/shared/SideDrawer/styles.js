@@ -4,7 +4,8 @@ import { Link } from "gatsby"
 
 export const SideDrawer = styled.aside`
   overflow-y: scroll;
-  height: 100%;
+  min-height: -webkit-fill-available;
+  height: 100vh;
   position: fixed;
   top: 0;
   bottom: 0;
