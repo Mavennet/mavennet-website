@@ -96,6 +96,10 @@ export const TimeLineCircle = styled.div`
 
     border: 2px solid var(${props => props.color});
   }
+
+  @media ${device.laptopL} {
+    margin-right: 20px;
+  }
 `
 
 export const TimeLineDate = styled.span`
@@ -104,6 +108,10 @@ export const TimeLineDate = styled.span`
   line-height: 29px;
 
   margin-right: 1.125em;
+
+  @media ${device.laptopL} {
+    margin-right: 2.125em;
+  }
 `
 
 export const TimeLineDescription = styled.p`

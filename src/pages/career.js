@@ -4,15 +4,17 @@ import { graphql } from "gatsby"
 import Layout from "../components/base/Layout"
 import MainSection from "../components/Career/MainSection"
 import TimeLineSection from "../components/Career/TimeLineSection"
+import WhoSection from "../components/Career/WhoSection"
 
 const CareerPage = ({ data }) => {
   const post = data.pagesYaml
-  const { careerMainSection, careerOurStorySection } = post
+  const { careerMainSection, careerOurStorySection, careerWhoSection } = post
 
   return (
     <Layout>
       <MainSection {...careerMainSection} />
       <TimeLineSection {...careerOurStorySection} />
+      <WhoSection {...careerWhoSection} />
     </Layout>
   )
 }
@@ -27,6 +29,7 @@ export const query = graphql`
         title
       }
       careerWhoSection {
+        title
         reasonsList {
           item {
             description
