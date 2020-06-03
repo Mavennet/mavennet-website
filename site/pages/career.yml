@@ -4,9 +4,10 @@ careerMainSection:
   title: Join Our Team
   description: Become a Maven from now!
   ctaText: See Open Positions
+  image: /assets/screen-shot-2020-06-02-at-23.14.22.png
 careerOurStorySection:
   title: Our Story Headline
-  image: /assets/screen-shot-2020-05-19-at-10.58.09.png
+  image: /assets/mavennet-team-2.png
   timeline:
     - item:
         year: 2017

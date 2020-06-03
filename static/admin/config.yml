@@ -481,6 +481,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Section Image", name: "image", widget: "image" }
               - {
                   label: "Section Description",
                   name: "description",

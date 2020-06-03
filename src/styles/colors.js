@@ -7,7 +7,9 @@ const colors = css`
     --c-p-selago: #f9f5fe;
     --c-p-selago-dark: #f1e7fc;
     --c-p-medium-purple: #d5b7f6;
+    --c-p-biloba-flower: #b688e8;
     --c-p-royal-purple: #964beb;
+    --c-p-purple-heart: #681dbc;
     --c-p-royal-purple-dark: #6e37ab;
     --c-p-meteorite: #51277b;
     --c-p-haiti: #230f32;

@@ -1,10 +1,20 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/base/Layout"
+import MainSection from "../components/Career/MainSection"
+import TimeLineSection from "../components/Career/TimeLineSection"
+
 const CareerPage = ({ data }) => {
   const post = data.pagesYaml
+  const { careerMainSection, careerOurStorySection } = post
 
-  return <pre>{JSON.stringify(post, null, 2)}</pre>
+  return (
+    <Layout>
+      <MainSection {...careerMainSection} />
+      <TimeLineSection {...careerOurStorySection} />
+    </Layout>
+  )
 }
 
 export default CareerPage
@@ -25,6 +35,8 @@ export const query = graphql`
         }
       }
       careerOurStorySection {
+        title
+        image
         timeline {
           item {
             year
@@ -46,6 +58,7 @@ export const query = graphql`
         }
       }
       careerMainSection {
+        image
         title
         description
         ctaText
