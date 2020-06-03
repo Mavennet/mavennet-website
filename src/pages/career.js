@@ -5,16 +5,23 @@ import Layout from "../components/base/Layout"
 import MainSection from "../components/Career/MainSection"
 import TimeLineSection from "../components/Career/TimeLineSection"
 import WhoSection from "../components/Career/WhoSection"
+import TestimonialSection from "../components/Career/TestimonialSection"
 
 const CareerPage = ({ data }) => {
   const post = data.pagesYaml
-  const { careerMainSection, careerOurStorySection, careerWhoSection } = post
+  const {
+    careerMainSection,
+    careerOurStorySection,
+    careerWhoSection,
+    careerDaySection,
+  } = post
 
   return (
     <Layout>
       <MainSection {...careerMainSection} />
       <TimeLineSection {...careerOurStorySection} />
       <WhoSection {...careerWhoSection} />
+      <TestimonialSection {...careerDaySection} />
     </Layout>
   )
 }
@@ -67,6 +74,7 @@ export const query = graphql`
         ctaText
       }
       careerDaySection {
+        title
         testimonialsList {
           item {
             name
