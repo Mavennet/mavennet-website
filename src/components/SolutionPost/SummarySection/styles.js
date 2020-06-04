@@ -86,11 +86,17 @@ export const ImageWrapper = styled.div`
   @media ${device.laptop} {
     max-width: ${props => (props.maxWidth ? props.maxWidth : "268px")};
   }
+
+  @media ${device.laptopL} {
+    max-width: unset;
+  }
 `
 
 export const Image = styled.img`
   width: 100%;
   display: block;
+  max-height: 300px;
+  object-fit: contain;
 `
 
 export const ItemsList = styled.ul`

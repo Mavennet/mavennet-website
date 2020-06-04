@@ -758,6 +758,13 @@ collections:
         collapsed: "true"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Type",
+              name: "featuresType",
+              widget: "select",
+              options: ["regular", "timeline"],
+              default: "regular",
+            }
           - label: "Feature List"
             name: "items"
             widget: "list"

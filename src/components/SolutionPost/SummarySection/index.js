@@ -31,13 +31,15 @@ const SummarySection = ({
             </S.Wrapper>
           </S.Header>
           <S.Content>
-            <S.ItemsList>
-              {itemsText.map(item => (
-                <S.ListItem key={item} width="45%">
-                  <CheckIconText text={item} />
-                </S.ListItem>
-              ))}
-            </S.ItemsList>
+            {itemsText && (
+              <S.ItemsList>
+                {itemsText.map(item => (
+                  <S.ListItem key={item} width="45%">
+                    <CheckIconText text={item} />
+                  </S.ListItem>
+                ))}
+              </S.ItemsList>
+            )}
           </S.Content>
         </>
       )

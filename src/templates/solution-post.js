@@ -80,6 +80,7 @@ export const query = graphql`
         }
         featuresSection {
           title
+          featuresType
           items {
             title
             description

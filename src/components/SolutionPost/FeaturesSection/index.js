@@ -3,6 +3,7 @@ import React from "react"
 import Container from "../../base/Container"
 
 import FeatureItem from "../../shared/FeatureItem"
+import FeatureTimeline from "../../shared/FeatureTimeline"
 
 import * as S from "./styles"
 
@@ -18,12 +19,16 @@ const getFeatureList = list => {
   )
 }
 
-const FeaturesSection = ({ title, items }) => {
+const FeaturesSection = ({ title, featuresType, items }) => {
   return (
     <S.FeaturesSection>
       <Container center>
         <S.Title>{title}</S.Title>
-        {getFeatureList(items)}
+        {featuresType === "regular" ? (
+          getFeatureList(items)
+        ) : (
+          <FeatureTimeline items={items} />
+        )}
       </Container>
     </S.FeaturesSection>
   )
