@@ -28,6 +28,7 @@ featuredSection:
   title: Digital Asset Kit powered by Mavennet
 featuresSection:
   title: How it Works
+  featuresType: timeline
   items:
     - title: Purchase QCAD Easily
       description:

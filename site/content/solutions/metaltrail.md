@@ -7,7 +7,8 @@ mainSection:
 firstSection:
   - type: growthSection
     title: Opportunity
-    description: Proving product origin, specifications and composition is a manual
+    description:
+      Proving product origin, specifications and composition is a manual
       process, reliant on paper-based communications systems. Additionally,
       there is no comprehensive method to track a product’s carbon footprint
       throughout the supply chain, upstream and downstream.
@@ -17,11 +18,13 @@ firstSection:
         description: of steel suppliers report incidences of counterfeit steel
       - image: /assets/screen-shot-2020-05-13-at-13.47.49.png
         numbers: "0"
-        description: The falsification of Mill Test Certificates has led to millionaire
+        description:
+          The falsification of Mill Test Certificates has led to millionaire
           losses for steel producers
       - image: /assets/screen-shot-2020-05-13-at-13.47.49.png
         numbers: "0"
-        description: Excess capacity in the global steel industry exceeds 800 m tonnes
+        description:
+          Excess capacity in the global steel industry exceeds 800 m tonnes
           annually
 featuredSection:
   featureType: banner
@@ -34,6 +37,7 @@ featuredSection:
     - "Support for Digitization of the Border Clearance Process "
 featuresSection:
   title: Key Features
+  featuresType: timeline
   items:
     - title: Creation and record of events
       description: MetalTrail has the capability to capture production,
@@ -41,11 +45,13 @@ featuresSection:
         product’s carbon footprint dynamically.
       image: /assets/screen-shot-2020-05-13-at-13.47.57.png
     - title: "End-to-end Product Traceability "
-      description: Easily trace back your products’ composition to the country of
+      description:
+        Easily trace back your products’ composition to the country of
         origin, from raw materials to finished products.
       image: /assets/screen-shot-2020-05-13-at-13.48.01.png
     - title: Trusted Real-Time Analytics
-      description: Aggregate insights of the metals supply chain, predictions of data
+      description:
+        Aggregate insights of the metals supply chain, predictions of data
         trends and detection of counterfeit or misclassified products.
       image: /assets/nf_f02.png
 demoSection:
@@ -58,7 +64,8 @@ testimonialSection:
       author: Jane Doe
       position: Title
       companyLogo: /assets/screen-shot-2020-05-13-at-13.48.13.png
-      message: “ Cilent Testimony consectetuer adipiscing elit, sed diam nonummy nibh
+      message:
+        “ Cilent Testimony consectetuer adipiscing elit, sed diam nonummy nibh
         , amet consectetuer adipiscing elit, sed diam nonummy, amet consectetuer
         adipiscing elit, sed diam nonummy, consectetuer adipiscing elit, sed
         diam nonummy nibh  “

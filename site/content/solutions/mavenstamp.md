@@ -21,6 +21,7 @@ firstSection:
       - Instant Proof of Possession
 featuresSection:
   title: Key Features
+  featuresType: regular
   items:
     - title: Easily Stamp Data
       description: Upload your digital content in a few simple steps

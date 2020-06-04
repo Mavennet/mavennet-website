@@ -37,6 +37,7 @@ featuredSection:
     - Neoflow provides seamless integration with legacy systems
 featuresSection:
   title: Key Features
+  featuresType: regular
   items:
     - title: Tracking of Events
       description:

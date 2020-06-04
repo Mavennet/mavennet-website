@@ -4,6 +4,8 @@ import { device } from "../../../consts/deviceSizes"
 
 export const FeatureTimeline = styled.div`
   margin-top: 4.875em;
+
+  width: 100%;
 `
 
 export const FeatureList = styled.ul``
