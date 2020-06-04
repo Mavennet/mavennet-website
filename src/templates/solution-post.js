@@ -7,6 +7,7 @@ import MainSection from "../components/SolutionPost/MainSection"
 import GrowthSection from "../components/SolutionPost/GrowthSection"
 import SummarySection from "../components/SolutionPost/SummarySection"
 import SolutionDescriptionSection from "../components/SolutionPost/SolutionDescriptionSection"
+import HowItWorksSection from "../components/SolutionPost/HowItWorksSection"
 import FeaturesSection from "../components/SolutionPost/FeaturesSection"
 import DemoSection from "../components/SolutionPost/DemoSection"
 import DemoSectionBg from "../components/SolutionPost/DemoSectionBg"
@@ -20,6 +21,7 @@ const SolutionPost = ({ data }) => {
     mainSection,
     firstSection,
     featuredSection,
+    howItWorksSection,
     featuresSection,
     demoSection,
     testimonialSection,
@@ -52,6 +54,7 @@ const SolutionPost = ({ data }) => {
       <MainSection {...mainSection} />
       {getFirstSection(firstSection)}
       {featuredSection && <SolutionDescriptionSection {...featuredSection} />}
+      {howItWorksSection && <HowItWorksSection {...howItWorksSection} />}
       <FeaturesSection {...featuresSection} />
       {getDemoSection(demoSection)}
       <TestimonialSection testimonialList={testimonialSection} />
@@ -77,6 +80,14 @@ export const query = graphql`
           image
           title
           items
+        }
+        howItWorksSection {
+          title
+          howItWorksItems {
+            image
+            title
+            description
+          }
         }
         featuresSection {
           title

@@ -15,6 +15,21 @@ firstSection:
       diam nonummy nibh , consectetuer adipiscing elit, sed diam nonummy nibh.
       consectetuer adipiscing elit, sed diam nonummy nibh ,
     image: /assets/vivopago-laptop-ss.svg
+howItWorksSection:
+  howItWorksItems:
+    - image: /assets/1.png
+      title: Earn
+      description: Earn pagos by watching brand promotions that you are interested in
+        on VIVOpago website
+    - image: /assets/2.png
+      title: Manage
+      description: Manage your pagos in your Pago wallet, view your balance and
+        transaction history at a glance
+    - image: /assets/3.png
+      title: Spend
+      description: Spend Pago tokens to pay  Premium Content on various video
+        streaming platforms
+  title: How It Works
 featuresSection:
   title: Features
   featuresType: timeline

@@ -734,6 +734,20 @@ collections:
                 widget: "list"
                 required: false
                 field: { label: "Text", name: "text", widget: "string" }
+      - label: "How it Works Section"
+        name: "howItWorksSection"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "How it Works Items"
+            name: "howItWorksItems"
+            required: false
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
       - label: "Featured Items Section"
         name: "featuredSection"
         widget: "object"
