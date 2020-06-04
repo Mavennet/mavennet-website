@@ -792,7 +792,8 @@ collections:
         collapsed: "true"
         fields:
           - { label: "Title", name: "title", widget: "text" }
-          - { label: "Image", name: "image", widget: "image" }
+          - {label: "Text Only", name: "textOnly", widget: "boolean", default: false}
+          - { label: "Image", name: "image", widget: "image", required: false }
           - {
               label: "Background Image",
               name: "backgroundImage",

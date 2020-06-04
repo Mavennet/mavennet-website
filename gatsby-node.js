@@ -85,6 +85,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
     type MarkdownRemarkFrontmatterDemoSection implements Node {
       backgroundImage: String
+      textOnly: Boolean
     }
 
     type PagesYamlNewsRoomMainSection implements Node {

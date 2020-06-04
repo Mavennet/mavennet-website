@@ -71,6 +71,7 @@ export const query = graphql`
       frontmatter {
         demoSection {
           title
+          textOnly
           ctaText
           image
           backgroundImage

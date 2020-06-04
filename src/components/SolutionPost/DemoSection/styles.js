@@ -24,6 +24,14 @@ export const Image = styled.img`
 export const TextContent = styled.div`
   background-color: var(--c-p-selago-dark);
 
+  ${({ textOnly }) =>
+    textOnly &&
+    `
+    width: 100%;
+    padding: 5.25em 0 !important;
+    text-align: center;
+  `}
+
   padding: 4.625em 2em;
 
   @media ${device.desktop} {

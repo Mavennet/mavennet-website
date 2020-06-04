@@ -19,7 +19,8 @@ howItWorksSection:
   howItWorksItems:
     - image: /assets/1.png
       title: Earn
-      description: Earn pagos by watching brand promotions that you are interested in
+      description:
+        Earn pagos by watching brand promotions that you are interested in
         on VIVOpago website
     - image: /assets/2.png
       title: Manage
@@ -56,7 +57,7 @@ featuresSection:
 demoSection:
   title: Type consectetuer adipiscing elit, sed diam nonummy nibh , amet
     consectetuer adip
-  image: /assets/group-2.png
+  textOnly: true
   ctaText: Let's Talk
 testimonialSection:
   - testimony:
