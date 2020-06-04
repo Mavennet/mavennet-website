@@ -1,5 +1,6 @@
 ---
 title: MetalTrail
+previousWork: false
 mainSection:
   image: /assets/mt-mockup.png
   logo: /assets/mt-logo.png

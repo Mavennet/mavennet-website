@@ -1,5 +1,6 @@
 ---
 title: Mavenstamp
+previousWork: false
 mainSection:
   image: /assets/mavenstamp-mockup-1-.png
   logo: /assets/group-9.png

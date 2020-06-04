@@ -13,7 +13,10 @@ export default function Layout({ children, footerHidden, contactUsHidden }) {
   const data = useStaticQuery(graphql`
     query HeaderFooterQuery {
       solutions: allMarkdownRemark(
-        filter: { fields: { slug: { regex: "/^/solutions/.*$/" } } }
+        filter: {
+          fields: { slug: { regex: "/^/solutions/.*$/" } }
+          frontmatter: { previousWork: { eq: false } }
+        }
       ) {
         nodes {
           frontmatter {

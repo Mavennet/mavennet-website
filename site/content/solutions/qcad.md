@@ -1,5 +1,6 @@
 ---
 title: QCad
+previousWork: false
 mainSection:
   image: /assets/qcad.png
   logo: /assets/qcad-logo.png

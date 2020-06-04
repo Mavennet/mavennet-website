@@ -1,5 +1,6 @@
 ---
 title: VIVOPago
+previousWork: true
 mainSection:
   image: /assets/group-2.png
   logo: /assets/vivopago-logo-white-text.svg

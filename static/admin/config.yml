@@ -679,6 +679,12 @@ collections:
     identifier_field: name
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Is it a Previous Work?",
+          name: "previousWork",
+          widget: "boolean",
+          default: false,
+        }
       - label: "Main Section"
         name: "mainSection"
         widget: "object"
