@@ -57,7 +57,9 @@ const SolutionPost = ({ data }) => {
       {howItWorksSection && <HowItWorksSection {...howItWorksSection} />}
       <FeaturesSection {...featuresSection} />
       {getDemoSection(demoSection)}
-      <TestimonialSection testimonialList={testimonialSection} />
+      {testimonialSection && (
+        <TestimonialSection testimonialList={testimonialSection} />
+      )}
       <NewsSection {...newsSection} />
 
       {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}

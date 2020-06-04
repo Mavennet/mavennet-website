@@ -59,10 +59,4 @@ demoSection:
     consectetuer adip
   textOnly: true
   ctaText: Let's Talk
-testimonialSection:
-  - testimony:
-      author: Esdras
-      position: Position
-      companyLogo: /assets/vivopago-logo-white-text.svg
-      message: Hello there
 ---

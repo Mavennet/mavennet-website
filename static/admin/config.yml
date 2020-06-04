@@ -792,7 +792,12 @@ collections:
         collapsed: "true"
         fields:
           - { label: "Title", name: "title", widget: "text" }
-          - {label: "Text Only", name: "textOnly", widget: "boolean", default: false}
+          - {
+              label: "Text Only",
+              name: "textOnly",
+              widget: "boolean",
+              default: false,
+            }
           - { label: "Image", name: "image", widget: "image", required: false }
           - {
               label: "Background Image",
@@ -806,6 +811,7 @@ collections:
         name: "testimonialSection"
         widget: "list"
         collapsed: "true"
+        required: false
         field:
           label: "Testimony"
           name: "testimony"
