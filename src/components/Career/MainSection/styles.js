@@ -10,7 +10,11 @@ export const MainSection = styled(GenericMainSection)`
   padding: 13.125em 0 9em;
 
   @media ${device.laptop} {
-    padding: 1.6875em 0 3em;
+    padding: 1.6875em 0 6em;
+  }
+  @media ${device.laptopL} {
+    overflow: visible;
+    padding: 1.6875em 0 12em;
   }
 `
 

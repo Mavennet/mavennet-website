@@ -7,6 +7,7 @@ import TimeLineSection from "../components/Career/TimeLineSection"
 import WhoSection from "../components/Career/WhoSection"
 import TestimonialSection from "../components/Career/TestimonialSection"
 import OpportunitiesSection from "../components/Career/OpportunitiesSection"
+import ContactUsSection from "../components/Career/ContactUsSection"
 
 const CareerPage = ({ data }) => {
   const post = data.pagesYaml
@@ -16,6 +17,7 @@ const CareerPage = ({ data }) => {
     careerWhoSection,
     careerDaySection,
     careerOppotunitySection,
+    careerOtherOpportunitiesSection,
   } = post
 
   return (
@@ -25,6 +27,7 @@ const CareerPage = ({ data }) => {
       <WhoSection {...careerWhoSection} />
       <TestimonialSection {...careerDaySection} />
       <OpportunitiesSection {...careerOppotunitySection} />
+      <ContactUsSection {...careerOtherOpportunitiesSection} />
     </Layout>
   )
 }
