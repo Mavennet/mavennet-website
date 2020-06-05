@@ -5,31 +5,43 @@ serviceMainSection:
   slogan: Mavennet Catchy Slogan
 serviceStepsSection:
   - item:
-      title: "Strategy: Lorem ipsum dolor sit amet, consectetuer "
-      description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing  "
+      title: Strategy
       stepsList:
-        - Lorem ipsum dolor sit
-        - "- Lorem ipsum dolor sit"
-        - "- Lorem ipsum dolor sit"
-        - "- Lorem ipsum dolor sit"
+        - "- IT Advisory"
+        - "- Blockchain Strategy "
+        - "- Tokenomics and token launch"
+        - "- Decentralized Identity Management "
+        - "Startup Product Strategy "
       cta:
         ctaText: Talk to us to learn more
         ctaType: contactUs
   - item:
-      title: "Design: Lorem ipsum dolor sit amet, consectetuer "
-      description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing  "
+      title: Design
       stepsList:
-        - "- Lorem ipsum dolor sit"
-        - "- Lorem ipsum dolor sit"
-        - "- Lorem ipsum dolor sit"
-        - "- Lorem ipsum dolor sit"
+        - "- UX Research and Design "
+        - "- Branding and Logo Design"
+        - "- Usability Testing"
       cta:
         ctaText: View Our Solutions
         ctaType: solutionsCta
+  - item:
+      title: Implementation
+      stepsList:
+        - "- Fullstack Development"
+        - "- Blockchain Development"
+        - "- Analytics"
+      cta:
+        ctaText: Talk to us to learn more
+        ctaType: solutionsCta
+  - item:
+      title: Support
+      cta:
+        ctaText: Talk to Us to learn more
+        ctaType: solutionsCta
+      stepsList:
+        - "- Project & Product Management"
+        - "- Smart Contract Auditing"
+        - "- Decentralized Platform Operations & Integration"
 serviceContactUsSection:
   title: "Lorem ipsum dolor sit amet, consectetuer ipsum dolor sit  "
   ctaText: Let's Talk

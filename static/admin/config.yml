@@ -161,11 +161,6 @@ collections:
               widget: "object"
               fields:
                 - { label: "Step Title", name: "title", widget: "string" }
-                - {
-                    label: "Step Description",
-                    name: "description",
-                    widget: "text",
-                  }
                 - label: "Steps List"
                   name: "stepsList"
                   widget: "list"

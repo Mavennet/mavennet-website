@@ -1,10 +1,17 @@
 import React from "react"
 import { graphql } from "gatsby"
 
+import Layout from "../components/base/Layout"
+import MainSection from "../components/ServicePage/MainSection"
+
 const ServicePage = ({ data }) => {
   const post = data.pagesYaml
 
-  return <pre>{JSON.stringify(post, null, 2)}</pre>
+  return (
+    <Layout contactUsHidden>
+      <MainSection {...post} />
+    </Layout>
+  )
 }
 
 export default ServicePage
@@ -24,7 +31,6 @@ export const query = graphql`
           }
           stepsList
           title
-          description
         }
       }
       serviceContactUsSection {

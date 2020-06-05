@@ -76,7 +76,7 @@ export default function Layout({ children, footerHidden, contactUsHidden }) {
       {children}
       {!footerHidden && (
         <>
-          <ContactUsFooter />
+          {!contactUsHidden && <ContactUsFooter />}
           <Footer menuItems={{ ...data }} />
         </>
       )}
