@@ -44,6 +44,7 @@ export const Slogan = styled.h1`
     font-weight: bold;
     letter-spacing: 0;
     line-height: 65px;
+    text-align: center;
   }
 `
 
