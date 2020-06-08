@@ -5,7 +5,6 @@ import Container from "../../base/Container"
 import * as S from "./styles"
 
 const ModelSection = ({ title, modelList }) => {
-  console.log(modelList)
   const getModelList = models => (
     <S.ModelList>
       {models.map(({ item }) => {

@@ -7,7 +7,6 @@ import * as S from "./styles"
 
 const NewsSection = ({ title, news, noBorder }, ref) => {
   const getNewsList = items => {
-    console.log(items)
     return (
       <S.NewsList>
         {items &&
