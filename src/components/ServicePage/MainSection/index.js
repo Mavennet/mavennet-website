@@ -15,7 +15,7 @@ const MainSection = ({
   serviceContactUsSection,
 }) => {
   const [windowWidth, setWidth] = useState(0)
-  const [topValues, setTopValues] = useState(getTopValues())
+  const topValues = getTopValues()
 
   useEffect(() => {
     if (typeof window === "undefined") return
@@ -27,7 +27,7 @@ const MainSection = ({
     return () => {
       window.removeEventListener("resize", handleResize)
     }
-  })
+  }, [])
 
   const getListServices = services =>
     services.map(({ item }, index) => (

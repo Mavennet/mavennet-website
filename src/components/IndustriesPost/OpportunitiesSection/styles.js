@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-import GenericMainSection from "../../shared/GenericMainSection"
-
 import { device } from "../../../consts/deviceSizes"
 
 export const OpportunitiesSection = styled.section`

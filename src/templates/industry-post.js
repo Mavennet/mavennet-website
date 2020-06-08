@@ -15,7 +15,6 @@ const IndustryPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
 
   const {
-    title,
     mainSection,
     opportunitySection,
     solutionsSection,

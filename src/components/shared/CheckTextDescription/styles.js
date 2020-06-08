@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-import { device } from "../../../consts/deviceSizes"
-
 export const CheckTextDescription = styled.div`
   display: flex;
   justify-content: flex-start;

@@ -8,7 +8,7 @@ import * as S from "./styles"
 import background from "../../../assets/images/contact-us-bg.png"
 
 const MainSection = ({ backgroundColor, meta }) => {
-  const { companyName, social } = meta
+  const { social } = meta
 
   const getSocialList = socialList => {
     return (

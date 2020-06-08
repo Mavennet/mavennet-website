@@ -17,7 +17,7 @@ const PartnersSection = ({ partners }) => {
     return () => {
       window.removeEventListener("resize", handleResize)
     }
-  })
+  }, [])
   return (
     <S.PartnersSection>
       {windowWidth > 1024 ? (

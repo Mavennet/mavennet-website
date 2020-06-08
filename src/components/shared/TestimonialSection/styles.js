@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-import { device } from "../../../consts/deviceSizes"
-
 export const TestimonialSection = styled.section`
   padding: 4em 0;
 `
