@@ -107,4 +107,6 @@ export const Position = styled.p`
 export const CTA = styled(TextArrowCTA)`
   margin-left: auto;
   margin-right: auto;
+
+  margin-top: 3.175em;
 `

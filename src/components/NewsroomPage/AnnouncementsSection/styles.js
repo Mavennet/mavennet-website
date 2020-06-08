@@ -22,6 +22,7 @@ export const Title = styled.h2`
 
 export const CTA = styled(TextArrowCTA)`
   width: fit-content;
+  margin-top: 3.175em;
 `
 
 export const AnnouncementsList = styled.ul`

@@ -28,6 +28,6 @@ export const NewsItem = styled.li`
 `
 
 export const CTAContainer = styled.div`
-  margin: 0 auto;
+  margin: 3.175em auto;
   width: fit-content;
 `
