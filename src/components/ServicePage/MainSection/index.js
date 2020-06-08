@@ -44,7 +44,7 @@ const MainSection = ({
   return (
     <S.MainSection>
       <S.BackgroundImage
-        src={windowWidth < 828 ? mobileBackground : background}
+        src={windowWidth < 768 ? mobileBackground : background}
       />
 
       <S.Wrapper

@@ -10,8 +10,6 @@ export const Cta = styled(Link)`
   justify-content: center;
   align-items: center;
 
-  margin-top: 3.75em;
-
   &:hover {
     color: var(--c-p-royal-purple-dark);
   }

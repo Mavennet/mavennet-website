@@ -77,7 +77,7 @@ const topValues = {
     mobile: calcMobileValue(154),
   },
   strategy: {
-    desktop: calcDesktopValue(857),
+    desktop: calcDesktopValue(750),
     mobile: calcMobileValue(711),
   },
   design: {

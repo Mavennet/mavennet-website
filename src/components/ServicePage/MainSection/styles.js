@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   position: absolute;
   top: ${props => props.mobileTop};
 
-  @media ${device.tabletL} {
+  @media ${device.tablet} {
     top: ${props => props.desktopTop};
   }
 `
@@ -38,6 +38,14 @@ export const Slogan = styled.h1`
   font-weight: bold;
   line-height: 48px;
   text-align: center;
+
+  @media ${device.laptop} {
+    font-size: 3.375em;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 65px;
+    text-align: center;
+  }
 `
 
 export const ContactUsTitle = styled.h3`
