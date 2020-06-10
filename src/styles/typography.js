@@ -34,9 +34,17 @@ const typography = css`
   p,
   button,
   a {
-    font-weight: 500;
     font-size: 1rem;
     line-height: 27px;
+  }
+
+  button,
+  a {
+    font-weight: 500;
+  }
+
+  p {
+    font-weight: 400;
   }
 
   small {

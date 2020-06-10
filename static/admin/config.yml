@@ -654,6 +654,47 @@ collections:
             widget: "object"
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
+      - label: "R&D Page"
+        name: "randd-page"
+        file: "site/pages/randd.yml"
+        fields:
+          - label: "Meta"
+            name: "meta"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+          - { label: "Page Title", name: "title", widget: string }
+          - label: "Main Section"
+            name: "rAndDMainSection"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Slogan", name: "slogan", widget: "string" }
+          - label: "R&D List Section"
+            name: "rAndDListSection"
+            widget: "list"
+            field:
+              label: "R&D Item"
+              name: "item"
+              widget: "object"
+              fields:
+                - { label: "Image", name: "image", widget: "image" }
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Description", name: "description", widget: "text" }
+                - label: "Points List"
+                  name: "pointsList"
+                  widget: "list"
+                  field:
+                    label: "Content"
+                    name: "listItem"
+                    widget: "string"
+                - {
+                    label: "Services CTA Text",
+                    name: "ctaText",
+                    widget: "string",
+                  }
+
       - label: "NotFound Page"
         name: "notfound-page"
         file: "site/pages/not-found.yml"

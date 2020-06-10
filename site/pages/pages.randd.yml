@@ -1,0 +1,52 @@
+meta:
+  title: R&D
+title: R&D
+rAndDMainSection:
+  slogan: Mavennet R & D Slogan Lorem ipsum dolor sit amet, consectetuer
+rAndDListSection:
+  - item:
+      image: /assets/did.png
+      title: Decentralized Identity Management
+      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh  Lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit,
+      pointsList:
+        - "- elit, sed diam nonummy nibh  "
+        - "- elit, sed diam nonummy nibh  "
+        - "- elit, sed diam nonummy nibh  "
+        - "- elit, sed diam nonummy nibh  "
+      ctaText: View Use Case
+  - item:
+      image: /assets/traceability.png
+      title: Asset Traceability
+      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh  Lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit,
+      pointsList:
+        - "- elit, sed diam nonummy nibh  "
+        - "- elit, sed diam nonummy nibh  "
+      ctaText: View Use Case
+  - item:
+      image: /assets/digital-asset-kit-graphic-copy.png
+      title: Digital Assets
+      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh  Lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit,
+      pointsList:
+        - "- elit, sed diam nonummy nibh  "
+        - "- elit, sed diam nonummy nibh  "
+      ctaText: View Use Case
+  - item:
+      image: /assets/ai.png
+      title: AI and Anlytics
+      description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+        sed diam nonummy nibh  Lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit,
+      pointsList:
+        - "- elit, sed diam nonummy nibh  "
+        - "- elit, sed diam nonummy nibh  "
+      ctaText: View Use Case
