@@ -11,15 +11,21 @@ const ListSection = ({ randdList }) => {
   useEffect(() => {
     if (window === "undefined") return
 
-    const IMAGE_WRAPPER_DIMENSION = {
-      laptop: 440,
-      laptopL: 500,
+    const DIMENSIONS = {
+      laptop: {
+        windowSize: 1024,
+        wrapperSize: 440,
+      },
+      laptopL: {
+        windowSize: 1280,
+        wrapperSize: 500,
+      },
     }
 
     const getImageWrapperSize = currWindowWidth =>
-      currWindowWidth < IMAGE_WRAPPER_DIMENSION.laptopL
-        ? IMAGE_WRAPPER_DIMENSION.laptop
-        : IMAGE_WRAPPER_DIMENSION.laptopL
+      currWindowWidth < DIMENSIONS.laptopL.windowSize
+        ? DIMENSIONS.laptop.wrapperSize
+        : DIMENSIONS.laptopL.wrapperSize
 
     const getLineSectionProps = (windowWidth, imageWrapperWidth) => {
       const lineSectionProps = randdList.map((item, index) => {
