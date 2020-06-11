@@ -8,13 +8,13 @@ import * as S from "./styles"
 const ListSection = ({ randdList }) => {
   const [lineSectionProps, setLineSectionProps] = useState([])
 
-  const IMAGE_WRAPPER_DIMENSION = {
-    laptop: 440,
-    laptopL: 500,
-  }
-
   useEffect(() => {
     if (window === "undefined") return
+
+    const IMAGE_WRAPPER_DIMENSION = {
+      laptop: 440,
+      laptopL: 500,
+    }
 
     const getImageWrapperSize = currWindowWidth =>
       currWindowWidth < IMAGE_WRAPPER_DIMENSION.laptopL
@@ -82,7 +82,7 @@ const ListSection = ({ randdList }) => {
     return () => {
       window.removeEventListener("resize", handleResize)
     }
-  }, [])
+  }, [randdList])
 
   const getListItems = items => {
     if (lineSectionProps.length === 0) return null
@@ -104,6 +104,7 @@ const ListSection = ({ randdList }) => {
             return (
               <>
                 <DiagonalLineSection
+                  key={index}
                   width={`${width}px`}
                   marginLeft={marginLeft}
                   marginRight={marginRight}
@@ -128,13 +129,7 @@ const ListSection = ({ randdList }) => {
     )
   }
 
-  return (
-    <S.ListSection>
-      {/* <S.SectionContainer>
-        </S.SectionContainer> */}
-      {getListItems(randdList)}
-    </S.ListSection>
-  )
+  return <S.ListSection>{getListItems(randdList)}</S.ListSection>
 }
 
 export default ListSection

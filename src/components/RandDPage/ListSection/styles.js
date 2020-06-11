@@ -1,7 +1,5 @@
 import styled from "styled-components"
 
-import Container from "../../base/Container"
-
 import { device } from "../../../consts/deviceSizes"
 
 export const ListSection = styled.section`
@@ -19,10 +17,11 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   &:not(:first-child) {
-    /* margin-top: 4em; */
+    margin-top: 4em;
   }
 
   @media ${device.laptop} {
+    margin-top: 0 !important;
     width: 98%;
 
     align-self: ${props => (props.isEven ? "flex-start" : "flex-end")};
