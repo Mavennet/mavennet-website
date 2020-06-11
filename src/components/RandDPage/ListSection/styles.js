@@ -6,6 +6,10 @@ import { device } from "../../../consts/deviceSizes"
 
 export const ListSection = styled.section`
   padding: 3em 0;
+
+  @media ${device.laptop} {
+    padding: 0;
+  }
 `
 
 export const List = styled.ul`
@@ -15,7 +19,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   &:not(:first-child) {
-    margin-top: 4em;
+    /* margin-top: 4em; */
   }
 
   @media ${device.laptop} {

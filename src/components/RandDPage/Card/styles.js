@@ -11,7 +11,7 @@ export const Card = styled.div`
   align-items: center;
 
   @media ${device.laptop} {
-    flex-direction: ${props => (props.isEven ? "row-reverse" : "row")};
+    flex-direction: ${props => (props.reverse ? "row-reverse" : "row")};
     justify-content: space-between;
   }
 `
@@ -28,22 +28,6 @@ export const ImageWrapper = styled.div`
     position: relative;
 
     background-color: var(--c-p-selago);
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -2em;
-      ${({ isEven, dimensions }) =>
-        isEven ? `left: ${dimensions / 2}px` : `right: ${dimensions / 2}px`};
-
-      height: 2px;
-      width: ${props => props.lineWidth}px;
-      transform: ${props =>
-        props.isEven
-          ? `rotate(-${props.lineAngle}deg)`
-          : `rotate(${props.lineAngle}deg)`};
-      background-color: blue;
-    }
   }
 
   @media ${device.laptopL} {
