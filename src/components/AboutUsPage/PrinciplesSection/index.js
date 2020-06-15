@@ -1,5 +1,6 @@
 import React from "react"
 
+import SvgDivider from "../../shared/SvgDivider"
 import Container from "../../base/Container"
 
 import * as S from "./styles"
@@ -29,6 +30,7 @@ const PrinciplesSection = ({ principlesList }) => {
 
   return (
     <S.PrinciplesSection>
+      <SvgDivider isPointingUp top="0" />
       <Container center>
         <S.Title>Our Principles</S.Title>
         {getPrinciplesList(principlesList)}

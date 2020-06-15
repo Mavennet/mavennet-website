@@ -1,5 +1,6 @@
 import React from "react"
 
+import SvgDivider from "../../shared/SvgDivider"
 import Container from "../../base/Container"
 
 import * as S from "./styles"
@@ -24,6 +25,7 @@ const OurTeamSection = ({ title, ctaText, team }) => {
   return (
     <S.OurTeamSection>
       <S.BackgroundWrapper>
+        <SvgDivider bottom="-2px" />
         <Container center>
           <S.Title>{title}</S.Title>
           {getTeamList(team)}

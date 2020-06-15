@@ -9,26 +9,6 @@ export const PrinciplesSection = styled.section`
   @media ${device.laptopL} {
     padding: 5.375em;
     background-color: var(--c-p-selago);
-
-    &:before,
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -1px;
-      width: 0%;
-      border-top: 95px solid white;
-    }
-
-    &:before {
-      left: 0;
-      border-right: 50vw solid transparent;
-    }
-
-    &:after {
-      right: 0;
-      border-left: 50vw solid transparent;
-    }
   }
 `
 

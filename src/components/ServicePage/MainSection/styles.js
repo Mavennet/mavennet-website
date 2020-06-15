@@ -6,7 +6,7 @@ import Button from "../../shared/Button"
 import { device } from "../../../consts/deviceSizes"
 
 export const MainSection = styled.div`
-  margin-bottom: -2px;
+  margin-bottom: -4px;
   position: relative;
 `
 

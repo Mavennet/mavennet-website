@@ -6,6 +6,7 @@ import { device } from "../../../consts/deviceSizes"
 
 export const OurTeamSection = styled.section`
   padding: 5.625em 0;
+  position: relative;
 `
 
 export const BackgroundWrapper = styled.div`
@@ -13,26 +14,6 @@ export const BackgroundWrapper = styled.div`
   @media ${device.laptop} {
     padding: 5.125em 0 9.125em;
     background-color: var(--c-p-selago);
-
-    &:before,
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: -1px;
-      width: 0%;
-      border-bottom: 95px solid white;
-    }
-
-    &:before {
-      left: 0;
-      border-right: 50vw solid transparent;
-    }
-
-    &:after {
-      right: 0;
-      border-left: 50vw solid transparent;
-    }
   }
 `
 
