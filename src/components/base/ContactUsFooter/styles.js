@@ -18,34 +18,6 @@ export const ContactUsFooter = styled.section`
   @media ${device.desktop} {
     padding: 12em 0 8.46875em;
   }
-
-  &:before,
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1px;
-    width: 0;
-    border-top: 95px solid white;
-  }
-
-  &:before {
-    left: 0;
-    border-right: 400px solid transparent;
-
-    @media ${device.tablet} {
-      border-right: 50vw solid transparent;
-    }
-  }
-
-  &:after {
-    right: 0;
-    border-left: 400px solid transparent;
-
-    @media ${device.tablet} {
-      border-left: 50vw solid transparent;
-    }
-  }
 `
 
 export const ButtonContainer = styled.div`

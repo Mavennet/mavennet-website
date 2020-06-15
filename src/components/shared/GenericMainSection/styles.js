@@ -39,9 +39,3 @@ export const GenericMainSection = styled.section`
     padding: 20em 0;
   }
 `
-export const DividerWrapper = styled.div`
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: -2px;
-`
