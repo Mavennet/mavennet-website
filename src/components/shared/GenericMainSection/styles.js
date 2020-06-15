@@ -38,32 +38,10 @@ export const GenericMainSection = styled.section`
   @media ${device.desktop} {
     padding: 20em 0;
   }
-
-  &:before,
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -1px;
-    width: 0%;
-    border-bottom: 95px solid white;
-  }
-
-  &:before {
-    left: 0;
-    border-right: 400px solid transparent;
-
-    @media ${device.tablet} {
-      border-right: 50vw solid transparent;
-    }
-  }
-
-  &:after {
-    right: 0;
-    border-left: 400px solid transparent;
-
-    @media ${device.tablet} {
-      border-left: 50vw solid transparent;
-    }
-  }
+`
+export const DividerWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -2px;
 `
