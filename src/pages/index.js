@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
+import SEO from "../components/base/SEO"
 
 import MainSection from "../components/HomePage/MainSection/MainSection"
 import ServiceSection from "../components/HomePage/ServiceSection"
@@ -11,11 +12,12 @@ import NewsSection from "../components/HomePage/NewsSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data, location }) => {
   const post = data.pagesYaml
   const partnersData = usePartnersData()
 
   const {
+    title,
     homeMainSection,
     homeServiceSection,
     homeSolutionsSection,
@@ -25,6 +27,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} pathname={location.pathname} />
       <MainSection {...homeMainSection} />
       <ServiceSection {...homeServiceSection} />
       <SolutionsSection solutions={homeSolutionsSection} />

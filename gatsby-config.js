@@ -3,17 +3,47 @@ module.exports = {
     title: `Mavennet`,
     description: `Mavennet Website`,
     author: `@Mavennet`,
+    siteUrl: `https://www.mavennet.com`,
     companyName: `Mavennet System Inc`,
+    // siteVerification: {
+    //   google: ...,
+    //   bing: ...
+    // },
     social: {
-      twitter: `Mavennet_`,
+      twitter: `mavennet_`,
       medium: `mavennet`,
       linkedin: `company/mavennet`,
       // angellist: `company/mavennet`,
+    },
+    socialLinks: {
+      twitter: `https://www.twitter.com/mavennet_`,
+      medium: `https://www.medium.com/mavennet`,
+      linkedin: `https://www.linkedin.com/company/mavennet`,
+      angelList: `https://www.angel.co/company/mavennet`,
+    },
+    keywords: [
+      "blockchain technology",
+      "supply chain solutions",
+      "timestamping",
+      "mavennet aion",
+      // Add more keywords later
+    ],
+    organization: {
+      name: `Mavennet`,
+      url: `https://www.mavennet.com`,
     },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: ``,
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -11,7 +11,7 @@ export const TestimonialItem = styled.div`
   }
 `
 
-export const Message = styled.p`
+export const Message = styled.blockquote`
   font-size: 1.25rem;
   font-style: italic;
   font-weight: 500;
