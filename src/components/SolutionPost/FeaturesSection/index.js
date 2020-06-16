@@ -11,7 +11,7 @@ const getFeatureList = list => {
   return (
     <S.FeatureList>
       {list.map((item, index) => (
-        <S.FeatureItem>
+        <S.FeatureItem key={index}>
           <FeatureItem {...item} isEven={index % 2 === 0} />
         </S.FeatureItem>
       ))}
