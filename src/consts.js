@@ -46,7 +46,7 @@ export const COMPANY = {
     },
     {
       name: "Contact",
-      to: "/contact",
+      to: "/contact-us",
     },
   ],
 }

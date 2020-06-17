@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
+import SEO from "../components/base/SEO"
 
 import MainSection from "../components/SolutionPost/MainSection"
 import GrowthSection from "../components/SolutionPost/GrowthSection"
@@ -18,6 +19,7 @@ const SolutionPost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
 
   const {
+    title,
     mainSection,
     firstSection,
     featuredSection,
@@ -51,6 +53,7 @@ const SolutionPost = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} />
       <MainSection {...mainSection} />
       {getFirstSection(firstSection)}
       {featuredSection && <SolutionDescriptionSection {...featuredSection} />}
@@ -61,8 +64,6 @@ const SolutionPost = ({ data }) => {
         <TestimonialSection testimonialList={testimonialSection} />
       )}
       <NewsSection {...newsSection} />
-
-      {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
     </Layout>
   )
 }

@@ -3,6 +3,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
+import SEO from "../components/base/SEO"
 
 import MainSection from "../components/Partnership/MainSection"
 import PartnersSection from "../components/Partnership/PartnersSection"
@@ -11,15 +12,21 @@ import WhySection from "../components/Partnership/WhySection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
 
-const PartnershipPage = ({ data }) => {
+const PartnershipPage = ({ data, location }) => {
   const post = data.pagesYaml
 
   const partnersData = usePartnersData()
 
-  const { partnersMainSection, partnersModelSection, partnersWhySection } = post
+  const {
+    partnersMainSection,
+    partnersModelSection,
+    partnersWhySection,
+    meta,
+  } = post
 
   return (
     <Layout>
+      <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...partnersMainSection} />
       <PartnersSection partners={partnersData} />
       <ModelSection {...partnersModelSection} />

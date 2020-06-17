@@ -17,7 +17,7 @@ const IndexPage = ({ data, location }) => {
   const partnersData = usePartnersData()
 
   const {
-    title,
+    meta,
     homeMainSection,
     homeServiceSection,
     homeSolutionsSection,
@@ -27,7 +27,7 @@ const IndexPage = ({ data, location }) => {
 
   return (
     <Layout>
-      <SEO title={title} pathname={location.pathname} />
+      <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...homeMainSection} />
       <ServiceSection {...homeServiceSection} />
       <SolutionsSection solutions={homeSolutionsSection} />
@@ -43,6 +43,9 @@ export const query = graphql`
   query {
     pagesYaml(meta: { title: { eq: "Home" } }) {
       title
+      meta {
+        title
+      }
       homeMainSection {
         ctaText
         slogan

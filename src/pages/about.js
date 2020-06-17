@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
+import SEO from "../components/base/SEO"
 
 import MainSection from "../components/AboutUsPage/MainSection"
 import WhoWeAre from "../components/AboutUsPage/WhoWeAre"
@@ -14,7 +15,7 @@ import LearnMoreSection from "../components/AboutUsPage/LearnMoreSection"
 import { usePartnersData } from "../hooks/use-partners-data"
 import { useOurTeamData } from "../hooks/use-ourTeam-data"
 
-const AboutPage = ({ data }) => {
+const AboutPage = ({ data, location }) => {
   const post = data.pagesYaml
   const partnersData = usePartnersData()
   const teamData = useOurTeamData()
@@ -27,10 +28,12 @@ const AboutPage = ({ data }) => {
     aboutAwardsSection,
     aboutTeamSection,
     aboutLearnSection,
+    meta,
   } = post
 
   return (
     <Layout>
+      <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...aboutMainSection} />
       <WhoWeAre {...aboutSummarySection} />
       <PrinciplesSection

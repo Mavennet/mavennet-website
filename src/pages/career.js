@@ -2,6 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
+import SEO from "../components/base/SEO"
+
 import MainSection from "../components/Career/MainSection"
 import TimeLineSection from "../components/Career/TimeLineSection"
 import WhoSection from "../components/Career/WhoSection"
@@ -9,7 +11,7 @@ import TestimonialSection from "../components/Career/TestimonialSection"
 import OpportunitiesSection from "../components/Career/OpportunitiesSection"
 import ContactUsSection from "../components/Career/ContactUsSection"
 
-const CareerPage = ({ data }) => {
+const CareerPage = ({ data, location }) => {
   const post = data.pagesYaml
   const {
     careerMainSection,
@@ -18,10 +20,12 @@ const CareerPage = ({ data }) => {
     careerDaySection,
     careerOppotunitySection,
     careerOtherOpportunitiesSection,
+    meta,
   } = post
 
   return (
     <Layout>
+      <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...careerMainSection} />
       <TimeLineSection {...careerOurStorySection} />
       <WhoSection {...careerWhoSection} />

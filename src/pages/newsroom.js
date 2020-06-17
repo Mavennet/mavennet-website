@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
+import SEO from "../components/base/SEO"
 
 import MainSection from "../components/NewsroomPage/MainSection"
 import NavigationMenu from "../components/NewsroomPage/NavigationMenu"
@@ -17,10 +18,11 @@ const scrollToRef = ref =>
     behavior: "smooth",
   })
 
-const NewsroomPage = ({ data }) => {
+const NewsroomPage = ({ data, location }) => {
   const post = data.pagesYaml
   const { announcements, media, awards, professionalAssociation } = data
   const {
+    meta,
     newsRoomMainSection,
     newsRoomAnnouncementSection,
     newsRoomMediaSection,
@@ -80,6 +82,7 @@ const NewsroomPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...newsRoomMainSection} featuredNews={featuredNews} />
       <NavigationMenu scrollTo={executeScroll} menuItems={menuItems} />
       <AnnouncementsSection
