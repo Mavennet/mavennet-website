@@ -77,6 +77,28 @@ export const TimelineContent = {
       },
     ],
   },
-  "2019": {},
+  "2019": {
+    yearImage: "2018-image.png",
+    events: [
+      {
+        title: "Mavennet is founded.",
+        subtitle:
+          "We are born from a new structure created to maximize growth and adoption of technology.",
+        logo: "mavennet-old-logo.svg",
+        glyph: "mavennet-old-logo.svg",
+        alt: "Mavennet Old Logo",
+        relevance: RELEVANCE.HIGH,
+        bubbleStyle: BUBBLE_STYLE.LIGHT_PINK,
+      },
+      {
+        title: "Mavennet partners with the TMX ",
+        logo: "tmx-logo.svg",
+        glyph: "tmx-logo.svg",
+        alt: "Tmx Logo",
+        relevance: RELEVANCE.HIGH,
+        bubbleStyle: BUBBLE_STYLE.DARK_PINK,
+      },
+    ],
+  },
   "2020": {},
 }
