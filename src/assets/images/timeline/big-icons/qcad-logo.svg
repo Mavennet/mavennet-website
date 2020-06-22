@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>B3724714-4F74-42A5-B798-F8A9AED26756</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="1.82542453%" y1="49.4441339%" x2="100.676386%" y2="50.8869155%" id="linearGradient-1">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100.262281%" y1="50.0229358%" x2="-0.353508772%" y2="50.0229358%" id="linearGradient-2">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-34.6430417%" y1="-92.4170194%" x2="-74.0113333%" y2="-153.110893%" id="linearGradient-3">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="36.2434899%" y1="61.3613865%" x2="72.872472%" y2="-4.3999497%" id="linearGradient-4">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-8.91456278%" y1="-56.8398542%" x2="40.4512915%" y2="33.6062708%" id="linearGradient-5">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="98.5920396%" y1="49.5146978%" x2="-1.21068317%" y2="50.4816115%" id="linearGradient-6">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="95.2686951%" y1="-37.8472375%" x2="48.0041211%" y2="56.4444292%" id="linearGradient-7">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.740740741%" y1="50.0692042%" x2="98.8888889%" y2="50.0692042%" id="linearGradient-8">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0320512821%" y1="50.0344828%" x2="100.128205%" y2="50.0344828%" id="linearGradient-9">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0171353587%" y1="49.644164%" x2="99.5342227%" y2="50.4372795%" id="linearGradient-10">
+            <stop stop-color="#DCDBDB" offset="26%"></stop>
+            <stop stop-color="#B2B2B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="story-list" transform="translate(-70.000000, -2042.000000)">
+            <g id="Group" transform="translate(59.000000, 1766.000000)">
+                <g id="QCAD_logo" transform="translate(12.000000, 277.000000)">
+                    <circle id="Oval" stroke="#FFFFFF" fill="#191918" cx="22.5" cy="22.5" r="22.5"></circle>
+                    <polygon id="Path" fill="url(#linearGradient-1)" opacity="0.57" points="16.2413793 10 16 16.4504505 18.9655172 18 20 14.972973"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-2)" opacity="0.57" points="29.9649123 11 30 17.5321101 26.9473684 19 26 15.9174312"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-3)" opacity="0.57" points="39 22 35.5714286 26 33 25.0679612 34.0714286 22.5825243"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-4)" opacity="0.57" points="7 23 10.5232558 27 13 25.9090909 11.8488372 23.4040404"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-5)" opacity="0.88" points="39 28.8333333 27.4484305 25 23 29.3333333 27.6278027 33"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-6)" opacity="0.88" points="8 14 22 20.618705 21.9306931 29 14.3069307 28.4964029"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-7)" opacity="0.88" points="7 29.2666667 18.3363229 25 23 29.1666667 18.5156951 33"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-8)" opacity="0.85" points="22.0740741 29.3114187 22.5185185 29 23 29.3114187 23 39 22 39"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-9)" opacity="0.88" points="22.5705128 8 17 23.062069 22.8525641 29 28 23.0258621"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-10)" opacity="0.88" points="37 14 23 20.618705 23.0691358 29 30.6740741 28.4964029"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
