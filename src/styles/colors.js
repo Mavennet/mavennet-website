@@ -2,6 +2,7 @@ import { css } from "styled-components"
 
 const colors = css`
   :root {
+    --c-p-white: #ffffff;
     --c-p-alabaster: #f9f9f9;
     --c-p-light-grey: #d8d8d8;
     --c-p-grey: #4a4a4a;

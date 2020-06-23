@@ -1,6 +1,6 @@
 import React from "react"
 
-import HistoryTimeline from "../../shared/HistoryTimeline"
+import StoryTimeline from "../../shared/StoryTimeline"
 
 import { TimelineContent } from "../../../content/timeline"
 
@@ -12,7 +12,7 @@ const TimeLineSection = () => {
       <S.TimeLineContainer>
         <S.Title>Our Story</S.Title>
         <S.Content>
-          <HistoryTimeline timelineData={TimelineContent} />
+          <StoryTimeline timelineData={TimelineContent} />
         </S.Content>
       </S.TimeLineContainer>
     </S.TimeLineSection>

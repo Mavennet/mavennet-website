@@ -1,14 +1,15 @@
 import styled, { keyframes } from "styled-components"
 
-export const HistoryTimelineTree = styled.div`
-  width: 50%;
+export const StoryTimelineTree = styled.div`
+  width: 100%;
+  min-width: 340px;
 `
 
 export const YearCircle = styled.div`
   cursor: pointer;
 
-  height: 58px;
-  width: 58px;
+  height: 59px;
+  width: 59px;
   border-radius: 50%;
 
   display: flex;
@@ -20,16 +21,16 @@ export const YearCircle = styled.div`
   &::before {
     position: absolute;
     content: "";
-    width: 68px;
-    height: 68px;
+    width: 65px;
+    height: 65px;
 
     z-index: -1;
     background-color: white;
 
-    top: -6.8px;
-    left: -6.8px;
+    top: -5px;
+    left: -5px;
     border-radius: 50%;
-    border: 1.8px solid var(--c-p-medium-purple);
+    border: 2px solid var(--c-p-medium-purple);
   }
 `
 
@@ -60,6 +61,7 @@ export const SVG = styled.svg`
 export const YearSection = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
   ${({ reverse }) =>
     reverse ? `align-items: flex-end;` : `align-items: flex-start;`}
 

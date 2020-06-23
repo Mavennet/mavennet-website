@@ -1,11 +1,27 @@
 import React from "react"
 
+import TimelineBubble from "../TimelineBubble"
+
 import * as S from "./styles"
 
-const HistoryTimelineTree = ({ onSelectYear, activeYear, events }) => {
+const StoryTimelineTree = ({ onSelectYear, activeYear, events }) => {
+  const getEventsIcons = (eventsContent, inSelectedYear) => {
+    const { glyph, alt, relevance, bubbleStyle, position } = eventsContent
+
+    return (
+      <TimelineBubble
+        relevance={relevance}
+        bubbleStyle={bubbleStyle}
+        alt={alt}
+        imagePath={glyph}
+        isImageVisible={inSelectedYear}
+        position={position}
+      />
+    )
+  }
   return (
-    <S.HistoryTimelineTree>
-      {Object.keys(events).map((eventYear, index) => (
+    <S.StoryTimelineTree>
+      {Object.entries(events).map(([eventYear, eventContent], index) => (
         <S.YearSection
           key={eventYear}
           active={activeYear === eventYear}
@@ -14,6 +30,12 @@ const HistoryTimelineTree = ({ onSelectYear, activeYear, events }) => {
           <S.YearCircle onClick={() => onSelectYear(eventYear)}>
             <S.Year>{eventYear}</S.Year>
           </S.YearCircle>
+          {/* {console.log(eventContent)} */}
+          {eventContent.events &&
+            eventContent.events.length > 0 &&
+            eventContent.events.map(event =>
+              getEventsIcons(event, activeYear === eventYear)
+            )}
           <S.SVGWrapper>
             <S.SVG
               xmlns="http://www.w3.org/2000/svg"
@@ -31,8 +53,8 @@ const HistoryTimelineTree = ({ onSelectYear, activeYear, events }) => {
           </S.SVGWrapper>
         </S.YearSection>
       ))}
-    </S.HistoryTimelineTree>
+    </S.StoryTimelineTree>
   )
 }
 
-export default HistoryTimelineTree
+export default StoryTimelineTree
