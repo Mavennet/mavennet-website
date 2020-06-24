@@ -17,7 +17,7 @@ const StoryTimeline = ({ timelineData }) => {
         />
       </S.ColumnTimelineTree>
       <S.ColumnContent>
-        <TimelineList events={timelineData} />
+        <TimelineList events={timelineData} activeYear={selectedYear} />
       </S.ColumnContent>
     </S.StoryTimeline>
   )

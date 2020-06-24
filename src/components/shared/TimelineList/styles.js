@@ -1,7 +1,8 @@
 import styled from "styled-components"
 
 export const TimelineList = styled.div`
-  padding: 0 6em 0 8em;
+  padding: 3em 6em 0 8em;
+  scroll-behavior: smooth;
 
   max-height: 630px;
   overflow-y: scroll;
@@ -21,7 +22,7 @@ export const Header = styled.header`
     content: "";
     position: absolute;
     bottom: calc(50% - 42px);
-    right: -6em;
+    right: -2em;
     left: 0;
     height: 1px;
     background-color: var(--c-p-medium-purple);

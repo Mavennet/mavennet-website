@@ -5,7 +5,7 @@ import GenericMainSection from "../GenericMainSection"
 export const StoryTimeline = styled(GenericMainSection)`
   z-index: 0;
 
-  padding: 3em 3.5em 8.5em;
+  padding: 0 0 8.5em 3.5em;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;

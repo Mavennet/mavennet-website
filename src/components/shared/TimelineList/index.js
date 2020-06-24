@@ -1,4 +1,4 @@
-import React from "react"
+import React, { createRef, forwardRef, useEffect } from "react"
 
 import * as S from "./styles"
 
@@ -17,9 +17,9 @@ const EventItem = ({ title, subtitle, logo, alt }) => (
   </S.Event>
 )
 
-const TimelineYear = ({ year, yearImage, events }) => {
+const TimelineYear = ({ year, yearImage, events, active }, ref) => {
   return (
-    <S.TimelineYear>
+    <S.TimelineYear ref={ref}>
       <S.Header>
         <S.Year>{year}</S.Year>
         <S.Image
@@ -36,11 +36,30 @@ const TimelineYear = ({ year, yearImage, events }) => {
   )
 }
 
-const TimelineList = ({ events }) => {
+const TimelineYearRef = forwardRef(TimelineYear)
+
+const TimelineList = ({ events, activeYear }) => {
+  const refs = {}
+  refs["2018"] = React.createRef()
+  refs["2019"] = React.createRef()
+  refs["2020"] = React.createRef()
+
+  const listScrollRef = React.createRef()
+
+  useEffect(() => {
+    var topPos = refs[activeYear].current.offsetTop
+    listScrollRef.current.scrollTop = topPos - 20
+  }, [activeYear, refs, listScrollRef])
+
   return (
-    <S.TimelineList>
+    <S.TimelineList ref={listScrollRef}>
       {Object.entries(events).map(([key, content]) => (
-        <TimelineYear year={key} {...content} />
+        <TimelineYearRef
+          ref={refs[key]}
+          active={activeYear === key}
+          year={key}
+          {...content}
+        />
       ))}
     </S.TimelineList>
   )
