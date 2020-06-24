@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components"
 
 export const StoryTimelineTree = styled.div`
   width: 100%;
-  min-width: 340px;
 `
 
 export const YearCircle = styled.div`

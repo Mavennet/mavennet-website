@@ -160,7 +160,7 @@ export const TimelineContent = {
       {
         title:
           "Mavennet is selected as technical lead for ITEA funded EU project",
-        logo: "itea3-logo.svg",
+        logo: "itea-logo.svg",
         glyph: "itea3-logo-glyph.svg",
         alt: "ITEA3 Logo",
         relevance: RELEVANCE.HIGH,
@@ -235,6 +235,7 @@ export const TimelineContent = {
     ],
   },
   "2020": {
+    yearImage: "2018-image.png",
     events: [
       {
         title: "Mavennet forms part of the WTIA",

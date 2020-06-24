@@ -1,23 +1,26 @@
 import React, { useState } from "react"
 
-import HistoryTimelineTree from "../HistoryTimelineTree"
+import StoryTimelineTree from "../StoryTimelineTree"
+import TimelineList from "../TimelineList"
 
 import * as S from "./styles"
 
-const HistoryTimeline = ({ timelineData }) => {
+const StoryTimeline = ({ timelineData }) => {
   const [selectedYear, setSelectedYear] = useState("2018")
   return (
     <S.StoryTimeline backgroundColor="--c-p-selago">
       <S.ColumnTimelineTree>
-        <HistoryTimelineTree
+        <StoryTimelineTree
           events={timelineData}
           onSelectYear={setSelectedYear}
           activeYear={selectedYear}
         />
       </S.ColumnTimelineTree>
-      <S.ColumnContent>Hello</S.ColumnContent>
+      <S.ColumnContent>
+        <TimelineList events={timelineData} />
+      </S.ColumnContent>
     </S.StoryTimeline>
   )
 }
 
-export default HistoryTimeline
+export default StoryTimeline

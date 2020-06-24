@@ -13,8 +13,9 @@ export const StoryTimeline = styled(GenericMainSection)`
 
 export const ColumnTimelineTree = styled.div`
   width: 30%;
+  min-width: 340px;
 `
 
 export const ColumnContent = styled.div`
-  width: 70%;
+  width: 100%;
 `
