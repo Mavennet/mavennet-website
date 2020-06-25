@@ -5,13 +5,13 @@ subtitle: "Cutting-edge technology solutions that are transforming the way we do
   business "
 industries:
   - title: Oil & Gas
-    description: The way that data is exchanged across different parties in the Oil
+    description:
+      The way that data is exchanged across different parties in the Oil
       & Gas value chain is not standardized. This leads to digital islands that
       result in manual processes and inefficiencies. Digitizing assets and
       processes has the power to connect multiple stakeholders and streamline
       operations.
     ctaText: Learn More
-    slug: industries/oil-and-gas
     image: /assets/oil-gas-1.png
   - title: Metals
     description: The metal’s supply chain is fragmented. As the industry is
@@ -21,26 +21,25 @@ industries:
       their operations.
     image: /assets/metal-1.png
     ctaText: Learn More
-    slug: industries/oil-and-gas
   - title: Financial Services
-    description: The financial services industry is getting disrupted by the digital
+    description:
+      The financial services industry is getting disrupted by the digital
       transformation of processes and assets. Now more than ever it is paramount
       for enterprises to gain access to streamlined settlement, decentralized
       exchange platforms and secure data.
     image: /assets/finance_1.png
     ctaText: View Solution
-    slug: industries/oil-and-gas
   - title: Legal Tech
-    description: Decentralized Identity management, digital attestation of data and
+    description:
+      Decentralized Identity management, digital attestation of data and
       verifiable credentials have the power to protect user data and audit
       processes and entities in a seamless way.
     image: /assets/legal-tech2.png
     ctaText: View Solution
-    slug: industries/oil-and-gas
   - title: Digital Media
-    description: The media industry is rapidly evolving, while viewers are demanding
+    description:
+      The media industry is rapidly evolving, while viewers are demanding
       rewards for their attention, content providers need a secure and easy way
       to calculate and distribute royalties instantly.
     image: /assets/digital-media-copy.png
     ctaText: View Solution
-    slug: industries/oil-and-gas

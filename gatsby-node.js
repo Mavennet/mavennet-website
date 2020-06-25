@@ -29,9 +29,6 @@ exports.createPages = ({ graphql, actions }) => {
       if (slug.match(/^\/solutions\/.*$/)) {
         component = path.resolve(`./src/templates/solution-post.js`)
       }
-      if (slug.match(/^\/industries\/.*$/)) {
-        component = path.resolve(`./src/templates/industry-post.js`)
-      }
 
       createPage({
         path: slug,
