@@ -1,15 +1,7 @@
-import { SERVICE, COMPANY } from "../consts"
+import { COMPANY } from "../consts"
 
 const getMenuItems = items => {
-  const { industries, solutions } = items
-
-  const industriesObj = {
-    name: "Industries",
-    children: industries.nodes.map(item => ({
-      name: item.frontmatter.title,
-      to: item.fields.slug,
-    })),
-  }
+  const { solutions } = items
 
   const solutionsObj = {
     name: "Solutions",
@@ -20,7 +12,6 @@ const getMenuItems = items => {
   }
 
   const values = {
-    industries: { ...industriesObj },
     solutions: { ...solutionsObj },
   }
 
@@ -28,16 +19,20 @@ const getMenuItems = items => {
 }
 
 export const getHeaderItems = items => {
-  const { industries, solutions } = getMenuItems(items)
+  const { solutions } = getMenuItems(items)
 
   const headerItems = {
     solutions: { ...solutions, to: "/solutions" },
-    service: {
-      name: SERVICE.name,
-      to: "/service",
+    approach: {
+      name: "Approach",
+      to: "/approach",
       children: [],
     },
-    industries: { ...industries, to: "/industries" },
+    industries: {
+      name: "Industries",
+      to: "/industries",
+      children: [],
+    },
     company: { ...COMPANY, to: "/about" },
     career: {
       name: "Career",
@@ -60,21 +55,12 @@ export const getSideDrawerItems = items => {
     ...headerItems.solutions.children,
   ]
 
-  headerItems.industries.children = [
-    {
-      name: "Industries",
-      to: "/industries",
-    },
-    ...headerItems.industries.children,
-  ]
-
   return headerItems
 }
 
 export const getFooterItems = items => {
-  const { industries, solutions } = getMenuItems(items)
+  const { solutions } = getMenuItems(items)
   const company = { ...COMPANY }
-  const service = { ...SERVICE }
 
   solutions.children = [
     {
@@ -82,14 +68,6 @@ export const getFooterItems = items => {
       to: "/solutions",
     },
     ...solutions.children,
-  ]
-
-  industries.children = [
-    {
-      name: "Industries",
-      to: "/industries",
-    },
-    ...industries.children,
   ]
 
   company.children = [
@@ -100,18 +78,8 @@ export const getFooterItems = items => {
     ...company.children,
   ]
 
-  service.children = [
-    {
-      name: "Service",
-      to: "/service",
-    },
-    ...service.children,
-  ]
-
   const footerItems = {
     solutions,
-    service,
-    industries,
     company,
   }
 

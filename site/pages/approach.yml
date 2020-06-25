@@ -1,9 +1,9 @@
 meta:
-  title: Service
-title: Service
-serviceMainSection:
+  title: Approach
+title: Approach
+approachMainSection:
   slogan: Mavennet Catchy Slogan
-serviceStepsSection:
+approachStepsSection:
   - item:
       title: Strategy
       stepsList:
@@ -42,6 +42,6 @@ serviceStepsSection:
         - "- Project & Product Management"
         - "- Smart Contract Auditing"
         - "- Decentralized Platform Operations & Integration"
-serviceContactUsSection:
+approachContactUsSection:
   title: "Lorem ipsum dolor sit amet, consectetuer ipsum dolor sit  "
   ctaText: Let's Talk

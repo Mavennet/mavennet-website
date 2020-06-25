@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react"
 
-import ServiceItem from "../ServiceItem"
+import ApproachItem from "../ApproachItem"
 
-import { getTopValues } from "../../../helpers/servicePageAbsoluteCalc"
+import { getTopValues } from "../../../helpers/approachPageAbsoluteCalc"
 
-import background from "../../../assets/images/service-bg.png"
-import mobileBackground from "../../../assets/images/mobile-service-bg.png"
+import background from "../../../assets/images/approach-bg.png"
+import mobileBackground from "../../../assets/images/mobile-approach-bg.png"
 
 import * as S from "./styles"
 
 const MainSection = ({
-  serviceMainSection,
-  serviceStepsSection,
-  serviceContactUsSection,
+  approachMainSection,
+  approachStepsSection,
+  approachContactUsSection,
 }) => {
   const [windowWidth, setWidth] = useState(0)
   const topValues = getTopValues()
@@ -29,14 +29,14 @@ const MainSection = ({
     }
   }, [])
 
-  const getListServices = services =>
-    services.map(({ item }, index) => (
+  const getListApproaches = approaches =>
+    approaches.map(({ item }, index) => (
       <S.Wrapper
-        desktopTop={topValues.serviceList[index].desktop}
-        mobileTop={topValues.serviceList[index].mobile}
+        desktopTop={topValues.approachList[index].desktop}
+        mobileTop={topValues.approachList[index].mobile}
       >
         <S.CustomContainer align={index % 2 === 0 ? "flex-start" : "flex-end"}>
-          <ServiceItem {...item} position={index} />
+          <ApproachItem {...item} position={index} />
         </S.CustomContainer>
       </S.Wrapper>
     ))
@@ -52,18 +52,18 @@ const MainSection = ({
         mobileTop={topValues.main.mobile}
       >
         <S.CustomContainer align="center">
-          <S.Slogan>{serviceMainSection.slogan}</S.Slogan>
+          <S.Slogan>{approachMainSection.slogan}</S.Slogan>
         </S.CustomContainer>
       </S.Wrapper>
-      {getListServices(serviceStepsSection)}
+      {getListApproaches(approachStepsSection)}
       <S.Wrapper
         desktopTop={topValues.contactUs.desktop}
         mobileTop={topValues.contactUs.mobile}
       >
         <S.CustomContainer align="center">
-          <S.ContactUsTitle>{serviceContactUsSection.title}</S.ContactUsTitle>
+          <S.ContactUsTitle>{approachContactUsSection.title}</S.ContactUsTitle>
           <S.ContactUsButton
-            text={serviceContactUsSection.ctaText}
+            text={approachContactUsSection.ctaText}
             to="contact-us"
           />
         </S.CustomContainer>

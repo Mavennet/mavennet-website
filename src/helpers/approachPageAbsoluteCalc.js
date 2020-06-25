@@ -101,7 +101,7 @@ const topValues = {
 export const getTopValues = () => {
   return {
     main: topValues.main,
-    serviceList: [
+    approachList: [
       { ...topValues.strategy },
       { ...topValues.design },
       { ...topValues.implementation },

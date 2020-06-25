@@ -134,9 +134,9 @@ collections:
                     - { label: "Title", name: "title", widget: "string" }
                     - { label: "Image", name: "image", widget: "image" }
                     - { label: "Link", name: "link", widget: "string" }
-      - label: "Service Page"
-        name: "service-page"
-        file: "site/pages/service.yml"
+      - label: "Approach Page"
+        name: "approach-page"
+        file: "site/pages/approach.yml"
         fields:
           - label: "Meta"
             name: "meta"
@@ -146,13 +146,13 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: "string" }
           - label: "Main Section"
-            name: "serviceMainSection"
+            name: "approachMainSection"
             widget: "object"
             collapsed: true
             fields:
               - { label: "Slogan", name: "slogan", widget: "string" }
           - label: "Steps Section"
-            name: "serviceStepsSection"
+            name: "approachStepsSection"
             widget: "list"
             collapsed: true
             field:
@@ -177,7 +177,7 @@ collections:
                         options: ["solutionsCta", "contactUs"],
                       }
           - label: "Contact Us Section"
-            name: "serviceContactUsSection"
+            name: "approachContactUsSection"
             widget: "object"
             collapsed: true
             fields:

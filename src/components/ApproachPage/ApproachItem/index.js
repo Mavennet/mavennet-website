@@ -2,10 +2,10 @@ import React from "react"
 
 import * as S from "./styles"
 
-const ServiceItem = ({ cta, stepsList, title, position }) => {
+const ApproachItem = ({ cta, stepsList, title, position }) => {
   return (
-    <S.ServiceItem hasPaddingLeft={position % 2 !== 0}>
-      <S.ServiceTitle>{title}</S.ServiceTitle>
+    <S.ApproachItem hasPaddingLeft={position % 2 !== 0}>
+      <S.ApproachTitle>{title}</S.ApproachTitle>
       <S.StepsList>
         {stepsList.map(step => (
           <S.Step>{step}</S.Step>
@@ -16,8 +16,8 @@ const ServiceItem = ({ cta, stepsList, title, position }) => {
       ) : (
         <S.TextCTA text={cta.ctaText} to="contact-us" />
       )}
-    </S.ServiceItem>
+    </S.ApproachItem>
   )
 }
 
-export default ServiceItem
+export default ApproachItem

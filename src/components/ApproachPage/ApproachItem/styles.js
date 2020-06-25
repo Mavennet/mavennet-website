@@ -5,7 +5,7 @@ import TextArrowCTA from "../../shared/TextArrowCTA"
 
 import { device } from "../../../consts/deviceSizes"
 
-export const ServiceItem = styled.div`
+export const ApproachItem = styled.div`
 box-sizing: border-box;
   ${({ hasPaddingLeft }) =>
     hasPaddingLeft &&
@@ -26,7 +26,7 @@ box-sizing: border-box;
   }
 `
 
-export const ServiceTitle = styled.h2`
+export const ApproachTitle = styled.h2`
   font-size: 2.125rem;
   font-weight: 600;
   line-height: 41px;
@@ -38,7 +38,7 @@ export const ServiceTitle = styled.h2`
   }
 `
 
-export const ServiceDescription = styled.p`
+export const ApproachDescription = styled.p`
   font-size: 1rem;
   line-height: 27px;
 

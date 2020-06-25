@@ -3,28 +3,6 @@ import linkedinIcon from "./assets/icons/linkedin_icon.svg"
 import twitterIcon from "./assets/icons/twitter_icon.svg"
 import angellistIcon from "./assets/icons/angellist_icon.svg"
 
-export const SERVICE = {
-  name: "Service",
-  children: [
-    {
-      name: "Strategy",
-      to: "/strategy",
-    },
-    {
-      name: "Design",
-      to: "/design",
-    },
-    {
-      name: "Implementation",
-      to: "/implementation",
-    },
-    {
-      name: "Support",
-      to: "/support",
-    },
-  ],
-}
-
 export const COMPANY = {
   name: "Company",
   children: [

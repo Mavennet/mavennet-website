@@ -4,9 +4,9 @@ import { graphql } from "gatsby"
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
 
-import MainSection from "../components/ServicePage/MainSection"
+import MainSection from "../components/ApproachPage/MainSection"
 
-const ServicePage = ({ data, location }) => {
+const ApproachPage = ({ data, location }) => {
   const post = data.pagesYaml
 
   const { meta } = post
@@ -19,19 +19,19 @@ const ServicePage = ({ data, location }) => {
   )
 }
 
-export default ServicePage
+export default ApproachPage
 
 export const query = graphql`
   query {
-    pagesYaml(meta: { title: { eq: "Service" } }) {
+    pagesYaml(meta: { title: { eq: "Approach" } }) {
       title
       meta {
         title
       }
-      serviceMainSection {
+      approachMainSection {
         slogan
       }
-      serviceStepsSection {
+      approachStepsSection {
         item {
           cta {
             ctaText
@@ -41,7 +41,7 @@ export const query = graphql`
           title
         }
       }
-      serviceContactUsSection {
+      approachContactUsSection {
         title
         ctaText
       }
