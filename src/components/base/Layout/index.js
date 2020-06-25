@@ -3,11 +3,15 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 
+import StoreProvider, { StoreContext } from "../../../utils/store"
+
 import Header from "../Header/Header"
 import Footer from "../Footer"
 import ContactUsFooter from "../ContactUsFooter"
 
 import GlobalStyle from "../../../styles/globalStyle"
+
+import * as S from "./styles"
 
 export default function Layout({ children, footerHidden, contactUsHidden }) {
   const data = useStaticQuery(graphql`
@@ -53,7 +57,7 @@ export default function Layout({ children, footerHidden, contactUsHidden }) {
   `)
 
   return (
-    <>
+    <StoreProvider>
       <Helmet>
         <link
           href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap"
@@ -71,7 +75,13 @@ export default function Layout({ children, footerHidden, contactUsHidden }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </Helmet>
-      <GlobalStyle />
+      <StoreContext.Consumer>
+        {value => {
+          const { drawerMenu } = value
+          const isDrawerMenuOpen = drawerMenu[0]
+          return <GlobalStyle isHtmlOverflowVisible={!isDrawerMenuOpen} />
+        }}
+      </StoreContext.Consumer>
       <Header menuItems={{ ...data }} />
       {children}
       {!footerHidden && (
@@ -80,6 +90,6 @@ export default function Layout({ children, footerHidden, contactUsHidden }) {
           <Footer menuItems={{ ...data }} />
         </>
       )}
-    </>
+    </StoreProvider>
   )
 }

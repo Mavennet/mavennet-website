@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import { ThemeProvider } from "styled-components"
+
+import { StoreContext } from "../../../utils/store"
 
 import Button from "../../shared/Button"
 import Hamburguer from "../../shared/Hamburguer/Hamburger"
@@ -17,6 +19,11 @@ const Header = ({ menuItems }) => {
   const [drawerItemsState, setDrawerItemsState] = useState([])
 
   const [isDrawerOpen, setDrawerState] = useState(false)
+
+  const { drawerMenu } = useContext(StoreContext)
+  const [isDrawerMenuOpen, setIsDrawerMenuOpen] = drawerMenu
+
+  console.log(drawerMenu)
 
   useEffect(() => {
     window.addEventListener("scroll", checkScroll)
@@ -42,6 +49,7 @@ const Header = ({ menuItems }) => {
 
   const handleDrawerState = state => {
     setDrawerState(state)
+    setIsDrawerMenuOpen(state)
   }
 
   const getDropdown = item => {

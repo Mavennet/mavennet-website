@@ -81,7 +81,6 @@ export const NavItem = styled.li`
 
 export const NavLink = styled(Link)`
   color: var(--c-p-haiti);
-  font-family: Barlow;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 29px;

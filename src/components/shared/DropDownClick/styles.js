@@ -5,7 +5,6 @@ export const DropDown = styled.div``
 
 export const Parent = styled.button`
   color: var(--c-p-haiti);
-  font-family: Barlow;
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 29px;
@@ -31,7 +30,6 @@ export const ListItem = styled.li``
 
 export const ItemLink = styled(Link)`
   color: var(--c-p-haiti);
-  font-family: Barlow;
   font-size: 1rem;
   font-weight: 500;
   line-height: 27px;

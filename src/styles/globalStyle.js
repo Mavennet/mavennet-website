@@ -12,6 +12,11 @@ const GlobalStyle = createGlobalStyle`
   ${typography}
   ${carousel}
   ${alert}
+
+  html {
+    overflow-y: ${({ isHtmlOverflowVisible }) =>
+      isHtmlOverflowVisible ? "auto" : "hidden"};
+  }
 `
 
 export default GlobalStyle
