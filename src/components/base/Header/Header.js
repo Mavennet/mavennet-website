@@ -55,7 +55,12 @@ const Header = ({ menuItems }) => {
   const getDropdown = item => {
     return (
       <S.DropdownWrapper>
-        <S.NavLink to={item.to} header={1}>
+        <S.NavLink
+          to={item.to}
+          header={1}
+          activeClassName="active"
+          partiallyActive={true}
+        >
           {item.name}
           <svg
             aria-hidden="true"
@@ -92,7 +97,9 @@ const Header = ({ menuItems }) => {
             {item.children.length > 0 ? (
               getDropdown(item)
             ) : (
-              <S.NavLink to={item.to}>{item.name}</S.NavLink>
+              <S.NavLink to={item.to} activeClassName="active">
+                {item.name}
+              </S.NavLink>
             )}
           </S.ListItem>
         ))}

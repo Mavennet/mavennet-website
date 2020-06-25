@@ -44,12 +44,15 @@ export const Navbar = styled.nav`
 
 export const NavList = styled.ul``
 
-export const ListItem = styled.li`
-  display: inline-block;
-`
-
 export const NavLink = styled(Link)`
   color: ${props => props.theme.color};
+  padding-bottom: 0.2em;
+  margin-top: 0.2em;
+  border-bottom: 2px solid transparent;
+
+  &.active {
+    border-bottom: 2px solid white;
+  }
 
   margin: 0 1em;
 
@@ -67,6 +70,14 @@ export const NavLink = styled(Link)`
     `}
 `
 
+export const ListItem = styled.li`
+  display: inline-block;
+
+  & > ${NavLink}:hover {
+    border-bottom: 2px solid white;
+  }
+`
+
 export const DropdownList = styled.ul`
   display: none;
   position: absolute;
@@ -77,6 +88,11 @@ export const DropdownList = styled.ul`
 
   padding: 1.2em 0.5em;
   min-width: max-content;
+
+  ${NavLink} {
+    padding-bottom: 0;
+    margin-top: 0;
+  }
 `
 
 export const DropdownListItem = styled.li`
@@ -95,6 +111,15 @@ export const DropdownWrapper = styled.div`
 
   &:hover ${DropdownList} {
     display: block;
+  }
+
+  &:hover > ${NavLink} {
+    border-bottom: 2px solid white;
+  }
+
+  & > ${NavLink} {
+    padding-bottom: 0.2em;
+    margin-top: 0.2em;
   }
 `
 
