@@ -113,10 +113,6 @@ export const DropdownWrapper = styled.div`
     display: block;
   }
 
-  &:hover > ${NavLink} {
-    border-bottom: 2px solid white;
-  }
-
   & > ${NavLink} {
     padding-bottom: 0.2em;
     margin-top: 0.2em;
