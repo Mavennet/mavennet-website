@@ -7,9 +7,7 @@ const InfoImageItem = ({
   title,
   description,
   ctaText,
-  slug,
   reverse,
-  buttomAlternate,
   imgMaxWidth,
 }) => {
   return (
@@ -26,7 +24,7 @@ const InfoImageItem = ({
         <S.TextContent>
           <S.Title>{title}</S.Title>
           <S.Description>{description}</S.Description>
-          <S.CTAButton text={ctaText} to={slug} reverse={reverse} />
+          <S.CTAButton text={ctaText} to="/" reverse={reverse} />
         </S.TextContent>
       </S.Column>
     </S.InfoImageItem>

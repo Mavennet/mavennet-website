@@ -15,7 +15,6 @@ const IndustriesPage = ({ data, location }) => {
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection title={title} subtitle={subtitle} />
       <IndustriesSection industries={industries} />
-      {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
     </Layout>
   )
 }
@@ -34,7 +33,6 @@ export const query = graphql`
         title
         description
         ctaText
-        slug
         image
       }
     }
