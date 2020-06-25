@@ -70,16 +70,17 @@ export const NavLink = styled(Link)`
 export const DropdownList = styled.ul`
   display: none;
   position: absolute;
+  top: 100%;
   background-color: #ffffff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
-  padding: 1em 0;
+  padding: 1.2em 0.5em;
   min-width: max-content;
 `
 
 export const DropdownListItem = styled.li`
-  padding: 0.5em 0;
+  padding: 0.8em 0;
   position: relative;
   width: 100%;
 
