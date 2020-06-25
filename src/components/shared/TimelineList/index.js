@@ -1,4 +1,10 @@
-import React, { createRef, forwardRef, useEffect } from "react"
+import React, {
+  createRef,
+  useRef,
+  forwardRef,
+  useEffect,
+  useState,
+} from "react"
 
 import * as S from "./styles"
 
@@ -17,7 +23,7 @@ const EventItem = ({ title, subtitle, logo, alt }) => (
   </S.Event>
 )
 
-const TimelineYear = ({ year, yearImage, events, active }, ref) => {
+const TimelineYear = ({ year, yearImage, events }, ref) => {
   return (
     <S.TimelineYear ref={ref}>
       <S.Header>
@@ -38,28 +44,61 @@ const TimelineYear = ({ year, yearImage, events, active }, ref) => {
 
 const TimelineYearRef = forwardRef(TimelineYear)
 
-const TimelineList = ({ events, activeYear }) => {
-  const refs = {}
-  refs["2018"] = React.createRef()
-  refs["2019"] = React.createRef()
-  refs["2020"] = React.createRef()
-
-  const listScrollRef = React.createRef()
-
+const TimelineList = ({
+  events,
+  refs,
+  listScrollRef,
+  isScrolling,
+  activeYear,
+  setActiveYear,
+}) => {
   useEffect(() => {
-    var topPos = refs[activeYear].current.offsetTop
-    listScrollRef.current.scrollTop = topPos - 20
-  }, [activeYear, refs, listScrollRef])
+    const handleScroll = () => {
+      if (isScrolling) return
+      const ref2018 = refs["2018"].current
+      const ref2019 = refs["2019"].current
+      const ref2020 = refs["2020"].current
+
+      const yearsTopAndBottom = {
+        "2018": {
+          top: ref2018.offsetTop,
+          bottom: ref2018.scrollHeight,
+        },
+        "2019": {
+          top: ref2019.offsetTop,
+          bottom: ref2019.scrollHeight,
+        },
+        "2020": {
+          top: ref2020.offsetTop,
+          bottom: ref2020.scrollHeight,
+        },
+      }
+      const scrollTop = listScrollRef.current.scrollTop
+      const offSet = 100
+
+      for (let [key, value] of Object.entries(yearsTopAndBottom)) {
+        if (
+          scrollTop + offSet > value.top &&
+          scrollTop + offSet < value.top + value.bottom
+        ) {
+          if (key !== activeYear) {
+            setActiveYear(key)
+          }
+          break
+        }
+      }
+    }
+    listScrollRef.current.addEventListener("scroll", handleScroll)
+
+    return () => {
+      listScrollRef.current.removeEventListener("scroll", handleScroll)
+    }
+  })
 
   return (
     <S.TimelineList ref={listScrollRef}>
       {Object.entries(events).map(([key, content]) => (
-        <TimelineYearRef
-          ref={refs[key]}
-          active={activeYear === key}
-          year={key}
-          {...content}
-        />
+        <TimelineYearRef ref={refs[key]} year={key} {...content} />
       ))}
     </S.TimelineList>
   )
