@@ -5,10 +5,10 @@ import { device } from "../../../consts/deviceSizes"
 export const GenericMainSection = styled.section`
   position: relative;
   padding: 13.5625em 0;
-  ${({ background }) =>
-    background &&
+  ${({ backgroundMobile }) =>
+    backgroundMobile &&
     `
-    background-image: url(${background});
+    background-image: url(${backgroundMobile});
   `}
 
   ${({ backgroundColor }) =>
@@ -30,6 +30,14 @@ export const GenericMainSection = styled.section`
   align-items: center;
 
   text-align: center;
+
+  @media ${device.tabletL} {
+    ${({ background }) =>
+      background &&
+      `
+    background-image: url(${background});
+  `}
+  }
 
   @media ${device.laptopL} {
     padding: 17em 0;
