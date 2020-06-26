@@ -87,6 +87,8 @@ export const NavigationContainer = styled.div`
 
   @media ${device.laptop} {
     flex: 0.8;
+
+    justify-content: flex-end;
   }
 
   @media ${device.laptopL} {
@@ -102,6 +104,10 @@ export const NavigationGroups = styled.nav`
   @media ${device.laptop} {
     width: auto;
     margin-top: 0;
+
+    &:first-child {
+      margin-right: 5.125em;
+    }
   }
 `
 
