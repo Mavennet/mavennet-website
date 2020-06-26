@@ -8,11 +8,12 @@ import background from "../../../assets/images/Home/desktop_background.png"
 
 import * as S from "./styles"
 
-const MainSection = ({ slogan, ctaText }) => {
+const MainSection = ({ slogan, subtitle, ctaText }) => {
   return (
     <S.MainSection background={background} backgroundMobile={backgroundMobile}>
       <Container>
         <S.Slogan>{slogan}</S.Slogan>
+        <S.Subtitle className="statement-medium">{subtitle}</S.Subtitle>
         <S.ButtonContainer>
           <Button text={ctaText} to="/solutions" />
         </S.ButtonContainer>

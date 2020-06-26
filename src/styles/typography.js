@@ -76,7 +76,8 @@ const typography = css`
     --f-m-h-small: 15px;
   }
 
-  h1 {
+  h1,
+  .headline-large {
     font-size: var(--f-m-s-headline-large);
     font-weight: var(--f-m-w-headline-large);
     line-height: var(--f-m-h-headline-large);
@@ -88,7 +89,8 @@ const typography = css`
     }
   }
 
-  h2 {
+  h2,
+  .headline-medium {
     font-size: var(--f-m-s-headline-medium);
     font-weight: var(--f-m-w-headline-medium);
     line-height: var(--f-m-h-headline-medium);
@@ -102,7 +104,8 @@ const typography = css`
     }
   }
 
-  h3 {
+  h3,
+  .statement-large {
     font-size: var(--f-m-s-statement-large);
     font-weight: var(--f-m-w-statement-large);
     line-height: var(--f-m-h-statement-large);
@@ -116,7 +119,8 @@ const typography = css`
     }
   }
 
-  h4 {
+  h4,
+  .statement-medium {
     font-size: var(--f-m-s-statement-medium);
     font-weight: var(--f-m-w-statement-medium);
     line-height: var(--f-m-h-statement-medium);
@@ -130,7 +134,8 @@ const typography = css`
     }
   }
 
-  p {
+  p,
+  .paragraph {
     font-size: var(--f-m-s-paragraph);
     font-weight: var(--f-m-w-paragraph);
     line-height: var(--f-m-h-paragraph);
@@ -145,7 +150,8 @@ const typography = css`
   }
 
   a,
-  button {
+  button,
+  .button-link {
     font-size: var(--f-m-s-button-link);
     font-weight: var(--f-m-w-button-link);
     line-height: var(--f-m-h-button-link);
@@ -159,7 +165,8 @@ const typography = css`
     }
   }
 
-  small {
+  small,
+  .small {
     font-size: var(--f-m-s-small);
     font-weight: var(--f-m-w-small);
     line-height: var(--f-m-h-small);

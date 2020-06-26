@@ -29,6 +29,7 @@ collections:
             collapsed: true
             fields:
               - { label: "Slogan", name: "slogan", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
               - {
                   label: "Solutions CTA Text",
                   name: "ctaText",

@@ -54,8 +54,6 @@ export const NavLink = styled(Link)`
     border-bottom: 2px solid white;
   }
 
-  margin: 0 1em;
-
   ${({ header }) =>
     header &&
     `
@@ -68,6 +66,14 @@ export const NavLink = styled(Link)`
         margin-top: 3px;
       }
     `}
+
+  @media ${device.laptop} {
+    margin: 0 .8em;
+  }
+
+  @media (max-width: '1048px') {
+    margin: 0 1em;
+  }
 `
 
 export const ListItem = styled.li`
