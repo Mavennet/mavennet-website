@@ -41,6 +41,13 @@ export const SolutionsList = styled.ul`
   }
 `
 
+export const IconImage = styled.img`
+  display: block;
+  max-width: 100%;
+
+  transition: transform 0.4s;
+`
+
 export const SolutionIcon = styled.li`
   box-sizing: content-box;
   margin: 0 1em;
@@ -49,17 +56,31 @@ export const SolutionIcon = styled.li`
   justify-content: center;
   align-items: center;
 
-  background-color: var(--c-p-selago-dark);
   border-radius: 37px;
 
   max-width: 200px;
 
   cursor: pointer;
-`
 
-export const IconImage = styled.img`
-  display: block;
-  max-width: 100%;
+  ${({ active }) =>
+    active &&
+    `
+      background-color: var(--c-p-selago-dark);
+  `}
+
+  transition: background-color .8s;
+
+  &:hover {
+    background-color: var(--c-p-selago-dark);
+  }
+
+  &:hover ${IconImage} {
+    ${({ active }) =>
+      !active &&
+      `
+        transform: translate(-1px, 2px);
+      `}
+  }
 `
 
 export const SlideSection = styled.section`
@@ -74,7 +95,7 @@ export const SlideSection = styled.section`
     height: 100%;
     top: 0;
     left: 0;
-    transform: skewY(6deg);
+    transform: skewY(4deg);
     background-color: var(--c-p-selago);
   }
 `
@@ -111,9 +132,14 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.img`
-  max-width: 100%;
+  width: 100%;
+  max-width: 380px;
   height: auto;
   margin: 0 auto;
+
+  @media ${device.tablet} {
+    max-width: 100%;
+  }
 `
 
 export const ContentWrapper = styled.div`
@@ -133,6 +159,10 @@ export const ContentWrapper = styled.div`
     max-width: 50%;
 
     margin-top: 0;
+    padding-right: 4em;
+  }
+
+  @media ${device.laptopL} {
     padding-right: 6em;
   }
 `

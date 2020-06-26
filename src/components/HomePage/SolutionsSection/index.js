@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useRef } from "react"
 
 import Slider from "react-slick"
 
@@ -7,11 +7,15 @@ import Button from "../../shared/Button"
 import * as S from "./styles"
 
 const SolutionsSection = ({ title, subtitle, solutionList }) => {
+  const [currSlide, setCurrSlide] = useState(0)
+
+  const sliderRef = useRef(null)
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 7000,
     activeClassName: "slick-active",
     slidesToShow: 1,
@@ -20,13 +24,21 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
       return <S.CustomDot />
     },
     appendDots: dots => <S.DotsWrapper>{dots}</S.DotsWrapper>,
+    beforeChange: (current, next) => setCurrSlide(next),
+  }
+
+  const handleSolutionIconClick = index => {
+    sliderRef.current.slickGoTo(index)
   }
 
   const getSolutionIcons = items => {
     const solutionItems = items.map(item => item.item)
 
-    return solutionItems.map(solution => (
-      <S.SolutionIcon>
+    return solutionItems.map((solution, index) => (
+      <S.SolutionIcon
+        active={index === currSlide}
+        onClick={() => handleSolutionIconClick(index)}
+      >
         <S.IconImage src={solution.logo} alt={solution.title} />
       </S.SolutionIcon>
     ))
@@ -64,7 +76,9 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
         <S.SolutionsList>{getSolutionIcons(solutionList)}</S.SolutionsList>
       </S.Header>
       <S.SlideSection>
-        <Slider {...settings}>{getSolutionItems(solutionList)}</Slider>
+        <Slider ref={sliderRef} {...settings}>
+          {getSolutionItems(solutionList)}
+        </Slider>
       </S.SlideSection>
     </S.SolutionsSection>
   )
