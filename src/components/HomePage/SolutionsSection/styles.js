@@ -82,7 +82,7 @@ export const SlideSection = styled.section`
 export const SolutionItem = styled.div`
   position: relative;
 
-  height: 100%;
+  /* height: 100%; */
 
   padding: 2.5em 0 3.875em;
 
