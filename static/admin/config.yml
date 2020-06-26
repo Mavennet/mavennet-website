@@ -63,34 +63,50 @@ collections:
                 }
           - label: "Solutions Section"
             name: "homeSolutionsSection"
-            widget: "list"
-            field:
-              label: "Solution Item"
-              name: "item"
-              widget: "object"
-              collapsed: true
-              fields:
-                - { label: "Solution Title", name: "title", widget: "string" }
-                - { label: "Solution Image", name: "image", widget: "image" }
-                - {
-                    label: "Solution Description",
-                    name: "description",
-                    widget: "text",
-                    required: false,
-                  }
-                - {
-                    label: "Select the solution",
-                    name: "slug",
-                    widget: "relation",
-                    collection: "solutions",
-                    searchFields: ["title", "{{slug}}"],
-                    valueField: "solutions/{{slug}}",
-                  }
-                - {
-                    label: "Solutions CTA Text",
-                    name: "ctaText",
-                    widget: "string",
-                  }
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "Solution List"
+                name: "solutionList"
+                widget: "list"
+                field:
+                  label: "Solution Item"
+                  name: "item"
+                  widget: "object"
+                  collapsed: true
+                  fields:
+                    - {
+                        label: "Solution Title",
+                        name: "title",
+                        widget: "string",
+                      }
+                    - {
+                        label: "Solution Image",
+                        name: "image",
+                        widget: "image",
+                      }
+                    - { label: "Solution Logo", name: "logo", widget: "image" }
+                    - {
+                        label: "Solution Description",
+                        name: "description",
+                        widget: "text",
+                        required: false,
+                      }
+                    - {
+                        label: "Select the solution",
+                        name: "slug",
+                        widget: "relation",
+                        collection: "solutions",
+                        searchFields: ["title", "{{slug}}"],
+                        valueField: "solutions/{{slug}}",
+                      }
+                    - {
+                        label: "Solutions CTA Text",
+                        name: "ctaText",
+                        widget: "string",
+                      }
+
           - label: "Partners Section"
             name: "homePartnersSection"
             widget: "object"

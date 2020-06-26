@@ -29,8 +29,8 @@ const IndexPage = ({ data, location }) => {
     <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...homeMainSection} />
+      <SolutionsSection {...homeSolutionsSection} />
       <ServiceSection {...homeServiceSection} />
-      <SolutionsSection solutions={homeSolutionsSection} />
       <PartnersSection {...homePartnersSection} partners={partnersData} />
       <NewsSection {...homeNewsSection} />
     </Layout>
@@ -51,6 +51,20 @@ export const query = graphql`
         slogan
         subtitle
       }
+      homeSolutionsSection {
+        title
+        subtitle
+        solutionList {
+          item {
+            title
+            image
+            logo
+            description
+            slug
+            ctaText
+          }
+        }
+      }
       homeServiceSection {
         title
         ctaText
@@ -60,15 +74,6 @@ export const query = graphql`
             title
             description
           }
-        }
-      }
-      homeSolutionsSection {
-        item {
-          title
-          image
-          description
-          slug
-          ctaText
         }
       }
       homePartnersSection {

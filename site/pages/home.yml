@@ -34,22 +34,42 @@ homeServiceSection:
           transformation, this includes ensuring that solutions are well
           integrated within enterprise environments.
 homeSolutionsSection:
-  - item:
-      title: Lorem ipsum dolor site amet, consectetuer
-      image: /assets/neoflow-map.gif
-      description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh. Lorem ipsum dolor site amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh
-      slug: /solutions/neoflow
-      ctaText: View Solution
-  - item:
-      title: Lorem ipsum dolor site amet, consectetuer
-      image: /assets/neoflow-map.gif
-      description: Lorem ipsum dolor site amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh. Lorem ipsum dolor site amet, consectetuer adipiscing elit,
-        sed diam nonummy nibh
-      slug: /solutions/metaltrail
-      ctaText: View Solution
+  title: What We Do
+  subtitle: Mavennet creates, builds and launches blockchain-enabled & AI
+    products, with a focus in large enterprise implementations.
+  solutionList:
+    - item:
+        title: Lorem ipsum dolor site amet, consectetuer
+        image: /assets/neoflow-map.gif
+        description: Access an end-to-end view of your oil supply chain, from the
+          wellhead to the refinery.
+        slug: solutions/neoflow
+        ctaText: View Solution
+        logo: /assets/neoflow_logo.png
+    - item:
+        title: Tracing the Steel Supply Chain
+        image: /assets/metaltrail-mockup.png
+        description: Securely trace origination of the steel and help avoid counterfeit.
+        slug: solutions/metaltrail
+        ctaText: View Solution
+        logo: /assets/mt-logo.png
+    - item:
+        title: First Institutional Canadian Dollar Stablecoin
+        image: /assets/qcad.png
+        description: A financial rail to facilitate instant payments in Canadian dollars
+          by using smart contracts.
+        slug: solutions/qcad
+        ctaText: View Solution
+        logo: /assets/qcad-logo-1.png
+    - item:
+        title: Trust-as-a-Service
+        image: /assets/mavenstamp-mockup.png
+        logo: /assets/group-9.png
+        description: Build your own applications or extend existing ones with the
+          Mavenstamp API, securing your data with immutable timestamps and
+          tamper detection.
+        slug: solutions/mavenstamp
+        ctaText: View Solution
 homePartnersSection:
   title: Who We Work With
   ctaText: Learn More About Partnership
