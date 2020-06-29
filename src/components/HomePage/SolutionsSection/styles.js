@@ -28,17 +28,19 @@ export const Subtitle = styled.p`
   margin-top: 0.8em;
 `
 
-export const SolutionsList = styled.ul`
-  display: none;
+export const SolutionsIconsSection = styled.div`
   margin-top: 3.3125em;
-
-  justify-content: space-between;
-  align-items: stretch;
 
   @media ${device.laptop} {
     margin-top: 2.75em;
-    display: flex;
   }
+`
+
+export const SolutionsList = styled.ul`
+  display: flex;
+
+  justify-content: space-between;
+  align-items: stretch;
 `
 
 export const IconImage = styled.img`
@@ -88,6 +90,8 @@ export const SlideSection = styled.section`
   position: relative;
 
   &:before {
+    display: none;
+
     z-index: -1;
     content: "";
     position: absolute;
@@ -97,6 +101,10 @@ export const SlideSection = styled.section`
     left: 0;
     transform: skewY(4deg);
     background-color: var(--c-p-selago);
+
+    @media ${device.laptop} {
+      display: block;
+    }
   }
 `
 
