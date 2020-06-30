@@ -4,6 +4,8 @@ import Slider from "react-slick"
 
 import Container from "../../base/Container"
 
+import line from "./test2.png"
+
 import arrow from "../../../assets/icons/slider-arrow.svg"
 
 import * as S from "./styles"
@@ -48,7 +50,7 @@ export const ItemsList = ({ children, isDesktop }) => {
     prevArrow: <SamplePrevArrow />,
   }
 
-  if (isDesktop) return children
+  if (isDesktop) return <S.List>{children}</S.List>
 
   return <Slider {...settings}>{children}</Slider>
 }
@@ -76,16 +78,21 @@ const RAndDSection = ({ title, subtitle, rAndDList }) => {
         <S.Title>{title}</S.Title>
         <S.Description>{subtitle}</S.Description>
         <S.ListWrapper>
-          <ItemsList isDesktop={windowWidth >= 1024}>
+          <ItemsList isDesktop={windowWidth >= 1280}>
             {rAndDList.map(({ item }, index) => {
               const { title, description, image } = item
               return (
-                <S.Item isReverse={index % 2 !== 0}>
+                <S.Item isReverse={index % 2 === 0}>
                   <S.TextContext>
                     <S.ItemTitle>{title}</S.ItemTitle>
                     <S.ItemDescription>{description}</S.ItemDescription>
                   </S.TextContext>
-                  <S.Image src={image} alt={title} />
+                  <S.ImageContainer>
+                    <S.Image src={image} alt={title} />
+                    {index !== rAndDList.length - 1 && (
+                      <S.Line src={line} isReverse={index % 2 !== 0} />
+                    )}
+                  </S.ImageContainer>
                 </S.Item>
               )
             })}
