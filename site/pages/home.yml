@@ -68,6 +68,31 @@ homeSolutionsSection:
           tamper detection.
         slug: solutions/mavenstamp
         ctaText: View Solution
+homeRandDSection:
+  title: Our R&D and IP
+  subtitle: In our years of experience and exploration, we have cultivated a
+    robust portfolio of knowledge and IP in many different fields.
+  rAndDList:
+    - item:
+        title: Identity Management
+        description: Verify and trust information without the liabilities of identity
+          management or disclosing private data.
+        image: /assets/r-d-1.png
+    - item:
+        title: Asset Traceability
+        description: Track assets transparently, leveraging the immutability of
+          blockchain technology and avoiding "double-spending”.
+        image: /assets/r-d-2.png
+    - item:
+        title: Digital Assets
+        description: Instant settlement of transactions and complete digital
+          auditability to streamline financial operations.
+        image: /assets/r-d-3.png
+    - item:
+        title: Analytics and AI
+        description: Blockchain technology provides trusted, immutable data that
+          augments the impact of Analytics and AI.
+        image: /assets/r-d-4.png
 homePartnersSection:
   title: Clients and Partners
   partners:

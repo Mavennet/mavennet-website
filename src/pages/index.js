@@ -10,6 +10,7 @@ import SolutionsSection from "../components/HomePage/SolutionsSection"
 import PartnersSection from "../components/shared/GenericPartnersSection"
 import AwardsSection from "../components/shared/AwardsSection"
 import NewsSection from "../components/HomePage/NewsSection"
+import RAndDSection from "../components/HomePage/RAndDSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
 
@@ -24,6 +25,7 @@ const IndexPage = ({ data, location }) => {
     homeSolutionsSection,
     homeNewsSection,
     homePartnersSection,
+    homeRandDSection,
   } = post
 
   return (
@@ -32,6 +34,7 @@ const IndexPage = ({ data, location }) => {
       <MainSection {...homeMainSection} />
       <SolutionsSection {...homeSolutionsSection} />
       <ServiceSection {...homeServiceSection} />
+      <RAndDSection {...homeRandDSection} />
       <PartnersSection {...homePartnersSection} partners={partnersData} />
       <AwardsSection title="Awards and Recognition" />
       <NewsSection {...homeNewsSection} />
@@ -76,6 +79,17 @@ export const query = graphql`
             image
             title
             description
+          }
+        }
+      }
+      homeRandDSection {
+        title
+        subtitle
+        rAndDList {
+          item {
+            title
+            description
+            image
           }
         }
       }

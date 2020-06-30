@@ -65,7 +65,7 @@ collections:
           - label: "Solutions Section"
             name: "homeSolutionsSection"
             widget: "object"
-            colapsed: true
+            collapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -108,7 +108,29 @@ collections:
                         name: "ctaText",
                         widget: "string",
                       }
-
+          - label: "R&D Section"
+            name: "homeRandDSection"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - label: "R&d List"
+                name: "rAndDList"
+                widget: "list"
+                field:
+                  label: "R&D Item"
+                  name: "item"
+                  widget: "object"
+                  collapsed: true
+                  fields:
+                    - { label: "R&D Title", name: "title", widget: "string" }
+                    - {
+                        label: "R&D Description",
+                        name: "description",
+                        widget: "text",
+                      }
+                    - { label: "R&D Image", name: "image", widget: "image" }
           - label: "Partners Section"
             name: "homePartnersSection"
             widget: "object"
