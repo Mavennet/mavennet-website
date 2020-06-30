@@ -3,8 +3,37 @@ import React, { useState, useRef, useEffect } from "react"
 import Slider from "react-slick"
 
 import Button from "../../shared/Button"
+import Container from "../../base/Container"
+import arrow from "../../../assets/icons/slider-arrow.svg"
 
 import * as S from "./styles"
+
+const SampleNextArrow = props => {
+  const { className, style, onClick } = props
+  return (
+    <S.Arrow
+      className={className}
+      onClick={onClick}
+      style={{ ...style, height: "auto" }}
+    >
+      <S.ArrowImage src={arrow} />
+    </S.Arrow>
+  )
+}
+
+const SamplePrevArrow = props => {
+  const { className, style, onClick } = props
+  return (
+    <S.Arrow
+      className={className}
+      onClick={onClick}
+      style={{ ...style, height: "auto" }}
+      src={arrow}
+    >
+      <S.ArrowImage src={arrow} isPrev />
+    </S.Arrow>
+  )
+}
 
 const SolutionsSection = ({ title, subtitle, solutionList }) => {
   const [currSlide, setCurrSlide] = useState(0)
@@ -37,12 +66,14 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
     customPaging: function (i) {
       return <S.CustomDot />
     },
-    appendDots: dots => <S.DotsWrapper>{dots}</S.DotsWrapper>,
+    appendDots: dots => <S.DotsWrapper mobileHidden>{dots}</S.DotsWrapper>,
     beforeChange: (current, next) => {
       if (solutionLogoSliderRef.current)
         solutionLogoSliderRef.current.slickGoTo(next)
       setCurrSlide(next)
     },
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   }
 
   const logosSettings = {
@@ -55,13 +86,15 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
     customPaging: function (i) {
       return <S.CustomDot />
     },
-    // appenddots: dots => <s.dotswrapper>{dots}</s.dotswrapper>,
+    appendDots: dots => <S.DotsWrapper>{dots}</S.DotsWrapper>,
     beforeChange: (current, next) => {
       solutionBannerSliderRef.current.slickGoTo(next)
-
       setCurrSlide(next)
     },
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   }
+
   const handleSolutionIconClick = index => {
     solutionBannerSliderRef.current.slickGoTo(index)
   }
@@ -85,11 +118,15 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
     }
 
     return (
-      <Slider {...logosSettings} ref={solutionLogoSliderRef}>
-        {solutionItems.map((solution, index) => (
-          <p>{solution.title}</p>
-        ))}
-      </Slider>
+      <Container>
+        <Slider {...logosSettings} ref={solutionLogoSliderRef}>
+          {solutionItems.map((solution, index) => (
+            <S.IconWrapper>
+              <S.IconImage src={solution.logo} alt={solution.title} isMobile />
+            </S.IconWrapper>
+          ))}
+        </Slider>
+      </Container>
     )
   }
 

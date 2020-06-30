@@ -42,12 +42,44 @@ export const SolutionsList = styled.ul`
   justify-content: space-between;
   align-items: stretch;
 `
+export const IconWrapper = styled.div`
+  height: 40px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  padding: 0 20px;
+`
 
 export const IconImage = styled.img`
   display: block;
   max-width: 100%;
 
   transition: transform 0.4s;
+
+  ${({ isMobile }) =>
+    isMobile &&
+    `
+    max-height: 100%;
+    margin: 0 auto;
+  `}
+`
+
+export const Arrow = styled.div`
+  &::before {
+    display: none;
+  }
+`
+
+export const ArrowImage = styled.img`
+  ${({ isPrev }) =>
+    isPrev &&
+    `
+    transform: rotate(180deg);
+  `}
 `
 
 export const SolutionIcon = styled.li`
@@ -201,4 +233,14 @@ export const CustomDot = styled.div`
 
 export const DotsWrapper = styled.ul`
   bottom: -54px !important;
+
+  ${({ mobileHidden }) =>
+    mobileHidden &&
+    `
+    display: none !important;
+
+    @media ${device.laptop} {
+      display: block !important;
+    }
+  `}
 `
