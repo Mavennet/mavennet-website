@@ -1,6 +1,5 @@
 import React from "react"
 
-import Container from "../../base/Container"
 import TextArrowCTA from "../../shared/TextArrowCTA"
 
 import * as S from "./styles"
@@ -22,7 +21,7 @@ const GenericPartnersSection = ({ title, ctaText, partners, className }) => {
 
   return (
     <S.GenericPartnersSection className={className}>
-      <Container center>
+      <S.PartnersContainer center>
         <S.Title>{title}</S.Title>
         {getPartnersList(partners)}
         {ctaText && (
@@ -30,7 +29,7 @@ const GenericPartnersSection = ({ title, ctaText, partners, className }) => {
             <TextArrowCTA text={ctaText} to="/partnership" />
           </S.CTAContainer>
         )}
-      </Container>
+      </S.PartnersContainer>
     </S.GenericPartnersSection>
   )
 }

@@ -91,6 +91,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       featuredAwards: String
       featuredProfessionalAssociation: String
     }
+
+    type PagesYamlHomePartnersSection implements Node {
+      ctaText: String
+    }
   `
   createTypes(typeDefs)
 }

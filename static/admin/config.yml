@@ -65,6 +65,7 @@ collections:
           - label: "Solutions Section"
             name: "homeSolutionsSection"
             widget: "object"
+            colapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Subtitle", name: "subtitle", widget: "string" }
@@ -118,6 +119,7 @@ collections:
                   label: "Partners CTA Text",
                   name: "ctaText",
                   widget: "string",
+                  required: false,
                 }
               - label: "Partners List"
                 name: "partners"

@@ -8,14 +8,16 @@ homeMainSection:
     catapult enterprises to digital spaces no one has reached before.
 homeServiceSection:
   title: How We Do It
-  description: We know that to get to places no one has ever been before you need
+  description:
+    We know that to get to places no one has ever been before you need
     both imagination and a disciplined approach to technology.
   ctaText: Learn more about our approach
   steps:
     - item:
         image: /assets/strategy-icon.png
         title: Strategy
-        description: We help organizations conceptualize their goals, align decision
+        description:
+          We help organizations conceptualize their goals, align decision
           makers and formulate actionable strategies for success.
     - item:
         image: /assets/design-icon.png
@@ -24,7 +26,8 @@ homeServiceSection:
     - item:
         image: /assets/implementation-logo.png
         title: Implementation
-        description: We follow agile methodologies to execute complex solutions in a
+        description:
+          We follow agile methodologies to execute complex solutions in a
           record time.
     - item:
         image: /assets/support-icon.png
@@ -39,7 +42,8 @@ homeSolutionsSection:
     - item:
         title: Digitalizing the Barrel of Oil
         image: /assets/neoflow-map.gif
-        description: Access an end-to-end view of your oil supply chain, from the
+        description:
+          Access an end-to-end view of your oil supply chain, from the
           wellhead to the refinery.
         slug: solutions/neoflow
         ctaText: View Solution
@@ -54,7 +58,8 @@ homeSolutionsSection:
     - item:
         title: First Institutional Canadian Dollar Stablecoin
         image: /assets/qcad.png
-        description: A financial rail to facilitate instant payments in Canadian dollars
+        description:
+          A financial rail to facilitate instant payments in Canadian dollars
           by using smart contracts.
         slug: solutions/qcad
         ctaText: View Solution
@@ -63,14 +68,14 @@ homeSolutionsSection:
         title: Trust-as-a-Service
         image: /assets/mavenstamp-mockup.png
         logo: /assets/group-9.png
-        description: Build your own applications or extend existing ones with the
+        description:
+          Build your own applications or extend existing ones with the
           Mavenstamp API, securing your data with immutable timestamps and
           tamper detection.
         slug: solutions/mavenstamp
         ctaText: View Solution
 homePartnersSection:
-  title: Who We Work With
-  ctaText: Learn More About Partnership
+  title: Clients and Partners
   partners:
     - item:
         title: Homeland Security

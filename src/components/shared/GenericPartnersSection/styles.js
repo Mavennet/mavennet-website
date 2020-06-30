@@ -1,13 +1,44 @@
 import styled from "styled-components"
 
+import Container from "../../base/Container"
+
 import { device } from "../../../consts/deviceSizes"
 
 export const GenericPartnersSection = styled.section`
-  padding: 4.0625em 0 2.1875em;
+  padding: 21px 0 114px;
+
+  background-color: var(--c-p-selago);
+
+  @media ${device.laptop} {
+    transform: skewY(-5deg);
+
+    padding: 65px 0 125px;
+
+    background-color: var(--c-p-selago-dark);
+  }
+`
+
+export const PartnersContainer = styled(Container)`
+  width: 95%;
+
+  @media ${device.laptop} {
+    transform: skewY(5deg);
+  }
 `
 
 export const Title = styled.h2`
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+  line-height: 56px;
   text-align: center;
+
+  max-width: 80%;
+
+  @media ${device.laptop} {
+    font-size: 48px;
+    line-height: 58px;
+  }
 `
 
 export const PartnersList = styled.ul`
@@ -23,7 +54,8 @@ export const PartnersList = styled.ul`
 export const PartnersItem = styled.li`
   margin: 1.625em 1em 0;
 
-  width: 80px;
+  max-width: 130px;
+  max-height: 60px;
 
   @media ${device.tablet} {
     width: 100px;
@@ -39,7 +71,9 @@ export const PartnerLink = styled.a``
 export const PartnerImage = styled.img`
   display: block;
 
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 `
 
 export const CTAContainer = styled.div`
