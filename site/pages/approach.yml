@@ -2,46 +2,71 @@ meta:
   title: Approach
 title: Approach
 approachMainSection:
-  slogan: Mavennet Catchy Slogan
+  slogan: Our Approach Goes End-to-end, Delivering impact
 approachStepsSection:
   - item:
-      title: Strategy
+      title: Strategy - Aim for the moon
       stepsList:
-        - "- IT Advisory"
-        - "- Blockchain Strategy "
-        - "- Tokenomics and token launch"
-        - "- Decentralized Identity Management "
-        - "Startup Product Strategy "
+        - • IT Advisory
+        - • Blockchain Strategy
+        - • Startup Product Strategy
+        - • Business Case definition
+        - • Tokenomics and token launch
+        - • Decentralized Identity Management
       cta:
-        ctaText: Talk to us to learn more
-        ctaType: contactUs
+        ctaText: Talk To Us
+        ctaType: solutionsCta
+        to: "/contact-us"
+      description:
+        It’s not just about doing things right, it’s about doing the right
+        things. We have many years of experience helping organizations
+        conceptualize their goals, align decision makers, and formulate
+        actionable strategies for success.
   - item:
-      title: Design
+      title: Design - Ready for a spacewalk?
       stepsList:
-        - "- UX Research and Design "
-        - "- Branding and Logo Design"
-        - "- Usability Testing"
+        - "• Design Thinking"
+        - "• UX Research"
+        - "• User Experience Design"
+        - "• Conceptual Prototype"
+        - "• Branding Development"
+        - "• Usability Testing"
       cta:
         ctaText: View Our Solutions
         ctaType: solutionsCta
+        to: "/solutions"
+      description:
+        We focus on early validation through design. A clickable concept is
+        a worth a million words. It is a lot easier to react to something than
+        to discuss concepts on paper. Here the end user is king.
   - item:
-      title: Implementation
+      title: Implementation - 3, 2, 1… Ignition!
       stepsList:
-        - "- Fullstack Development"
-        - "- Blockchain Development"
-        - "- Analytics"
+        - "• Agile Delivery"
+        - "• ­­AI and Blockchain"
+        - "• Focus on Value"
+        - "• Go-Live Plan"
+        - "• Roadmap to adoption and commercial success"
       cta:
-        ctaText: Talk to us to learn more
+        ctaText: View R&D Modules
         ctaType: solutionsCta
+        to: "/r&d"
+      description: "Over the years we have develop accelerators that allow us to
+        kickstart and execute complex solutions in a record time. We follow
+        agile methodologies, when you are creating a ground-breaking concept not
+        all variables are known during the design phase. "
   - item:
-      title: Support
+      title: Support – Major Tom can hear you
       cta:
         ctaText: Talk to Us to learn more
         ctaType: solutionsCta
       stepsList:
-        - "- Project & Product Management"
-        - "- Smart Contract Auditing"
-        - "- Decentralized Platform Operations & Integration"
+        - "• Project & Product Management"
+        - "• Smart Contract Auditing"
+        - "• Decentralized Platform Operations & Integration"
+      description: We accompany our clients end to end on the path of digital
+        transformation, and ensure a foundation exist for their long-term
+        success.
 approachContactUsSection:
-  title: "Lorem ipsum dolor sit amet, consectetuer ipsum dolor sit  "
+  title: "Ready For Liftoff?"
   ctaText: Let's Talk

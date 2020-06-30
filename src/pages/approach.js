@@ -36,8 +36,10 @@ export const query = graphql`
           cta {
             ctaText
             ctaType
+            to
           }
           stepsList
+          description
           title
         }
       }

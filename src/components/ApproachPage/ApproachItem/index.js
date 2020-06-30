@@ -2,20 +2,18 @@ import React from "react"
 
 import * as S from "./styles"
 
-const ApproachItem = ({ cta, stepsList, title, position }) => {
+const ApproachItem = ({ cta, stepsList, title, description, position }) => {
   return (
     <S.ApproachItem hasPaddingLeft={position % 2 !== 0}>
       <S.ApproachTitle>{title}</S.ApproachTitle>
+      <S.Description>{description}</S.Description>
       <S.StepsList>
         {stepsList.map(step => (
-          <S.Step>{step}</S.Step>
+          <S.Step isHalfWidth={stepsList.length > 3}>{step}</S.Step>
         ))}
       </S.StepsList>
-      {position % 2 !== 0 ? (
-        <S.CTAButton text={cta.ctaText} to="/contact-us" reverse />
-      ) : (
-        <S.TextCTA text={cta.ctaText} to="contact-us" />
-      )}
+
+      <S.CTAButton text={cta.ctaText} to={cta.to} reverse />
     </S.ApproachItem>
   )
 }

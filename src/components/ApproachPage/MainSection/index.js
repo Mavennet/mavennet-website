@@ -33,6 +33,7 @@ const MainSection = ({
     approaches.map(({ item }, index) => (
       <S.Wrapper
         desktopTop={topValues.approachList[index].desktop}
+        tabletTop={topValues.approachList[index].tablet}
         mobileTop={topValues.approachList[index].mobile}
       >
         <S.CustomContainer align={index % 2 === 0 ? "flex-start" : "flex-end"}>
@@ -49,6 +50,7 @@ const MainSection = ({
 
       <S.Wrapper
         desktopTop={topValues.main.desktop}
+        tabletTop={topValues.main.tablet}
         mobileTop={topValues.main.mobile}
       >
         <S.CustomContainer align="center">
@@ -58,6 +60,7 @@ const MainSection = ({
       {getListApproaches(approachStepsSection)}
       <S.Wrapper
         desktopTop={topValues.contactUs.desktop}
+        tabletTop={topValues.contactUs.tablet}
         mobileTop={topValues.contactUs.mobile}
       >
         <S.CustomContainer align="center">

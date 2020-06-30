@@ -74,27 +74,33 @@ const getRealMobileTopValue = value =>
 const topValues = {
   main: {
     desktop: calcDesktopValue(270),
+    tablet: calcDesktopValue(270),
     mobile: calcMobileValue(154),
   },
   strategy: {
     desktop: calcDesktopValue(750),
-    mobile: calcMobileValue(711),
+    tablet: calcDesktopValue(720),
+    mobile: calcMobileValue(659),
   },
   design: {
     desktop: calcDesktopValue(1438),
-    mobile: calcMobileValue(1611),
+    tablet: calcDesktopValue(1329),
+    mobile: calcMobileValue(1564),
   },
   implementation: {
     desktop: calcDesktopValue(2251),
-    mobile: calcMobileValue(2675),
+    tablet: calcDesktopValue(2196),
+    mobile: calcMobileValue(2596),
   },
   operation: {
     desktop: calcDesktopValue(3141),
+    tablet: calcDesktopValue(3100),
     mobile: calcMobileValue(3910),
   },
   contactUs: {
     desktop: calcDesktopValue(3851),
-    mobile: calcMobileValue(5100),
+    tablet: calcDesktopValue(3851),
+    mobile: calcMobileValue(5250),
   },
 }
 

@@ -14,7 +14,7 @@ box-sizing: border-box;
     
   `}
 
-  @media ${device.laptop} {
+  @media ${device.tablet} {
     width: 50%;
 
     ${({ hasPaddingLeft }) =>
@@ -27,14 +27,27 @@ box-sizing: border-box;
 `
 
 export const ApproachTitle = styled.h2`
-  font-size: 2.125rem;
+  font-size: 34px;
   font-weight: 600;
   line-height: 41px;
 
   @media ${device.tablet} {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: bold;
-    line-height: 48px;
+    letter-spacing: 0.25px;
+    line-height: 56px;
+  }
+`
+
+export const Description = styled.p`
+  font-size: 16px;
+  line-height: 27px;
+  margin-top: 25px;
+
+  @media ${device.tablet} {
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    line-height: 24px;
   }
 `
 
@@ -57,16 +70,25 @@ export const StepsList = styled.ul`
 `
 
 export const Step = styled.li`
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
   line-height: 24px;
+
   &:not(:first-child) {
     margin-top: 1.1875em;
   }
 
   @media ${device.laptop} {
     margin-top: 1em !important;
-    width: 50%;
+    width: 100%;
+
+    ${({ isHalfWidth }) =>
+      isHalfWidth &&
+      `
+      width: 45%;
+      padding-right: 5%;
+    `}
   }
 `
 

@@ -16,7 +16,11 @@ export const Wrapper = styled.div`
   position: absolute;
   top: ${props => props.mobileTop};
 
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
+    top: ${props => props.tabletTop};
+  }
+
+  @media ${device.desktop} {
     top: ${props => props.desktopTop};
   }
 `
@@ -39,6 +43,8 @@ export const Slogan = styled.h1`
   line-height: 48px;
   text-align: center;
 
+  max-width: 853px;
+
   @media ${device.laptop} {
     font-size: 3.375em;
     font-weight: bold;
@@ -53,6 +59,14 @@ export const ContactUsTitle = styled.h3`
   font-weight: 600;
   line-height: 41px;
   text-align: center;
+
+  @media ${device.laptop} {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 64px;
+    text-align: center;
+  }
 `
 
 export const ContactUsButton = styled(Button)`

@@ -203,6 +203,11 @@ collections:
               widget: "object"
               fields:
                 - { label: "Step Title", name: "title", widget: "string" }
+                - {
+                    label: "Step Description",
+                    name: "description",
+                    widget: "string",
+                  }
                 - label: "Steps List"
                   name: "stepsList"
                   widget: "list"
@@ -212,6 +217,7 @@ collections:
                   widget: "object"
                   fields:
                     - { label: "CTA Text", name: "ctaText", widget: "string" }
+                    - { label: "CTA To", name: "to", widget: "string" }
                     - {
                         label: "CTA Type",
                         name: "ctaType",
