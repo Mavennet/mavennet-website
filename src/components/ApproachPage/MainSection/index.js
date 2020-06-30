@@ -4,7 +4,8 @@ import ApproachItem from "../ApproachItem"
 
 import { getTopValues } from "../../../helpers/approachPageAbsoluteCalc"
 
-import background from "../../../assets/images/approach-bg.png"
+import background from "../../../assets/images/approach-bg1.png"
+import rocketbackground from "../../../assets/images/approach-rocket.png"
 import mobileBackground from "../../../assets/images/mobile-approach-bg.png"
 
 import * as S from "./styles"
@@ -71,6 +72,7 @@ const MainSection = ({
           />
         </S.CustomContainer>
       </S.Wrapper>
+      {windowWidth >= 768 && <S.RocketImage src={rocketbackground} />}
     </S.MainSection>
   )
 }

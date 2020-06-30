@@ -12,7 +12,7 @@ const ApproachPage = ({ data, location }) => {
   const { meta } = post
 
   return (
-    <Layout contactUsHidden>
+    <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...post} />
     </Layout>

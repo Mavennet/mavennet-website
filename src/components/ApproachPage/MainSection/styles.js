@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
   position: absolute;
   top: ${props => props.mobileTop};
 
-  @media ${device.tabletL} {
+  @media ${device.tablet} {
     top: ${props => props.tabletTop};
   }
 
@@ -34,6 +34,10 @@ export const CustomContainer = styled(Container)`
 export const BackgroundImage = styled.img`
   max-width: 100%;
   height: auto;
+
+  @media ${device.laptop} {
+    width: 100%;
+  }
 `
 
 export const Slogan = styled.h1`
@@ -71,4 +75,13 @@ export const ContactUsTitle = styled.h3`
 
 export const ContactUsButton = styled(Button)`
   margin-top: 2.5em;
+`
+
+export const RocketImage = styled.img`
+  display: block;
+  width: 45%;
+  max-width: 100%;
+  height: auto;
+
+  margin: 0 auto;
 `
