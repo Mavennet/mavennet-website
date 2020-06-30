@@ -5,22 +5,22 @@ rAndDMainSection:
   slogan: We turn our intellectual property into solutions that drive impact
 rAndDListSection:
   - item:
-      image: /assets/did.png
+      image: /assets/did-logo.png
       title: Identity Management
       description: Decentralized Identifiers (DIDs) associate a robust digital identity to actors and assets along a  value chain. In conjunction with Verifiable Credentials (VCs) they enable cryptographically sound and privacy preserving claims that provide transparency and traceability to value chain participants.
       ctaText: View Use Case
   - item:
-      image: /assets/traceability.png
+      image: /assets/traceability-logo.png
       title: Asset Traceability
       description: The ability to track and trace assets throughout the value chain can help reduce double-spending of products, disputes, increase efficiencies and react in real-time to anomalies. Mavennet has developed a suite of products that bring the benefits of immutable asset traceability to real-world applications.
       ctaText: View Use Case
   - item:
-      image: /assets/digital-asset-kit-graphic-copy.png
+      image: /assets/digital-logo.png
       title: Digital Assets
       description: Traditional digital assets are volatile and unreliable. Mavennet specializes in bridging the gap between legacy financial services and digital solutions that provide robust payment and settlement options for enterprises. Our technology does this by unlocking the power of transparency and real-time auditability.
       ctaText: View Use Case
   - item:
-      image: /assets/ai.png
+      image: /assets/ai-logo.png
       title: Analytics & AI
       description: Aggregated data analytics, when coupled with blockchain technology, helps enterprises make informed decisions in real-time with trusted data that has been validated by multiple stakeholders. The prediction power is then augmented by better, faster and more accurate data.
       ctaText: View Use Case

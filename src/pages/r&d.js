@@ -8,6 +8,7 @@ import MainSection from "../components/RandDPage/MainSection"
 import ListSection from "../components/RandDPage/ListSection"
 
 const RandDPage = ({ data, location }) => {
+  console.log(data)
   const post = data.pagesYaml
 
   const { rAndDListSection, rAndDMainSection, meta } = post
@@ -20,8 +21,6 @@ const RandDPage = ({ data, location }) => {
     </Layout>
   )
 }
-
-export default RandDPage
 
 export const query = graphql`
   query {
@@ -44,3 +43,5 @@ export const query = graphql`
     }
   }
 `
+
+export default RandDPage
