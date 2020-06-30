@@ -82,22 +82,25 @@ const RAndDSection = ({ title, subtitle, rAndDList }) => {
             {rAndDList.map(({ item }, index) => {
               const { title, description, image } = item
               return (
-                <S.Item isReverse={index % 2 === 0}>
-                  <S.TextContext>
-                    <S.ItemTitle>{title}</S.ItemTitle>
-                    <S.ItemDescription>{description}</S.ItemDescription>
-                  </S.TextContext>
-                  <S.ImageContainer>
-                    <S.Image src={image} alt={title} />
-                    {index !== rAndDList.length - 1 && (
-                      <S.Line src={line} isReverse={index % 2 !== 0} />
-                    )}
-                  </S.ImageContainer>
-                </S.Item>
+                <S.ItemWrapper>
+                  <S.Item isReverse={index % 2 === 0}>
+                    <S.TextContext>
+                      <S.ItemTitle>{title}</S.ItemTitle>
+                      <S.ItemDescription>{description}</S.ItemDescription>
+                    </S.TextContext>
+                    <S.ImageContainer>
+                      <S.Image src={image} alt={title} />
+                    </S.ImageContainer>
+                  </S.Item>
+                  {index !== rAndDList.length - 1 && (
+                    <S.Line src={line} isReverse={index % 2 !== 0} />
+                  )}
+                </S.ItemWrapper>
               )
             })}
           </ItemsList>
         </S.ListWrapper>
+        <S.CTA text="Learn more about our R&D and IP" to="/r&d" />
       </Container>
     </S.RAndDSection>
   )

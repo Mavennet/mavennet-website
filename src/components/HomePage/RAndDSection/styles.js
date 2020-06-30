@@ -2,10 +2,14 @@ import styled from "styled-components"
 
 import { device } from "../../../consts/deviceSizes"
 
-import image from "./test.svg"
+import TextArrowCTA from "../../shared/TextArrowCTA"
 
 export const RAndDSection = styled.section`
   padding: 53px 0;
+
+  @media ${device.laptopL} {
+    padding-bottom: 86px;
+  }
 `
 
 export const Title = styled.h2`
@@ -49,39 +53,11 @@ export const List = styled.ul`
 export const ImageContainer = styled.div`
   width: 203px;
   position: relative;
-`
 
-export const Line = styled.img`
-  display: none;
-  position: absolute;
-  left: 98%;
-  bottom: 50%;
-  width: 44%;
-  height: 110%;
-
-  z-index: -1;
-
-  @media ${device.laptopL} {
-    display: block;
-  }
-
-  @media (min-width: 1400px) {
-    display: block;
-    width: 71%;
-  }
-
-  ${({ isReverse }) =>
-    isReverse &&
-    `
-    transform: rotateX(180deg);
-    top: 50%;
-    bottom: auto;
-    display: none;
-
-    @media (max-width: 1400px) {
-      width: 71%;
+    @media ${device.laptopL} {
+      display: block;
     }
-  `}
+  }
 `
 
 export const Image = styled.img`
@@ -99,6 +75,32 @@ export const TextContext = styled.div`
   }
 `
 
+export const ItemWrapper = styled.div`
+  @media ${device.laptopL} {
+    width: 25%;
+    display: flex;
+    align-items: center;
+  }
+`
+
+export const Line = styled.img`
+  width: 50%;
+  height: 280px;
+  display: none !important;
+
+  margin: 0 -20%;
+
+  ${({ isReverse }) =>
+    isReverse &&
+    `
+    transform: scaleX(-1);
+  `}
+
+  @media ${device.laptopL} {
+    display: block !important;
+  }
+`
+
 export const Item = styled.div`
   display: flex !important;
   flex-direction: column-reverse;
@@ -106,6 +108,7 @@ export const Item = styled.div`
   position: relative;
 
   @media ${device.laptopL} {
+    width: 90%;
     ${({ isReverse }) =>
       isReverse &&
       `
@@ -118,7 +121,7 @@ export const Item = styled.div`
       ${ImageContainer} {
         margin-top: 60px;
       }
-    `}
+    `};
   }
 `
 
@@ -164,4 +167,15 @@ export const ArrowImage = styled.img`
     `
     transform: rotate(180deg);
   `}
+`
+
+export const CTA = styled(TextArrowCTA)`
+  margin-top: 50px;
+  @media ${device.laptopL} {
+    margin-top: 78px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 29px;
+  }
 `
