@@ -6,12 +6,12 @@ import Container from "../Container"
 
 import * as S from "./styles"
 
-const ContactUsFooter = () => {
+const ContactUsFooter = ({ fillFooter }) => {
   return (
     <S.ContactUsFooter>
-      <SvgDivider isPointingUp top="0" />
+      <SvgDivider isPointingUp top="0" fill={fillFooter} />
       <Container center>
-        <S.Text>Lorem ipsum dolor sit amet</S.Text>
+        <S.Text>Ready For Liftoff?</S.Text>
         <S.ButtonContainer>
           <Button text="Get In Touch" to="/contact-us" />
         </S.ButtonContainer>

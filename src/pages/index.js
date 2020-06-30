@@ -27,7 +27,7 @@ const IndexPage = ({ data, location }) => {
   } = post
 
   return (
-    <Layout>
+    <Layout fillFooter="#F9F5FE">
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...homeMainSection} />
       <SolutionsSection {...homeSolutionsSection} />

@@ -13,7 +13,12 @@ import GlobalStyle from "../../../styles/globalStyle"
 
 import * as S from "./styles"
 
-export default function Layout({ children, footerHidden, contactUsHidden }) {
+export default function Layout({
+  children,
+  footerHidden,
+  contactUsHidden,
+  fillFooter,
+}) {
   const data = useStaticQuery(graphql`
     query HeaderFooterQuery {
       solutions: allMarkdownRemark(
@@ -86,7 +91,7 @@ export default function Layout({ children, footerHidden, contactUsHidden }) {
       {children}
       {!footerHidden && (
         <>
-          {!contactUsHidden && <ContactUsFooter />}
+          {!contactUsHidden && <ContactUsFooter fillFooter={fillFooter} />}
           <Footer menuItems={{ ...data }} />
         </>
       )}

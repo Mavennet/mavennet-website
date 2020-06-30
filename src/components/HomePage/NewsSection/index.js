@@ -21,11 +21,11 @@ const NewsSection = ({ title, ctaText, news }) => {
 
   return (
     <S.NewsSection>
-      <Container>
+      <Container style={{ position: "relative" }}>
         <S.Title>{title}</S.Title>
         {getNewsList(news)}
         <S.CTAContainer>
-          <TextArrowCTA text={ctaText} to="/newsroom" />
+          <S.CTA text={ctaText} to="/newsroom" />
         </S.CTAContainer>
       </Container>
     </S.NewsSection>

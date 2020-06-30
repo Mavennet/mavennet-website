@@ -5,6 +5,9 @@ export const NewsCard = styled.article`
   height: 100%;
   max-width: 385px;
   padding-bottom: 2em;
+  box-sizing: border-box;
+
+  background-color: #fff;
 
   ${({ noBorder }) =>
     !noBorder &&
@@ -15,6 +18,7 @@ export const NewsCard = styled.article`
 
 export const CardLink = styled.a`
   width: 100%;
+  height: 100%;
 `
 
 export const Image = styled.img`

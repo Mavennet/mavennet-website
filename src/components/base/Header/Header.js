@@ -23,8 +23,6 @@ const Header = ({ menuItems }) => {
   const { drawerMenu } = useContext(StoreContext)
   const [isDrawerMenuOpen, setIsDrawerMenuOpen] = drawerMenu
 
-  console.log(drawerMenu)
-
   useEffect(() => {
     window.addEventListener("scroll", checkScroll)
     return () => {
