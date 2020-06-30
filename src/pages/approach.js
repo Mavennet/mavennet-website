@@ -5,6 +5,7 @@ import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
 
 import MainSection from "../components/ApproachPage/MainSection"
+import ShowCaseSection from "../components/ApproachPage/ShowCaseSection"
 
 const ApproachPage = ({ data, location }) => {
   const post = data.pagesYaml
@@ -12,9 +13,10 @@ const ApproachPage = ({ data, location }) => {
   const { meta } = post
 
   return (
-    <Layout>
+    <Layout fillFooter="#F1E7FC" opacity="0">
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...post} />
+      <ShowCaseSection />
     </Layout>
   )
 }
