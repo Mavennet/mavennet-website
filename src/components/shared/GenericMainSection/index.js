@@ -14,7 +14,7 @@ const GenericMainSection = ({
   return (
     <S.GenericMainSection
       background={background}
-      backgroundMobile={backgroundMobile}
+      backgroundMobile={backgroundMobile || background}
       backgroundColor={backgroundColor}
       className={className}
     >

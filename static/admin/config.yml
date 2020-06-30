@@ -728,13 +728,6 @@ collections:
                 - { label: "Image", name: "image", widget: "image" }
                 - { label: "Title", name: "title", widget: "string" }
                 - { label: "Description", name: "description", widget: "text" }
-                - label: "Points List"
-                  name: "pointsList"
-                  widget: "list"
-                  field:
-                    label: "Content"
-                    name: "listItem"
-                    widget: "string"
                 - {
                     label: "Services CTA Text",
                     name: "ctaText",

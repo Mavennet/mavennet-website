@@ -15,32 +15,49 @@ const ListSection = ({ randdList }) => {
       laptop: {
         windowSize: 1024,
         wrapperSize: 440,
+        mult: {
+          width: 0.85,
+          margin: 0.15,
+        },
       },
       laptopL: {
         windowSize: 1280,
         wrapperSize: 500,
+        mult: {
+          width: 0.83,
+          margin: 0.17,
+        },
       },
     }
+
+    const getMult = currWindowWidth =>
+      currWindowWidth < DIMENSIONS.laptopL.windowSize
+        ? DIMENSIONS.laptop.mult
+        : DIMENSIONS.laptopL.mult
 
     const getImageWrapperSize = currWindowWidth =>
       currWindowWidth < DIMENSIONS.laptopL.windowSize
         ? DIMENSIONS.laptop.wrapperSize
         : DIMENSIONS.laptopL.wrapperSize
 
-    const getLineSectionProps = (windowWidth, imageWrapperWidth) => {
+    const getLineSectionProps = (windowWidth, imageWrapperWidth, mult) => {
       const lineSectionProps = randdList.map((item, index) => {
         const isFirst = index === 0
         const isReverse = index % 2 === 0
 
         const width = isFirst
-          ? (windowWidth - imageWrapperWidth) / 2
-          : windowWidth - imageWrapperWidth
+          ? (windowWidth * mult.width - imageWrapperWidth) / 2
+          : windowWidth * mult.width - imageWrapperWidth
 
         let marginLeft, marginRight
 
         if (isFirst) {
-          marginLeft = !isReverse ? "auto" : `${imageWrapperWidth / 2}px`
-          marginRight = !isReverse ? `${imageWrapperWidth / 2}px` : "auto"
+          marginLeft = !isReverse
+            ? "auto"
+            : `${(imageWrapperWidth + windowWidth * mult.margin) / 2}px`
+          marginRight = !isReverse
+            ? `${(imageWrapperWidth + windowWidth * mult.margin) / 2}px`
+            : "auto"
         } else {
           marginLeft = "auto"
           marginRight = "auto"
@@ -59,10 +76,14 @@ const ListSection = ({ randdList }) => {
       const lineSection = [
         ...lineSectionProps,
         {
-          width: (windowWidth - imageWrapperWidth) / 2,
+          width: (windowWidth * mult.width - imageWrapperWidth) / 2,
           isReverse: lastIsReverse,
-          marginLeft: lastIsReverse ? "auto" : `${imageWrapperWidth / 2}px`,
-          marginRight: lastIsReverse ? `${imageWrapperWidth / 2}px` : "auto",
+          marginLeft: lastIsReverse
+            ? "auto"
+            : `${(imageWrapperWidth + windowWidth * mult.margin) / 2}px`,
+          marginRight: lastIsReverse
+            ? `${(imageWrapperWidth + windowWidth * mult.margin) / 2}px`
+            : "auto",
         },
       ]
 
@@ -71,12 +92,12 @@ const ListSection = ({ randdList }) => {
 
     const handleResize = () => {
       const windowWidth = document.documentElement.clientWidth
-      const imageWrapperSize = getImageWrapperSize(
-        document.documentElement.clientWidth
-      )
+      const mult = getMult(windowWidth)
+      const imageWrapperSize = getImageWrapperSize(windowWidth)
       const lineSectionProps = getLineSectionProps(
         windowWidth,
-        imageWrapperSize
+        imageWrapperSize,
+        mult
       )
 
       setLineSectionProps(lineSectionProps)

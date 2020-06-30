@@ -2,21 +2,12 @@ import React from "react"
 
 import * as S from "./styles"
 
-const Card = ({ title, description, pointsList, ctaText, image, reverse }) => {
-  const getPointsList = items => (
-    <S.PointsList>
-      {items.map((item, index) => (
-        <S.PointsItem key={index}>{item}</S.PointsItem>
-      ))}
-    </S.PointsList>
-  )
-
+const Card = ({ title, description, ctaText, image, reverse }) => {
   return (
     <S.Card reverse={reverse}>
       <S.TextContent>
         <S.Title>{title}</S.Title>
         <S.Description>{description}</S.Description>
-        {pointsList && getPointsList(pointsList)}
         <S.CTA text={ctaText} to="/" />
       </S.TextContent>
       <S.ImageWrapper>

@@ -9,7 +9,6 @@ const SvgDivider = ({
   bottom,
   flatMobile,
   fill,
-  opacity = 1,
 }) => {
   const path = isPointingUp
     ? "M500.2,0L0,64.7V0H1000V64.7L500.2,0Z"
@@ -30,7 +29,6 @@ const SvgDivider = ({
         <path
           fill={fill ? fill : "#ffffff"}
           d={isReverse ? pathReverse : path}
-          fill-opacity={opacity}
         ></path>
       </svg>
     </S.SvgDivider>

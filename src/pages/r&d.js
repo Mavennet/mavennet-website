@@ -35,7 +35,6 @@ export const query = graphql`
           ctaText
           description
           image
-          pointsList
           title
         }
       }

@@ -24,13 +24,13 @@ export const ListItem = styled.li`
   }
 
   @media ${device.laptop} {
-    margin-top: 0 !important;
-    width: 98%;
+    margin: 0 auto !important;
+    width: 85%;
 
     align-self: ${props => (props.isEven ? "flex-start" : "flex-end")};
   }
 
   @media ${device.desktop} {
-    width: 90%;
+    width: 83%;
   }
 `
