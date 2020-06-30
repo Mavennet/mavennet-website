@@ -318,18 +318,16 @@ collections:
                   widget: "image",
                   media_library: { config: { multiple: false } },
                 }
+              - label: "Companies List"
+                name: "companies"
+                widget: "list"
+                fields:
+                  - { label: "Company Name", name: "title", widget: "string" }
+                  - { label: "Company Logo", name: "logo", widget: "image" }
               - {
                   label: "Industry CTA Text",
                   name: "ctaText",
                   widget: "string",
-                }
-              - {
-                  label: "Select the industry",
-                  name: "slug",
-                  widget: "relation",
-                  collection: "industries",
-                  searchFields: ["title", "{{slug}}"],
-                  valueField: "industries/{{slug}}",
                 }
       - label: "About Page"
         name: "about-page"

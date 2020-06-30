@@ -34,6 +34,10 @@ export const query = graphql`
         description
         ctaText
         image
+        companies {
+          title
+          logo
+        }
       }
     }
   }

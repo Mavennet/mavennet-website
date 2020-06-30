@@ -8,7 +8,7 @@ export const InfoImageItem = styled.div`
   @media ${device.laptop} {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     ${({ reverse }) =>
       reverse &&
@@ -69,6 +69,23 @@ export const Description = styled.p`
   line-height: 24px;
 
   margin-top: 1.875em;
+`
+
+export const CompaniesLogo = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 14px;
+`
+
+export const CompanyLogo = styled.img`
+  height: auto;
+  max-height: 46px;
+  max-width: 167px;
+
+  margin: 20px 30px 0 0;
 `
 
 export const CTAButton = styled(Button)`

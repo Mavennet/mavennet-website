@@ -8,6 +8,7 @@ const InfoImageItem = ({
   description,
   ctaText,
   reverse,
+  companies,
   imgMaxWidth,
 }) => {
   return (
@@ -24,7 +25,12 @@ const InfoImageItem = ({
         <S.TextContent>
           <S.Title>{title}</S.Title>
           <S.Description>{description}</S.Description>
-          <S.CTAButton text={ctaText} to="/" reverse={reverse} />
+          <S.CompaniesLogo>
+            {companies.map(company => (
+              <S.CompanyLogo src={company.logo} />
+            ))}
+          </S.CompaniesLogo>
+          <S.CTAButton text={ctaText} to="/contact-us" reverse={true} />
         </S.TextContent>
       </S.Column>
     </S.InfoImageItem>

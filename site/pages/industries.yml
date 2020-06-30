@@ -1,45 +1,56 @@
 meta:
   title: Industries
 title: Industries
-subtitle: "Cutting-edge technology solutions that are transforming the way we do
-  business "
+subtitle: The impact of technology as a competitive differentiator will continue
+  to gain momentum
 industries:
-  - title: Oil & Gas
-    description:
-      The way that data is exchanged across different parties in the Oil
-      & Gas value chain is not standardized. This leads to digital islands that
-      result in manual processes and inefficiencies. Digitizing assets and
-      processes has the power to connect multiple stakeholders and streamline
-      operations.
+  - title: Energy
+    description: Millions of dollars are lost every year, not due to logistical
+      problems, but rather due to the inability share digital data in a reliable
+      way. Costs of audit, tariff overpayments, lack of real-time visibility of
+      assets and superfluous back office costs represent north of 1 billion for
+      the Canadian oil industry every year. While many companies have gone
+      through massive digital transformations the reality is that when
+      information is shared with other organizations companies go back to the
+      old traditional paper flow, since there is yet a secure industry standard
+      to exchange data.
     ctaText: Learn More
     image: /assets/oil-gas-1.png
-  - title: Metals
-    description: The metal’s supply chain is fragmented. As the industry is
-      struggling with overcapacity and increasing regulations, firms are
-      demanding solutions to transparently track asset provenance from raw
-      materials to end-products and to increase the competitive advantage of
-      their operations.
+    companies:
+      - title: DHS
+        logo: /assets/dhs-logo.png
+  - title: Steel & Commodities
+    description: The overproduction of steel at global level is putting a huge
+      strain on north American production. Counterfeit, potential transshipment,
+      lack of real-time information and an unstable regulatory framework results
+      in the reduction of the competitivity of local industries. A single source
+      of truth, automatic fraud detection through AI and the ability to prove
+      origination and provenance of products in real-time is expected to become
+      a must across the industry.
     image: /assets/metal-1.png
     ctaText: Learn More
+    companies:
+      - title: Canada Gov
+        logo: /assets/canada-logo.svg
   - title: Financial Services
-    description:
-      The financial services industry is getting disrupted by the digital
+    description: The financial services industry is getting disrupted by the digital
       transformation of processes and assets. Now more than ever it is paramount
       for enterprises to gain access to streamlined settlement, decentralized
-      exchange platforms and secure data.
+      exchange platforms and secure data. These have the power to unlocking the
+      value of digital assets, faster audits and instant payments.
     image: /assets/finance_1.png
-    ctaText: View Solution
-  - title: Legal Tech
-    description:
-      Decentralized Identity management, digital attestation of data and
-      verifiable credentials have the power to protect user data and audit
-      processes and entities in a seamless way.
-    image: /assets/legal-tech2.png
-    ctaText: View Solution
-  - title: Digital Media
-    description:
-      The media industry is rapidly evolving, while viewers are demanding
+    ctaText: Learn More
+    companies:
+      - title: 3iQ
+        logo: /assets/3iq-logo.png
+      - title: Stablecorp
+        logo: /assets/stablecorp-logo.png
+  - title: Media & Entertainment
+    description: The media industry is rapidly evolving, while viewers are demanding
       rewards for their attention, content providers need a secure and easy way
       to calculate and distribute royalties instantly.
     image: /assets/digital-media-copy.png
-    ctaText: View Solution
+    ctaText: Learn More
+    companies:
+      - title: Vivo Play
+        logo: /assets/vivo-logo.png
