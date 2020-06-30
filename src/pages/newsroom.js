@@ -173,7 +173,7 @@ export const query = graphql`
     }
 
     awards: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//awards/" } }
+      filter: { fileAbsolutePath: { regex: "//awardsNews/" } }
       sort: { fields: frontmatter___date }
       limit: 4
     ) {

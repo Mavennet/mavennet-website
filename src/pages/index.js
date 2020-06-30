@@ -8,6 +8,7 @@ import MainSection from "../components/HomePage/MainSection/MainSection"
 import ServiceSection from "../components/HomePage/ServiceSection"
 import SolutionsSection from "../components/HomePage/SolutionsSection"
 import PartnersSection from "../components/shared/GenericPartnersSection"
+import AwardsSection from "../components/shared/AwardsSection"
 import NewsSection from "../components/HomePage/NewsSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
@@ -32,6 +33,7 @@ const IndexPage = ({ data, location }) => {
       <SolutionsSection {...homeSolutionsSection} />
       <ServiceSection {...homeServiceSection} />
       <PartnersSection {...homePartnersSection} partners={partnersData} />
+      <AwardsSection title="Awards and Recognition" />
       <NewsSection {...homeNewsSection} />
     </Layout>
   )

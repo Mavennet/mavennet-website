@@ -910,6 +910,14 @@ collections:
       - { label: "Company name", name: "title", widget: "string" }
       - { label: "Company Logo", name: "logo", widget: "image" }
       - { label: "Company Link", name: "link", widget: "string" }
+  - label: "Awards"
+    name: "awards"
+    folder: "site/other/awards"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Award name", name: "title", widget: "string" }
+      - { label: "Award Logo", name: "logo", widget: "image" }
   - label: "Announcements"
     name: "announcements"
     folder: "site/news/announcements"
@@ -930,8 +938,8 @@ collections:
       - { label: "Media Date", name: "date", widget: "date" }
       - { label: "Media Image", name: "image", widget: "image" }
       - { label: "Media Link", name: "link", widget: "string" }
-  - label: "Awards"
-    name: "awards"
+  - label: "Awards News"
+    name: "awardsNews"
     folder: "site/news/awards"
     create: true
     identifier_field: name
