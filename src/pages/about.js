@@ -69,7 +69,6 @@ export const query = graphql`
       }
       aboutMainSection {
         title
-        description
       }
       aboutPartnersSection {
         title

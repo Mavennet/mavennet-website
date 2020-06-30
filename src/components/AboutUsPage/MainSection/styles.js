@@ -8,30 +8,23 @@ export const MainSection = styled(GenericMainSection)`
   color: #ffffff;
   text-align: left;
 
-  padding: 7.1875em 0 17.0625em;
+  padding: 214px 0 220px;
 
   @media ${device.laptop} {
-    padding: 10.1875em 0 16.875em;
+    padding: 215px 0 311px;
   }
 `
 
 export const Title = styled.h1`
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 29px;
-`
-
-export const Description = styled.p`
-  font-size: 2.5rem;
-  line-height: 48px;
-
-  margin-top: 0.875em;
-  max-width: 700px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 56px;
+  text-align: center;
+  max-width: 956px;
 
   @media ${device.laptop} {
-    font-size: 3rem;
-    line-height: 58px;
-
-    margin-top: 0.3em;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 64px;
   }
 `

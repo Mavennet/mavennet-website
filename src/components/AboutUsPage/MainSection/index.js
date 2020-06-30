@@ -1,16 +1,18 @@
 import React from "react"
 
-import TextOnlyMainSection from "../../shared/TextOnlyMainSection"
+import Container from "../../base/Container"
 
 import Background from "../../../assets/images/contact-us-bg.png"
 
-const MainSection = ({ title, description }) => {
+import * as S from "./styles"
+
+const MainSection = ({ title }) => {
   return (
-    <TextOnlyMainSection
-      title={title}
-      description={description}
-      background={Background}
-    />
+    <S.MainSection background={Background}>
+      <Container center>
+        <S.Title>{title}</S.Title>
+      </Container>
+    </S.MainSection>
   )
 }
 
