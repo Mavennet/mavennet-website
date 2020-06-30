@@ -16,12 +16,21 @@ export const Image = styled.img`
 `
 
 export const Title = styled.h4`
-  margin-top: 1.46em;
+  margin-top: 22px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 34px;
 `
 
 export const Description = styled.p`
   color: var(--c-p-grey);
 
   max-width: 220px;
-  margin-top: 1.4375em;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+  text-align: center;
+
+  margin-top: 15px;
 `

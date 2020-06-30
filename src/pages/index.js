@@ -67,6 +67,7 @@ export const query = graphql`
       }
       homeServiceSection {
         title
+        description
         ctaText
         steps {
           item {

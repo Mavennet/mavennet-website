@@ -7,35 +7,30 @@ homeMainSection:
   subtitle: We are a tech product company that is not afraid of moonshots. We
     catapult enterprises to digital spaces no one has reached before.
 homeServiceSection:
-  title: What we offer
-  ctaText: Learn more about our service
+  title: How We Do It
+  description: We know that to get to places no one has ever been before you need
+    both imagination and a disciplined approach to technology.
+  ctaText: Learn more about our approach
   steps:
     - item:
-        image: /assets/strategy.png
+        image: /assets/strategy-icon.png
         title: Strategy
-        description:
-          We specialize in enterprise technology strategy and possess deep
-          expertise in implementing blockchain solutions, launching digital
-          assets and building scalable decentralized systems.
+        description: We help organizations conceptualize their goals, align decision
+          makers and formulate actionable strategies for success.
     - item:
-        image: /assets/design.png
+        image: /assets/design-icon.png
         title: Design
-        description:
-          Our solutions are built for massive user adoption, considering the
-          latest developments in UX/UI to optimize the user experience.
+        description: We focus on early validation through design. Here the end user is king.
     - item:
-        image: /assets/implementation.png
+        image: /assets/implementation-logo.png
         title: Implementation
-        description:
-          Thanks to our accelerators we are able to kickstart and execute
-          complex solutions in a record time, across a wide variety of use
-          cases.
+        description: We follow agile methodologies to execute complex solutions in a
+          record time.
     - item:
-        image: /assets/support.png
+        image: /assets/support-icon.png
         title: Support
-        description: We accompany our clients end-to-end on the path of digital
-          transformation, this includes ensuring that solutions are well
-          integrated within enterprise environments.
+        description: We accompany our clients end to end on the path of digital
+          transformation, ensuring a foundation for long term success.
 homeSolutionsSection:
   title: What We Do
   subtitle: Mavennet creates, builds and launches blockchain-enabled & AI
@@ -44,8 +39,7 @@ homeSolutionsSection:
     - item:
         title: Digitalizing the Barrel of Oil
         image: /assets/neoflow-map.gif
-        description:
-          Access an end-to-end view of your oil supply chain, from the
+        description: Access an end-to-end view of your oil supply chain, from the
           wellhead to the refinery.
         slug: solutions/neoflow
         ctaText: View Solution
@@ -60,8 +54,7 @@ homeSolutionsSection:
     - item:
         title: First Institutional Canadian Dollar Stablecoin
         image: /assets/qcad.png
-        description:
-          A financial rail to facilitate instant payments in Canadian dollars
+        description: A financial rail to facilitate instant payments in Canadian dollars
           by using smart contracts.
         slug: solutions/qcad
         ctaText: View Solution
@@ -70,8 +63,7 @@ homeSolutionsSection:
         title: Trust-as-a-Service
         image: /assets/mavenstamp-mockup.png
         logo: /assets/group-9.png
-        description:
-          Build your own applications or extend existing ones with the
+        description: Build your own applications or extend existing ones with the
           Mavenstamp API, securing your data with immutable timestamps and
           tamper detection.
         slug: solutions/mavenstamp
