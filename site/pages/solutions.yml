@@ -1,30 +1,30 @@
 meta:
   title: Solutions
 title: Our Solutions
-subtitle: Discover the next generation of technology solutions to industry-wide problems
+subtitle: "We have developed a constellation of solutions across three layers:
+  value exchange, financial exchange and Trust: the launchpad for the industry
+  of the future."
 solutions:
-  - title: Digital Traceability of Metals’ Lifecycle
-    description: Securely trace products as they are transformed upstream and
-      downstream the supply chain
-    image: /assets/mt-mockup.png
-    ctaImage: /assets/mt-logo.png
-    slug: solutions/metaltrail
-    sectionType: regular
-  - title: Oil & Gas Supply Chain Digitization
-    description: Access an end-to-end view of your O&G supply chain, from the
-      wellhead to the refinery
+  - title: Digitalizing the Barrel of Oil
+    description: Universal end to end view of the Oil value chain, from the wellhead to the refinery.
     image: /assets/neoflow-mockup.png
     ctaImage: /assets/neoflow_logo.png
     slug: solutions/neoflow
     sectionType: regular
-  - title: First Mass Market Canadian Dollar Stablecoin
-    sectionType: banner
+  - title: Tracing the Steel Supply Chain
+    description: Securely trace origination of the steel and help avoid counterfeit.
+    image: /assets/mt-mockup.png
+    ctaImage: /assets/mt-logo.png
+    slug: solutions/metaltrail
+    sectionType: regular
+  - title: First Institutional Canadian Dollar Stablecoin
+    sectionType: regular
     image: /assets/qcad.png
     ctaImage: /assets/group-4.png
     slug: solutions/qcad
-    description: Get a transparent and secure stablecoin with 1-to-1 CAD equivalency
-  - title: Immutability-as-a-Service
-    description: Get tamper-proof timestamps for your data, seamlessly and securely
+    description: A financial rail to facilitate instant payments in Canadian dollars by using smart contracts.
+  - title: Trust-as-a-Service
+    description: Build your own applications or extend existing ones with the Mavenstamp API, securing your data with immutable timestamps and tamper detection.
     image: /assets/mavenstamp-mockup.png
     ctaImage: /assets/group-9.png
     slug: solutions/mavenestamp

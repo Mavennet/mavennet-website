@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import Container from "../../base/Container"
+import TextArrowCTA from "../../shared/TextArrowCTA"
 
 import { device } from "../../../consts/deviceSizes"
 
@@ -9,6 +10,12 @@ export const SolutionItem = styled.div`
 
   position: relative;
   margin-bottom: 28px;
+
+  ${({ isLast }) =>
+    isLast &&
+    `
+      margin-bottom: -77px;
+    `}
 
   &::before {
     content: "";
@@ -19,10 +26,21 @@ export const SolutionItem = styled.div`
     left: 0;
     background-color: var(${props => props.backgroundColor});
     transform: skewY(8.3deg);
+
+    ${({ isLast }) =>
+      isLast &&
+      `
+      z-index: 1;
+    `}
   }
 
   @media ${device.laptop} {
     margin-bottom: 10em;
+    ${({ isLast }) =>
+      isLast &&
+      `
+    margin-bottom: -5em;
+    `}
     &::before {
       transform: ${props =>
         props.isEven ? "skewY(-8.3deg)" : "skewY(8.3deg)"};
@@ -30,7 +48,13 @@ export const SolutionItem = styled.div`
   }
 
   @media ${device.laptopL} {
-    margin-bottom: 17em;
+    margin-bottom: 13em;
+
+    ${({ isLast }) =>
+      isLast &&
+      `
+    margin-bottom: -5em;
+    `}
   }
 `
 
@@ -87,10 +111,6 @@ export const Header = styled.header`
       margin-top: -7em;
     `}
   }
-
-  @media ${device.laptopL} {
-    width: auto;
-  }
 `
 
 export const Image = styled.img`
@@ -117,7 +137,8 @@ export const Content = styled.div`
   margin-top: 2em;
 
   @media ${device.laptop} {
-    width: 40%;
+    width: 50%;
+    padding: 0 2em;
     ${({ isBanner }) =>
       isBanner &&
       `
@@ -139,6 +160,13 @@ export const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: bold;
   line-height: 48px;
+
+  @media ${device.laptop} {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    line-height: 56px;
+  }
 `
 
 export const Description = styled.p`
@@ -147,4 +175,36 @@ export const Description = styled.p`
   line-height: 24px;
 
   margin-top: 1em;
+
+  @media ${device.laptop} {
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+
+    font-weight: 400;
+
+    margin-top: 24px;
+  }
+`
+export const CTA = styled(TextArrowCTA)`
+  margin-top: 32px;
+  @media ${device.laptop} {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 29px;
+  }
+`
+
+export const Logo = styled.img`
+  display: block;
+  max-width: 200px;
+  height: auto;
+  max-height: 50px;
+
+  margin-bottom: 30px;
+
+  @media ${device.laptop} {
+    max-height: 64px;
+  }
 `

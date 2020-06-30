@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { device } from "../../../consts/deviceSizes"
 
 export const MainSection = styled.section`
-  text-align: left;
+  text-align: center;
   color: #ffffff;
 
   padding-top: 10.75em;
@@ -19,37 +19,36 @@ export const MainSection = styled.section`
   }
 
   @media ${device.laptopL} {
-    padding-bottom: 32em;
+    padding-bottom: 24em;
   }
 `
 
 export const Title = styled.h1`
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: bold;
   line-height: 48px;
 
   @media ${device.laptop} {
-    font-size: 2.875rem;
-    font-weight: bold;
-    line-height: 58px;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 64px;
   }
 `
 
 export const Description = styled.p`
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 500;
   line-height: 29px;
 
   margin-top: 2.3em;
 
-  max-width: 700px;
+  max-width: 730px;
 
   @media ${device.laptop} {
-    font-size: 2.25rem;
-    font-weight: 600;
-    line-height: 41px;
+    letter-spacing: 0;
+    line-height: 34px;
 
-    margin-top: 0.89em;
+    margin-top: 20px;
   }
 `
