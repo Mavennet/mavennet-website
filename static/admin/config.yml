@@ -372,26 +372,6 @@ collections:
                         name: "description",
                         widget: "text",
                       }
-          - label: "Principles Section"
-            name: "aboutPrinciplesSection"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", object: "string" }
-              - label: "Principles List"
-                name: "principlesList"
-                widget: "list"
-                field:
-                  label: "Principle Item"
-                  name: "item"
-                  widget: "object"
-                  fields:
-                    - { label: "Title", name: "title", widget: "string" }
-                    - {
-                        label: "Description",
-                        name: "description",
-                        widget: "text",
-                      }
-                    - { label: "Image", name: "image", widget: "image" }
           - label: "Clients and Partners Section"
             name: "aboutPartnersSection"
             widget: "object"
@@ -543,6 +523,26 @@ collections:
                   widget: "text",
                 }
               - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - label: "Principles Section"
+            name: "careerPrinciplesSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", object: "string" }
+              - label: "Principles List"
+                name: "principlesList"
+                widget: "list"
+                field:
+                  label: "Principle Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Title", name: "title", widget: "string" }
+                    - {
+                        label: "Description",
+                        name: "description",
+                        widget: "text",
+                      }
+                    - { label: "Image", name: "image", widget: "image" }
           - label: "Who Should Join Section"
             name: "careerWhoSection"
             widget: "object"

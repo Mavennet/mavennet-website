@@ -1,14 +1,11 @@
 import React from "react"
 
-import background from "../../../assets/images/contact-us-bg.png"
-
 import * as S from "./styles"
 
 const MainSection = ({ image, title, description, ctaText }) => {
   return (
-    <S.MainSection background={background}>
+    <S.MainSection background={image} center fill="#F9F5FE">
       <S.MainSectionContainer>
-        <S.Image src={image} />
         <S.TextContent>
           <S.Title>{title}</S.Title>
           <S.Description>{description}</S.Description>

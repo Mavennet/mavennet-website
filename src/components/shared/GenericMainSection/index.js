@@ -10,6 +10,7 @@ const GenericMainSection = ({
   backgroundColor,
   className,
   flatMobile,
+  fill,
 }) => {
   return (
     <S.GenericMainSection
@@ -18,7 +19,7 @@ const GenericMainSection = ({
       backgroundColor={backgroundColor}
       className={className}
     >
-      <SvgDivider bottom="-2px" flatMobile={flatMobile} />
+      <SvgDivider bottom="-2px" flatMobile={flatMobile} fill={fill} />
       {children}
     </S.GenericMainSection>
   )

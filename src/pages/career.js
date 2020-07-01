@@ -5,6 +5,7 @@ import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
 
 import MainSection from "../components/Career/MainSection"
+import PrinciplesSection from "../components/Career/PrinciplesSection"
 import WhoSection from "../components/Career/WhoSection"
 import TestimonialSection from "../components/Career/TestimonialSection"
 import OpportunitiesSection from "../components/Career/OpportunitiesSection"
@@ -14,6 +15,7 @@ const CareerPage = ({ data, location }) => {
   const post = data.pagesYaml
   const {
     careerMainSection,
+    careerPrinciplesSection,
     careerWhoSection,
     careerDaySection,
     careerOppotunitySection,
@@ -25,6 +27,9 @@ const CareerPage = ({ data, location }) => {
     <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...careerMainSection} />
+      <PrinciplesSection
+        principlesList={careerPrinciplesSection.principlesList}
+      />
       <WhoSection {...careerWhoSection} />
       <TestimonialSection {...careerDaySection} />
       <OpportunitiesSection {...careerOppotunitySection} />
@@ -70,6 +75,15 @@ export const query = graphql`
         title
         description
         ctaText
+      }
+      careerPrinciplesSection {
+        principlesList {
+          item {
+            title
+            description
+            image
+          }
+        }
       }
       careerDaySection {
         title

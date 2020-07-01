@@ -7,7 +7,6 @@ import SEO from "../components/base/SEO"
 import MainSection from "../components/AboutUsPage/MainSection"
 import WhoWeAre from "../components/AboutUsPage/WhoWeAre"
 import TimeLineSection from "../components/Career/TimeLineSection"
-import PrinciplesSection from "../components/AboutUsPage/PrinciplesSection"
 import PartnersSection from "../components/shared/GenericPartnersSection"
 import AwardsSection from "../components/shared/AwardsSection"
 import OurTeamSection from "../components/AboutUsPage/OurTeamSection"
@@ -25,7 +24,6 @@ const AboutPage = ({ data, location }) => {
     aboutMainSection,
     aboutSummarySection,
     aboutOurStorySection,
-    aboutPrinciplesSection,
     aboutPartnersSection,
     aboutAwardsSection,
     aboutTeamSection,
@@ -41,9 +39,6 @@ const AboutPage = ({ data, location }) => {
 
       <TimeLineSection {...aboutOurStorySection} />
       <OurTeamSection {...aboutTeamSection} team={teamData} />
-      {/* <PrinciplesSection
-        principlesList={aboutPrinciplesSection.principlesList}
-      /> */}
       <PartnersSection {...aboutPartnersSection} partners={partnersData} />
       <AwardsSection title="Awards and Recognition" />
       <LearnMoreSection {...aboutLearnSection} />
@@ -86,15 +81,6 @@ export const query = graphql`
       }
       aboutPartnersSection {
         title
-      }
-      aboutPrinciplesSection {
-        principlesList {
-          item {
-            title
-            description
-            image
-          }
-        }
       }
       aboutSummarySection {
         title

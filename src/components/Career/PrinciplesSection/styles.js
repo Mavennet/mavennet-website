@@ -5,22 +5,22 @@ import { device } from "../../../consts/deviceSizes"
 export const PrinciplesSection = styled.section`
   padding: 2.375em 0;
   position: relative;
+  background-color: var(--c-p-selago);
 
   @media ${device.laptopL} {
-    padding: 5.375em;
-    background-color: var(--c-p-selago);
+    padding: 5.375em 0 10em;
   }
 `
 
 export const Title = styled.h2`
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 48px;
+  font-size: 40px;
+  letter-spacing: 0.25px;
+  line-height: 56px;
 
   @media ${device.laptop} {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 48px;
     line-height: 58px;
+    text-align: center;
   }
 `
 
@@ -79,6 +79,7 @@ export const TextContent = styled.div`
   @media ${device.laptopL} {
     text-align: left;
     margin-top: 0;
+    padding-right: 50px;
   }
 `
 

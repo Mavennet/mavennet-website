@@ -30,7 +30,7 @@ const PrinciplesSection = ({ principlesList }) => {
 
   return (
     <S.PrinciplesSection>
-      <SvgDivider isPointingUp top="0" />
+      <SvgDivider bottom="0" />
       <Container center>
         <S.Title>Our Principles</S.Title>
         {getPrinciplesList(principlesList)}

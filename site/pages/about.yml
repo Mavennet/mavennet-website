@@ -31,45 +31,6 @@ aboutOurStorySection:
         description:
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh Lirem ipsum dolor sit amet, consectetuer
-aboutPrinciplesSection:
-  title: Our Principles
-  principlesList:
-    - item:
-        title: Ownership
-        description: >
-          consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-          consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit, sed diam no
-        image: /assets/ownership-1.png
-    - item:
-        title: Integrity
-        description: >
-          consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-          consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit, sed diam no
-        image: /assets/integrity-1.png
-    - item:
-        title: Impact
-        description: >
-          consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-          consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit, sed diam no
-        image: /assets/impact-1.png
-    - item:
-        title: Resilience
-        description: >
-          consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit, sed diam nonummy. Lorem ipsum dolor sit
-          amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-          consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit, sed diam no
-        image: /assets/resiience.png
 aboutPartnersSection:
   title: Clients and Partners
 aboutAwardsSection:
