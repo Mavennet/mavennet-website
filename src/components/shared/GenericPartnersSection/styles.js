@@ -52,15 +52,19 @@ export const PartnersList = styled.ul`
 `
 
 export const PartnersItem = styled.li`
-  margin: 1.625em 1em 2em;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 100%;
-  max-width: 200px;
-  max-height: 60px;
+  width: 45%;
+  margin: 1.625em 1.5%;
+
+  @media ${device.tablet} {
+    width: 100%;
+    max-width: 200px;
+    max-height: 60px;
+    margin: 1.625em 1em 2em;
+  }
 `
 
 export const PartnerImage = styled.img`

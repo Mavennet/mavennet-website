@@ -64,7 +64,7 @@ const RAndDSection = ({ title, subtitle, rAndDList }) => {
     const handleResize = () => setWindowWidth(window.innerWidth)
     window.addEventListener("resize", handleResize)
 
-    handleResize()
+    setWindowWidth(window.innerWidth)
     console.log(windowWidth)
 
     return () => {
