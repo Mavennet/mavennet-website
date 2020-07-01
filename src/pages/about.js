@@ -9,7 +9,7 @@ import WhoWeAre from "../components/AboutUsPage/WhoWeAre"
 import TimeLineSection from "../components/Career/TimeLineSection"
 import PrinciplesSection from "../components/AboutUsPage/PrinciplesSection"
 import PartnersSection from "../components/shared/GenericPartnersSection"
-import AwardsSection from "../components/AboutUsPage/AwardsSection"
+import AwardsSection from "../components/shared/AwardsSection"
 import OurTeamSection from "../components/AboutUsPage/OurTeamSection"
 import LearnMoreSection from "../components/AboutUsPage/LearnMoreSection"
 
@@ -34,18 +34,18 @@ const AboutPage = ({ data, location }) => {
   } = post
 
   return (
-    <Layout>
+    <Layout fillFooter="#F9F5FE">
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...aboutMainSection} />
       <WhoWeAre {...aboutSummarySection} />
 
       <TimeLineSection {...aboutOurStorySection} />
       <OurTeamSection {...aboutTeamSection} team={teamData} />
-      <PrinciplesSection
+      {/* <PrinciplesSection
         principlesList={aboutPrinciplesSection.principlesList}
-      />
+      /> */}
       <PartnersSection {...aboutPartnersSection} partners={partnersData} />
-      <AwardsSection {...aboutAwardsSection} />
+      <AwardsSection title="Awards and Recognition" />
       <LearnMoreSection {...aboutLearnSection} />
     </Layout>
   )
@@ -86,7 +86,6 @@ export const query = graphql`
       }
       aboutPartnersSection {
         title
-        ctaText
       }
       aboutPrinciplesSection {
         principlesList {

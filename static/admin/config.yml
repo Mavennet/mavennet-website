@@ -137,12 +137,6 @@ collections:
             collapsed: true
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
-              - {
-                  label: "Partners CTA Text",
-                  name: "ctaText",
-                  widget: "string",
-                  required: false,
-                }
               - label: "Partners List"
                 name: "partners"
                 widget: "list"

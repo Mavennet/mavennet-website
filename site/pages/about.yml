@@ -71,8 +71,7 @@ aboutPrinciplesSection:
           consectetuer adipiscing elit, sed diam no
         image: /assets/resiience.png
 aboutPartnersSection:
-  title: Our Clients and Partners
-  ctaText: Learn More About Partnership
+  title: Clients and Partners
 aboutAwardsSection:
   title: Awards & Recognition
   awardsList:
@@ -88,16 +87,9 @@ aboutLearnSection:
   linksList:
     - item:
         ctaText: Career
-        description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit.
+        description: Join our time to become A Maven
         link: /career
     - item:
         ctaText: Newsroom
-        description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit.
+        description: Stay up to date with Mavennet News
         link: /newsroom
-    - item:
-        ctaText: Partners
-        description: consectetuer adipiscing elit, sed diam nonummy nibh , amet
-          consectetuer adipiscing elit.
-        link: /partners

@@ -22,11 +22,6 @@ const GenericPartnersSection = ({ title, ctaText, partners, className }) => {
       <S.PartnersContainer center>
         <S.Title>{title}</S.Title>
         {getPartnersList(partners)}
-        {ctaText && (
-          <S.CTAContainer>
-            <TextArrowCTA text={ctaText} to="/partnership" />
-          </S.CTAContainer>
-        )}
       </S.PartnersContainer>
     </S.GenericPartnersSection>
   )

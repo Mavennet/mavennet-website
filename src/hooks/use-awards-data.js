@@ -3,7 +3,10 @@ import { useStaticQuery, graphql } from "gatsby"
 export const useAwardsData = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query AwardsData {
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "//awards//" } }) {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "//awards//" } }
+        sort: { fields: frontmatter___order }
+      ) {
         edges {
           node {
             id
