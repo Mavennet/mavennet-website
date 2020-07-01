@@ -15,10 +15,6 @@ export const COMPANY = {
       to: "/newsroom",
     },
     {
-      name: "Partners",
-      to: "/partnership",
-    },
-    {
       name: "Career",
       to: "/career",
     },
