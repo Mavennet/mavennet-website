@@ -25,13 +25,12 @@ const OurTeamSection = ({ title, ctaText, team }) => {
   return (
     <S.OurTeamSection>
       <S.BackgroundWrapper>
-        <SvgDivider bottom="-2px" />
         <Container center>
           <S.Title>{title}</S.Title>
           {getTeamList(team)}
         </Container>
       </S.BackgroundWrapper>
-      <S.CTA text={ctaText} to="/contact-us" />
+      <S.CTA text={ctaText} to="/career" />
     </S.OurTeamSection>
   )
 }

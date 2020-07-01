@@ -40,12 +40,12 @@ const AboutPage = ({ data, location }) => {
       <WhoWeAre {...aboutSummarySection} />
 
       <TimeLineSection {...aboutOurStorySection} />
+      <OurTeamSection {...aboutTeamSection} team={teamData} />
       <PrinciplesSection
         principlesList={aboutPrinciplesSection.principlesList}
       />
       <PartnersSection {...aboutPartnersSection} partners={partnersData} />
       <AwardsSection {...aboutAwardsSection} />
-      <OurTeamSection {...aboutTeamSection} team={teamData} />
       <LearnMoreSection {...aboutLearnSection} />
     </Layout>
   )

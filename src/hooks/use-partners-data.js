@@ -11,9 +11,9 @@ export const usePartnersData = () => {
             node {
               id
               frontmatter {
+                order
                 title
                 logo
-                link
               }
             }
           }

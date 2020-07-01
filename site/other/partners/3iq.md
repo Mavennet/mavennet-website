@@ -1,5 +1,5 @@
 ---
+order: 13
 title: 3iQ
-logo: /assets/3iq_logo.png
-link: https://3iq.ca/
+logo: /assets/3iq-logo.png
 ---

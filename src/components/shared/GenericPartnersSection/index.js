@@ -10,9 +10,7 @@ const GenericPartnersSection = ({ title, ctaText, partners, className }) => {
       <S.PartnersList>
         {items.map(item => (
           <S.PartnersItem key={item.id}>
-            <S.PartnerLink href={item.link} target="_blank">
-              <S.PartnerImage src={item.logo} alt={item.title} />
-            </S.PartnerLink>
+            <S.PartnerImage src={item.logo} alt={item.title} />
           </S.PartnersItem>
         ))}
       </S.PartnersList>

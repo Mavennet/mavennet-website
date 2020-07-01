@@ -7,13 +7,16 @@ import { device } from "../../../consts/deviceSizes"
 export const OurTeamSection = styled.section`
   padding: 5.625em 0;
   position: relative;
+
+  @media ${device.laptop} {
+    padding-top: 0;
+  }
 `
 
 export const BackgroundWrapper = styled.div`
   position: relative;
   @media ${device.laptop} {
-    padding: 5.125em 0 9.125em;
-    background-color: var(--c-p-selago);
+    padding: 5.125em 0 0;
   }
 `
 
@@ -72,16 +75,17 @@ export const Image = styled.img`
 `
 
 export const Name = styled.p`
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 29px;
+  letter-spacing: 0;
+  line-height: 34px;
   margin-top: 1.125em;
 `
 
 export const Position = styled.p`
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 29px;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 34px;
   margin-top: 0.25em;
 `
 
@@ -90,4 +94,9 @@ export const CTA = styled(TextArrowCTA)`
   margin-right: auto;
 
   margin-top: 3.175em;
+
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 29px;
 `

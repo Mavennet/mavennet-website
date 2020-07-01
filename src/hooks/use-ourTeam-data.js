@@ -6,6 +6,7 @@ export const useOurTeamData = () => {
       query OurTeamData {
         allMarkdownRemark(
           filter: { fileAbsolutePath: { regex: "//ourTeam/" } }
+          sort: { fields: frontmatter___order }
         ) {
           edges {
             node {

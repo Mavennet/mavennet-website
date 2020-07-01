@@ -52,28 +52,23 @@ export const PartnersList = styled.ul`
 `
 
 export const PartnersItem = styled.li`
-  margin: 1.625em 1em 0;
+  margin: 1.625em 1em 2em;
 
-  max-width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  max-width: 200px;
   max-height: 60px;
-
-  @media ${device.tablet} {
-    width: 100px;
-  }
-
-  @media ${device.laptop} {
-    width: 160px;
-  }
 `
-
-export const PartnerLink = styled.a``
 
 export const PartnerImage = styled.img`
   display: block;
 
   max-width: 100%;
   height: auto;
-  max-height: 100%;
+  max-height: 70px;
 `
 
 export const CTAContainer = styled.div`

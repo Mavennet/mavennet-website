@@ -1,5 +1,5 @@
 ---
+order: 14
 title: Stablecorp
-logo: /assets/stablecorp_logo.png
-link: https://www.stablecorp.ca/
+logo: /assets/stablecorp-logo.png
 ---

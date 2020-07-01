@@ -1,5 +1,5 @@
 ---
+order: 10
 title: TMX
-logo: /assets/tmx_logo.png
-link: https://www.tmx.com/
+logo: /assets/tmx-logo.png
 ---
