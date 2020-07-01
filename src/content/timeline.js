@@ -106,7 +106,7 @@ export const TimelineContent = {
     ],
   },
   "2019": {
-    yearImage: "2018-image.png",
+    yearImage: "2019-image.png",
     events: [
       {
         title: "Mavennet partners with VIVOpago",
@@ -235,7 +235,7 @@ export const TimelineContent = {
     ],
   },
   "2020": {
-    yearImage: "2018-image.png",
+    yearImage: "2020-image.png",
     events: [
       {
         title: "Mavennet forms part of the WTIA",

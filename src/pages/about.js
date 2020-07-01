@@ -61,7 +61,6 @@ export const query = graphql`
         title
         awardsList
       }
-
       aboutOurStorySection {
         title
         image
