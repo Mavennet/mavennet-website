@@ -25,6 +25,7 @@ export const Title = styled.h2`
 
 export const AwardsList = styled.ul`
   margin-top: 60px;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;
@@ -33,16 +34,29 @@ export const AwardsList = styled.ul`
 `
 
 export const Award = styled.div`
-  max-width: 150px;
-  max-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  margin: 21px 14px;
+  width: 45%;
+  max-height: 66px;
+  margin: 21px 2.5%;
+
+  @media ${device.tablet} {
+    width: 30%;
+    margin: 21px 1.5%;
+  }
+
+  @media ${device.laptop} {
+    margin: 21px 14px;
+    max-width: 150px;
+  }
 `
 
 export const AwardImage = styled.img`
   display: block;
 
   max-width: 100%;
-  max-height: 100%;
+  max-height: 66px;
   height: auto;
 `

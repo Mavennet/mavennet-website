@@ -935,6 +935,7 @@ collections:
     create: true
     identifier_field: name
     fields:
+      - { label: "Order", name: "order", widget: "number" }
       - { label: "Award name", name: "title", widget: "string" }
       - { label: "Award Logo", name: "logo", widget: "image" }
   - label: "Announcements"

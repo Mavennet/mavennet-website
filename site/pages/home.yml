@@ -58,7 +58,7 @@ homeSolutionsSection:
           by using smart contracts.
         slug: solutions/qcad
         ctaText: View Solution
-        logo: /assets/qcad-logo-1.png
+        logo: /assets/qcad-logo.svg
     - item:
         title: Trust-as-a-Service
         image: /assets/mavenstamp-mockup.png

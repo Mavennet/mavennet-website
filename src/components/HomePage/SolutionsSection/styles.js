@@ -57,6 +57,7 @@ export const IconWrapper = styled.div`
 export const IconImage = styled.img`
   display: block;
   max-width: 100%;
+  min-width: 109px;
 
   transition: transform 0.4s;
 

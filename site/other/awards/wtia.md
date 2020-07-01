@@ -1,4 +1,5 @@
 ---
-title: Frost & Sullivan
-logo: /assets/frost-sullivan.svg
+order: 5
+title: WTIA
+logo: /assets/wtia-logo.png
 ---
