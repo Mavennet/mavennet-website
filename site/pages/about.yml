@@ -7,6 +7,30 @@ aboutSummarySection:
   subTitle: We are a tech product company that is not afraid of moonshots. We catapult enterprises to digital spaces no one has reached before.
   description: We learn, we challenge, we create. We question what is acknowledged and work at lightning speed even in the midst of uncertainty, through a collaborative approach. We adopt a lens charged with bold curiosity to become industry mavens capable of transforming life as we know it.
   ctaText: Meet the Mavennet Team
+aboutOurStorySection:
+  title: Our Story Headline
+  image: /assets/mavennet-team-2.png
+  timeline:
+    - item:
+        year: 2017
+        description:
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
+    - item:
+        year: 2018
+        description:
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
+    - item:
+        year: 2019
+        description:
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
+    - item:
+        year: 2020
+        description:
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
 aboutPrinciplesSection:
   title: Our Principles
   principlesList:

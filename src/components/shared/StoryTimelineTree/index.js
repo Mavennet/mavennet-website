@@ -4,7 +4,26 @@ import TimelineBubble from "../TimelineBubble"
 
 import * as S from "./styles"
 
-const StoryTimelineTree = ({ onSelectYear, activeYear, events }) => {
+const MobileTimelineTree = ({ onSelectYear, activeYear, events }) => {
+  return (
+    <S.MobileTree>
+      {Object.entries(events).map(([eventYear, eventContent], index) => (
+        <>
+          <S.MobileYear
+            key={eventYear}
+            active={activeYear === eventYear}
+            onClick={() => onSelectYear(eventYear)}
+          >
+            <S.Year>{eventYear}</S.Year>
+          </S.MobileYear>
+          {index !== Object.entries(events).length - 1 && <S.Divider />}
+        </>
+      ))}
+    </S.MobileTree>
+  )
+}
+
+const StoryTimelineTree = ({ onSelectYear, activeYear, events, isMobile }) => {
   const getEventsIcons = (eventsContent, inSelectedYear) => {
     const { glyph, alt, relevance, bubbleStyle, position } = eventsContent
 
@@ -19,7 +38,13 @@ const StoryTimelineTree = ({ onSelectYear, activeYear, events }) => {
       />
     )
   }
-  return (
+  return isMobile ? (
+    <MobileTimelineTree
+      onSelectYear={onSelectYear}
+      activeYear={activeYear}
+      events={events}
+    />
+  ) : (
     <S.StoryTimelineTree>
       {Object.entries(events).map(([eventYear, eventContent], index) => (
         <S.YearSection
@@ -30,7 +55,6 @@ const StoryTimelineTree = ({ onSelectYear, activeYear, events }) => {
           <S.YearCircle onClick={() => onSelectYear(eventYear)}>
             <S.Year>{eventYear}</S.Year>
           </S.YearCircle>
-          {/* {console.log(eventContent)} */}
           {eventContent.events &&
             eventContent.events.length > 0 &&
             eventContent.events.map(event =>

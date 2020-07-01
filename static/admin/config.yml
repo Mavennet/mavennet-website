@@ -357,6 +357,27 @@ collections:
               - { label: "SubTitle", name: "subTitle", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "CTA Text", name: "ctaText", widget: "text" }
+
+          - label: "Our Story Section"
+            name: "aboutOurStorySection"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Section Image", name: "image", widget: "image" }
+              - label: "Timeline"
+                name: "timeline"
+                widget: "list"
+                field:
+                  label: "Timeline Item"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Year", name: "year", widget: "number" }
+                    - {
+                        label: "Description",
+                        name: "description",
+                        widget: "text",
+                      }
           - label: "Principles Section"
             name: "aboutPrinciplesSection"
             widget: "object"
@@ -528,26 +549,6 @@ collections:
                   widget: "text",
                 }
               - { label: "CTA Text", name: "ctaText", widget: "string" }
-          - label: "Our Story Section"
-            name: "careerOurStorySection"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
-              - { label: "Section Image", name: "image", widget: "image" }
-              - label: "Timeline"
-                name: "timeline"
-                widget: "list"
-                field:
-                  label: "Timeline Item"
-                  name: "item"
-                  widget: "object"
-                  fields:
-                    - { label: "Year", name: "year", widget: "number" }
-                    - {
-                        label: "Description",
-                        name: "description",
-                        widget: "text",
-                      }
           - label: "Who Should Join Section"
             name: "careerWhoSection"
             widget: "object"

@@ -1,4 +1,4 @@
-import React, { useState, useRef, createRef } from "react"
+import React, { useState, useRef, createRef, useEffect } from "react"
 
 import StoryTimelineTree from "../StoryTimelineTree"
 import TimelineList from "../TimelineList"
@@ -8,6 +8,7 @@ import * as S from "./styles"
 const StoryTimeline = ({ timelineData }) => {
   const [selectedYear, setSelectedYear] = useState("2018")
   const [isScrolling, setIsScrolling] = useState(false)
+  const [windowWidth, setWindowWidth] = useState(0)
 
   const refs = {}
 
@@ -35,10 +36,23 @@ const StoryTimeline = ({ timelineData }) => {
     setSelectedYear(year)
   }
 
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    const handleResize = () => setWindowWidth(window.innerWidth)
+    window.addEventListener("resize", handleResize)
+
+    setWindowWidth(window.innerWidth)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
   return (
     <S.StoryTimeline backgroundColor="--c-p-selago">
       <S.ColumnTimelineTree>
         <StoryTimelineTree
+          isMobile={windowWidth < 1024}
           events={timelineData}
           onSelectYear={handleYearClick}
           activeYear={selectedYear}
@@ -46,6 +60,7 @@ const StoryTimeline = ({ timelineData }) => {
       </S.ColumnTimelineTree>
       <S.ColumnContent>
         <TimelineList
+          isMobile={windowWidth < 1024}
           events={timelineData}
           setActiveYear={setSelectedYear}
           refs={refs}

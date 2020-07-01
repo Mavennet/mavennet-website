@@ -8,11 +8,16 @@ export const TimeLineSection = styled.section`
   padding-bottom: 5.125em;
 
   @media ${device.tablet} {
-    padding: 5.125em 0;
   }
 `
 
-export const TimeLineContainer = styled(Container)``
+export const TimeLineContainer = styled(Container)`
+  width: 100%;
+
+  @media ${device.laptop} {
+    width: initial;
+  }
+`
 
 export const Title = styled.h2`
   font-size: 2.5rem;

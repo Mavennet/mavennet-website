@@ -6,6 +6,7 @@ import SEO from "../components/base/SEO"
 
 import MainSection from "../components/AboutUsPage/MainSection"
 import WhoWeAre from "../components/AboutUsPage/WhoWeAre"
+import TimeLineSection from "../components/Career/TimeLineSection"
 import PrinciplesSection from "../components/AboutUsPage/PrinciplesSection"
 import PartnersSection from "../components/shared/GenericPartnersSection"
 import AwardsSection from "../components/AboutUsPage/AwardsSection"
@@ -23,6 +24,7 @@ const AboutPage = ({ data, location }) => {
   const {
     aboutMainSection,
     aboutSummarySection,
+    aboutOurStorySection,
     aboutPrinciplesSection,
     aboutPartnersSection,
     aboutAwardsSection,
@@ -36,6 +38,8 @@ const AboutPage = ({ data, location }) => {
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...aboutMainSection} />
       <WhoWeAre {...aboutSummarySection} />
+
+      <TimeLineSection {...aboutOurStorySection} />
       <PrinciplesSection
         principlesList={aboutPrinciplesSection.principlesList}
       />
@@ -56,6 +60,17 @@ export const query = graphql`
       aboutAwardsSection {
         title
         awardsList
+      }
+
+      aboutOurStorySection {
+        title
+        image
+        timeline {
+          item {
+            year
+            description
+          }
+        }
       }
       aboutLearnSection {
         title

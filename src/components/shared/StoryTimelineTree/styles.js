@@ -86,3 +86,30 @@ export const YearSection = styled.div`
     }
   }
 `
+
+export const MobileTree = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+`
+
+export const MobileYearWrapper = styled.div``
+
+export const MobileYear = styled(YearCircle)`
+  background-color: ${({ active }) =>
+    active ? `var(--c-p-royal-purple)` : `var(--c-p-medium-purple)`};
+
+  &::before {
+    border-color: ${({ active }) =>
+      active ? `var(--c-p-royal-purple)` : `var(--c-p-medium-purple)`};
+  }
+`
+
+export const Divider = styled.div`
+  flex-grow: 1;
+  border-bottom: 2px solid #d5b7f6;
+  z-index: -2;
+`
