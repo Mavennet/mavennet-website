@@ -28,36 +28,49 @@ const MainSection = ({ backgroundColor, meta }) => {
         <S.InfoList>
           <S.Column>
             <S.InfoItem>
+              <S.ItemTitle>Project Inquires</S.ItemTitle>
+              <S.ItemDescription
+                as="a"
+                href="mailto:project@mavennet.com?subject=Project Inquires"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                project@mavennet.com
+              </S.ItemDescription>
+            </S.InfoItem>
+            <S.InfoItem>
+              <S.ItemTitle>Career Inquires</S.ItemTitle>
+              <S.ItemDescription
+                as="a"
+                href="mailto:talent@mavennet.com?subject=Career Inquires"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                talent@mavennet.com
+              </S.ItemDescription>
+            </S.InfoItem>
+          </S.Column>
+          <S.Column>
+            <S.InfoItem>
               <S.ItemTitle>Office</S.ItemTitle>
-              <S.ItemDescription>
+              <S.ItemDescription
+                as="a"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://maps.google.com/?q=129 Spadina Ave, Toronto, Ontario, Canada, M5V 2L3"
+              >
                 129 Spadina Ave, <br />
                 Toronto, Ontario, Canada <br />
                 M5V 2L3
               </S.ItemDescription>
             </S.InfoItem>
-
+          </S.Column>
+          <S.Column>
             <S.InfoItem>
               <S.ItemTitle>Connect with us</S.ItemTitle>
               <S.ItemDescription as="div">
                 {getSocialList(social)}
               </S.ItemDescription>
-            </S.InfoItem>
-          </S.Column>
-          <S.Column>
-            <S.InfoItem>
-              <S.ItemTitle>Project Inquires</S.ItemTitle>
-              <S.ItemDescription>project@mavennet.com</S.ItemDescription>
-            </S.InfoItem>
-
-            <S.InfoItem>
-              <S.ItemTitle>Partnership Inquires</S.ItemTitle>
-              <S.ItemDescription>Partners@mavennet.com</S.ItemDescription>
-            </S.InfoItem>
-          </S.Column>
-          <S.Column>
-            <S.InfoItem>
-              <S.ItemTitle>Career Inquires</S.ItemTitle>
-              <S.ItemDescription>talent@mavennet.com</S.ItemDescription>
             </S.InfoItem>
           </S.Column>
         </S.InfoList>

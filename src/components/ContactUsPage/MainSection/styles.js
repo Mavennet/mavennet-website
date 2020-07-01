@@ -56,9 +56,11 @@ export const ItemTitle = styled.h2`
 `
 
 export const ItemDescription = styled.p`
-  color: var(--c-p-medium-purple);
-  font-size: 1rem;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.25px;
   line-height: 27px;
+  font-weight: 400;
 
   margin-top: 1em;
 `
