@@ -10,60 +10,60 @@ careerPrinciplesSection:
   principlesList:
     - item:
         title: Ownership
-        description: We work in a no-excuses environment. We do what need to be done irrespectively of the challenges ahead of us.
+        description: We work in a no-excuses environment. We do what need to be done
+          irrespectively of the challenges ahead of us.
         image: /assets/ownership-1.png
     - item:
         title: Integrity
-        description: We stay true to our values and are serious about the work we do. We believe in open communications and conveying the truth in the most direct manner.
+        description: We stay true to our values and are serious about the work we do. We
+          believe in open communications and conveying the truth in the most
+          direct manner.
         image: /assets/integrity-1.png
     - item:
         title: Impact
-        description: We like to laser focus on solving problems with a big impact that affect entire industries. We value simple and meaningful over complex solutions.
+        description: We like to laser focus on solving problems with a big impact that
+          affect entire industries. We value simple and meaningful over complex
+          solutions.
         image: /assets/impact-1.png
     - item:
         title: Resilience
-        description: We learn, we adapt, we drive until we face the “aha” moment that no one else has yet identified.
+        description: We learn, we adapt, we drive until we face the “aha” moment that no
+          one else has yet identified.
         image: /assets/resiience.png
 careerWhoSection:
-  title: Who should join Mavennet?
+  title: Are you ready to be a Maven?
+  subtitle: |
+    We are looking for:
   reasonsList:
     - item:
-        description:
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
-        image: /assets/screen-shot-2020-05-19-at-10.59.41.png
+        description: Creative, motivated people seeking to improve the way our world works
+        image: /assets/career-group-1.png
     - item:
-        description:
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
-        image: /assets/screen-shot-2020-05-19-at-10.59.44.png
+        description: Problem-solvers who move quickly and go beyond the norm to deliver
+          impact
+        image: /assets/career-group-2.png
     - item:
-        description:
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
-        image: /assets/screen-shot-2020-05-19-at-10.59.48.png
+        description: Curious minds passionate about reshaping the world through technology
+        image: /assets/career-group-3.png
 careerDaySection:
   title: A Day of A Maven
   testimonialsList:
     - item:
         name: Mahmoud Alkhraishi
         position: Lead Software Developer
-        testimony:
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        testimony: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh Lirem ipsum dolor sit amet, consectetuer
         image: /assets/screen-shot-2020-05-19-at-11.02.57.png
     - item:
         name: Mahmoud Alkhraishi
         position: Lead Software Developer
-        testimony:
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        testimony: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh Lirem ipsum dolor sit amet, consectetuer
         image: /assets/screen-shot-2020-05-19-at-11.02.57.png
     - item:
         name: Mahmoud Alkhraishi
         position: Lead Software Developer
-        testimony:
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        testimony: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh Lirem ipsum dolor sit amet, consectetuer
         image: /assets/screen-shot-2020-05-19-at-11.02.57.png
 careerOppotunitySection:

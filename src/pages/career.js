@@ -49,6 +49,7 @@ export const query = graphql`
       }
       careerWhoSection {
         title
+        subtitle
         reasonsList {
           item {
             description

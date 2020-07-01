@@ -548,6 +548,11 @@ collections:
             widget: "object"
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
+              - {
+                  label: "Section SubTitle",
+                  name: "subtitle",
+                  widget: "string",
+                }
               - label: "Reasons list"
                 name: "reasonsList"
                 widget: "list"

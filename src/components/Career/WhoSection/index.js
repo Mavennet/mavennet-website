@@ -12,7 +12,7 @@ const frameColors = [
   "",
 ]
 
-const WhoSection = ({ title, reasonsList }) => {
+const WhoSection = ({ title, subtitle, reasonsList }) => {
   const getQualityList = qualities => (
     <S.QualityList>
       {qualities.map(({ item }, index) => {
@@ -39,6 +39,7 @@ const WhoSection = ({ title, reasonsList }) => {
     <S.WhoSection>
       <Container center>
         <S.Title>{title}</S.Title>
+        <S.Title>{subtitle}</S.Title>
         {getQualityList(reasonsList)}
       </Container>
     </S.WhoSection>

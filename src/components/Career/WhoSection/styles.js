@@ -97,7 +97,8 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   position: relative;
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   z-index: 2;
 `
 
