@@ -25,6 +25,13 @@ export const Title = styled.h2`
   line-height: 48px;
 
   text-align: center;
+
+  @media ${device.laptop} {
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 64px;
+    text-align: center;
+  }
 `
 
 export const Content = styled.div`

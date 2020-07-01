@@ -92,6 +92,9 @@ export const MobileTree = styled.header`
   justify-content: space-between;
   align-items: center;
 
+  width: 85%;
+  margin: 0 auto;
+
   position: relative;
   z-index: 1;
 `
