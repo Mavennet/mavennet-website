@@ -8,6 +8,7 @@ import { device } from "../../../consts/deviceSizes"
 export const DemoSection = styled.section`
   @media ${device.laptop} {
     display: flex;
+    margin-bottom: 5em;
   }
 `
 

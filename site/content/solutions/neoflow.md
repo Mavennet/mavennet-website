@@ -58,25 +58,7 @@ demoSection:
   image: /assets/neoflow-working-mockup.png
   ctaText: Request a Demo
   textOnly: true
-testimonialSection:
-  - testimony:
-      author: Jane Doe
-      position: Title
-      companyLogo: /assets/screen-shot-2020-05-13-at-13.48.13.png
-      message:
-        “ Cilent Testimony consectetuer adipiscing elit, sed diam nonummy nibh
-        , amet consectetuer adipiscing elit, sed diam nonummy, amet consectetuer
-        adipiscing elit, sed diam nonummy, consectetuer adipiscing elit, sed
-        diam nonummy nibh  “
-  - testimony:
-      author: Jane Doe
-      position: Title
-      companyLogo: /assets/screen-shot-2020-05-13-at-13.48.13.png
-      message:
-        “ Cilent Testimony consectetuer adipiscing elit, sed diam nonummy nibh
-        , amet consectetuer adipiscing elit, sed diam nonummy, amet consectetuer
-        adipiscing elit, sed diam nonummy, consectetuer adipiscing elit, sed
-        diam nonummy nibh  “
+
 newsSection:
   title: Learn More About Neoflow
   news:
