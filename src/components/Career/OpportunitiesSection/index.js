@@ -1,12 +1,12 @@
-import React from "react"
+import React, { forwardRef } from "react"
 
 import Table from "./Table"
 
 import * as S from "./styles"
 
-const OpportunitiesSection = ({ title, opportunitiesList }) => {
+const OpportunitiesSection = ({ title, opportunitiesList }, ref) => {
   return (
-    <S.OpportunitiesSection>
+    <S.OpportunitiesSection ref={ref}>
       <S.SectionContainer>
         <S.Title>{title}</S.Title>
         <S.TableWrapper>
@@ -20,4 +20,4 @@ const OpportunitiesSection = ({ title, opportunitiesList }) => {
   )
 }
 
-export default OpportunitiesSection
+export default forwardRef(OpportunitiesSection)

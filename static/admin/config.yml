@@ -650,6 +650,7 @@ collections:
                     name: "ctaText",
                     widget: "string",
                   }
+                - { label: "To", name: "to", widget: "string" }
 
       - label: "NotFound Page"
         name: "notfound-page"

@@ -2,14 +2,20 @@ import React from "react"
 
 import * as S from "./styles"
 
-const MainSection = ({ image, title, description, ctaText }) => {
+const MainSection = ({
+  image,
+  title,
+  description,
+  ctaText,
+  handlePositionClick,
+}) => {
   return (
     <S.MainSection background={image} center fill="#F9F5FE">
       <S.MainSectionContainer>
         <S.TextContent>
           <S.Title>{title}</S.Title>
           <S.Description>{description}</S.Description>
-          <S.CTA text={ctaText} />
+          <S.CTA text={ctaText} type="button" onClick={handlePositionClick} />
         </S.TextContent>
       </S.MainSectionContainer>
     </S.MainSection>

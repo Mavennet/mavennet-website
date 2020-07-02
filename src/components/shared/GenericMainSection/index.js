@@ -11,6 +11,7 @@ const GenericMainSection = ({
   className,
   flatMobile,
   fill,
+  dividerIndex,
 }) => {
   return (
     <S.GenericMainSection
@@ -19,7 +20,12 @@ const GenericMainSection = ({
       backgroundColor={backgroundColor}
       className={className}
     >
-      <SvgDivider bottom="-2px" flatMobile={flatMobile} fill={fill} />
+      <SvgDivider
+        bottom="-2px"
+        flatMobile={flatMobile}
+        fill={fill}
+        dividerIndex={dividerIndex}
+      />
       {children}
     </S.GenericMainSection>
   )

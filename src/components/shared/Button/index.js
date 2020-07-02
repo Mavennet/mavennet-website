@@ -14,12 +14,14 @@ const Button = ({
   className,
   width,
   isLoading,
+  onClick,
 }) => {
   return type ? (
     <S.Button
       as="button"
       width={width}
       type={type}
+      onClick={onClick}
       reverse={reverse ? 1 : undefined}
       outline={outline ? 1 : undefined}
       className={className}

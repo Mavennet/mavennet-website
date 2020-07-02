@@ -27,7 +27,7 @@ solutions:
     description: Build your own applications or extend existing ones with the Mavenstamp API, securing your data with immutable timestamps and tamper detection.
     image: /assets/mavenstamp-mockup.png
     ctaImage: /assets/group-9.png
-    slug: solutions/mavenestamp
+    slug: solutions/mavenstamp
     sectionType: regular
 previousWork:
   title: Select Clients & Work

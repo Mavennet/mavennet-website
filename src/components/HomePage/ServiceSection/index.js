@@ -26,11 +26,11 @@ const ServiceSection = ({ title, description, ctaText, steps }) => {
         <S.Title>{title}</S.Title>
         <S.Description>{description}</S.Description>
       </Container>
-      <S.StepsSection flatMobile>
+      <S.StepsSection flatMobile dividerIndex={true}>
         <Container>
           <S.ItemsList>{getItems(steps)}</S.ItemsList>
           <S.CTAContainer>
-            <S.CTA text={ctaText} to="/service" />
+            <S.CTA text={ctaText} to="/approach" />
           </S.CTAContainer>
         </Container>
       </S.StepsSection>

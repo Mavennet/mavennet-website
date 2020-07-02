@@ -5,6 +5,7 @@ import { device } from "../../../consts/deviceSizes"
 export const GenericMainSection = styled.section`
   position: relative;
   padding: 13.5625em 0;
+  z-index: 1;
   ${({ backgroundMobile }) =>
     backgroundMobile &&
     `

@@ -60,6 +60,7 @@ approachStepsSection:
       cta:
         ctaText: Talk to Us to learn more
         ctaType: solutionsCta
+        to: "/contact-us"
       stepsList:
         - "• Project & Product Management"
         - "• Smart Contract Auditing"

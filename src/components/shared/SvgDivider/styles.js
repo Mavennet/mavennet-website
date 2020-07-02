@@ -9,6 +9,12 @@ export const SvgDivider = styled.div`
   bottom: ${({ bottom }) => bottom || "unset"};
   top: ${({ top }) => top || "unset"};
 
+  ${({ dividerIndex }) =>
+    dividerIndex &&
+    `
+    z-index: -1;
+  `}
+
   ${({ flatMobile }) =>
     flatMobile &&
     `

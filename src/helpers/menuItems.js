@@ -23,6 +23,11 @@ export const getHeaderItems = items => {
 
   const headerItems = {
     solutions: { ...solutions, to: "/solutions" },
+    industries: {
+      name: "Industries",
+      to: "/industries",
+      children: [],
+    },
     approach: {
       name: "Approach",
       to: "/approach",
@@ -31,11 +36,6 @@ export const getHeaderItems = items => {
     rAndD: {
       name: "R & D",
       to: "/r&d",
-      children: [],
-    },
-    industries: {
-      name: "Industries",
-      to: "/industries",
       children: [],
     },
     company: { ...COMPANY, to: "/about" },

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
@@ -10,6 +10,13 @@ import WhoSection from "../components/Career/WhoSection"
 import TestimonialSection from "../components/Career/TestimonialSection"
 import OpportunitiesSection from "../components/Career/OpportunitiesSection"
 import ContactUsSection from "../components/Career/ContactUsSection"
+
+const scrollToRef = ref =>
+  window.scrollTo({
+    left: 0,
+    top: ref.current.offsetTop - 90,
+    behavior: "smooth",
+  })
 
 const CareerPage = ({ data, location }) => {
   const post = data.pagesYaml
@@ -23,16 +30,25 @@ const CareerPage = ({ data, location }) => {
     meta,
   } = post
 
+  const openPositionsRef = useRef(null)
+  const executeScroll = ref => scrollToRef(ref)
+
   return (
     <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
-      <MainSection {...careerMainSection} />
+      <MainSection
+        {...careerMainSection}
+        handlePositionClick={() => executeScroll(openPositionsRef)}
+      />
       <PrinciplesSection
         principlesList={careerPrinciplesSection.principlesList}
       />
       <WhoSection {...careerWhoSection} />
       <TestimonialSection {...careerDaySection} />
-      <OpportunitiesSection {...careerOppotunitySection} />
+      <OpportunitiesSection
+        {...careerOppotunitySection}
+        ref={openPositionsRef}
+      />
       <ContactUsSection {...careerOtherOpportunitiesSection} />
     </Layout>
   )
