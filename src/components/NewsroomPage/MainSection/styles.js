@@ -12,7 +12,7 @@ export const MainSection = styled(GenericMainSection)`
   padding: 7.25em 0 9.25em;
 
   @media ${device.laptop} {
-    padding: 9.25em 0 0.25em;
+    padding: 9.25em 0 2.25em;
   }
 `
 

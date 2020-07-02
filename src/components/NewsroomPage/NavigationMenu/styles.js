@@ -5,9 +5,7 @@ import { device } from "../../../consts/deviceSizes"
 export const NavigationMenu = styled.nav`
   color: var(--c-p-royal-purple);
 
-  @media ${device.laptop} {
-    padding: 3em 0;
-  }
+  padding: 3em 0;
 `
 
 export const MenuList = styled.ul``
