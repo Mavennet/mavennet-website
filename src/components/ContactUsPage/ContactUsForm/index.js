@@ -22,7 +22,7 @@ const ContactUsForm = ({ onSubmit }) => {
       email: "",
       company: "",
       jobTitle: "",
-      contactReason: "",
+      clientType: "",
       message: "",
     },
     validationSchema: Yup.object({
@@ -35,7 +35,7 @@ const ContactUsForm = ({ onSubmit }) => {
         .required("Email Address is Required"),
       company: Yup.string(),
       jobTitle: Yup.string(),
-      contactReason: Yup.string().required("Contact Reason is Required"),
+      clientType: Yup.string().required("I am is Required"),
       message: Yup.string(),
     }),
     onSubmit: onSubmit,
@@ -101,11 +101,11 @@ const ContactUsForm = ({ onSubmit }) => {
       <S.Row>
         <S.InputContainer>
           <SelectInputFormik
-            name="contactReason"
-            label="How can we help you?"
-            touched={touched.contactReason}
-            errors={errors.contactReason}
-            formikProps={getFieldProps("contactReason")}
+            name="clientType"
+            label="I am a..."
+            touched={touched.clientType}
+            errors={errors.clientType}
+            formikProps={getFieldProps("clientType")}
           />
         </S.InputContainer>
       </S.Row>
