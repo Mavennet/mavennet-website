@@ -42,7 +42,7 @@ featuresSection:
     - title: Single source of truth for records of events
       description: MetalTrail has the capability to capture and exchange information
         about production, transformation, transport and inspection events.
-      image: /assets/screen-shot-2020-05-13-at-13.47.57.png
+      image: /assets/mt-f-01.png
     - title: Real time end-to-end product traceability
       description: "Easily trace back your products’ composition to the country of
         origin, from raw materials to finished products. "
