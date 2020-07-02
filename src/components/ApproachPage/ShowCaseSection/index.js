@@ -12,11 +12,15 @@ const showcase = [
     title: "VIVOPago",
     description: "App for Media and Telecoms Payments in Latin America.",
     image: vivoPago,
+    to: "/solutions/vivopago",
+    isExternal: false,
   },
   {
     title: "TMX",
     description: "Green bonds origination through maturity",
     image: tmx,
+    to: "https://www.tmx.com/",
+    isExternal: true,
   },
 ]
 
@@ -41,7 +45,11 @@ const ShowCaseSection = () => {
               <S.Col text>
                 <S.ItemTitle>{item.title}</S.ItemTitle>
                 <S.ItemDescription>{item.description}</S.ItemDescription>
-                <S.CTA text="Learn More" />
+                {item.isExternal ? (
+                  <S.CTA text="Learn More" link={item.to} />
+                ) : (
+                  <S.CTA text="Learn More" to={item.to} />
+                )}
               </S.Col>
             </S.Item>
           ))}
