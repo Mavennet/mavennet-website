@@ -9,11 +9,9 @@ mainSection:
 firstSection:
   - type: summarySection
     summaryType: regular
-    title:
-      All the benefits of digital assets through a stable and fully regulated
+    title: All the benefits of digital assets through a stable and fully regulated
       token
-    description:
-      "Financial transactions are time consuming and costly. There is no
+    description: "Financial transactions are time consuming and costly. There is no
       convenient on-off ramp between crypto-currency and fiat currency. QCAD is
       a reliable piece of financial market infrastructure that provides an easy
       way to manage your digital assets with complete transparency and security.
@@ -27,15 +25,14 @@ firstSection:
     image: /assets/qcad-graphic.png
 featuredSection:
   featureType: imageOnly
-  image: /assets/digital-asset-kit-graphic.png
+  image: /assets/digital-asset-kit-graphic.svg
   title: Digital Asset Kit powered by Mavennet
 featuresSection:
   title: Key Features
   featuresType: timeline
   items:
     - title: Purchase assets easily
-      description:
-        Our built-in order management system is designed to let you acquire
+      description: Our built-in order management system is designed to let you acquire
         tokens, with just a few, simple clicks.
       image: /assets/qcad_ui1.png
     - title: Redeem your tokens
@@ -46,8 +43,7 @@ featuresSection:
         transactions, through a real-time analytics dashboard.
       image: /assets/qcad_ui3.png
     - title: ­Process requests
-      description:
-        "Sending and receiving funds has never been easier, settle client
+      description: "Sending and receiving funds has never been easier, settle client
         requests instantly. "
       image: /assets/qcad_ui4.png
 demoSection:

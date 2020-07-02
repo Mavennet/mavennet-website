@@ -239,7 +239,7 @@ export const TimelineContent = {
     events: [
       {
         title: "Mavennet forms part of the WTIA",
-        logo: "mavennet-logo.svg",
+        logo: "wtia-logo.svg",
         glyph: "mavennet-logo.svg",
         alt: "WTIA Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -268,7 +268,7 @@ export const TimelineContent = {
           "Mavennet is nominated as a finalist for the Industry Solutions Award of the Blockchain Research Institute.",
         subtitle:
           "This recognition comes as a result of our work in building Neoflow.",
-        logo: "bridge-logo.svg",
+        logo: "brg-logo.svg",
         glyph: "brg-logo-glyph.svg",
         alt: "Blockchain Revolution Global Logo",
         relevance: RELEVANCE.MEDIUM,

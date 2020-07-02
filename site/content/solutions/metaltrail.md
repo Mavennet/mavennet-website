@@ -46,7 +46,7 @@ featuresSection:
     - title: Real time end-to-end product traceability
       description: "Easily trace back your products’ composition to the country of
         origin, from raw materials to finished products. "
-      image: /assets/screen-shot-2020-05-13-at-13.48.01.png
+      image: /assets/mt-ui-2.png
     - title: Industry analytics and anomaly detection
       description: Aggregate insights of the metals supply chain, predictions of data
         trends and detection of counterfeit or misclassified products.

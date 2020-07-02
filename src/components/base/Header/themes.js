@@ -4,6 +4,7 @@ import logoDark from "../../../assets/images/logo_dark.svg"
 const primary = {
   logo: logoWhite,
   color: "#FFFFFF",
+  activeBorder: "#ffffff",
   background: "transparent",
   button: "outline",
   position: "absolute",
@@ -14,6 +15,7 @@ const sticky = {
   logo: logoDark,
   color: "var(--c-p-haiti)",
   background: "#FFFFFF",
+  activeBorder: "#230f32",
   button: "primary",
   position: "fixed",
   boxShadow: "0px -7px 19px 0px rgba(0,0,0,0.75)",
