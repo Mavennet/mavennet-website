@@ -41,8 +41,8 @@ const FormSection = () => {
     <S.FormSection>
       <S.FormSectionContainer center>
         <S.ContactUsText>
-          Kindly fill in the form with any questions or suggestions you might
-          have, and our team will get back to you as soon as we can.
+          Send us your questions or comments and our team will contact you
+          shortly.
         </S.ContactUsText>
         <ContactUsForm onSubmit={onSubmit} />
       </S.FormSectionContainer>
