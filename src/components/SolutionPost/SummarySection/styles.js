@@ -12,7 +12,7 @@ export const SummarySection = styled.section`
 
 export const Header = styled.header`
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 
   @media ${device.laptop} {
     flex-direction: row;
@@ -28,10 +28,10 @@ export const Content = styled.div`
     `}
 
   @media ${device.laptop} {
-    margin-top: 4.12em;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    margin-top: 0;
   }
 `
 
@@ -63,9 +63,10 @@ export const TextContent = styled.div`
 `
 
 export const Title = styled.h2`
-  font-size: 2.125rem;
-  font-weight: 600;
-  line-height: 41px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 0.25px;
+  line-height: 56px;
 `
 
 export const Description = styled.p`
@@ -112,6 +113,6 @@ export const ListItem = styled.li`
   margin-top: 2.125em;
 
   @media ${device.laptop} {
-    width: ${props => (props.width ? props.width : "100%")};
+    width: "100%";
   }
 `

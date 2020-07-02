@@ -64,7 +64,7 @@ demoSection:
   backgroundImage: /assets/mt-mock-bg.png
   textOnly: false
 newsSection:
-  title: Learn More About Neoflow
+  title: Learn More About Metaltrail
   news:
     - item:
         title: Become a global blockchain expert with Mavennet

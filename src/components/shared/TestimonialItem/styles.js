@@ -12,8 +12,7 @@ export const TestimonialItem = styled.div`
 `
 
 export const Message = styled.blockquote`
-  font-size: 1.25rem;
-  font-style: italic;
+  font-size: 20px;
   font-weight: 500;
   line-height: 24px;
 
@@ -23,13 +22,14 @@ export const Message = styled.blockquote`
 
   @media ${device.laptop} {
     width: 70%;
-    padding-top: 2em;
+    padding: 1em 0 1em 2em;
   }
 
   @media ${device.desktop} {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 29px;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 34px;
   }
 `
 
@@ -49,26 +49,27 @@ export const ContactInfo = styled.div`
 export const PersonInfo = styled.div``
 
 export const Name = styled.p`
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 500;
   line-height: 29px;
 
   @media ${device.desktop} {
-    font-size: 2.125rem;
     font-weight: 600;
-    line-height: 41px;
+    letter-spacing: 0;
+    line-height: 34px;
   }
 `
 
 export const Position = styled.p`
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 500;
   line-height: 24px;
 
   @media ${device.desktop} {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 29px;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    font-weight: 400;
+    line-height: 24px;
   }
 `
 
