@@ -14,7 +14,7 @@ export const MainSection = styled(GenericMainSection)`
   }
   @media ${device.laptopL} {
     overflow: visible;
-    padding: 279px 0 170px;
+    padding: 279px 0 230px;
   }
 `
 
