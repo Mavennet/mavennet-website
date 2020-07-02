@@ -6,7 +6,13 @@ import checkIcon from "../../../assets/icons/check-solid.svg"
 
 import * as S from "./styles"
 
-const SolutionDescriptionSection = ({ featureType, title, image, items }) => {
+const SolutionDescriptionSection = ({
+  featureType,
+  title,
+  description,
+  image,
+  items,
+}) => {
   const isBanner = featureType === "banner"
   const isImageOnly = featureType === "imageOnly"
 
@@ -22,18 +28,48 @@ const SolutionDescriptionSection = ({ featureType, title, image, items }) => {
       </S.PointsList>
     )
   }
-  return (
+
+  const Banner = ({ title, image, items }) => (
     <S.SolutionDescriptionSection>
-      <Container center>
-        <S.Title isImageOnly={isImageOnly}>{title}</S.Title>
-        <S.Content isBanner={isBanner} isImageOnly={isImageOnly}>
-          <S.ImageContainer isBanner={isBanner} isImageOnly={isImageOnly}>
-            <S.Image src={image} alt={`${title} image`} />
-          </S.ImageContainer>
-          {!isImageOnly && getPointsList(items)}
+      <Container>
+        <S.Content style={{ marginTop: 0 }}>
+          <S.Col imageContent>
+            <S.ImageContainer isBanner={true}>
+              <S.Image src={image} alt={`${title} image`} />
+            </S.ImageContainer>
+          </S.Col>
+          <S.Col textContent>
+            <S.Title>{title}</S.Title>
+            <S.Description>{description}</S.Description>
+            {getPointsList(items)}
+          </S.Col>
         </S.Content>
       </Container>
     </S.SolutionDescriptionSection>
+  )
+
+  const ImageOnly = ({ title, image }) => (
+    <S.SolutionDescriptionSection>
+      <Container center>
+        <S.Title isImageOnly={true}>{title}</S.Title>
+        <S.Content isBanner={false} isImageOnly={true}>
+          <S.ImageContainer isBanner={false} isImageOnly={true}>
+            <S.Image src={image} alt={`${title} image`} />
+          </S.ImageContainer>
+        </S.Content>
+      </Container>
+    </S.SolutionDescriptionSection>
+  )
+
+  return isImageOnly ? (
+    <ImageOnly title={title} image={image} />
+  ) : (
+    <Banner
+      title={title}
+      image={image}
+      description={description}
+      items={items}
+    />
   )
 }
 

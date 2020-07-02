@@ -1,35 +1,51 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
 
 import { device } from "../../../consts/deviceSizes"
 
 export const NumberItem = styled.div`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
+  padding: 0 15px;
+
   width: 100%;
 `
 
-export const Image = styled.img`
+export const CircularChart = styled.svg`
   display: block;
-  width: 80%;
-
-  max-width: 118px;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 123px;
 `
 
-export const Number = styled.span`
-  display: block;
-  font-size: 2.125rem;
-  font-weight: 600;
-  line-height: 41px;
-  text-align: center;
-
-  margin-top: 0.2em;
-
-  @media ${device.desktop} {
-    font-size: 2.5em;
+const progress = keyframes`
+  0% {
+    stroke-dasharray: 0 100;
   }
+`
+
+export const CircleBg = styled.path`
+  fill: none;
+  stroke: var(--c-p-medium-purple);
+  stroke-width: 3.8;
+`
+
+export const Circle = styled.path`
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  stroke: var(--c-p-royal-purple);
+  animation: ${progress} 2s ease-out forwards;
+`
+
+export const Number = styled.text`
+  fill: var(--c-p-royal-purple);
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
 `
 
 export const Description = styled.p`

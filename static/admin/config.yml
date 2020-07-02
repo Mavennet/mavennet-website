@@ -699,11 +699,16 @@ collections:
                 name: "items"
                 widget: "list"
                 fields:
-                  - { label: "Image", name: "image", widget: "image" }
                   - {
                       label: "Numbers",
                       name: "numbers",
                       widget: "string",
+                      required: false,
+                    }
+                  - {
+                      label: "Is Percentage",
+                      name: "isPercentage",
+                      widget: boolean,
                       required: false,
                     }
                   - {
@@ -737,7 +742,7 @@ collections:
         widget: "object"
         required: false
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", required: false }
           - label: "How it Works Items"
             name: "howItWorksItems"
             required: false
@@ -770,6 +775,7 @@ collections:
         collapsed: "true"
         fields:
           - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
           - {
               label: "Type",
               name: "featuresType",

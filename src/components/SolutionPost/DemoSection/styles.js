@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import Button from "../../shared/Button"
+import Container from "../../base/Container"
 
 import { device } from "../../../consts/deviceSizes"
 
@@ -24,12 +25,15 @@ export const Image = styled.img`
 export const TextContent = styled.div`
   background-color: var(--c-p-selago-dark);
 
+  display: flex;
+  align-items: center;
+
   ${({ textOnly }) =>
     textOnly &&
     `
     width: 100%;
     padding: 5.25em 0 !important;
-    text-align: center;
+    text-align: left;
   `}
 
   padding: 4.625em 2em;
@@ -43,15 +47,29 @@ export const Title = styled.h3`
   font-size: 2.125rem;
   font-weight: 600;
   line-height: 41px;
+  text-align: center;
 
-  @media ${device.desktop} {
+  @media ${device.laptop} {
     font-size: 2.5rem;
+    max-width: 400px;
+    text-align: left;
   }
 `
 
 export const DemoButton = styled(Button)`
   margin-top: 2.625em;
   @media ${device.desktop} {
-    margin-top: 5.625em;
+    margin-top: 3.625em;
+  }
+`
+
+export const SectionContainer = styled(Container)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media ${device.laptop} {
+    display: block;
   }
 `

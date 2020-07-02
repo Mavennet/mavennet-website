@@ -4,7 +4,6 @@ export const NewsCard = styled.article`
   width: 100%;
   height: 100%;
   max-width: 385px;
-  padding-bottom: 2em;
   box-sizing: border-box;
 
   background-color: #fff;
@@ -19,6 +18,7 @@ export const NewsCard = styled.article`
 export const CardLink = styled.a`
   width: 100%;
   height: 100%;
+  padding-bottom: 2em;
 `
 
 export const Image = styled.img`

@@ -1,13 +1,11 @@
 import React from "react"
 
-import Container from "../../base/Container"
-
 import * as S from "./styles"
 
 const DemoSection = ({ title, textOnly, ctaText, image }) => {
   const ParentWrapper = ({ children }, textOnly) => {
     if (textOnly) {
-      return <Container center>{children}</Container>
+      return <S.SectionContainer>{children}</S.SectionContainer>
     }
 
     return children

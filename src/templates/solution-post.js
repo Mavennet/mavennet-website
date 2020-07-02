@@ -83,6 +83,7 @@ export const query = graphql`
           featureType
           image
           title
+          description
           items
         }
         howItWorksSection {
@@ -110,9 +111,9 @@ export const query = graphql`
           image
           items {
             image
-            numbers
             description
-            text
+            numbers
+            isPercentage
           }
           itemsText
         }

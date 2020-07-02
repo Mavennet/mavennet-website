@@ -17,18 +17,51 @@ export const Title = styled.h2`
   line-height: 41px;
   max-width: 900px;
 
-  ${({ isImageOnly }) =>
-    isImageOnly &&
-    `
-        text-align: center;
-    `}
-
   @media ${device.laptop} {
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 48px;
-    text-align: center;
+    text-align: left;
+
+    ${({ isImageOnly }) =>
+      isImageOnly &&
+      `
+        text-align: center;
+    `}
   }
+`
+
+export const Col = styled.div`
+  width: 100%;
+
+  ${({ textContent }) =>
+    textContent &&
+    `
+    margin-top: 2em;
+  `}
+
+  @media ${device.laptop} {
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 0;
+
+    ${({ imageContent }) =>
+      imageContent &&
+      `
+
+      padding-right: 6em;
+      display: flex;
+      align-items: center;
+    `}
+  }
+`
+
+export const Description = styled.p`
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+
+  margin-top: 20px;
 `
 
 export const Content = styled.div`
@@ -57,7 +90,7 @@ export const ImageContainer = styled.div`
     ${({ isBanner }) =>
       !isBanner &&
       `
-        width: 45%;
+        width: 100%;
         max-width: 563px;
     
     `}
@@ -80,8 +113,8 @@ export const PointsList = styled.ul`
   margin-top: 3em;
 
   @media ${device.laptop} {
-    margin-top: 0;
-    width: 45%;
+    margin-top: 2em;
+    width: 100%;
 
     ${({ isBanner }) =>
       isBanner &&
@@ -100,9 +133,10 @@ export const PointsList = styled.ul`
 `
 
 export const PointsItem = styled.li`
-  font-size: 1.25rem;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 24px;
+  letter-spacing: 0;
+  line-height: 34px;
 
   margin-top: 1.7em;
 
@@ -111,7 +145,6 @@ export const PointsItem = styled.li`
   align-items: center;
 
   @media ${device.laptop} {
-    font-size: 1.5rem;
     margin-top: 1em;
   }
 `
