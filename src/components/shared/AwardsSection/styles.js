@@ -30,7 +30,16 @@ export const AwardsList = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media ${device.mobileL} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media ${device.tablet} {
+    flex-wrap: nowrap;
+  }
 `
 
 export const Award = styled.div`
