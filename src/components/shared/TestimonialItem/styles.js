@@ -74,5 +74,7 @@ export const Position = styled.p`
 `
 
 export const CompanyImage = styled.img`
-  width: 150px;
+  max-width: 150px;
+  height: auto;
+  max-height: 100px;
 `
