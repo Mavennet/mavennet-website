@@ -36,7 +36,7 @@ export const Logo = styled.img`
 export const Navbar = styled.nav`
   display: none;
 
-  @media ${device.laptop} {
+  @media (min-width: 1080px) {
     display: flex;
     align-items: center;
   }

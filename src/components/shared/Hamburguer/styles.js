@@ -6,7 +6,7 @@ export const Hamburguer = styled.div`
   width: 30px;
   cursor: pointer;
 
-  @media ${device.laptop} {
+  @media (min-width: 1080px) {
     display: none;
   }
 `
