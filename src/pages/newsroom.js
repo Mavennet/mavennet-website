@@ -11,6 +11,8 @@ import MediaSection from "../components/NewsroomPage/MediaSection"
 import AwardsSection from "../components/NewsroomPage/AwardsSection"
 import NewsSection from "../components/shared/NewsSection"
 
+import newsRoomImage from "../assets/innovative-blockchain-awards-finalist.jpeg"
+
 const scrollToRef = ref =>
   window.scrollTo({
     left: 0,
@@ -58,7 +60,7 @@ const NewsroomPage = ({ data, location }) => {
     setFeaturedNews({
       title: "Mavenet was selected a finalist for the Industry Solutions Award",
       data: "2020-05-29T17:32:01.703Z",
-      image: "/assets/innovative-blockchain-awards-finalist.jpeg",
+      image: newsRoomImage,
       link: "https://blockchainrevolutionglobal.com/the-eb-awards/",
     })
   }, [professionalAssociation])
