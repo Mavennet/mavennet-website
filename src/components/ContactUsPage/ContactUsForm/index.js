@@ -30,7 +30,9 @@ const ContactUsForm = ({ onSubmit }) => {
         .max(15, "Must be 30 characters or less")
         .required("First Name is Required"),
       lastName: Yup.string().max(15, "Must be 15 characters or less"),
-      email: Yup.string().email("Invalid email address").required("Required"),
+      email: Yup.string()
+        .email("Invalid email address")
+        .required("Email Address is Required"),
       company: Yup.string(),
       jobTitle: Yup.string(),
       contactReason: Yup.string().required("Contact Reason is Required"),
