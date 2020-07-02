@@ -16,6 +16,7 @@ export const Title = styled.h2`
   font-weight: 600;
   line-height: 41px;
   max-width: 900px;
+  text-align: center;
 
   @media ${device.laptop} {
     font-size: 2.5rem;
@@ -146,6 +147,9 @@ export const PointsItem = styled.li`
 
   @media ${device.laptop} {
     margin-top: 1em;
+    box-sizing: border-box;
+
+    padding-right: 10px;
   }
 `
 

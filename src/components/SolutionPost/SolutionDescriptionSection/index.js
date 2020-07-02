@@ -29,7 +29,7 @@ const SolutionDescriptionSection = ({
     )
   }
 
-  const Banner = ({ title, image, items }) => (
+  const Regular = ({ title, image, items }) => (
     <S.SolutionDescriptionSection>
       <Container>
         <S.Content style={{ marginTop: 0 }}>
@@ -48,6 +48,20 @@ const SolutionDescriptionSection = ({
     </S.SolutionDescriptionSection>
   )
 
+  const Banner = ({ title, image, items }) => (
+    <S.SolutionDescriptionSection>
+      <Container center>
+        <S.Title isImageOnly={true}>{title}</S.Title>
+        <S.Content isBanner={false} isImageOnly={true}>
+          <S.ImageContainer isBanner={false} isImageOnly={true}>
+            <S.Image src={image} alt={`${title} image`} />
+          </S.ImageContainer>
+        </S.Content>
+        {getPointsList(items)}
+      </Container>
+    </S.SolutionDescriptionSection>
+  )
+
   const ImageOnly = ({ title, image }) => (
     <S.SolutionDescriptionSection>
       <Container center>
@@ -61,9 +75,22 @@ const SolutionDescriptionSection = ({
     </S.SolutionDescriptionSection>
   )
 
-  return isImageOnly ? (
-    <ImageOnly title={title} image={image} />
-  ) : (
+  if (isImageOnly) {
+    return <ImageOnly title={title} image={image} />
+  }
+
+  if (!isBanner) {
+    return (
+      <Regular
+        title={title}
+        image={image}
+        description={description}
+        items={items}
+      />
+    )
+  }
+
+  return (
     <Banner
       title={title}
       image={image}

@@ -35,6 +35,7 @@ export const Title = styled.h3`
     font-size: 2.5em;
     font-weight: bold;
     line-height: 48px;
+    max-width: 800px;
   }
 `
 
