@@ -1,16 +1,15 @@
 ---
-title: NeoFlow
 order: 1
+title: NeoFlow
 previousWork: false
 mainSection:
   image: /assets/neoflow-mockup.png
-  logo: /assets/neoflow_logo.png
+  logo: /assets/nf-logo-white.png
   text: "Digitizing the Oil Barrel "
 firstSection:
   - type: growthSection
     title: Industry Opportunity
-    description:
-      "Information exchange in the oil industry today is largely manual,
+    description: "Information exchange in the oil industry today is largely manual,
       with redundancies in regulatory reporting. Analysis of origins and
       traceability of flows is susceptible to errors, miscommunication and
       misrepresentation. The standard today is for each participant in the value
@@ -23,13 +22,17 @@ firstSection:
         description: 9% of cross-border global oil shipments gets disputed
       - numbers: 50
         isPercentage: true
-        description: 50% of back-office costs are spent on documentation and information exchange
+        description: 50% of back-office costs are spent on documentation and information
+          exchange
       - numbers: $1 bn
         description: $1 bn annual potential savings in G&A expenses
 featuredSection:
   featureType: regular
   title: Trusted Data Exchange for Oil
-  description: Neoflow is a platform accessible by industry, border control agencies and relevant government entities. Neoflow tracks key value chain events, while digitizing relevant documentation such as Bills of Lading and Certificates of Origin.
+  description: Neoflow is a platform accessible by industry, border control
+    agencies and relevant government entities. Neoflow tracks key value chain
+    events, while digitizing relevant documentation such as Bills of Lading and
+    Certificates of Origin.
   image: /assets/neoflow-graphic.png
   items:
     - Provable product traceability
@@ -40,8 +43,7 @@ featuresSection:
   featuresType: regular
   items:
     - title: Immutable tracking of events and interactions
-      description:
-        End-to-end visibility of the products’ lifecycle, from wellhead
+      description: End-to-end visibility of the products’ lifecycle, from wellhead
         production, to upgrading, inspection, transportation import and
         refinement.
       image: /assets/nf_ui1.png
@@ -59,7 +61,6 @@ demoSection:
   image: /assets/neoflow-working-mockup.png
   ctaText: Request a Demo
   textOnly: false
-
 newsSection:
   title: Learn More About Neoflow
   news:

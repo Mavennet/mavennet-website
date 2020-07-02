@@ -9,8 +9,7 @@ mainSection:
 firstSection:
   - type: growthSection
     title: Industry Opportunity
-    description:
-      Proving product origin, specifications and composition is a manual
+    description: Proving product origin, specifications and composition is a manual
       process, reliant on paper documents and manual communications systems.
       Additionally, there is no comprehensive method to track a product’s carbon
       footprint throughout the supply chain, upstream and downstream.
@@ -21,13 +20,11 @@ firstSection:
         isPercentage: true
       - image: /assets/screen-shot-2020-05-13-at-13.47.49.png
         numbers: 133M
-        description:
-          The falsification of Mill Test Certificates has led to $133 million
+        description: The falsification of Mill Test Certificates has led to $133 million
           USD losses for steel producers
       - image: /assets/screen-shot-2020-05-13-at-13.47.49.png
         numbers: 800M
-        description:
-          Excess capacity in the global steel industry exceeds 800 m tonnes
+        description: Excess capacity in the global steel industry exceeds 800 m tonnes
           annually
 featuredSection:
   featureType: banner
@@ -43,20 +40,17 @@ featuresSection:
   featuresType: timeline
   items:
     - title: Single source of truth for records of events
-      description:
-        MetalTrail has the capability to capture and exchange information
+      description: MetalTrail has the capability to capture and exchange information
         about production, transformation, transport and inspection events.
       image: /assets/screen-shot-2020-05-13-at-13.47.57.png
     - title: Real time end-to-end product traceability
-      description:
-        "Easily trace back your products’ composition to the country of
+      description: "Easily trace back your products’ composition to the country of
         origin, from raw materials to finished products. "
       image: /assets/screen-shot-2020-05-13-at-13.48.01.png
     - title: Industry analytics and anomaly detection
-      description:
-        Aggregate insights of the metals supply chain, predictions of data
+      description: Aggregate insights of the metals supply chain, predictions of data
         trends and detection of counterfeit or misclassified products.
-      image: /assets/nf_f02.png
+      image: /assets/mt_ui3.png
 demoSection:
   title: Discover how MetalTrail can make your business more competitive
   image: /assets/mt-mockup.png
