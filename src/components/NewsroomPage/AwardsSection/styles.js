@@ -22,11 +22,14 @@ export const AwardList = styled.ul`
 
   display: grid;
 
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
     grid-template-columns: repeat(3, 31%);
     grid-column-gap: 3%;
     grid-row-gap: 5%;
-    grid-template-areas: "banner banner banner";
+    grid-template-areas:
+      "banner banner banner"
+      "first second second"
+      "third third fourth";
   }
 `
 
@@ -35,46 +38,94 @@ export const AwardItem = styled.li`
     margin-top: 2.1875em;
   }
 
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
     margin-top: 0 !important;
-    ${({ isFirst }) =>
-      isFirst &&
-      `
-        grid-area: banner;
-      `}
+
+    ${({ position }) => {
+      switch (position) {
+        case 0:
+          return `grid-area: banner;`
+        case 1:
+          return `grid-area: first;`
+        case 2:
+          return `grid-area: second;`
+        case 3:
+          return `grid-area: third;`
+        case 3:
+          return `grid-area: fourth;`
+        default:
+          return ""
+      }
+    }}
   }
+`
+
+export const AwardTitle = styled.h3`
+  font-size: 2.125rem;
+  font-weight: 600;
+  line-height: 41px;
+
+  display: none;
+
+  width: 60%;
+
+  ${({ isFirst }) =>
+    !isFirst &&
+    `
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 34px;
+    padding-left: 30px;
+  `}
 `
 
 export const AwardCard = styled.a`
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  max-width: 385px;
   padding: 3.5em 3.4em;
 
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
 
   border: 3px solid var(--c-s-perfume);
 
   @media ${device.laptop} {
+    padding: 2.5em 0.8em;
+  }
+
+  @media (min-width: 1290px) {
     padding: 2.5em 3.4em;
+    justify-content: space-between;
+    align-items: center;
+
+    ${({ isFirst }) =>
+      !isFirst &&
+      `
+    padding: 2.5em 2.4em;
+  `}
+  }
+
+  @media ${device.laptopL} {
+    ${AwardTitle} {
+      display: block;
+    }
   }
 
   ${({ isFirst }) =>
     isFirst &&
     `
+
+    flex-direction: row;
     padding: 3.5em 3.4em;
     background-color: var(--c-s-perfume);
 
     @media ${device.laptop} {
       justify-content: space-between;
       max-width: unset;
-
-      ${AwardTitle} {
-        display: block;
-      }
     }
   `}
 `
@@ -83,19 +134,12 @@ export const ImageWrapper = styled.div``
 
 export const Image = styled.img`
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
 
   @media ${device.laptop} {
-    max-width: 200px;
+    max-width: ${({ position }) => (position === 1 ? "106px" : "200px")};
+    max-height: 80px;
   }
-`
-
-export const AwardTitle = styled.h3`
-  display: none;
-
-  font-size: 2.125rem;
-  font-weight: 600;
-  line-height: 41px;
-
-  width: 60%;
 `

@@ -12,15 +12,19 @@ const AwardsSection = ({ title, awards }, ref) => {
           const award = item.node.frontmatter
 
           return (
-            <S.AwardItem key={award.title} isFirst={index === 0}>
+            <S.AwardItem key={award.title} position={index}>
               <S.AwardCard
                 href={award.link}
                 target="__blank"
                 isFirst={index === 0}
               >
-                <S.AwardTitle>{award.title}</S.AwardTitle>
+                <S.AwardTitle isFirst={index === 0}>{award.title}</S.AwardTitle>
                 <S.ImageWrapper>
-                  <S.Image src={award.image} alt={award.title} />
+                  <S.Image
+                    position={index}
+                    src={award.image}
+                    alt={award.title}
+                  />
                 </S.ImageWrapper>
               </S.AwardCard>
             </S.AwardItem>

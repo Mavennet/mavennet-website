@@ -878,14 +878,14 @@ collections:
       - { label: "Media Link", name: "link", widget: "string" }
   - label: "Awards News"
     name: "awardsNews"
-    folder: "site/news/awards"
+    folder: "site/news/awardsNews"
     create: true
     identifier_field: name
     fields:
       - { label: "Awards Title", name: "title", widget: "string" }
-      - { label: "Awards Date", name: "date", widget: "date" }
+      - { label: "Awards Order", name: "order", widget: "number" }
       - { label: "Awards Image", name: "image", widget: "image" }
-      - { label: "Awards Link", name: "link", widget: "string" }
+      # - { label: "Awards Link", name: "link", widget: "string" }
   - label: "Professional Association"
     name: "professionalAssociation"
     folder: "site/news/professionalAssociation"

@@ -43,10 +43,10 @@ const NewsroomPage = ({ data, location }) => {
       text: "Announcements",
       reference: announcementRef,
     },
-    {
-      text: "Media",
-      reference: mediaRef,
-    },
+    // {
+    //   text: "Media",
+    //   reference: mediaRef,
+    // },
     {
       text: "Awards",
       reference: awardsRef,
@@ -85,18 +85,18 @@ const NewsroomPage = ({ data, location }) => {
         announcements={announcements.edges}
         {...newsRoomAnnouncementSection}
       />
-      <MediaSection ref={mediaRef} media={media} {...newsRoomMediaSection} />
+      {/* <MediaSection ref={mediaRef} media={media} {...newsRoomMediaSection} /> */}
       <AwardsSection
         ref={awardsRef}
         awards={awards.edges}
         {...newsRoomAwardsSection}
       />
-      <NewsSection
+      {/* <NewsSection
         ref={professionalAssociationRef}
         {...newsRoomProfessionalSection}
         {...professionalValues}
         noBorder={true}
-      />
+      /> */}
     </Layout>
   )
 }
@@ -170,8 +170,8 @@ export const query = graphql`
 
     awards: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//awardsNews/" } }
-      sort: { fields: frontmatter___date }
-      limit: 4
+      sort: { fields: frontmatter___order }
+      limit: 5
     ) {
       edges {
         node {
@@ -179,7 +179,6 @@ export const query = graphql`
           frontmatter {
             image
             title
-            date
           }
         }
       }

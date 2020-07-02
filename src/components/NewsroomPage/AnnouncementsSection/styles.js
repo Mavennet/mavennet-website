@@ -44,6 +44,8 @@ export const AnnouncementCard = styled.a`
   color: var(--c-p-haiti) !important;
   display: block;
   margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
 
   @media ${device.laptop} {
     ${({ first }) =>
@@ -116,7 +118,10 @@ export const AnnouncementItem = styled.li`
   }
 `
 
-export const Header = styled.header``
+export const Header = styled.header`
+  display: flex;
+  align-items: center;
+`
 
 export const Image = styled.img`
   display: block;
