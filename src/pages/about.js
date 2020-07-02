@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/base/Layout"
@@ -15,10 +15,19 @@ import LearnMoreSection from "../components/AboutUsPage/LearnMoreSection"
 import { usePartnersData } from "../hooks/use-partners-data"
 import { useOurTeamData } from "../hooks/use-ourTeam-data"
 
+const scrollToRef = ref =>
+  window.scrollTo({
+    left: 0,
+    top: ref.current.offsetTop - 90,
+    behavior: "smooth",
+  })
+
 const AboutPage = ({ data, location }) => {
   const post = data.pagesYaml
   const partnersData = usePartnersData()
   const teamData = useOurTeamData()
+
+  const ourTeamRef = useRef(null)
 
   const {
     aboutMainSection,
@@ -31,14 +40,21 @@ const AboutPage = ({ data, location }) => {
     meta,
   } = post
 
+  const executeScroll = ref => scrollToRef(ref)
+
   return (
     <Layout fillFooter="#F9F5FE">
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...aboutMainSection} />
-      <WhoWeAre {...aboutSummarySection} />
+      <WhoWeAre
+        {...aboutSummarySection}
+        handleClick={() => {
+          executeScroll(ourTeamRef)
+        }}
+      />
 
       <TimeLineSection {...aboutOurStorySection} />
-      <OurTeamSection {...aboutTeamSection} team={teamData} />
+      <OurTeamSection ref={ourTeamRef} {...aboutTeamSection} team={teamData} />
       <PartnersSection {...aboutPartnersSection} partners={partnersData} />
       <AwardsSection title="Awards and Recognition" />
       <LearnMoreSection {...aboutLearnSection} />

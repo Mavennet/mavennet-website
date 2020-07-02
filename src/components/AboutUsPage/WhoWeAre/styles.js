@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import Container from "../../base/Container"
-import TextArrowCTA from "../../shared/TextArrowCTA"
+import TextArrowScroll from "../../shared/TextArrowScroll"
 
 import { device } from "../../../consts/deviceSizes"
 
@@ -104,7 +104,7 @@ export const Description = styled.p`
   }
 `
 
-export const CTA = styled(TextArrowCTA)`
+export const CTA = styled(TextArrowScroll)`
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0;

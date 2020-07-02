@@ -1,11 +1,11 @@
-import React from "react"
+import React, { forwardRef } from "react"
 
 import SvgDivider from "../../shared/SvgDivider"
 import Container from "../../base/Container"
 
 import * as S from "./styles"
 
-const OurTeamSection = ({ title, ctaText, team }) => {
+const OurTeamSection = ({ title, ctaText, team }, ref) => {
   const getTeamList = teamList => {
     return (
       <S.TeamList>
@@ -23,7 +23,7 @@ const OurTeamSection = ({ title, ctaText, team }) => {
   }
 
   return (
-    <S.OurTeamSection>
+    <S.OurTeamSection ref={ref}>
       <S.BackgroundWrapper>
         <Container center>
           <S.Title>{title}</S.Title>
@@ -35,4 +35,4 @@ const OurTeamSection = ({ title, ctaText, team }) => {
   )
 }
 
-export default OurTeamSection
+export default forwardRef(OurTeamSection)

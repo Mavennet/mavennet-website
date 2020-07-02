@@ -2,7 +2,7 @@ import React from "react"
 
 import * as S from "./styles"
 
-const WhoWeAre = ({ title, subTitle, description, ctaText }) => {
+const WhoWeAre = ({ title, subTitle, description, ctaText, handleClick }) => {
   return (
     <S.WhoWeAre>
       <S.Title>{title}</S.Title>
@@ -10,7 +10,7 @@ const WhoWeAre = ({ title, subTitle, description, ctaText }) => {
         <S.TextContent>
           <S.SubTitle>{subTitle}</S.SubTitle>
           <S.Description>{description}</S.Description>
-          <S.CTA text={ctaText}></S.CTA>
+          <S.CTA text={ctaText} handleClick={handleClick} />
         </S.TextContent>
         <S.VideoWrapper>
           <S.IFrame
