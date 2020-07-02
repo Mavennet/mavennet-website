@@ -107,7 +107,7 @@ export const DropdownListItem = styled.li`
   transition: ease-in-out 0.2s background-color;
 
   &:hover {
-    background-color: var(--c-p-medium-purple);
+    background-color: var(--c-p-royal-purple);
   }
 
   & ${NavLink} {
