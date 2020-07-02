@@ -29,15 +29,15 @@ export const TextContent = styled.div`
   display: flex;
   align-items: center;
 
+
+  padding: 5.25em 0 !important;
+    width: 100%;
+
   ${({ textOnly }) =>
     textOnly &&
     `
-    width: 100%;
-    padding: 5.25em 0 !important;
-    text-align: left;
+    text-align: center;
   `}
-
-  padding: 4.625em 2em;
 
   @media ${device.desktop} {
     padding: 9.625em 17.72em 9.625em 8.75em;
@@ -52,8 +52,12 @@ export const Title = styled.h3`
 
   @media ${device.laptop} {
     font-size: 2.5rem;
-    max-width: 400px;
-    text-align: left;
+    ${({ imageText }) =>
+      imageText &&
+      `
+      max-width: 400px;
+      text-align: left;
+    `}
   }
 `
 

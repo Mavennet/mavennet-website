@@ -58,7 +58,7 @@ demoSection:
   title: Contact us to discover how Neoflow can transform your business
   image: /assets/neoflow-working-mockup.png
   ctaText: Request a Demo
-  textOnly: true
+  textOnly: false
 
 newsSection:
   title: Learn More About Neoflow

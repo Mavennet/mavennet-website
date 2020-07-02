@@ -43,7 +43,7 @@ demoSection:
   title: Stamp it. Protect It. Trust it. Ready to get control of your data?
   image: /assets/ms-mockup.png
   ctaText: Start For Free
-  textOnly: true
+  textOnly: false
 testimonialSection:
   - testimony:
       author: Joaquin Dotras

@@ -16,7 +16,7 @@ const DemoSection = ({ title, textOnly, ctaText, image }) => {
       {image && <S.Image src={image} alt={title} />}
       <S.TextContent textOnly={textOnly}>
         <ParentWrapper textOnly={textOnly}>
-          <S.Title>{title}</S.Title>
+          <S.Title imageText={!textOnly}>{title}</S.Title>
           <S.DemoButton text={ctaText} to="/contact-us" />
         </ParentWrapper>
       </S.TextContent>

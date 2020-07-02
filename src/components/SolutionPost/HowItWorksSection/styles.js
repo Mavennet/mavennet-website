@@ -22,6 +22,7 @@ export const Title = styled.h2`
 
 export const List = styled.ul`
   margin-top: 3.75em;
+  width: 100%;
 
   @media ${device.laptop} {
     display: flex;
@@ -45,6 +46,9 @@ export const ListItem = styled.li`
 
 export const Card = styled.div`
   text-align: center;
+
+  max-width: 200px;
+  margin: 0 auto;
 `
 
 export const Image = styled.img`

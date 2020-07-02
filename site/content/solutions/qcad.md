@@ -54,7 +54,6 @@ demoSection:
   title: Explore the future of financial systems
   image: /assets/qcad-laptop-mockup.png
   ctaText: Request A Demo
-  textOnly: true
 newsSection:
   title: Learn More About QCad
   news:
