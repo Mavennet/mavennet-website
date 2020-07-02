@@ -74,6 +74,10 @@ exports.createSchemaCustomization = ({ actions }) => {
       isPercentage: Boolean
     }
 
+    type MarkdownRemarkFrontmatterFeaturedSection implements Node {
+      description: String
+    }
+
     type MarkdownRemarkFrontmatterFirstSectionItems implements Node {
       text: String
       image: String

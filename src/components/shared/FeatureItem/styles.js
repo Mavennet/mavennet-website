@@ -40,8 +40,12 @@ export const Title = styled.h3`
     left: 0;
     width: 45%;
     height: 6px;
-    top: 130%;
+    top: 110%;
     background-color: var(--c-p-royal-purple);
+
+    @media ${device.laptop} {
+      top: 130%;
+    }
   }
 `
 
@@ -78,7 +82,7 @@ export const ImageContainer = styled.div`
   }
 
   @media ${device.desktop} {
-    width: 45%;
+    width: 35%;
   }
 `
 
