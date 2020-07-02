@@ -865,6 +865,7 @@ collections:
       - { label: "Announcement Date", name: "date", widget: "date" }
       - { label: "Announcement Image", name: "image", widget: "image" }
       - { label: "Announcement Link", name: "link", widget: "string" }
+      - { label: "Announcement order", name: "order", widget: "number" }
   - label: "Media"
     name: "media"
     folder: "site/news/media"

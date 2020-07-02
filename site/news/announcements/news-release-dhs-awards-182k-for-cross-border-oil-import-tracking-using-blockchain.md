@@ -1,7 +1,8 @@
 ---
 title: "News Release: DHS Awards $182K for Cross-Border Oil Import Tracking
   Using Blockchain"
-date: 2019-11-06T18:28:34.160Z
-image: /assets/screen-shot-2020-05-29-at-13.28.00.png
-link: https://google.com
+date: 2019-11-07T03:15:15.977Z
+image: /assets/homeland-news.jpeg
+link: https://www.dhs.gov/science-and-technology/news/2019/11/06/news-release-dhs-awards-182k-cross-border-oil-import-tracking
+order: 0
 ---

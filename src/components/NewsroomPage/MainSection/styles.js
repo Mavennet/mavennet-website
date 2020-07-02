@@ -63,6 +63,10 @@ export const FeaturedTitle = styled.h2`
 `
 
 export const CTA = styled(TextArrowCTA)`
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+
   margin-top: 1em;
   width: fit-content;
   color: #ffffff;

@@ -9,14 +9,15 @@ export const AnnoucementsSection = styled.section`
 `
 
 export const Title = styled.h2`
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: bold;
   line-height: 48px;
   text-align: center;
 
   @media ${device.laptop} {
-    font-size: 2.5rem;
-    line-height: 58px;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 64px;
   }
 `
 
@@ -35,19 +36,7 @@ export const AnnouncementsList = styled.ul`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-  }
-`
-
-export const AnnouncementItem = styled.li`
-  max-width: 354px;
-  &:not(:first-child) {
-    margin-top: 3.75em;
-  }
-
-  @media ${device.laptop} {
-    width: ${props => (props.first ? "100%" : "30%")};
-    max-width: unset;
+    align-items: stretch;
   }
 `
 
@@ -87,6 +76,46 @@ export const AnnouncementCard = styled.a`
   }
 `
 
+export const CardTitle = styled.h3`
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 29px;
+`
+
+export const AnnouncementItem = styled.li`
+  max-width: 354px;
+
+  border: 1px solid var(--c-p-medium-purple);
+
+  ${CardTitle} {
+    padding: 0 1em;
+  }
+
+  ${AnnouncementCard} {
+    padding-bottom: 4em;
+  }
+
+  &:not(:first-child) {
+    margin-top: 3.75em;
+  }
+
+  @media ${device.laptop} {
+    width: ${props => (props.first ? "100%" : "30%")};
+    max-width: unset;
+
+    &:first-child {
+      border: unset;
+      ${CardTitle} {
+        padding: 0;
+      }
+
+      ${AnnouncementCard} {
+        padding-bottom: 0;
+      }
+    }
+  }
+`
+
 export const Header = styled.header``
 
 export const Image = styled.img`
@@ -95,14 +124,8 @@ export const Image = styled.img`
   object-fit: cover;
 `
 
-export const Content = styled.div``
-
-export const CardTitle = styled.h3`
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 29px;
-
-  margin-top: 2.1875em;
+export const Content = styled.div`
+  margin-top: 1.1875em;
 `
 
 export const CardDate = styled.p`

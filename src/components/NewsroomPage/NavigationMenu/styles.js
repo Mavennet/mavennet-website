@@ -28,9 +28,11 @@ export const ListItem = styled.li`
 `
 
 export const MenuItem = styled.p`
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 29px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 34px;
+  color: var(--c-p-haiti);
 
   cursor: pointer;
 `

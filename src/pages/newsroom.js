@@ -51,20 +51,15 @@ const NewsroomPage = ({ data, location }) => {
       text: "Awards",
       reference: awardsRef,
     },
-    {
-      text: "Professional Association",
-      reference: professionalAssociationRef,
-    },
   ]
 
   useEffect(() => {
     configProfessionalValues(professionalAssociation)
     setFeaturedNews({
-      title:
-        "Mavenet was nominated a finalist for the Industry Solutions Award",
+      title: "Mavenet was selected a finalist for the Industry Solutions Award",
       data: "2020-05-29T17:32:01.703Z",
-      image: "/assets/screen-shot-2020-05-29-at-13.28.07.png",
-      link: "https://google.com",
+      image: "/assets/innovative-blockchain-awards-finalist.jpeg",
+      link: "https://blockchainrevolutionglobal.com/the-eb-awards/",
     })
   }, [professionalAssociation])
 
@@ -140,6 +135,7 @@ export const query = graphql`
     }
     announcements: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//announcements/" } }
+      sort: { fields: frontmatter___order }
       limit: 4
     ) {
       edges {

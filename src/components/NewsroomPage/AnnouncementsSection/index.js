@@ -39,7 +39,7 @@ const AnnouncementsSection = ({ announcements, title, ctaText }, ref) => {
       <Container>
         <S.Title>{title}</S.Title>
         {getAnnouncementsList(announcements)}
-        <S.CTA text={ctaText} to="/" />
+        {/* <S.CTA text={ctaText} to="/" /> */}
       </Container>
     </S.AnnoucementsSection>
   )
