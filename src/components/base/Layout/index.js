@@ -26,6 +26,7 @@ export default function Layout({
           fields: { slug: { regex: "/^/solutions/.*$/" } }
           frontmatter: { previousWork: { eq: false } }
         }
+        sort: { fields: frontmatter___order }
       ) {
         nodes {
           frontmatter {

@@ -670,6 +670,7 @@ collections:
     create: true
     identifier_field: name
     fields:
+      - { label: "Order", name: "order", widget: "number" }
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Is it a Previous Work?",

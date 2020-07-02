@@ -1,5 +1,6 @@
 ---
 title: QCad
+order: 3
 previousWork: false
 mainSection:
   image: /assets/qcad.png

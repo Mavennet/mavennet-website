@@ -1,5 +1,6 @@
 ---
 title: NeoFlow
+order: 1
 previousWork: false
 mainSection:
   image: /assets/neoflow-mockup.png

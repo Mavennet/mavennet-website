@@ -1,5 +1,6 @@
 ---
 title: Mavenstamp
+order: 4
 previousWork: false
 mainSection:
   image: /assets/mavenstamp-mockup-1-.png
