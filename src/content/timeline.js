@@ -240,7 +240,7 @@ export const TimelineContent = {
       {
         title: "Mavennet forms part of the WTIA",
         logo: "wtia-logo.svg",
-        glyph: "mavennet-logo.svg",
+        glyph: "wtia-glyph.png",
         alt: "WTIA Logo",
         relevance: RELEVANCE.MEDIUM,
         bubbleStyle: BUBBLE_STYLE.DARK_PINK,
