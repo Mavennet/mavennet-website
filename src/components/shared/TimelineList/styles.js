@@ -70,7 +70,8 @@ export const Year = styled.h3`
 `
 
 export const Image = styled.img`
-  max-width: 100%;
+  width: 100%;
+  max-width: 200px;
 
   z-index: 2;
 `
