@@ -931,6 +931,8 @@ collections:
       - { label: "Position grid", name: "order", widget: "number" }
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Bio", name: "bio", widget: "text" }
+      - { label: "Linkedin Profile Link", name: "linkedin", widget: "string" }
       - {
           label: "Professional Association Image",
           name: "image",

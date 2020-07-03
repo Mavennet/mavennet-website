@@ -15,6 +15,8 @@ export const useOurTeamData = () => {
                 title
                 image
                 name
+                bio
+                linkedin
               }
             }
           }
@@ -25,13 +27,15 @@ export const useOurTeamData = () => {
   return allMarkdownRemark.edges.map(item => {
     const { node } = item
     const { id } = node
-    const { name, title, image } = node.frontmatter
+    const { name, title, image, bio, linkedin } = node.frontmatter
 
     return {
       id,
       name,
       title,
       image,
+      bio,
+      linkedin,
     }
   })
 }

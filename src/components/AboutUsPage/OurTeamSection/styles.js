@@ -67,6 +67,8 @@ export const TeamCard = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  cursor: pointer;
 `
 
 export const Image = styled.img`
