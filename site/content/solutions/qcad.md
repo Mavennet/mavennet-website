@@ -57,7 +57,7 @@ newsSection:
         title: BIGG Digital Assets Inc. Subsidiary Netcoins Launches Support for
           Canadian Dollar-Backed QCAD Stablecoin by Stablecorp (3iQ and Mavennet
           Systems)
-        image: /assets/bigg-news-digital.png
+        image: /assets/bigg-news-digital.jpg
         link: https://www.globenewswire.com/news-release/2020/02/11/1983011/0/en/BIGG-Digital-Assets-Inc-Subsidiary-Netcoins-Launches-Support-for-Canadian-Dollar-Backed-QCAD-Stablecoin-by-Stablecorp-3iQ-and-Mavennet-Systems.html
     - item:
         title: New Canadian Dollar-Pegged Stablecoin QCAD to be Regulated by FinTRAC

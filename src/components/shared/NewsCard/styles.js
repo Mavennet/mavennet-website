@@ -20,12 +20,16 @@ export const CardLink = styled.a`
   height: 100%;
   padding-bottom: 2em;
 `
+export const ImageWrapper = styled.div`
+  width: 100%;
+  height: 200px;
+`
 
 export const Image = styled.img`
-  object-fit: cover;
   display: block;
+  object-fit: cover;
   width: 100%;
-  max-height: 216px;
+  height: 100%;
 `
 
 export const Title = styled.h4`
