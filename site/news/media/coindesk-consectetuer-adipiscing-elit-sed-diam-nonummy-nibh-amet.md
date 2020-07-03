@@ -1,6 +1,6 @@
 ---
-title: "Coindesk consectetuer adipiscing elit, sed diam nonummy nibh , amet "
-date: 2020-05-29T23:17:06.494Z
-image: /assets/screen-shot-2020-05-29-at-19.17.48.png
-link: https://google.com
+title: Government of Canada invests in tracing the steel supply chain
+date: 2020-01-25T00:17:06.494Z
+image: /assets/cision-logo.svg
+link: https://www.newswire.ca/news-releases/government-of-canada-invests-in-tracing-the-steel-supply-chain-804219475.html
 ---

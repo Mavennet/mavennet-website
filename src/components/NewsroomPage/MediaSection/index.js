@@ -20,7 +20,11 @@ const MediaSection = ({ media, title, ctaText }, ref) => {
             target="__blank"
             area={gridName[index]}
           >
-            <S.CardImage src={mediaItem.image} alt={mediaItem.title} />
+            <S.CardImage
+              src={mediaItem.image}
+              alt={mediaItem.title}
+              isSmall={index >= 2}
+            />
             <S.CardText>{mediaItem.title}</S.CardText>
           </S.MediaCard>
         )
@@ -33,7 +37,7 @@ const MediaSection = ({ media, title, ctaText }, ref) => {
       <Container center>
         <S.Title>{title}</S.Title>
         {getMediaCards(mediaList)}
-        <S.CTA text={ctaText} to="/" />
+        {/* <S.CTA text={ctaText} to="/" /> */}
       </Container>
     </S.MediaSection>
   )

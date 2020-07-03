@@ -63,7 +63,7 @@ const SolutionPost = ({ data }) => {
       {testimonialSection && (
         <TestimonialSection testimonialList={testimonialSection} />
       )}
-      <NewsSection {...newsSection} />
+      {newsSection.news.length > 0 && <NewsSection {...newsSection} />}
     </Layout>
   )
 }

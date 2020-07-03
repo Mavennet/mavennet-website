@@ -9,7 +9,8 @@ mainSection:
 firstSection:
   - type: growthSection
     title: Industry Opportunity
-    description: "Information exchange in the oil industry today is largely manual,
+    description:
+      "Information exchange in the oil industry today is largely manual,
       with redundancies in regulatory reporting. Analysis of origins and
       traceability of flows is susceptible to errors, miscommunication and
       misrepresentation. The standard today is for each participant in the value
@@ -22,7 +23,8 @@ firstSection:
         description: 9% of cross-border global oil shipments gets disputed
       - numbers: 50
         isPercentage: true
-        description: 50% of back-office costs are spent on documentation and information
+        description:
+          50% of back-office costs are spent on documentation and information
           exchange
       - numbers: $1 bn
         description: $1 bn annual potential savings in G&A expenses
@@ -43,7 +45,8 @@ featuresSection:
   featuresType: regular
   items:
     - title: Immutable tracking of events and interactions
-      description: End-to-end visibility of the products’ lifecycle, from wellhead
+      description:
+        End-to-end visibility of the products’ lifecycle, from wellhead
         production, to upgrading, inspection, transportation import and
         refinement.
       image: /assets/nf_ui1.png
@@ -65,15 +68,9 @@ newsSection:
   title: Learn More About Neoflow
   news:
     - item:
-        title: Become a global blockchain expert with Mavennet
-        image: /assets/blockchain-expert.jpg
-        link: https://www.marsdd.com/news/become-a-global-blockchain-expert-with-mavennet/
-    - item:
-        title: Canada Forges $130,000 Development Deal for Steel-Tracking Blockchain
-        image: /assets/forges-news.jpeg
-        link: https://www.coindesk.com/canada-forges-130000-development-deal-for-steel-tracking-blockchain
-    - item:
-        title: Introducing QCAD by Stablecorp
-        image: /assets/qcad-post.png
-        link: https://medium.com/@Stablecorp/introducing-qcad-by-stablecorp-bc7216194e82
+        title:
+          "News Release: DHS Awards $182K for Cross-Border Oil Import Tracking
+          Using Blockchain"
+        image: /assets/homeland-news.jpeg
+        link: https://www.dhs.gov/science-and-technology/news/2019/11/06/news-release-dhs-awards-182k-cross-border-oil-import-tracking
 ---

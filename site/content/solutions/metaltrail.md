@@ -61,15 +61,7 @@ newsSection:
   title: Learn More About Metaltrail
   news:
     - item:
-        title: Become a global blockchain expert with Mavennet
-        image: /assets/blockchain-expert.jpg
-        link: https://www.marsdd.com/news/become-a-global-blockchain-expert-with-mavennet/
-    - item:
         title: Canada Forges $130,000 Development Deal for Steel-Tracking Blockchain
         image: /assets/forges-news.jpeg
         link: https://www.coindesk.com/canada-forges-130000-development-deal-for-steel-tracking-blockchain
-    - item:
-        title: Introducing QCAD by Stablecorp
-        image: /assets/qcad-post.png
-        link: https://medium.com/@Stablecorp/introducing-qcad-by-stablecorp-bc7216194e82
 ---

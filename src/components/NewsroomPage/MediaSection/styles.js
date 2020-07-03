@@ -59,11 +59,7 @@ export const MediaCard = styled.a`
 export const CardImage = styled.img`
   display: block;
   max-width: 100%;
-  max-height: 75px;
-
-  @media ${device.laptop} {
-    max-width: 50%;
-  }
+  height: ${({ isSmall }) => (isSmall ? "40px" : "65px")};
 `
 
 export const CardText = styled.h3`

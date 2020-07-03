@@ -54,15 +54,13 @@ newsSection:
   title: Learn More About QCad
   news:
     - item:
-        title: Become a global blockchain expert with Mavennet
-        image: /assets/blockchain-expert.jpg
-        link: https://www.marsdd.com/news/become-a-global-blockchain-expert-with-mavennet/
+        title: BIGG Digital Assets Inc. Subsidiary Netcoins Launches Support for
+          Canadian Dollar-Backed QCAD Stablecoin by Stablecorp (3iQ and Mavennet
+          Systems)
+        image: /assets/bigg-news-digital.png
+        link: https://www.globenewswire.com/news-release/2020/02/11/1983011/0/en/BIGG-Digital-Assets-Inc-Subsidiary-Netcoins-Launches-Support-for-Canadian-Dollar-Backed-QCAD-Stablecoin-by-Stablecorp-3iQ-and-Mavennet-Systems.html
     - item:
-        title: Canada Forges $130,000 Development Deal for Steel-Tracking Blockchain
-        image: /assets/forges-news.jpeg
-        link: https://www.coindesk.com/canada-forges-130000-development-deal-for-steel-tracking-blockchain
-    - item:
-        title: Introducing QCAD by Stablecorp
-        image: /assets/qcad-post.png
-        link: https://medium.com/@Stablecorp/introducing-qcad-by-stablecorp-bc7216194e82
+        title: New Canadian Dollar-Pegged Stablecoin QCAD to be Regulated by FinTRAC
+        image: /assets/coin-telegraph-image.jpg
+        link: https://cointelegraph.com/news/new-canadian-dollar-pegged-stablecoin-qcad-to-be-regulated-by-fintrac
 ---

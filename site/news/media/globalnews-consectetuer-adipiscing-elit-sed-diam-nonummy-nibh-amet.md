@@ -1,6 +1,7 @@
 ---
-title: "GlobalNews consectetuer adipiscing elit, sed diam nonummy nibh , amet "
-date: 2020-05-29T23:18:29.333Z
-image: /assets/screen-shot-2020-05-29-at-19.18.06.png
-link: https://google.com
+title: QCAD, the First Canadian Dollar-Backed Stablecoin, Is Live and Available
+  Through Bitvo
+date: 2020-02-12T00:18:29.333Z
+image: /assets/businesswire-logo.png
+link: https://www.businesswire.com/news/home/20200211005268/en/QCAD-Canadian-Dollar-Backed-Stablecoin-Live-Bitvo
 ---

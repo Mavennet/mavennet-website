@@ -11,7 +11,8 @@ firstSection:
     summaryType: pictureItems
     title: Data is power. Protect your data from tampering, manipulation, and
       falsifiability is paramount.
-    description: Mavenstamp is an easy to use blockchain-based timestamping service
+    description:
+      Mavenstamp is an easy to use blockchain-based timestamping service
       designed to protect the integrity of your data by making it tamper-proof.
       Simple/ready to implement, integrate.
     image: /assets/ms_1.png
@@ -29,7 +30,8 @@ featuresSection:
         time and verify that it has not been tampered with or edited since then.
       image: /assets/ms_ui2.png
     - title: Ready to implement workflow templates
-      description: Ease the process of stamping, sharing, and verifying data with
+      description:
+        Ease the process of stamping, sharing, and verifying data with
         standardized flows for key use cases
       image: /assets/ms_ui3.png
     - title: Proof certificate
@@ -47,7 +49,8 @@ testimonialSection:
       author: Joaquin Dotras
       position: CEO, Blockchain RFP
       companyLogo: /assets/rfpblockchain-logo.png
-      message: “ At BlockchainRFP, we optimize the Request for Proposal process for
+      message:
+        “ At BlockchainRFP, we optimize the Request for Proposal process for
         the public and private sector with the help of a blockchain based
         system. Mavenstamp is a fantastic solution that enables transparency and
         integrity throughout the whole process to guarantee the reliability of
@@ -56,17 +59,5 @@ testimonialSection:
         Mavennet team! ”
 newsSection:
   title: Learn More About Mavenstamp
-  news:
-    - item:
-        title: Become a global blockchain expert with Mavennet
-        image: /assets/blockchain-expert.jpg
-        link: https://www.marsdd.com/news/become-a-global-blockchain-expert-with-mavennet/
-    - item:
-        title: Canada Forges $130,000 Development Deal for Steel-Tracking Blockchain
-        image: /assets/forges-news.jpeg
-        link: https://www.coindesk.com/canada-forges-130000-development-deal-for-steel-tracking-blockchain
-    - item:
-        title: Introducing QCAD by Stablecorp
-        image: /assets/qcad-post.png
-        link: https://medium.com/@Stablecorp/introducing-qcad-by-stablecorp-bc7216194e82
+  news: []
 ---

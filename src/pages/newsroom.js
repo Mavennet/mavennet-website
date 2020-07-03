@@ -45,10 +45,10 @@ const NewsroomPage = ({ data, location }) => {
       text: "Announcements",
       reference: announcementRef,
     },
-    // {
-    //   text: "Media",
-    //   reference: mediaRef,
-    // },
+    {
+      text: "Media",
+      reference: mediaRef,
+    },
     {
       text: "Awards",
       reference: awardsRef,
@@ -87,7 +87,7 @@ const NewsroomPage = ({ data, location }) => {
         announcements={announcements.edges}
         {...newsRoomAnnouncementSection}
       />
-      {/* <MediaSection ref={mediaRef} media={media} {...newsRoomMediaSection} /> */}
+      <MediaSection ref={mediaRef} media={media} {...newsRoomMediaSection} />
       <AwardsSection
         ref={awardsRef}
         awards={awards.edges}
@@ -155,6 +155,7 @@ export const query = graphql`
 
     media: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "//media/" } }
+      sort: { fields: frontmatter___date }
       limit: 5
     ) {
       edges {
