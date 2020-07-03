@@ -42,7 +42,7 @@ export const SliderWrapper = styled.div`
   }
 
   @media ${device.laptopL} {
-    width: 75%;
+    width: 85%;
   }
 `
 
@@ -100,8 +100,8 @@ export const Image = styled.img`
   width: 100%;
 
   @media ${device.laptop} {
-    width: 398px;
-    height: 398px;
+    width: 345px;
+    height: 345px;
   }
 `
 
@@ -116,7 +116,7 @@ export const Content = styled.div`
   background-color: var(--c-p-haiti);
 
   @media ${device.laptop} {
-    padding: 2.98em 3.625em 2.98em 3em;
+    padding: 1.98em 1.625em 1.98em 3em;
   }
 `
 

@@ -55,17 +55,13 @@ careerDaySection:
           nonummy nibh Lirem ipsum dolor sit amet, consectetuer
         image: /assets/screen-shot-2020-05-19-at-11.02.57.png
     - item:
-        name: Mahmoud Alkhraishi
-        position: Lead Software Developer
-        testimony: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
-        image: /assets/screen-shot-2020-05-19-at-11.02.57.png
-    - item:
-        name: Mahmoud Alkhraishi
-        position: Lead Software Developer
-        testimony: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh Lirem ipsum dolor sit amet, consectetuer
-        image: /assets/screen-shot-2020-05-19-at-11.02.57.png
+        name: Yayi
+        position: UX/UI Designer
+        testimony: At Mavennet every day is a magical adventure. I work on solving
+          challenging and interesting problems in different areas, turn creative
+          concepts into a delightful user experience. Also, the ownership
+          culture and the collaborative team make it a fun place to work!
+        image: /assets/yayi.png
 careerOppotunitySection:
   title: Open Opportunities
   opportunitiesList:

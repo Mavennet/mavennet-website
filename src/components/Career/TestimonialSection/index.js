@@ -56,7 +56,7 @@ const TestimonialSection = ({ title, testimonialsList }) => {
             <S.Image src={image} />
           </S.ImageWrapper>
           <S.Content>
-            <S.Testimony>{testimony}</S.Testimony>
+            <S.Testimony>“{testimony}”</S.Testimony>
             <S.Position>{position}</S.Position>
             <S.Name>{name}</S.Name>
           </S.Content>
