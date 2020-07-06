@@ -47,6 +47,7 @@ const TimelineList = ({
   setActiveYear,
 }) => {
   useEffect(() => {
+    const currentScrollRef = listScrollRef.current
     const handleScroll = () => {
       if (isScrolling) return
       const ref2018 = refs["2018"].current
@@ -67,7 +68,8 @@ const TimelineList = ({
           bottom: ref2020.scrollHeight,
         },
       }
-      const scrollTop = listScrollRef.current.scrollTop
+
+      const scrollTop = currentScrollRef.scrollTop
       const offSet = 100
 
       for (let [key, value] of Object.entries(yearsTopAndBottom)) {
@@ -82,10 +84,10 @@ const TimelineList = ({
         }
       }
     }
-    listScrollRef.current.addEventListener("scroll", handleScroll)
+    currentScrollRef.addEventListener("scroll", handleScroll)
 
     return () => {
-      listScrollRef.current.removeEventListener("scroll", handleScroll)
+      currentScrollRef.removeEventListener("scroll", handleScroll)
     }
   })
 
