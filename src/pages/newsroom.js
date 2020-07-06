@@ -9,7 +9,6 @@ import NavigationMenu from "../components/NewsroomPage/NavigationMenu"
 import AnnouncementsSection from "../components/NewsroomPage/AnnouncementsSection"
 import MediaSection from "../components/NewsroomPage/MediaSection"
 import AwardsSection from "../components/NewsroomPage/AwardsSection"
-import NewsSection from "../components/shared/NewsSection"
 
 import newsRoomImage from "../assets/innovative-blockchain-awards-finalist.jpeg"
 
@@ -29,16 +28,14 @@ const NewsroomPage = ({ data, location }) => {
     newsRoomAnnouncementSection,
     newsRoomMediaSection,
     newsRoomAwardsSection,
-    newsRoomProfessionalSection,
   } = post
 
   const [featuredNews, setFeaturedNews] = useState({})
-  const [professionalValues, setProfessionalValues] = useState({})
+  const [, setProfessionalValues] = useState({})
 
   const announcementRef = useRef(null)
   const mediaRef = useRef(null)
   const awardsRef = useRef(null)
-  const professionalAssociationRef = useRef(null)
 
   const menuItems = [
     {
