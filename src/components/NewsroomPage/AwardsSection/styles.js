@@ -51,7 +51,7 @@ export const AwardItem = styled.li`
           return `grid-area: second;`
         case 3:
           return `grid-area: third;`
-        case 3:
+        case 4:
           return `grid-area: fourth;`
         default:
           return ""
