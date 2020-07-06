@@ -1,6 +1,5 @@
 import React, { useState, forwardRef } from "react"
 
-import SvgDivider from "../../shared/SvgDivider"
 import Container from "../../base/Container"
 import BioModal from "../BioModal"
 
