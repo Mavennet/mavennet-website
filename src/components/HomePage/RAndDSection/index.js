@@ -70,7 +70,7 @@ const RAndDSection = ({ title, subtitle, rAndDList }) => {
     return () => {
       window.removeEventListener("resize", handleResize)
     }
-  }, [])
+  }, [windowWidth])
 
   return (
     <S.RAndDSection>
