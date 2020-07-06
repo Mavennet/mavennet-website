@@ -1,10 +1,4 @@
-import React, {
-  createRef,
-  useRef,
-  forwardRef,
-  useEffect,
-  useState,
-} from "react"
+import React, { forwardRef, useEffect } from "react"
 
 import * as S from "./styles"
 
