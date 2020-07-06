@@ -11,8 +11,6 @@ import ContactUsFooter from "../ContactUsFooter"
 
 import GlobalStyle from "../../../styles/globalStyle"
 
-import * as S from "./styles"
-
 export default function Layout({
   children,
   footerHidden,
