@@ -1,4 +1,4 @@
-import React, { useState, useRef, createRef, useEffect } from "react"
+import React, { useState, useRef, useEffect } from "react"
 
 import StoryTimelineTree from "../StoryTimelineTree"
 import TimelineList from "../TimelineList"
