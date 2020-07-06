@@ -67,6 +67,16 @@ careerDaySection:
           open and flexible work culture to support your personal and work-life
           balance.
         image: /assets/vaishnavi.png
+    - item:
+        name: Daniel Pye
+        testimony: It was an honour and a pleasure to be part of the Mavennet team.
+          Throughout my time as a project manager, I was able to learn from and
+          contribute to many of the diverse company operations and active
+          projects. Among others, the friendly community you are part of and the
+          responsibility you are given in your work is what makes each day at
+          Mavennet unique and exciting.
+        position: Product Manager
+        image: /assets/daniel-photo.jpeg
 careerOppotunitySection:
   title: Open Opportunities
   opportunitiesList:
