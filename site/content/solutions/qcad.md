@@ -50,6 +50,19 @@ demoSection:
   title: Explore the future of financial systems
   image: /assets/qcad-laptop-mockup.png
   ctaText: Request A Demo
+testimonialSection:
+  - testimony:
+      author: Roberto Durscki
+      position: COO
+      companyLogo: /assets/stablecorp-logo.png
+      message: Stablecorp is bringing to market digital assets that are dependable and
+        can power a fully digital financial ecosystem. Mavennet provided
+        essential technical leadership and expertise to launch QCAD, an asset
+        that is secure, transparent, scalable and easy to integrate to
+        exchanges, wallets, custodians and beyond. We deeply enjoy working with
+        the Mavennet team for their agile delivery and ambition. We certainly
+        will continue building products that transform the financial industry
+        together!
 newsSection:
   title: Learn More About QCad
   news:
