@@ -1,7 +1,5 @@
 import React from "react"
 
-import TextArrowCTA from "../../shared/TextArrowCTA"
-
 import * as S from "./styles"
 
 const GenericPartnersSection = ({ title, ctaText, partners, className }) => {
