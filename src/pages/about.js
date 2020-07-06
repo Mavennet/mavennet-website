@@ -34,7 +34,6 @@ const AboutPage = ({ data, location }) => {
     aboutSummarySection,
     aboutOurStorySection,
     aboutPartnersSection,
-    aboutAwardsSection,
     aboutTeamSection,
     aboutLearnSection,
     meta,
