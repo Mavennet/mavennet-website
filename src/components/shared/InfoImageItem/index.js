@@ -26,8 +26,8 @@ const InfoImageItem = ({
           <S.Title>{title}</S.Title>
           <S.Description>{description}</S.Description>
           <S.CompaniesLogo>
-            {companies.map(company => (
-              <S.CompanyLogo src={company.logo} />
+            {companies.map((company, index) => (
+              <S.CompanyLogo key={index} src={company.logo} />
             ))}
           </S.CompaniesLogo>
           <S.CTAButton text={ctaText} to="/contact-us" reverse={true} />

@@ -12,7 +12,7 @@ const WhySection = ({ title, whyList }) => {
         const { title, description } = item
 
         return (
-          <S.ListItem>
+          <S.ListItem key={title}>
             <CheckTextDescription title={title} description={description} />
           </S.ListItem>
         )

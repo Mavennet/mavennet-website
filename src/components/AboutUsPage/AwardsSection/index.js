@@ -8,8 +8,8 @@ const AwardsSection = ({ title, awardsList }) => {
   const getAwardsList = awards => {
     return (
       <S.AwardsList>
-        {awards.map(award => (
-          <S.ListItem>
+        {awards.map((award, index) => (
+          <S.ListItem key={index}>
             <S.AwardImage src={award} />
           </S.ListItem>
         ))}

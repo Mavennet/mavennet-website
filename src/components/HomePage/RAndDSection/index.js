@@ -82,7 +82,7 @@ const RAndDSection = ({ title, subtitle, rAndDList }) => {
             {rAndDList.map(({ item }, index) => {
               const { title, description, image } = item
               return (
-                <S.ItemWrapper>
+                <S.ItemWrapper key={title}>
                   <S.Item isReverse={index % 2 === 0}>
                     <S.TextContext>
                       <S.ItemTitle>{title}</S.ItemTitle>

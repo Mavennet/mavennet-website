@@ -9,7 +9,7 @@ const NavigationMenu = ({ menuItems, scrollTo }) => {
     return (
       <S.MenuList>
         {items.map(menuItem => (
-          <S.ListItem>
+          <S.ListItem key={menuItem.text}>
             <S.MenuItem onClick={() => scrollTo(menuItem.reference)}>
               {menuItem.text}
             </S.MenuItem>

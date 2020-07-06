@@ -18,7 +18,7 @@ const Table = ({ head, body }) => {
   const getTableBody = bodyItems => (
     <S.Body>
       {bodyItems.map(({ item }) => (
-        <S.Row>
+        <S.Row key={item.title}>
           <S.Cell>{item.title}</S.Cell>
           <S.Cell>{item.location}</S.Cell>
           <S.Cell>{utcStringToFullMonthDate(item.date)}</S.Cell>

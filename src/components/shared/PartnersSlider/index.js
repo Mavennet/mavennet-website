@@ -27,8 +27,8 @@ const PartnersSlider = ({ partners, customSlidesSection }) => {
   return (
     <S.SliderWrapper>
       <Slider {...sliderSettings}>
-        {partners.map(partner => (
-          <PartnerItem {...partner} />
+        {partners.map((partner, index) => (
+          <PartnerItem key={index} {...partner} />
         ))}
       </Slider>
     </S.SliderWrapper>

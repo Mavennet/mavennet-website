@@ -10,7 +10,7 @@ const ModelSection = ({ title, modelList }) => {
       {models.map(({ item }) => {
         const { title, description, image } = item
         return (
-          <S.ListItem>
+          <S.ListItem key={title}>
             <S.Model>
               <S.ImageWrapper>
                 <S.ModelImage src={image} alt={title} />

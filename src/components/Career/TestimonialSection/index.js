@@ -51,7 +51,7 @@ const TestimonialSection = ({ title, testimonialsList }) => {
       const { name, position, image, testimony } = testimonial
 
       return (
-        <S.Card>
+        <S.Card key={name}>
           <S.ImageWrapper>
             <S.Image src={image} />
           </S.ImageWrapper>

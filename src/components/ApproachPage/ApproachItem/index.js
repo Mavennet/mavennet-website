@@ -8,8 +8,10 @@ const ApproachItem = ({ cta, stepsList, title, description, position }) => {
       <S.ApproachTitle>{title}</S.ApproachTitle>
       <S.Description>{description}</S.Description>
       <S.StepsList>
-        {stepsList.map(step => (
-          <S.Step isHalfWidth={stepsList.length > 3}>{step}</S.Step>
+        {stepsList.map((step, index) => (
+          <S.Step key={index} isHalfWidth={stepsList.length > 3}>
+            {step}
+          </S.Step>
         ))}
       </S.StepsList>
 

@@ -22,7 +22,7 @@ const OurTeamSection = ({ title, ctaText, team }, ref) => {
         {teamList.map(teamMember => {
           const { name, title, image } = teamMember
           return (
-            <S.ListItem>
+            <S.ListItem key={name}>
               <S.TeamCard onClick={() => handleOpen(teamMember)}>
                 <S.Image src={image} alt={name} />
                 <S.Name>{name}</S.Name>

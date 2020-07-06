@@ -13,7 +13,7 @@ const AwardsSection = ({ title }) => {
     awardsData.map(award => {
       const { id, title, logo } = award
       return (
-        <S.Award>
+        <S.Award key={id}>
           <S.AwardImage src={logo} alt={title} />
         </S.Award>
       )

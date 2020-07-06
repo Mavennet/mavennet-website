@@ -107,6 +107,7 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
         <S.SolutionsList>
           {solutionItems.map((solution, index) => (
             <S.SolutionIcon
+              key={index}
               active={index === currSlide}
               onClick={() => handleSolutionIconClick(index)}
             >
@@ -121,7 +122,7 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
       <Container>
         <Slider {...logosSettings} ref={solutionLogoSliderRef}>
           {solutionItems.map((solution, index) => (
-            <S.IconWrapper>
+            <S.IconWrapper key={solution.title}>
               <S.IconImage src={solution.logo} alt={solution.title} isMobile />
             </S.IconWrapper>
           ))}

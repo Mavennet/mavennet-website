@@ -16,6 +16,7 @@ const MediaSection = ({ media, title, ctaText }, ref) => {
 
         return (
           <S.MediaCard
+            key={mediaItem.title}
             href={mediaItem.link}
             target="__blank"
             area={gridName[index]}

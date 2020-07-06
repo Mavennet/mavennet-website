@@ -10,7 +10,7 @@ const LearnMoreSection = ({ title, linksList }) => {
       {links.map(({ item }) => {
         const { link, ctaText, description } = item
         return (
-          <S.ListItem>
+          <S.ListItem key={description}>
             <S.LinkItem>
               <S.LinkCTA text={ctaText} to={link} />
               <S.LinkDescription>{description}</S.LinkDescription>

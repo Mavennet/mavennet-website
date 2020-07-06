@@ -33,6 +33,7 @@ const MainSection = ({
   const getListApproaches = approaches =>
     approaches.map(({ item }, index) => (
       <S.Wrapper
+        key={index}
         desktopTop={topValues.approachList[index].desktop}
         tabletTop={topValues.approachList[index].tablet}
         mobileTop={topValues.approachList[index].mobile}

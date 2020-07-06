@@ -13,7 +13,7 @@ const PrinciplesSection = ({ principlesList }) => {
           const { image, title, description } = principle
 
           return (
-            <S.ListItem>
+            <S.ListItem key={title}>
               <S.PrincipleItem>
                 <S.Image src={image} alt={title} />
                 <S.TextContent>

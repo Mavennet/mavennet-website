@@ -34,8 +34,8 @@ const TimelineYear = ({ year, yearImage, events }, ref) => {
         />
       </S.Header>
       <S.EventList>
-        {events.map(event => (
-          <EventItem {...event} />
+        {events.map((event, index) => (
+          <EventItem key={index} {...event} />
         ))}
       </S.EventList>
     </S.TimelineYear>
@@ -98,7 +98,7 @@ const TimelineList = ({
   return (
     <S.TimelineList ref={listScrollRef}>
       {Object.entries(events).map(([key, content]) => (
-        <TimelineYearRef ref={refs[key]} year={key} {...content} />
+        <TimelineYearRef key={key} ref={refs[key]} year={key} {...content} />
       ))}
     </S.TimelineList>
   )

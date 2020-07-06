@@ -38,7 +38,7 @@ const ShowCaseSection = () => {
         <S.Title>Showcase: Clients & Work </S.Title>
         <S.List>
           {showcase.map(item => (
-            <S.Item>
+            <S.Item key={item.title}>
               <S.Col>
                 <S.Image src={item.image} />
               </S.Col>
