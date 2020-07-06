@@ -10,7 +10,6 @@ export const TimelineBubble = ({
   alt,
   isImageVisible,
 }) => {
-  console.log("render")
   return (
     <S.TimelineBubble
       position={position}
