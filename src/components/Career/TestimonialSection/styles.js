@@ -121,19 +121,19 @@ export const Content = styled.div`
 `
 
 export const Testimony = styled.p`
-  font-size: inherit;
+  font-size: 20px;
   font-style: italic;
 `
 
 export const Position = styled.p`
-  font-size: inherit;
+  font-size: 20px;
   color: var(--c-p-medium-purple);
   font-weight: bold;
 
   margin-top: 5em;
 
   @media ${device.laptop} {
-    margin-top: 1.75em;
+    margin-top: 0.75em;
   }
 `
 
