@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components"
 
-import { device } from "../../../consts/deviceSizes"
-
 export const NumberItem = styled.div`
   box-sizing: border-box;
   display: flex;
