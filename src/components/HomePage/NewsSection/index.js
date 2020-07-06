@@ -1,7 +1,6 @@
 import React from "react"
 
 import Container from "../../base/Container"
-import TextArrowCTA from "../../shared/TextArrowCTA"
 import NewsCard from "../../shared/NewsCard"
 
 import * as S from "./styles"
