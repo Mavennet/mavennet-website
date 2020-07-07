@@ -51,6 +51,7 @@ const MainSection = ({
       />
 
       <S.Wrapper
+        main={true}
         desktopTop={topValues.main.desktop}
         tabletTop={topValues.main.tablet}
         mobileTop={topValues.main.mobile}

@@ -23,6 +23,14 @@ export const Wrapper = styled.div`
   @media ${device.desktop} {
     top: ${props => props.desktopTop};
   }
+
+  ${({ main, desktopTop }) =>
+    main &&
+    `
+        @media (min-width: 1020px) {
+          top: ${desktopTop};
+        }
+    `}
 `
 
 export const CustomContainer = styled(Container)`

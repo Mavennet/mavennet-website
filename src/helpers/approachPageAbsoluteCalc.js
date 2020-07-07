@@ -73,7 +73,7 @@ const getRealMobileTopValue = value =>
 
 const topValues = {
   main: {
-    desktop: calcDesktopValue(270),
+    desktop: calcDesktopValue(190),
     tablet: calcDesktopValue(270),
     mobile: calcMobileValue(154),
   },
