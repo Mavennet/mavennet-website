@@ -1,6 +1,6 @@
 ---
 order: 3
-title: QCad
+title: QCAD
 previousWork: false
 mainSection:
   image: /assets/qcad.png
@@ -9,9 +9,11 @@ mainSection:
 firstSection:
   - type: summarySection
     summaryType: regular
-    title: All the benefits of digital assets through a stable and fully regulated
+    title:
+      All the benefits of digital assets through a stable and fully regulated
       token
-    description: "Financial transactions are time consuming and costly. There is no
+    description:
+      "Financial transactions are time consuming and costly. There is no
       convenient on-off ramp between crypto-currency and fiat currency. QCAD is
       a reliable piece of financial market infrastructure that provides an easy
       way to manage your digital assets with complete transparency and security.
@@ -32,7 +34,8 @@ featuresSection:
   featuresType: timeline
   items:
     - title: Purchase assets easily
-      description: Our built-in order management system is designed to let you acquire
+      description:
+        Our built-in order management system is designed to let you acquire
         tokens, with just a few, simple clicks.
       image: /assets/qcad_ui1.png
     - title: Redeem your tokens
@@ -43,7 +46,8 @@ featuresSection:
         transactions, through a real-time analytics dashboard.
       image: /assets/qcad_ui3.png
     - title: ­Process requests
-      description: "Sending and receiving funds has never been easier, settle client
+      description:
+        "Sending and receiving funds has never been easier, settle client
         requests instantly. "
       image: /assets/qcad_ui4.png
 demoSection:
@@ -55,7 +59,8 @@ testimonialSection:
       author: Roberto Durscki
       position: COO
       companyLogo: /assets/stablecorp-logo.png
-      message: Stablecorp is bringing to market digital assets that are dependable and
+      message:
+        Stablecorp is bringing to market digital assets that are dependable and
         can power a fully digital financial ecosystem. Mavennet provided
         essential technical leadership and expertise to launch QCAD, an asset
         that is secure, transparent, scalable and easy to integrate to
@@ -64,7 +69,7 @@ testimonialSection:
         will continue building products that transform the financial industry
         together!
 newsSection:
-  title: Learn More About QCad
+  title: Learn More About QCAD
   news:
     - item:
         title: BIGG Digital Assets Inc. Subsidiary Netcoins Launches Support for
