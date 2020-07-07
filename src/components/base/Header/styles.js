@@ -50,6 +50,8 @@ export const NavLink = styled(Link)`
   margin-top: 0.2em;
   border-bottom: 2px solid transparent;
 
+  transition: ease-in-out 0.2s color;
+
   &.active {
     border-bottom: 2px solid ${props => props.theme.color};
   }
@@ -108,6 +110,10 @@ export const DropdownListItem = styled.li`
 
   &:hover {
     background-color: var(--c-p-royal-purple);
+
+    ${NavLink} {
+      color: white;
+    }
   }
 
   & ${NavLink} {
