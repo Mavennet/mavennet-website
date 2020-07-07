@@ -48,7 +48,7 @@ aboutLearnSection:
   linksList:
     - item:
         ctaText: Career
-        description: Join our time to become A Maven
+        description: Join our team to become a Maven
         link: /career
     - item:
         ctaText: Newsroom
