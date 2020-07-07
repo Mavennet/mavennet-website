@@ -106,6 +106,13 @@ export const CTA = styled(TextArrowCTA)`
 
   margin: 23px auto 0;
 
+  ${({ disabled }) =>
+    disabled &&
+    `
+    cursor: not-allowed;
+    pointer-events: none;
+  `}
+
   @media ${device.laptop} {
     margin: 23px auto 0 0;
   }

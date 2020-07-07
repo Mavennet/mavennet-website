@@ -10,10 +10,12 @@ import * as S from "./styles"
 const showcase = [
   {
     title: "VIVOPago",
-    description: "App for Media and Telecoms Payments in Latin America.",
+    description: "App for Media and Telecoms Payments in Latin America",
     image: vivoPago,
     to: "/solutions/vivopago",
     isExternal: false,
+    ctaText: "Learn More",
+    isDisabled: false,
   },
   {
     title: "TMX",
@@ -21,6 +23,8 @@ const showcase = [
     image: tmx,
     to: "https://www.tmx.com/",
     isExternal: true,
+    ctaText: "Coming Soon",
+    isDisabled: true,
   },
 ]
 
@@ -46,9 +50,17 @@ const ShowCaseSection = () => {
                 <S.ItemTitle>{item.title}</S.ItemTitle>
                 <S.ItemDescription>{item.description}</S.ItemDescription>
                 {item.isExternal ? (
-                  <S.CTA text="Learn More" link={item.to} />
+                  <S.CTA
+                    text={item.ctaText}
+                    link={item.to}
+                    disabled={item.isDisabled}
+                  />
                 ) : (
-                  <S.CTA text="Learn More" to={item.to} />
+                  <S.CTA
+                    text={item.ctaText}
+                    to={item.to}
+                    disabled={item.isDisabled}
+                  />
                 )}
               </S.Col>
             </S.Item>
