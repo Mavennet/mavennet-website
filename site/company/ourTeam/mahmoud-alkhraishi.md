@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 6
 name: Mahmoud Alkhraishi
 title: Lead Developer
 bio: "Mahmoud Alkhraishi, Lead Software Developer, was previously a Blockchain

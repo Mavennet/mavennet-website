@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 4
 name: Vaishnavi Panchal
 title: Core Engineer
 bio: "Vaishnavi Panchal, Core Engineer is an Oracle certified Java Professional

@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 3
 name: Yayi Liu
 title: UX/UI Designer
 bio: "Yayi Liu, Lead UX/UI Designer, specializes in both Human-Computer

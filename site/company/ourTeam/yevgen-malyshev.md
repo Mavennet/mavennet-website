@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 8
 name: Yevgen Malyshev
 title: Delivery and Strategy
 bio: "Yevgen Malyshev, Strategy & Project Delivery, is a technology leader
