@@ -291,7 +291,8 @@ export const TimelineContent = {
         },
       },
       {
-        title: "Mavennet EU Consortium goes live (30 mn euros – 20 countries)",
+        title:
+          "Mavennet EU Consortium goes live (7.6 M euros – 20 participants)",
         logo: "eu-logo.svg",
         glyph: "eu-logo.svg",
         alt: "European Union Logo",
