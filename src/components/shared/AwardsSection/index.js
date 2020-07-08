@@ -14,7 +14,10 @@ const AwardsSection = ({ title }) => {
       const { id, title, logo } = award
       return (
         <S.Award key={id}>
-          <S.AwardImage src={logo} alt={title} />
+          <S.ImageWrapper>
+            <S.AwardImage src={logo} alt={title} />
+          </S.ImageWrapper>
+          <S.AwardText>{title}</S.AwardText>
         </S.Award>
       )
     })

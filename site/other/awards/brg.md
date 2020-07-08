@@ -1,5 +1,5 @@
 ---
 order: 1
-title: brg
+title: Mavennet was nominated a finalist for the Industry Solutions Award
 logo: /assets/brg-logo.png
 ---

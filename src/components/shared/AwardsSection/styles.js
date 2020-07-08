@@ -6,7 +6,8 @@ export const AwardsSection = styled.section`
   padding: 40px 0;
 
   @media ${device.laptop} {
-    padding: 60px;
+    padding: 60px 60px 0;
+    margin-bottom: -65px;
   }
 `
 
@@ -34,6 +35,7 @@ export const AwardsList = styled.ul`
 
   @media ${device.mobileL} {
     flex-direction: row;
+    align-items: stretch;
     flex-wrap: wrap;
   }
 
@@ -42,13 +44,43 @@ export const AwardsList = styled.ul`
   }
 `
 
-export const Award = styled.div`
+export const AwardImage = styled.img`
+  display: block;
+
+  max-height: 66px;
+  height: auto;
+
+  max-width: 100%;
+  transition: all 0.25s ease-in-out 0s;
+
+  margin: 0 auto;
+`
+
+export const AwardText = styled.p`
+  opacity: 0;
+  visibility: hidden;
+  align-self: flex-start;
+
+  transform: translateY(10px);
+  transition: all 0.25s ease-in-out 0s;
+`
+
+export const ImageWrapper = styled.div`
+  width: 100%;
+  transition: all 0.25s ease-in-out 0s;
+  min-height: 66px;
   display: flex;
   align-items: center;
-  justify-content: center;
+`
+
+export const Award = styled.li`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 
   width: 45%;
-  max-height: 66px;
   margin: 21px 2.5%;
 
   @media ${device.tablet} {
@@ -58,14 +90,21 @@ export const Award = styled.div`
 
   @media ${device.laptop} {
     margin: 21px 14px;
-    max-width: 150px;
   }
-`
 
-export const AwardImage = styled.img`
-  display: block;
+  &:hover {
+    ${AwardText} {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-25px);
+    }
 
-  max-width: 100%;
-  max-height: 66px;
-  height: auto;
+    ${ImageWrapper} {
+      transform: translateX(-50%);
+    }
+
+    ${AwardImage} {
+      transform: scale(0.5) translate(50%, -45px);
+    }
+  }
 `
