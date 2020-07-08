@@ -1,5 +1,7 @@
 import React from "react"
 
+import background from "../../../assets/images/backgrounds/career-bg.jpg"
+
 import * as S from "./styles"
 
 const MainSection = ({
@@ -10,7 +12,7 @@ const MainSection = ({
   handlePositionClick,
 }) => {
   return (
-    <S.MainSection background={image} center fill="#F9F5FE">
+    <S.MainSection background={background} center fill="#F9F5FE">
       <S.MainSectionContainer>
         <S.TextContent>
           <S.Title>{title}</S.Title>
