@@ -4,7 +4,7 @@ import Container from "../../base/Container"
 import Button from "../../shared/Button"
 
 import backgroundMobile from "../../../assets/images/Home/mobile_background.png"
-import background from "../../../assets/images/Home/desktop_background.png"
+import background from "../../../assets/images/backgrounds/home-bg.jpg"
 
 import * as S from "./styles"
 
