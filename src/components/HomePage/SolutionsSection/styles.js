@@ -73,9 +73,32 @@ export const Arrow = styled.div`
   &::before {
     display: none;
   }
+
+  ${({ isBanner, isPrev }) =>
+    isBanner &&
+    `
+    top: calc(50% - 33px);
+    z-index: 1;
+
+    ${
+      isPrev
+        ? `
+        left: 12% !important;
+      `
+        : `
+      right: 13% !important;`
+    }
+
+  `}
 `
 
 export const ArrowImage = styled.img`
+  ${({ isBanner }) =>
+    isBanner &&
+    `
+      height: 66px;
+      widthL 32px;
+`}
   ${({ isPrev }) =>
     isPrev &&
     `

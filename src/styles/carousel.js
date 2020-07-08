@@ -16,4 +16,15 @@ export const carousel = css`
   .slick-slide > div {
     height: 100% !important;
   }
+
+  .slick-slider.solution-slider {
+    .slick-arrow {
+      display: none !important;
+    }
+    &:hover {
+      .slick-arrow {
+        display: block !important;
+      }
+    }
+  }
 `

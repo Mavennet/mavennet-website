@@ -4,33 +4,43 @@ import Slider from "react-slick"
 
 import Button from "../../shared/Button"
 import Container from "../../base/Container"
-import arrow from "../../../assets/icons/slider-arrow.svg"
+import arrowPurple from "../../../assets/icons/slider-arrow.svg"
+import arrowWhite from "../../../assets/icons/slider-arrow-white.svg"
 
 import * as S from "./styles"
 
 const SampleNextArrow = props => {
-  const { className, style, onClick } = props
+  const { className, style, onClick, isWhite } = props
   return (
     <S.Arrow
       className={className}
       onClick={onClick}
       style={{ ...style, height: "auto" }}
+      isBanner={isWhite}
     >
-      <S.ArrowImage src={arrow} />
+      <S.ArrowImage
+        src={isWhite ? arrowWhite : arrowPurple}
+        isBanner={isWhite}
+      />
     </S.Arrow>
   )
 }
 
 const SamplePrevArrow = props => {
-  const { className, style, onClick } = props
+  const { className, style, onClick, isWhite } = props
   return (
     <S.Arrow
       className={className}
       onClick={onClick}
       style={{ ...style, height: "auto" }}
-      src={arrow}
+      isBanner={isWhite}
+      isPrev
     >
-      <S.ArrowImage src={arrow} isPrev />
+      <S.ArrowImage
+        src={isWhite ? arrowWhite : arrowPurple}
+        isPrev
+        isBanner={isWhite}
+      />
     </S.Arrow>
   )
 }
@@ -72,8 +82,8 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
         solutionLogoSliderRef.current.slickGoTo(next)
       setCurrSlide(next)
     },
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <SampleNextArrow isWhite />,
+    prevArrow: <SamplePrevArrow isWhite />,
   }
 
   const logosSettings = {
@@ -165,7 +175,11 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
         </S.SolutionsIconsSection>
       </S.Header>
       <S.SlideSection>
-        <Slider {...settings} ref={solutionBannerSliderRef}>
+        <Slider
+          {...settings}
+          ref={solutionBannerSliderRef}
+          className="solution-slider"
+        >
           {getSolutionItems(solutionList)}
         </Slider>
       </S.SlideSection>
