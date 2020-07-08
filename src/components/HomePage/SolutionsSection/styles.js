@@ -80,15 +80,19 @@ export const Arrow = styled.div`
     top: calc(50% - 33px);
     z-index: 1;
 
-    ${
-      isPrev
-        ? `
-        left: 12% !important;
-      `
-        : `
-      right: 13% !important;`
-    }
+    display: none;
 
+    @media ${device.laptop} {
+      display: block;
+      ${
+        isPrev
+          ? `
+        left: 3% !important;
+      `
+          : `
+      right: 5% !important;`
+      }
+    }
   `}
 `
 
