@@ -4,7 +4,7 @@ import Container from "../../base/Container"
 
 import * as S from "./styles"
 
-import background from "../../../assets/images/planets-bg.png"
+import background from "../../../assets/images/backgrounds/R&D-bg.jpg"
 
 const MainSection = ({ slogan }) => {
   return (
