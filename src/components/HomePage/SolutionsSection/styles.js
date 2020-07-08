@@ -87,10 +87,11 @@ export const Arrow = styled.div`
       ${
         isPrev
           ? `
-        left: 3% !important;
-      `
+          left: 3% !important;
+        `
           : `
-      right: 5% !important;`
+          right: 5% !important;
+        `
       }
     }
   `}
@@ -102,7 +103,7 @@ export const ArrowImage = styled.img`
     `
       height: 66px;
       widthL 32px;
-`}
+  `}
   ${({ isPrev }) =>
     isPrev &&
     `

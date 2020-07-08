@@ -53,6 +53,7 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
   const solutionBannerSliderRef = useRef(null)
 
   useEffect(() => {
+    console.log("render")
     if (typeof window === "undefined") return
 
     const handleResize = () => setWindowWidth(window.innerWidth)
@@ -62,7 +63,7 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
     return () => {
       window.removeEventListener("resize", handleResize)
     }
-  })
+  }, [])
 
   const settings = {
     dots: true,
