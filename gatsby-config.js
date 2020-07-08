@@ -101,23 +101,6 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/assets/icons/favicon-32.png`, // This path is relative to the root of the site.
-        icons: [
-          {
-            src: `assets/icons/favicon-16.png`,
-            sizes: `16x16`,
-            type: `image/png`,
-          },
-          {
-            src: `assets/icons/favicon-152.png`,
-            sizes: `152x152`,
-            type: `image/png`,
-          },
-          {
-            src: `assets/icons/favicon-512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
       },
     },
   ],
