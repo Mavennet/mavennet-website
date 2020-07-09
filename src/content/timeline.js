@@ -56,14 +56,17 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet’s Hire #1",
-        logo: "mavennet-logo.svg",
-        glyph: "mavennet-logo.svg",
+        logo: "mavennet-hires.svg",
+        glyph: "mavennet-hires.svg",
         alt: "Mavennet Logo",
         relevance: RELEVANCE.LOW,
         bubbleStyle: BUBBLE_STYLE.LIGHT_PINK,
         position: {
           top: "86px",
           right: "172px",
+        },
+        logoStyles: {
+          paddingLeft: "17px",
         },
       },
       {
@@ -147,14 +150,17 @@ export const TimelineContent = {
       {
         title: "The Mavennet team expands",
         subtitle: "Our team exceeds 15 Mavens in just over a year",
-        logo: "mavennet-logo.svg",
-        glyph: "mavennet-logo.svg",
+        logo: "mavennet-15.svg",
+        glyph: "mavennet-15.svg",
         alt: "Mavennet Logo",
         relevance: RELEVANCE.HIGH,
         bubbleStyle: BUBBLE_STYLE.DARK_PINK,
         position: {
           top: "117px",
           right: "220px",
+        },
+        logoStyles: {
+          paddingLeft: "23px",
         },
       },
       {
@@ -222,14 +228,17 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet hosts 1st annual BBQ",
-        logo: "mavennet-logo.svg",
-        glyph: "mavennet-logo.svg",
+        logo: "mavennet-bbq.svg",
+        glyph: "mavennet-bbq.svg",
         alt: "Mavennet Logo",
         relevance: RELEVANCE.LOW,
         bubbleStyle: BUBBLE_STYLE.DARK_PINK,
         position: {
           top: "221px",
           right: "74px",
+        },
+        logoStyles: {
+          paddingLeft: "30px",
         },
       },
     ],

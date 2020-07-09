@@ -2,12 +2,13 @@ import React, { forwardRef, useEffect } from "react"
 
 import * as S from "./styles"
 
-const EventItem = ({ title, subtitle, logo, alt }) => (
+const EventItem = ({ title, subtitle, logo, alt, logoStyles }) => (
   <S.Event>
     <S.ColLogo>
       <S.Logo
         src={require(`../../../assets/images/timeline/${logo}`)}
         alt={alt}
+        style={logoStyles}
       />
     </S.ColLogo>
     <S.TextContent>
