@@ -15,7 +15,7 @@ const sticky = {
   logo: logoDark,
   color: "var(--c-p-haiti)",
   background: "#FFFFFF",
-  activeBorder: "#230f32",
+  activeBorder: "#964beb",
   button: "primary",
   position: "fixed",
   boxShadow: "0px -7px 19px 0px rgba(0,0,0,0.75)",

@@ -57,7 +57,7 @@ export const NavLink = styled(Link)`
   transition: ease-in-out 0.2s color;
 
   &.active {
-    border-bottom: 2px solid ${props => props.theme.color};
+    border-bottom: 2px solid ${props => props.theme.activeBorder};
   }
 
   ${({ header }) =>
@@ -86,7 +86,7 @@ export const ListItem = styled.li`
   display: inline-block;
 
   & > ${NavLink}:hover {
-    border-bottom: 2px solid ${props => props.theme.color};
+    border-bottom: 2px solid ${props => props.theme.activeBorder};
   }
 `
 
@@ -94,11 +94,13 @@ export const DropdownList = styled.ul`
   display: none;
   position: absolute;
   top: 100%;
+  left: 0;
   background-color: #ffffff;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   min-width: max-content;
   padding: 12.5px 0;
+  border-radius: 2px;
 
   ${NavLink} {
     padding-bottom: 0;
@@ -113,11 +115,11 @@ export const DropdownListItem = styled.li`
   transition: ease-in-out 0.2s background-color;
 
   &:hover {
-    background-color: var(--c-p-royal-purple);
+    background-color: var(--c-p-selago-dark);
 
-    ${NavLink} {
+    /* ${NavLink} {
       color: white;
-    }
+    } */
   }
 
   & ${NavLink} {
