@@ -10,7 +10,7 @@ import * as S from "./styles"
 const showcase = [
   {
     title: "VIVOPago",
-    description: "App for Media and Telecoms Payments in Latin America",
+    description: "Media and Telecoms Payments in Latin America",
     image: vivoPago,
     to: "/solutions/vivopago",
     isExternal: false,
