@@ -109,6 +109,10 @@ export const Logo = styled.img`
   display: block;
   max-width: 100%;
   max-height: 100%;
+
+  &:not(:first-child) {
+    margin-left: 5px;
+  }
 `
 
 export const TextContent = styled.div`

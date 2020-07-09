@@ -5,11 +5,13 @@ import * as S from "./styles"
 const EventItem = ({ title, subtitle, logo, alt, logoStyles }) => (
   <S.Event>
     <S.ColLogo>
-      <S.Logo
-        src={require(`../../../assets/images/timeline/${logo}`)}
-        alt={alt}
-        style={logoStyles}
-      />
+      {logo.map(uniqueLogo => (
+        <S.Logo
+          src={require(`../../../assets/images/timeline/${uniqueLogo}`)}
+          alt={alt}
+          style={logoStyles}
+        />
+      ))}
     </S.ColLogo>
     <S.TextContent>
       <S.Title>{title}</S.Title>
@@ -29,9 +31,10 @@ const TimelineYear = ({ year, yearImage, events }, ref) => {
         />
       </S.Header>
       <S.EventList>
-        {events.map((event, index) => (
-          <EventItem key={index} {...event} />
-        ))}
+        {events.map(
+          (event, index) =>
+            !event.hiddenList && <EventItem key={index} {...event} />
+        )}
       </S.EventList>
     </S.TimelineYear>
   )

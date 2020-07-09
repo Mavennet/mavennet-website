@@ -25,17 +25,26 @@ const MobileTimelineTree = ({ onSelectYear, activeYear, events }) => {
 
 const StoryTimelineTree = ({ onSelectYear, activeYear, events, isMobile }) => {
   const getEventsIcons = (eventsContent, inSelectedYear) => {
-    const { glyph, alt, relevance, bubbleStyle, position } = eventsContent
+    const {
+      glyph,
+      alt,
+      relevance,
+      bubbleStyle,
+      position,
+      hiddenBubble,
+    } = eventsContent
 
     return (
-      <TimelineBubble
-        relevance={relevance}
-        bubbleStyle={bubbleStyle}
-        alt={alt}
-        imagePath={glyph}
-        isImageVisible={inSelectedYear}
-        position={position}
-      />
+      !hiddenBubble && (
+        <TimelineBubble
+          relevance={relevance}
+          bubbleStyle={bubbleStyle}
+          alt={alt}
+          imagePath={glyph}
+          isImageVisible={inSelectedYear}
+          position={position}
+        />
+      )
     )
   }
   return isMobile ? (

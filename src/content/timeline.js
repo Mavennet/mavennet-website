@@ -18,7 +18,7 @@ export const TimelineContent = {
         title: "Mavennet is founded.",
         subtitle:
           "We are born from a new structure created to maximize growth and adoption of technology.",
-        logo: "mavennet-old-logo.svg",
+        logo: ["mavennet-old-logo.svg"],
         glyph: "mavennet-old-logo.svg",
         alt: "Mavennet Old Logo",
         relevance: RELEVANCE.HIGH,
@@ -30,7 +30,7 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet partners with the TMX ",
-        logo: "tmx-logo.svg",
+        logo: ["tmx-logo.svg"],
         glyph: "tmx-logo.svg",
         alt: "Tmx Logo",
         relevance: RELEVANCE.HIGH,
@@ -44,7 +44,7 @@ export const TimelineContent = {
         title: "The ‘token bridge’ is launched.",
         subtitle:
           "The interoperability application successfully transfers AION ERC-20 tokens from Ethereum to native AION coins on the Aion blockchain.",
-        logo: "bridge-logo.svg",
+        logo: ["bridge-logo.svg"],
         glyph: "bridge-logo.svg",
         alt: "Token Bridge Logo",
         relevance: RELEVANCE.LOW,
@@ -56,7 +56,7 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet’s Hire #1",
-        logo: "mavennet-hires.svg",
+        logo: ["mavennet-hires.svg"],
         glyph: "mavennet-hires.svg",
         alt: "Mavennet Logo",
         relevance: RELEVANCE.LOW,
@@ -72,7 +72,7 @@ export const TimelineContent = {
       {
         title:
           "Mavennet represents Canada as part of a tech delegation to the EU",
-        logo: "eu-logo.svg",
+        logo: ["eu-logo.svg"],
         glyph: "eu-logo.svg",
         alt: "EU Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -84,7 +84,7 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet became a MaRs company",
-        logo: "mars-logo.svg",
+        logo: ["mars-logo.svg"],
         glyph: "mars-logo.svg",
         alt: "MaRS Logo",
         relevance: RELEVANCE.LOW,
@@ -96,7 +96,7 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet became a IRAP company",
-        logo: "irap-logo.svg",
+        logo: ["irap-logo.svg"],
         glyph: "irap-logo.svg",
         alt: "IRAP Logo",
         relevance: RELEVANCE.HIGH,
@@ -113,7 +113,7 @@ export const TimelineContent = {
     events: [
       {
         title: "Mavennet partners with VIVOpago",
-        logo: "vivo-pago-logo.svg",
+        logo: ["vivo-pago-logo.svg"],
         glyph: "vivo-pago-logo.svg",
         alt: "Vivo Pago Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -125,7 +125,7 @@ export const TimelineContent = {
       },
       {
         title: "March 2019 – Mavenet partners with 3iQ",
-        logo: "3iq-logo.svg",
+        logo: ["3iq-logo.svg"],
         glyph: "3iq-logo.svg",
         alt: "3iQ Logo",
         relevance: RELEVANCE.HIGH,
@@ -137,7 +137,7 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet launches Mavenstamp",
-        logo: "mavenstamp-logo.svg",
+        logo: ["mavenstamp-logo.svg"],
         glyph: "mavenstamp-logo.svg",
         alt: "3iQ Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -150,7 +150,7 @@ export const TimelineContent = {
       {
         title: "The Mavennet team expands",
         subtitle: "Our team exceeds 15 Mavens in just over a year",
-        logo: "mavennet-15.svg",
+        logo: ["mavennet-15.svg"],
         glyph: "mavennet-15.svg",
         alt: "Mavennet Logo",
         relevance: RELEVANCE.HIGH,
@@ -166,7 +166,7 @@ export const TimelineContent = {
       {
         title:
           "Mavennet is selected as technical lead for ITEA funded EU project",
-        logo: "itea-logo.svg",
+        logo: ["itea-logo.svg"],
         glyph: "itea3-logo-glyph.svg",
         alt: "ITEA3 Logo",
         relevance: RELEVANCE.HIGH,
@@ -179,7 +179,7 @@ export const TimelineContent = {
       {
         title:
           "Mavennet is awarded a contract with the US Department of Homeland  Security to create a cross-border import tracking system using blockchain",
-        logo: "dhs-logo.svg",
+        logo: ["dhs-logo.svg"],
         glyph: "dhs-logo.svg",
         alt: "DHS Logo",
         relevance: RELEVANCE.HIGH,
@@ -192,7 +192,7 @@ export const TimelineContent = {
       {
         title:
           "Mavennet is awarded a contract with the Government of Canada (ISED) to trace the North American steel supply chain",
-        logo: "ca-gov-logo.svg",
+        logo: ["ca-gov-logo.svg"],
         glyph: "ca-gov-logo.svg",
         alt: "Canadian Government Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -204,7 +204,7 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet speaks at the NCFA",
-        logo: "ncfa-logo.svg",
+        logo: ["ncfa-logo.svg"],
         glyph: "ncfa-logo.svg",
         alt: "NCFA Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -216,7 +216,7 @@ export const TimelineContent = {
       },
       {
         title: "Stablecorp launches",
-        logo: "stable-corp-logo.svg",
+        logo: ["stable-corp-logo.svg"],
         glyph: "stable-corp-logo.svg",
         alt: "Stablecorp Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -228,7 +228,7 @@ export const TimelineContent = {
       },
       {
         title: "Mavennet hosts 1st annual BBQ",
-        logo: "mavennet-bbq.svg",
+        logo: ["mavennet-bbq.svg"],
         glyph: "mavennet-bbq.svg",
         alt: "Mavennet Logo",
         relevance: RELEVANCE.LOW,
@@ -248,7 +248,7 @@ export const TimelineContent = {
     events: [
       {
         title: "Mavennet forms part of the WTIA",
-        logo: "wtia-logo.svg",
+        logo: ["wtia-logo.svg"],
         glyph: "wtia-glyph.png",
         alt: "WTIA Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -262,7 +262,7 @@ export const TimelineContent = {
         title: "QCAD is launched",
         subtitle:
           "Stablecorp, a joint venture between 3iQ and Mavennet launches the first fully-regulated Canadian dollar stablecoin.",
-        logo: "qcad-logo.svg",
+        logo: ["qcad-logo.svg"],
         glyph: "qcad-logo.svg",
         alt: "QCAD Logo",
         relevance: RELEVANCE.HIGH,
@@ -277,7 +277,7 @@ export const TimelineContent = {
           "Mavennet is nominated as a finalist for the Industry Solutions Award of the Blockchain Research Institute.",
         subtitle:
           "This recognition comes as a result of our work in building Neoflow.",
-        logo: "brg-logo.svg",
+        logo: ["brg-logo.svg"],
         glyph: "brg-logo-glyph.svg",
         alt: "Blockchain Revolution Global Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -289,7 +289,7 @@ export const TimelineContent = {
       },
       {
         title: "Alpha version of Neoflow and MetalTrail are launched.",
-        logo: "metaltrail-logo.svg",
+        logo: ["neoflow-logo.svg", "metaltrail-logo.svg"],
         glyph: "metaltrail-logo.svg",
         alt: "Metaltrail Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -300,9 +300,22 @@ export const TimelineContent = {
         },
       },
       {
+        title: "Alpha version of Neoflow and MetalTrail are launched.",
+        logo: ["neoflow-logo.svg", "metaltrail-logo.svg"],
+        glyph: "neoflow-logo.svg",
+        alt: "Neoflow Logo",
+        hiddenList: true,
+        relevance: RELEVANCE.MEDIUM,
+        bubbleStyle: BUBBLE_STYLE.LIGHT_PINK,
+        position: {
+          top: "170px",
+          right: "165px",
+        },
+      },
+      {
         title:
           "Mavennet EU Consortium goes live (7.6 M euros – 20 participants)",
-        logo: "eu-logo.svg",
+        logo: ["eu-logo.svg"],
         glyph: "eu-logo.svg",
         alt: "European Union Logo",
         relevance: RELEVANCE.MEDIUM,
@@ -314,9 +327,10 @@ export const TimelineContent = {
       },
       {
         title: "More and more is happening!",
-        logo: "mavennet-logo.svg",
+        logo: ["mavennet-logo.svg"],
         glyph: "mavennet-logo.svg",
         alt: "Mavennet Logo",
+        hiddenBubble: true,
         relevance: RELEVANCE.HIGH,
         bubbleStyle: BUBBLE_STYLE.WHITE,
         position: {
