@@ -8,16 +8,14 @@ homeMainSection:
     catapult enterprises to digital spaces no one has reached before.
 homeServiceSection:
   title: How We Do It
-  description:
-    We know that to get to places no one has ever been before you need
+  description: We know that to get to places no one has ever been before you need
     both imagination and a disciplined approach to technology.
   ctaText: Learn more about our approach
   steps:
     - item:
         image: /assets/strategy-icon.png
         title: Strategy
-        description:
-          We help organizations conceptualize their goals, align decision
+        description: We help organizations conceptualize their goals, align decision
           makers and formulate actionable strategies for success.
     - item:
         image: /assets/design-icon.png
@@ -26,8 +24,7 @@ homeServiceSection:
     - item:
         image: /assets/implementation-logo.png
         title: Implementation
-        description:
-          We follow agile methodologies to execute complex solutions in a
+        description: We follow agile methodologies to execute complex solutions in a
           record time.
     - item:
         image: /assets/support-icon.png
@@ -42,8 +39,7 @@ homeSolutionsSection:
     - item:
         title: Digitalizing the Barrel of Oil
         image: /assets/neoflow-map.gif
-        description:
-          Access an end-to-end view of your oil supply chain, from the
+        description: Access an end-to-end view of your oil supply chain, from the
           wellhead to the refinery.
         slug: solutions/neoflow
         ctaText: View Solution
@@ -57,9 +53,8 @@ homeSolutionsSection:
         logo: /assets/mt-logo.png
     - item:
         title: First Institutional Canadian Dollar Stablecoin
-        image: /assets/qcad.png
-        description:
-          A financial rail to facilitate instant payments in Canadian dollars
+        image: /assets/qcad-main.png
+        description: A financial rail to facilitate instant payments in Canadian dollars
           by using smart contracts.
         slug: solutions/qcad
         ctaText: View Solution
@@ -68,8 +63,7 @@ homeSolutionsSection:
         title: Trust-as-a-Service
         image: /assets/mavenstamp-mockup.png
         logo: /assets/group-9.png
-        description:
-          Build your own applications or extend existing ones with the
+        description: Build your own applications or extend existing ones with the
           Mavenstamp API, securing your data with immutable timestamps and
           tamper detection.
         slug: solutions/mavenstamp
@@ -81,8 +75,7 @@ homeRandDSection:
   rAndDList:
     - item:
         title: Identity Management
-        description:
-          Verify and trust information without the liabilities of identity
+        description: Verify and trust information without the liabilities of identity
           management or disclosing private data.
         image: /assets/r-d-1.png
     - item:
@@ -117,8 +110,7 @@ homeNewsSection:
   news:
     - item:
         link: https://www.dhs.gov/science-and-technology/news/2019/11/06/news-release-dhs-awards-182k-cross-border-oil-import-tracking
-        title:
-          "News Release: DHS Awards $182K for Cross-Border Oil Import Tracking
+        title: "News Release: DHS Awards $182K for Cross-Border Oil Import Tracking
           Using Blockchain"
         image: /assets/homeland-news.jpeg
     - item:
@@ -126,8 +118,7 @@ homeNewsSection:
         image: /assets/screen-shot-2020-05-13-at-13.48.16.png
         link: https://www.coindesk.com/canada-forges-130000-development-deal-for-steel-tracking-blockchain
     - item:
-        title:
-          Mavennet is chosen to be part of the WTIA Cascadia Blockchain Council
+        title: Mavennet is chosen to be part of the WTIA Cascadia Blockchain Council
           Accelerator Program
         image: /assets/wtia-acceleration-news.jpg
         link: https://www.washingtontechnology.org/wtia-cascadia-blockchain-council-announces-inaugural-accelerator-program/

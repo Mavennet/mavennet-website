@@ -102,7 +102,7 @@ export const ArrowImage = styled.img`
     isBanner &&
     `
       height: 66px;
-      widthL 32px;
+      width: 32px;
   `}
   ${({ isPrev }) =>
     isPrev &&
@@ -207,7 +207,9 @@ export const Image = styled.img`
   margin: 0 auto;
 
   @media ${device.tablet} {
+    max-height: 375px;
     max-width: 100%;
+    width: auto;
   }
 `
 
