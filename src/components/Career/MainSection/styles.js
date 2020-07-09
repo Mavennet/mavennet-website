@@ -9,12 +9,16 @@ import { device } from "../../../consts/deviceSizes"
 export const MainSection = styled(GenericMainSection)`
   padding: 13.125em 0 9em;
 
-  @media ${device.laptop} {
+  /* @media ${device.laptop} {
     padding: 1.6875em 0 6em;
-  }
+  } */
   @media ${device.laptopL} {
     overflow: visible;
     padding: 279px 0 230px;
+  }
+
+  @media ${device.desktop} {
+    padding: 329px 0 400px;
   }
 `
 
