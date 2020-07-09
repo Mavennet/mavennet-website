@@ -13,21 +13,21 @@ homeServiceSection:
   ctaText: Learn more about our approach
   steps:
     - item:
-        image: /assets/strategy-icon.png
+        image: /assets/strategy.png
         title: Strategy
         description: We help organizations conceptualize their goals, align decision
           makers and formulate actionable strategies for success.
     - item:
-        image: /assets/design-icon.png
+        image: /assets/design.png
         title: Design
         description: We focus on early validation through design. Here the end user is king.
     - item:
-        image: /assets/implementation-logo.png
+        image: /assets/implementation.png
         title: Implementation
         description: We follow agile methodologies to execute complex solutions in a
           record time.
     - item:
-        image: /assets/support-icon.png
+        image: /assets/support.png
         title: Support
         description: We accompany our clients end to end on the path of digital
           transformation, ensuring a foundation for long term success.
