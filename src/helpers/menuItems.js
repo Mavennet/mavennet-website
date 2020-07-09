@@ -38,7 +38,16 @@ export const getHeaderItems = items => {
       to: "/r&d",
       children: [],
     },
-    company: { ...COMPANY, to: "/about" },
+    company: {
+      name: "Company",
+      to: "/about",
+      children: [],
+    },
+    news: {
+      name: "News",
+      to: "/newsroom",
+      children: [],
+    },
     career: {
       name: "Career",
       to: "/career",

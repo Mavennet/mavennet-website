@@ -11,7 +11,7 @@ export const COMPANY = {
       to: "/about",
     },
     {
-      name: "Newsroom",
+      name: "News",
       to: "/newsroom",
     },
     {

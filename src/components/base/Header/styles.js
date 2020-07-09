@@ -24,6 +24,10 @@ export const HeaderContainer = styled(Container)`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 1080px) and (max-width: 1132px) {
+    width: 90%;
+  }
 `
 
 export const LogoLink = styled(Link)``
