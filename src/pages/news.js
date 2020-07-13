@@ -57,7 +57,7 @@ export const query = graphql`
     }
     news: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/site/news/" } }
-      sort: { fields: frontmatter___order }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {

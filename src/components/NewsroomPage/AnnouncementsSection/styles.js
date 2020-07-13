@@ -65,10 +65,6 @@ export const AnnouncementCard = styled.a`
         height: unset;
       }
 
-      ${Image} {
-        height: unset;
-      }
-
       ${Content} {
         padding: 3em 2em 3em 4.5em;
         box-sizing: border-box;
@@ -114,6 +110,12 @@ export const AnnouncementItem = styled.li`
   @media ${device.laptop} {
     width: ${props => (props.first ? "100%" : "30%")};
     max-width: unset;
+
+    ${({ first }) =>
+      first &&
+      `
+      min-height: 315px;
+    `}
 
     &:first-child {
       border: unset;
