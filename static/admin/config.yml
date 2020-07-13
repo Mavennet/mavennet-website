@@ -542,7 +542,7 @@ collections:
                 }
       - label: "Newsroom Page"
         name: "news-room"
-        file: "site/pages/newsroom.yml"
+        file: "site/pages/news.yml"
         fields:
           - label: "Meta"
             name: "meta"
@@ -659,6 +659,19 @@ collections:
           - { label: "Page Title", name: "title", widget: string }
           - label: "Main Section"
             name: "notFoundMainSection"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Home CTA Text", name: "ctaText", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+      - label: "Coming Soon Page"
+        name: "coming-soon-page"
+        file: "site/pages/coming-soon.yml"
+        fields:
+          - { label: "Page Title", name: "title", widget: string }
+          - label: "Main Section"
+            name: "comingSoonMainSection"
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
