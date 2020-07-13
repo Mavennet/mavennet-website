@@ -65,6 +65,10 @@ export const AnnouncementCard = styled.a`
         height: unset;
       }
 
+      ${Image} {
+        height: unset;
+      }
+
       ${Content} {
         padding: 3em 2em 3em 4.5em;
         box-sizing: border-box;
