@@ -57,6 +57,7 @@ export const AnnouncementCard = styled.a`
       ${Header},
       ${Content} {
         width: 50%;
+        height: unset;
       }
 
       ${Content} {
@@ -121,12 +122,16 @@ export const AnnouncementItem = styled.li`
 export const Header = styled.header`
   display: flex;
   align-items: center;
+
+  width: 100%;
+  height: 200px;
 `
 
 export const Image = styled.img`
   display: block;
-  width: 100%;
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 `
 
 export const Content = styled.div`

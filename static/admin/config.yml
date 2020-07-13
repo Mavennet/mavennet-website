@@ -595,28 +595,6 @@ collections:
                   valueField: "title",
                 }
               - { label: "CTA Text", name: "ctaText", widget: "string" }
-          - label: "Announcement Section"
-            name: "newsRoomAnnouncementSection"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
-              - { label: "CTA Text", name: "ctaText", widget: "string" }
-          - label: "Media Release Section"
-            name: "newsRoomMediaSection"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
-              - { label: "CTA Text", name: "ctaText", widget: "string" }
-          - label: "Awards Section"
-            name: "newsRoomAwardsSection"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
-          - label: "Professional Association Section"
-            name: "newsRoomProfessionalSection"
-            widget: "object"
-            fields:
-              - { label: "Section Title", name: "title", widget: "string" }
       - label: "R&D Page"
         name: "randd-page"
         file: "site/pages/randd.yml"
@@ -882,59 +860,17 @@ collections:
       - { label: "Order", name: "order", widget: "number" }
       - { label: "Award name", name: "title", widget: "string" }
       - { label: "Award Logo", name: "logo", widget: "image" }
-  - label: "Announcements"
-    name: "announcements"
-    folder: "site/news/announcements"
+  - label: "News"
+    name: "news"
+    folder: "site/news/"
     create: true
     identifier_field: name
     fields:
-      - { label: "Announcement Title", name: "title", widget: "string" }
-      - { label: "Announcement Date", name: "date", widget: "date" }
-      - { label: "Announcement Image", name: "image", widget: "image" }
-      - { label: "Announcement Link", name: "link", widget: "string" }
-      - { label: "Announcement order", name: "order", widget: "number" }
-  - label: "Media"
-    name: "media"
-    folder: "site/news/media"
-    create: true
-    identifier_field: name
-    fields:
-      - { label: "Media Title", name: "title", widget: "string" }
-      - { label: "Media Date", name: "date", widget: "date" }
-      - { label: "Media Image", name: "image", widget: "image" }
-      - { label: "Media Link", name: "link", widget: "string" }
-  - label: "Awards News"
-    name: "awardsNews"
-    folder: "site/news/awardsNews"
-    create: true
-    identifier_field: name
-    fields:
-      - { label: "Awards Title", name: "title", widget: "string" }
-      - { label: "Awards Order", name: "order", widget: "number" }
-      - { label: "Awards Image", name: "image", widget: "image" }
-      # - { label: "Awards Link", name: "link", widget: "string" }
-  - label: "Professional Association"
-    name: "professionalAssociation"
-    folder: "site/news/professionalAssociation"
-    create: true
-    identifier_field: name
-    fields:
-      - {
-          label: "Professional Association Title",
-          name: "title",
-          widget: "string",
-        }
-      - { label: "Professional Association Date", name: "date", widget: "date" }
-      - {
-          label: "Professional Association Image",
-          name: "image",
-          widget: "image",
-        }
-      - {
-          label: "Professional Association Link",
-          name: "link",
-          widget: "string",
-        }
+      - { label: "News Title", name: "title", widget: "string" }
+      - { label: "News Date", name: "date", widget: "date" }
+      - { label: "News Image", name: "image", widget: "image" }
+      - { label: "News Link", name: "link", widget: "string" }
+      - { label: "News order", name: "order", widget: "number" }
   - label: "Our Team"
     name: "ourTeam"
     folder: "site/company/ourTeam"
