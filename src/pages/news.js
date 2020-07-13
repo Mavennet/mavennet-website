@@ -85,11 +85,11 @@ const NewsPage = ({ data, location }) => {
         {...newsRoomAnnouncementSection}
       />
       <MediaSection ref={mediaRef} media={media} {...newsRoomMediaSection} />
-      <AwardsSection
+      {/* <AwardsSection
         ref={awardsRef}
         awards={awards.edges}
         {...newsRoomAwardsSection}
-      />
+      /> */}
       {/* <NewsSection
         ref={professionalAssociationRef}
         {...newsRoomProfessionalSection}
