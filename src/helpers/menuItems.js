@@ -45,7 +45,7 @@ export const getHeaderItems = items => {
     },
     news: {
       name: "News",
-      to: "/newsroom",
+      to: "/news",
       children: [],
     },
     career: {

@@ -19,7 +19,7 @@ const scrollToRef = ref =>
     behavior: "smooth",
   })
 
-const NewsroomPage = ({ data, location }) => {
+const NewsPage = ({ data, location }) => {
   const post = data.pagesYaml
   const { announcements, media, awards, professionalAssociation } = data
   const {
@@ -100,11 +100,11 @@ const NewsroomPage = ({ data, location }) => {
   )
 }
 
-export default NewsroomPage
+export default NewsPage
 
 export const query = graphql`
   query {
-    pagesYaml(meta: { title: { eq: "Newsroom" } }) {
+    pagesYaml(meta: { title: { eq: "News" } }) {
       id
       meta {
         title
