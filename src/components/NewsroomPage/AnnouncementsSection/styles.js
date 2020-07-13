@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import TextArrowCTA from "../../shared/TextArrowCTA"
+import TextArrow from "../../shared/TextArrow"
 
 import { device } from "../../../consts/deviceSizes"
 
@@ -21,9 +21,14 @@ export const Title = styled.h2`
   }
 `
 
-export const CTA = styled(TextArrowCTA)`
+export const CTA = styled(TextArrow)`
   width: fit-content;
-  margin-top: 3.175em;
+  margin: 3.175em auto 0;
+
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 29px;
 `
 
 export const AnnouncementsList = styled.ul`
@@ -95,7 +100,7 @@ export const AnnouncementItem = styled.li`
   }
 
   ${AnnouncementCard} {
-    padding-bottom: 4em;
+    padding-bottom: 2em;
   }
 
   &:not(:first-child) {

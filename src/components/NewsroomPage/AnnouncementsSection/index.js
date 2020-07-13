@@ -1,16 +1,34 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import Container from "../../base/Container"
-import NewsCard from "../../shared/NewsCard"
 
 import { utcStringToFullMonthDate } from "../../../helpers/dateManipulation"
 
 import * as S from "./styles"
 
-const AnnouncementsSection = ({ announcements, title, ctaText }) => {
-  const NUM_NEWS_IN_CHUNKS = 6
+const NUM_NEWS_IN_CHUNKS = 6
 
-  const [numChunksVisible, setNumChunksVisible] = useState(1)
+const AnnouncementsSection = ({ announcements, title, ctaText }) => {
+  const [numNewsVisible, setNumNewsVisible] = useState(NUM_NEWS_IN_CHUNKS)
+  const [hasMoreNewsToShow, setHasMoreNewsToShow] = useState(false)
+
+  useEffect(() => {
+    if (announcements.length > NUM_NEWS_IN_CHUNKS + 1) {
+      setHasMoreNewsToShow(true)
+    }
+  }, [announcements])
+
+  const handleLoadMoreNews = () => {
+    const loadableNewsNumber = announcements.length - 1
+    let newNewsNumber = numNewsVisible + NUM_NEWS_IN_CHUNKS
+
+    if (loadableNewsNumber < newNewsNumber) {
+      newNewsNumber = loadableNewsNumber
+      setHasMoreNewsToShow(false)
+    }
+
+    setNumNewsVisible(newNewsNumber)
+  }
 
   const getAnnouncementsList = announcementsList => {
     if (announcementsList.length === 0) return null
@@ -31,31 +49,27 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
           </S.AnnouncementCard>
         </S.AnnouncementItem>
 
-        {otherNewsNodes
-          .slice(0, NUM_NEWS_IN_CHUNKS * numChunksVisible)
-          .map(newsFrontmatter => {
-            const news = newsFrontmatter.node.frontmatter
+        {otherNewsNodes.slice(0, numNewsVisible).map(newsFrontmatter => {
+          const news = newsFrontmatter.node.frontmatter
 
-            return (
-              <S.AnnouncementItem key={news.title} first={false}>
-                <S.AnnouncementCard
-                  href={news.link}
-                  target="_blank"
-                  first={false}
-                >
-                  <S.Header>
-                    <S.Image src={news.image} />
-                  </S.Header>
-                  <S.Content>
-                    <S.CardTitle>{news.title}</S.CardTitle>
-                    <S.CardDate>
-                      {utcStringToFullMonthDate(news.date)}
-                    </S.CardDate>
-                  </S.Content>
-                </S.AnnouncementCard>
-              </S.AnnouncementItem>
-            )
-          })}
+          return (
+            <S.AnnouncementItem key={news.title} first={false}>
+              <S.AnnouncementCard
+                href={news.link}
+                target="_blank"
+                first={false}
+              >
+                <S.Header>
+                  <S.Image src={news.image} />
+                </S.Header>
+                <S.Content>
+                  <S.CardTitle>{news.title}</S.CardTitle>
+                  <S.CardDate>{utcStringToFullMonthDate(news.date)}</S.CardDate>
+                </S.Content>
+              </S.AnnouncementCard>
+            </S.AnnouncementItem>
+          )
+        })}
       </S.AnnouncementsList>
     )
   }
@@ -65,7 +79,9 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
       <Container>
         <S.Title>{title}</S.Title>
         {getAnnouncementsList(announcements)}
-        {/* <S.CTA text={ctaText} to="/" /> */}
+        {hasMoreNewsToShow && (
+          <S.CTA text="Load More News" onClick={handleLoadMoreNews} />
+        )}
       </Container>
     </S.AnnoucementsSection>
   )
