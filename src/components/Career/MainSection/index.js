@@ -12,7 +12,12 @@ const MainSection = ({
   handlePositionClick,
 }) => {
   return (
-    <S.MainSection background={background} center fill="#F9F5FE">
+    <S.MainSection
+      background={background}
+      center
+      fill="#F9F5FE"
+      parallaxActive={true}
+    >
       <S.MainSectionContainer>
         <S.TextContent>
           <S.Title>{title}</S.Title>

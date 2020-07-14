@@ -8,7 +8,7 @@ import * as S from "./styles"
 
 const MainSection = ({ title }) => {
   return (
-    <S.MainSection background={Background}>
+    <S.MainSection background={Background} parallaxActive={true}>
       <Container center>
         <S.Title>{title}</S.Title>
       </Container>
