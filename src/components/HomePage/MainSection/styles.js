@@ -6,6 +6,7 @@ import { device } from "../../../consts/deviceSizes"
 
 export const MainSection = styled(GenericMainSection)`
   padding: 12.1875em 0 10.875em;
+  position: relative;
 
   @media ${device.laptop} {
     padding: 11.6875em 0 13.375em;
