@@ -72,7 +72,7 @@ const RAndDSection = ({ title, subtitle, rAndDList }) => {
   }, [windowWidth])
 
   return (
-    <S.RAndDSection>
+    <S.RAndDSection data-aos="fade-up">
       <Container center>
         <S.Title>{title}</S.Title>
         <S.Description>{subtitle}</S.Description>

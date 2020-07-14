@@ -183,7 +183,7 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
   }
 
   return (
-    <S.SolutionsSection>
+    <S.SolutionsSection data-aos="fade-up">
       <S.Header>
         <S.Title className="headline-large">{title}</S.Title>
         <S.Subtitle className="statement-medium">{subtitle}</S.Subtitle>

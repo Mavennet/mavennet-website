@@ -19,7 +19,7 @@ const NewsSection = ({ title, ctaText, news }) => {
   }
 
   return (
-    <S.NewsSection>
+    <S.NewsSection data-aos="fade-up">
       <Container style={{ position: "relative" }}>
         <S.Title>{title}</S.Title>
         {getNewsList(news)}

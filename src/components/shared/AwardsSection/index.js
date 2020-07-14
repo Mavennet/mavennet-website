@@ -23,7 +23,7 @@ const AwardsSection = ({ title }) => {
     })
 
   return (
-    <S.AwardsSection>
+    <S.AwardsSection data-aos="fade-up">
       <Container center>
         <S.Title>{title}</S.Title>
         <S.AwardsList>{getAwardsItems(awardsData)}</S.AwardsList>

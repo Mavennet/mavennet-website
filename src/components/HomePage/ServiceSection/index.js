@@ -21,7 +21,7 @@ const ServiceSection = ({ title, description, ctaText, steps }) => {
     ))
   }
   return (
-    <S.Section>
+    <S.Section data-aos="fade-up">
       <Container>
         <S.Title>{title}</S.Title>
         <S.Description>{description}</S.Description>

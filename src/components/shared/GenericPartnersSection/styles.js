@@ -10,7 +10,7 @@ export const GenericPartnersSection = styled.section`
   background-color: var(--c-p-selago);
 
   @media ${device.laptop} {
-    transform: skewY(-5deg);
+    transform: skewY(-5deg) !important;
 
     padding: 65px 0 125px;
 

@@ -1,5 +1,8 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
+
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
@@ -15,6 +18,21 @@ import RAndDSection from "../components/HomePage/RAndDSection"
 import { usePartnersData } from "../hooks/use-partners-data"
 
 const IndexPage = ({ data, location }) => {
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.init({
+      offset: 200,
+      "data-aos-duration": "1000",
+    })
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.refresh()
+  })
+
   const post = data.pagesYaml
   const partnersData = usePartnersData()
 

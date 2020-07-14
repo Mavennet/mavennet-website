@@ -16,7 +16,7 @@ const GenericPartnersSection = ({ title, ctaText, partners, className }) => {
   }
 
   return (
-    <S.GenericPartnersSection className={className}>
+    <S.GenericPartnersSection className={className} data-aos="fade-up">
       <S.PartnersContainer center>
         <S.Title>{title}</S.Title>
         {getPartnersList(partners)}
