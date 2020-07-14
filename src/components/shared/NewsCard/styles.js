@@ -1,5 +1,14 @@
 import styled from "styled-components"
 
+export const Image = styled.img`
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.25s ease-in-out;
+`
+
 export const NewsCard = styled.article`
   width: 100%;
   height: 100%;
@@ -7,12 +16,21 @@ export const NewsCard = styled.article`
   box-sizing: border-box;
 
   background-color: #fff;
+  transition: all 0.3s ease-in-out;
 
   ${({ noBorder }) =>
     !noBorder &&
     `
       border: 1px solid var(--c-p-medium-purple);
   `}
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &:hover ${Image} {
+    /* transform: scale(1.06); */
+  }
 `
 
 export const CardLink = styled.a`
@@ -23,13 +41,7 @@ export const CardLink = styled.a`
 export const ImageWrapper = styled.div`
   width: 100%;
   height: 200px;
-`
-
-export const Image = styled.img`
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  overflow: hidden;
 `
 
 export const Title = styled.h4`
