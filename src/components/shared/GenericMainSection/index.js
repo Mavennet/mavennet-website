@@ -12,6 +12,7 @@ const GenericMainSection = ({
   flatMobile,
   fill,
   dividerIndex,
+  parallaxActive,
 }) => {
   return (
     <S.GenericMainSection
@@ -19,6 +20,7 @@ const GenericMainSection = ({
       backgroundMobile={backgroundMobile || background}
       backgroundColor={backgroundColor}
       className={className}
+      parallaxActive={parallaxActive}
     >
       <SvgDivider
         bottom="-2px"

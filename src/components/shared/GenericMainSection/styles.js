@@ -17,6 +17,13 @@ export const GenericMainSection = styled.section`
     `
     background-color: var(${backgroundColor});
   `}
+
+  ${({ parallaxActive }) =>
+    parallaxActive &&
+    `
+    background-attachment: fixed;
+  `}
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
