@@ -13,6 +13,11 @@ export const MainSection = styled.section`
   background-image: url(${props => props.background});
   background-repeat: no-repeat;
   background-size: cover;
+  ${({ parallaxActive }) =>
+    parallaxActive &&
+    `
+    background-attachment: fixed;
+  `}
 
   @media ${device.laptop} {
     padding-bottom: 16em;
