@@ -213,6 +213,10 @@ export const Image = styled.img`
   }
 `
 
+export const Video = styled.video`
+  width: 100%;
+`
+
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;

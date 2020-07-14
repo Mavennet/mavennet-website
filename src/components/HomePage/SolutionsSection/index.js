@@ -145,8 +145,18 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
   const getSolutionItems = items => {
     const newItems = items.map(item => item.item)
 
+    const checkExtension = fileName => {
+      let extension
+
+      if (/.(jpe?g|png|gif)$/.test(fileName)) extension = "image"
+
+      if (/.(mp4|mov)$/.test(fileName)) extension = "video"
+
+      return extension
+    }
+
     return newItems.map(
-      ({ title, image, description, slug, ctaText, logo }, index) => (
+      ({ title, media, description, slug, ctaText, logo }, index) => (
         <S.SolutionItem key={title}>
           <S.ItemContainer>
             <S.ContentWrapper>
@@ -158,7 +168,13 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
               </S.ButtonWrapper>
             </S.ContentWrapper>
             <S.ImageContainer>
-              <S.Image src={image} alt={`${title} image`} />
+              {checkExtension(media) === "image" ? (
+                <S.Image src={media} alt={`${title} media`} />
+              ) : (
+                <S.Video autoPlay loop muted playsInline>
+                  <source src={media} type="video/mp4"></source>
+                </S.Video>
+              )}
             </S.ImageContainer>
           </S.ItemContainer>
         </S.SolutionItem>

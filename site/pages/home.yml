@@ -38,7 +38,7 @@ homeSolutionsSection:
   solutionList:
     - item:
         title: Digitalizing the Barrel of Oil
-        image: /assets/neoflow-map.gif
+        media: /assets/neoflow-map.gif
         description: Access an end-to-end view of your oil supply chain, from the
           wellhead to the refinery.
         slug: solutions/neoflow
@@ -46,14 +46,14 @@ homeSolutionsSection:
         logo: /assets/neoflow_logo.png
     - item:
         title: Tracing the Steel Supply Chain
-        image: /assets/metaltrail-mockup.png
+        media: /assets/metaltrail-mockup.png
         description: Securely trace origination of the steel and help avoid counterfeit.
         slug: solutions/metaltrail
         ctaText: View Solution
         logo: /assets/mt-logo.png
     - item:
         title: First Institutional Canadian Dollar Stablecoin
-        image: /assets/qcad-main.png
+        media: /assets/video-qcad.mp4
         description: A financial rail to facilitate instant payments in Canadian dollars
           by using smart contracts.
         slug: solutions/qcad
@@ -61,7 +61,7 @@ homeSolutionsSection:
         logo: /assets/qcad-logo.svg
     - item:
         title: Trust-as-a-Service
-        image: /assets/mavenstamp-mockup.png
+        media: /assets/mavenstamp-mockup.png
         logo: /assets/group-9.png
         description: Build your own applications or extend existing ones with the
           Mavenstamp API, securing your data with immutable timestamps and

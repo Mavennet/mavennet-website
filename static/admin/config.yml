@@ -84,9 +84,10 @@ collections:
                         widget: "string",
                       }
                     - {
-                        label: "Solution Image",
-                        name: "image",
-                        widget: "image",
+                        label: "Solutions Media",
+                        name: "media",
+                        widget: "file",
+                        required: false,
                       }
                     - { label: "Solution Logo", name: "logo", widget: "image" }
                     - {

@@ -62,7 +62,7 @@ export const query = graphql`
         solutionList {
           item {
             title
-            image
+            media
             logo
             description
             slug
