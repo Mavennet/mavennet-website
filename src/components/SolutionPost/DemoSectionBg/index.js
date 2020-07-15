@@ -6,7 +6,11 @@ import * as S from "./styles"
 
 const DemoSectionBg = ({ title, ctaText, image, backgroundImage }) => {
   return (
-    <S.DemoSectionBg background={backgroundImage} data-aos="fade-up">
+    <S.DemoSectionBg
+      background={backgroundImage}
+      data-aos="fade-up"
+      data-aos-offset="300"
+    >
       <Container>
         <S.Content>
           <S.Image src={image} alt={title} />
