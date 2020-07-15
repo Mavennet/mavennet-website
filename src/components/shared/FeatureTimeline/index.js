@@ -59,9 +59,11 @@ const FeatureTimeline = ({ items }) => {
             <S.Feature isEven={index % 2 === 0}>
               <S.TextContent>
                 <S.Title data-aos="fade-up">{title}</S.Title>
-                <S.Description data-aos="fade-up">{description}</S.Description>
+                <S.Description data-aos="fade-up" data-aos-offset="250">
+                  {description}
+                </S.Description>
               </S.TextContent>
-              <S.ImageWrapper data-aos="fade-up">
+              <S.ImageWrapper data-aos="fade-up" data-aos-offset="250">
                 <S.Image src={image} alt={title} />
               </S.ImageWrapper>
             </S.Feature>
