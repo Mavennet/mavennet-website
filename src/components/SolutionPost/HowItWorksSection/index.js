@@ -20,7 +20,7 @@ const HowItWorksSection = ({ title, howItWorksItems }) => {
   )
 
   return (
-    <S.HowItWorksSection>
+    <S.HowItWorksSection data-aos="fade-up">
       <Container center>
         <S.Title>{title}</S.Title>
         {getHowItWorksItems(howItWorksItems)}

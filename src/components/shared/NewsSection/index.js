@@ -20,7 +20,7 @@ const NewsSection = ({ title, news, noBorder }, ref) => {
   }
 
   return (
-    <S.NewsSection ref={ref}>
+    <S.NewsSection ref={ref} data-aos="fade-up">
       <Container>
         <S.Title>{title}</S.Title>
         {getNewsList(news)}

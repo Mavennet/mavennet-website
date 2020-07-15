@@ -20,7 +20,7 @@ const TestimonialSection = ({ testimonialList }) => {
   }
 
   return (
-    <S.TestimonialSection>
+    <S.TestimonialSection data-aos="fade-up">
       <Container>
         <S.Title>What our clients are saying…</S.Title>
         <S.SliderWrapper>

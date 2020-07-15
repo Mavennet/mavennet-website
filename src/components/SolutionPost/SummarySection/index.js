@@ -48,7 +48,7 @@ const SummarySection = ({
   }
 
   return (
-    <S.SummarySection>
+    <S.SummarySection data-aos="fade-up">
       <Container center>{getSummaryByType(summaryType)}</Container>
     </S.SummarySection>
   )

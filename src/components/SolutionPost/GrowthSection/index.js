@@ -25,7 +25,7 @@ const GrowthSection = ({
   }
 
   return (
-    <S.GrowthSection>
+    <S.GrowthSection data-aos="fade-up">
       <S.GrowthContainer>
         {getNumbersItems(items)}
         <S.TextContent>

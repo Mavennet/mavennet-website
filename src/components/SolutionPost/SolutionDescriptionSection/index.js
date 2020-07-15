@@ -30,7 +30,7 @@ const SolutionDescriptionSection = ({
   }
 
   const Regular = ({ title, image, items }) => (
-    <S.SolutionDescriptionSection>
+    <S.SolutionDescriptionSection data-aos="fade-up">
       <Container>
         <S.Content style={{ marginTop: 0 }}>
           <S.Col imageContent>
@@ -49,7 +49,7 @@ const SolutionDescriptionSection = ({
   )
 
   const Banner = ({ title, image, items }) => (
-    <S.SolutionDescriptionSection>
+    <S.SolutionDescriptionSection data-aos="fade-up">
       <Container center>
         <S.Title isImageOnly={true}>{title}</S.Title>
         <S.Content isBanner={false} isImageOnly={true}>
@@ -63,7 +63,7 @@ const SolutionDescriptionSection = ({
   )
 
   const ImageOnly = ({ title, image }) => (
-    <S.SolutionDescriptionSection>
+    <S.SolutionDescriptionSection data-aos="fade-up">
       <Container center>
         <S.Title isImageOnly={true}>{title}</S.Title>
         <S.Content isBanner={false} isImageOnly={true}>
