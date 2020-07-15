@@ -6,24 +6,34 @@ import { device } from "../../../consts/deviceSizes"
 
 export const GenericPartnersSection = styled.section`
   padding: 21px 0 114px;
+  position: relative;
 
   background-color: var(--c-p-selago);
 
   @media ${device.laptop} {
-    transform: skewY(-5deg) !important;
-
     padding: 65px 0 125px;
+    background-color: unset;
 
-    background-color: var(--c-p-selago-dark);
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      transform: skewY(-5deg) !important;
+      background-color: var(--c-p-selago-dark);
+    }
   }
 `
 
 export const PartnersContainer = styled(Container)`
   width: 95%;
 
-  @media ${device.laptop} {
+  /* @media ${device.laptop} {
     transform: skewY(5deg);
-  }
+  } */
 `
 
 export const Title = styled.h2`
