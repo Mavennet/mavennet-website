@@ -35,7 +35,7 @@ const OurTeamSection = ({ title, ctaText, team }, ref) => {
   }
 
   return (
-    <S.OurTeamSection ref={ref}>
+    <S.OurTeamSection ref={ref} data-aos="fade-up">
       <BioModal
         teamMember={currentTeamMember}
         open={modalOpen}

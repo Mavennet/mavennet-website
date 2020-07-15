@@ -4,7 +4,7 @@ import * as S from "./styles"
 
 const WhoWeAre = ({ title, subTitle, description, ctaText, handleClick }) => {
   return (
-    <S.WhoWeAre>
+    <S.WhoWeAre data-aos="fade-up">
       <S.Title>{title}</S.Title>
       <S.SectionContainer center>
         <S.TextContent>

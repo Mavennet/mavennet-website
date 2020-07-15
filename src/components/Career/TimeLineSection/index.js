@@ -8,7 +8,7 @@ import * as S from "./styles"
 
 const TimeLineSection = () => {
   return (
-    <S.TimeLineSection>
+    <S.TimeLineSection data-aos="fade-up">
       <S.TimeLineContainer>
         <S.Title>Our Story</S.Title>
         <S.Content>

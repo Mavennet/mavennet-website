@@ -1,5 +1,8 @@
-import React, { useRef } from "react"
+import React, { useRef, useEffect } from "react"
 import { graphql } from "gatsby"
+
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
@@ -38,6 +41,20 @@ const AboutPage = ({ data, location }) => {
     aboutLearnSection,
     meta,
   } = post
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.init({
+      offset: 200,
+    })
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.refresh()
+  })
 
   const executeScroll = ref => scrollToRef(ref)
 

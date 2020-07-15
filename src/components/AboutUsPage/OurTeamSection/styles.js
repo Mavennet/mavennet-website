@@ -67,8 +67,13 @@ export const TeamCard = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  transition: all 0.2s ease-in-out;
 
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 export const Image = styled.img`

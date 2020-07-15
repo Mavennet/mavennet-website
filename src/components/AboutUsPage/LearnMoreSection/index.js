@@ -22,7 +22,7 @@ const LearnMoreSection = ({ title, linksList }) => {
   )
 
   return (
-    <S.LearnMoreSection>
+    <S.LearnMoreSection data-aos="fade-up">
       <Container center>
         <S.Title>{title}</S.Title>
         {getLinkList(linksList)}
