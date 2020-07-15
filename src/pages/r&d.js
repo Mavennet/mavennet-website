@@ -1,5 +1,8 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
+
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
@@ -11,6 +14,20 @@ const RandDPage = ({ data, location }) => {
   const post = data.pagesYaml
 
   const { rAndDListSection, rAndDMainSection, meta } = post
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.init({
+      offset: 200,
+    })
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.refresh()
+  })
 
   return (
     <Layout>
