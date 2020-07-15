@@ -11,7 +11,11 @@ const IndustriesSection = ({ industries }) => {
       <S.IndustriesList>
         {list.map((industry, index) => (
           <S.IndustryListItem key={industry.title}>
-            <InfoImageItem {...industry} reverse={index % 2 !== 0} />
+            <InfoImageItem
+              {...industry}
+              reverse={index % 2 !== 0}
+              isFirst={index === 0}
+            />
           </S.IndustryListItem>
         ))}
       </S.IndustriesList>

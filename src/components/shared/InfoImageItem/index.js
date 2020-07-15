@@ -10,6 +10,7 @@ const InfoImageItem = ({
   reverse,
   companies,
   imgMaxWidth,
+  isFirst,
 }) => {
   return (
     <S.InfoImageItem reverse={reverse}>
@@ -20,15 +21,23 @@ const InfoImageItem = ({
           reverse={reverse}
           imgMaxWidth={imgMaxWidth}
           data-aos="fade-up"
+          data-aos-offset={isFirst ? "100" : "200"}
         />
       </S.Column>
       <S.Column>
         <S.TextContent>
           <S.Title data-aos="fade-up">{title}</S.Title>
-          <S.Description data-aos="fade-up" data-aos-delay="150">
+          <S.Description
+            data-aos="fade-up"
+            data-aos-delay="150"
+            data-aos-offset={isFirst ? "100" : "200"}
+          >
             {description}
           </S.Description>
-          <S.CompaniesLogo data-aos="fade-up">
+          <S.CompaniesLogo
+            data-aos="fade-up"
+            data-aos-offset={isFirst ? "100" : "200"}
+          >
             {companies.map((company, index) => (
               <S.CompanyLogo key={index} src={company.logo} />
             ))}
