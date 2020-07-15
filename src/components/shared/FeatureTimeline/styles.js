@@ -4,6 +4,7 @@ import { device } from "../../../consts/deviceSizes"
 
 export const FeatureTimeline = styled.div`
   margin-top: 4.875em;
+  overflow: hidden;
 
   width: 100%;
 `
@@ -33,7 +34,9 @@ export const ListItem = styled.li`
         content: "";
         position: absolute;
         width: 2px;
-        height: calc(100% + (5.3125em - 36px));
+        transition: height 0.6s ease-out;
+        height: ${({ isVisible }) =>
+          isVisible ? "calc(100% + (5.3125em - 36px))" : "0px"};
         background-color: var(--c-s-perfume);
         top: 68px;
         left: calc(50% - 1px);
