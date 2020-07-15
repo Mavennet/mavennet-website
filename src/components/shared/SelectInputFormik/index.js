@@ -51,12 +51,13 @@ const SelectInputFormik = ({
         labelWidth={170}
         {...formikProps}
       >
-        <MenuItem value="Technology Provider">Technology Provider</MenuItem>
-        <MenuItem value="Producer">Producer</MenuItem>
-        <MenuItem value="Carrier">Carrier</MenuItem>
-        <MenuItem value="Refiner">Refiner</MenuItem>
-        <MenuItem value="Customs Broker">Customs Broker</MenuItem>
-        <MenuItem value="Other Services">Other Services</MenuItem>
+        <MenuItem value="Solution and Project Inquiry">
+          Solution and Project Inquiry
+        </MenuItem>
+        <MenuItem value="Career Inquiry">Career Inquiry</MenuItem>
+        <MenuItem value="Partnership Inquiry">Partnership Inquiry</MenuItem>
+        <MenuItem value="Media Inquiry">Media Inquiry</MenuItem>
+        <MenuItem value="Other Inquires">Other Inquires</MenuItem>
       </Select>
       <FormHelperText>{touched && errors}</FormHelperText>
     </CssFormControl>

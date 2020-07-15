@@ -35,7 +35,7 @@ const ContactUsForm = ({ onSubmit }) => {
         .required("Email Address is Required"),
       company: Yup.string(),
       jobTitle: Yup.string(),
-      clientType: Yup.string().required("I am is Required"),
+      clientType: Yup.string().required("How can we help is Required"),
       message: Yup.string(),
     }),
     onSubmit: onSubmit,
@@ -102,7 +102,7 @@ const ContactUsForm = ({ onSubmit }) => {
         <S.InputContainer>
           <SelectInputFormik
             name="clientType"
-            label="I am a..."
+            label="How can we help?"
             touched={touched.clientType}
             errors={errors.clientType}
             formikProps={getFieldProps("clientType")}
