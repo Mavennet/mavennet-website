@@ -2,13 +2,14 @@ import React from "react"
 
 import * as S from "./styles"
 
-const SolutionItem = ({ item, backgroundColor, isEven, isLast }) => {
+const SolutionItem = ({ item, backgroundColor, isEven, isLast, isFirst }) => {
   const { title, description, image, slug, ctaImage, sectionType } = item
   const isBanner = sectionType === "banner"
 
   return (
     <S.SolutionItem
       data-aos="fade-up"
+      data-aos-offset={isFirst ? "0" : "200"}
       backgroundColor={backgroundColor}
       isEven={isEven}
       isLast={isLast}

@@ -12,6 +12,7 @@ const SolutionsSection = ({ solutions }) => {
       {items.map((item, index) => (
         <S.SolutionSection key={item.title}>
           <SolutionItem
+            isFirst={index === 0}
             isLast={items.length - 1 === index}
             isEven={(index + 1) % 2 === 0}
             item={item}
