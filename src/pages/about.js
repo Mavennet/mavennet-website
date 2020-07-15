@@ -46,7 +46,7 @@ const AboutPage = ({ data, location }) => {
     if (typeof window === "undefined") return
 
     AOS.init({
-      offset: 200,
+      offset: 300,
     })
   }, [])
 
