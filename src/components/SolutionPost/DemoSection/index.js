@@ -12,7 +12,7 @@ const DemoSection = ({ title, textOnly, ctaText, image }) => {
   }
 
   return (
-    <S.DemoSection data-aos="fade-up" data-aos-offset="300">
+    <S.DemoSection data-aos="fade-up" data-aos-offset="200">
       {image && <S.Image src={image} alt={title} />}
       <S.TextContent textOnly={textOnly}>
         <ParentWrapper textOnly={textOnly}>

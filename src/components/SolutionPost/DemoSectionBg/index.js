@@ -9,7 +9,7 @@ const DemoSectionBg = ({ title, ctaText, image, backgroundImage }) => {
     <S.DemoSectionBg
       background={backgroundImage}
       data-aos="fade-up"
-      data-aos-offset="300"
+      data-aos-offset="200"
     >
       <Container>
         <S.Content>
