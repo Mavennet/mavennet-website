@@ -23,7 +23,6 @@ const IndexPage = ({ data, location }) => {
 
     AOS.init({
       offset: 200,
-      "data-aos-duration": "1000",
     })
   }, [])
 

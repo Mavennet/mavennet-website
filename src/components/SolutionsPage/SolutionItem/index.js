@@ -8,6 +8,7 @@ const SolutionItem = ({ item, backgroundColor, isEven, isLast }) => {
 
   return (
     <S.SolutionItem
+      data-aos="fade-up"
       backgroundColor={backgroundColor}
       isEven={isEven}
       isLast={isLast}
