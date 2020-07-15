@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
 
@@ -24,6 +27,20 @@ const NewsPage = ({ data, location }) => {
       link: "https://blockchainrevolutionglobal.com/the-eb-awards/",
     })
   }, [])
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.init({
+      offset: 200,
+    })
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.refresh()
+  })
 
   return (
     <Layout>

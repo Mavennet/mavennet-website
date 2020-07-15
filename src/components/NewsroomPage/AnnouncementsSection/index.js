@@ -37,7 +37,11 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
     const fistNews = firstNewsNode.node.frontmatter
     return (
       <S.AnnouncementsList>
-        <S.AnnouncementItem key={fistNews.title} first={true}>
+        <S.AnnouncementItem
+          key={fistNews.title}
+          first={true}
+          data-aos="fade-up"
+        >
           <S.AnnouncementCard href={fistNews.link} target="_blank" first={true}>
             <S.Header>
               <S.Image src={fistNews.image} />
@@ -49,27 +53,36 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
           </S.AnnouncementCard>
         </S.AnnouncementItem>
 
-        {otherNewsNodes.slice(0, numNewsVisible).map(newsFrontmatter => {
-          const news = newsFrontmatter.node.frontmatter
+        {otherNewsNodes
+          .slice(0, numNewsVisible)
+          .map((newsFrontmatter, index) => {
+            const news = newsFrontmatter.node.frontmatter
 
-          return (
-            <S.AnnouncementItem key={news.title} first={false}>
-              <S.AnnouncementCard
-                href={news.link}
-                target="_blank"
+            return (
+              <S.AnnouncementItem
+                key={news.title}
                 first={false}
+                data-aos="fade-up"
+                data-aos-delay={100 * (index % 3)}
               >
-                <S.Header>
-                  <S.Image src={news.image} />
-                </S.Header>
-                <S.Content>
-                  <S.CardTitle>{news.title}</S.CardTitle>
-                  <S.CardDate>{utcStringToFullMonthDate(news.date)}</S.CardDate>
-                </S.Content>
-              </S.AnnouncementCard>
-            </S.AnnouncementItem>
-          )
-        })}
+                <S.AnnouncementCard
+                  href={news.link}
+                  target="_blank"
+                  first={false}
+                >
+                  <S.Header>
+                    <S.Image src={news.image} />
+                  </S.Header>
+                  <S.Content>
+                    <S.CardTitle>{news.title}</S.CardTitle>
+                    <S.CardDate>
+                      {utcStringToFullMonthDate(news.date)}
+                    </S.CardDate>
+                  </S.Content>
+                </S.AnnouncementCard>
+              </S.AnnouncementItem>
+            )
+          })}
       </S.AnnouncementsList>
     )
   }
