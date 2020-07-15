@@ -15,7 +15,7 @@ const PrinciplesSection = ({ principlesList }) => {
           return (
             <S.ListItem key={title}>
               <S.PrincipleItem>
-                <S.Image src={image} alt={title} />
+                <S.Image src={image} alt={title} data-aos="fade-up" />
                 <S.TextContent>
                   <S.PrincipleTitle>{title}</S.PrincipleTitle>
                   <S.PrincipleDescription>{description}</S.PrincipleDescription>

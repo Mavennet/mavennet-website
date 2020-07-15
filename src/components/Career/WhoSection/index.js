@@ -23,8 +23,14 @@ const WhoSection = ({ title, subtitle, reasonsList }) => {
               <S.ImageContainer
                 isEven={index % 2 === 0}
                 color={colors[index % colors.length]}
+                data-aos="fade-up"
               >
-                <S.Image src={image} />
+                <S.Image
+                  src={image}
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  data-aos-duration="2000"
+                />
               </S.ImageContainer>
               <S.Content color={frameColors[index % frameColors.length]}>
                 <S.Description>{description}</S.Description>
