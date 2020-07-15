@@ -1,5 +1,6 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby"
+import AOS from "aos"
 
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
@@ -9,6 +10,20 @@ import IndustriesSection from "../components/IndustriesPage/IndustriesSection"
 const IndustriesPage = ({ data, location }) => {
   const post = data.pagesYaml
   const { title, subtitle, industries, meta } = post
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.init({
+      offset: 200,
+    })
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    AOS.refresh()
+  })
 
   return (
     <Layout>

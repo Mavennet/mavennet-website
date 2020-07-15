@@ -19,13 +19,16 @@ const InfoImageItem = ({
           alt={title}
           reverse={reverse}
           imgMaxWidth={imgMaxWidth}
+          data-aos="fade-up"
         />
       </S.Column>
       <S.Column>
         <S.TextContent>
-          <S.Title>{title}</S.Title>
-          <S.Description>{description}</S.Description>
-          <S.CompaniesLogo>
+          <S.Title data-aos="fade-up">{title}</S.Title>
+          <S.Description data-aos="fade-up" data-aos-delay="150">
+            {description}
+          </S.Description>
+          <S.CompaniesLogo data-aos="fade-up">
             {companies.map((company, index) => (
               <S.CompanyLogo key={index} src={company.logo} />
             ))}
