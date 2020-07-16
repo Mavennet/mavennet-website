@@ -53,7 +53,7 @@ homeSolutionsSection:
         logo: /assets/mt-logo.png
     - item:
         title: First Institutional Canadian Dollar Stablecoin
-        media: /assets/video-qcad.mp4
+        media: /assets/qcad.png
         description: A financial rail to facilitate instant payments in Canadian dollars
           by using smart contracts.
         slug: solutions/qcad
