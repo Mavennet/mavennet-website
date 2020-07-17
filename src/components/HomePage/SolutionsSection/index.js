@@ -170,7 +170,7 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
               {checkExtension(media) === "image" ? (
                 <S.Image src={media} alt={`${title} media`} />
               ) : (
-                <S.Video autoPlay loop muted playsInline>
+                <S.Video autoPlay={false} loop muted playsInline>
                   <source src={media} type="video/mp4"></source>
                 </S.Video>
               )}
