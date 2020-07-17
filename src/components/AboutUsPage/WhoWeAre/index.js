@@ -18,7 +18,7 @@ const WhoWeAre = ({ title, subTitle, description, ctaText, handleClick }) => {
             src="https://livestream.com/accounts/25643695/events/8056412/videos/179195193/player?width=640&height=360&enableInfo=true&defaultDrawer=&autoPlay=false&mute=false"
             frameborder="0"
             scrolling="no"
-            allowfullscreen
+            allowFullScreen={true}
           ></S.IFrame>
         </S.VideoWrapper>
       </S.SectionContainer>
