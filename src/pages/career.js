@@ -101,6 +101,7 @@ export const query = graphql`
             date
             title
             location
+            link
           }
         }
       }

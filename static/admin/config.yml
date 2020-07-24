@@ -534,6 +534,7 @@ collections:
                         name: "location",
                         widget: "string",
                       }
+                    - { label: "Link", name: "link", widget: "string" }
                     - { label: "Start Date", name: "date", widget: "date" }
           - label: "Apply for other opportunities Section"
             name: "careerOtherOpportunitiesSection"

@@ -22,9 +22,11 @@ const Table = ({ head, body }) => {
           <S.Cell>{item.title}</S.Cell>
           <S.Cell>{item.location}</S.Cell>
           <S.Cell>{utcStringToFullMonthDate(item.date)}</S.Cell>
-          <S.Cell>
-            <S.CTA text="Apply Now" to="/contact-us" />
-          </S.Cell>
+          {item.link && (
+            <S.Cell>
+              <S.CTA text="Apply Now" link={item.link} />
+            </S.Cell>
+          )}
         </S.Row>
       ))}
     </S.Body>

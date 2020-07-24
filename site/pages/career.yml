@@ -92,10 +92,12 @@ careerOppotunitySection:
         date: 2020-05-19T15:01:15.901Z
         title: Full Stack Developer
         location: Toronto, Canada
+        link: https://mavennet.com
     - item:
         date: 2020-05-19T15:01:31.457Z
         title: Front End Developer
         location: Toronto, Canada
+        link: https://mavennet.com
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
   content: Send your resume to talent@mavennet.com with the type of role you'd
