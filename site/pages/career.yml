@@ -10,24 +10,28 @@ careerPrinciplesSection:
   principlesList:
     - item:
         title: Ownership
-        description: We work in a no-excuses environment. We do what need to be done
+        description:
+          We work in a no-excuses environment. We do what need to be done
           irrespectively of the challenges ahead of us.
         image: /assets/ownership-1.png
     - item:
         title: Integrity
-        description: We stay true to our values and are serious about the work we do. We
+        description:
+          We stay true to our values and are serious about the work we do. We
           believe in open communications and conveying the truth in the most
           direct manner.
         image: /assets/integrity-1.png
     - item:
         title: Impact
-        description: We like to laser focus on solving problems with a big impact that
+        description:
+          We like to laser focus on solving problems with a big impact that
           affect entire industries. We value simple and meaningful over complex
           solutions.
         image: /assets/impact-1.png
     - item:
         title: Resilience
-        description: We learn, we adapt, we drive until we face the “aha” moment that no
+        description:
+          We learn, we adapt, we drive until we face the “aha” moment that no
           one else has yet identified.
         image: /assets/resiience.png
 careerWhoSection:
@@ -39,7 +43,8 @@ careerWhoSection:
         description: Creative, motivated people seeking to improve the way our world works
         image: /assets/career-group-1.png
     - item:
-        description: Problem-solvers who move quickly and go beyond the norm to deliver
+        description:
+          Problem-solvers who move quickly and go beyond the norm to deliver
           impact
         image: /assets/career-group-2.png
     - item:
@@ -51,7 +56,8 @@ careerDaySection:
     - item:
         name: Yayi
         position: UX/UI Designer
-        testimony: At Mavennet every day is a magical adventure. I work on solving
+        testimony:
+          At Mavennet every day is a magical adventure. I work on solving
           challenging and interesting problems in different areas, turn creative
           concepts into a delightful user experience. Also, the ownership
           culture and the collaborative team make it a fun place to work!
@@ -59,7 +65,8 @@ careerDaySection:
     - item:
         name: Vaishnavi Panchal
         position: Core Engineer
-        testimony: It's a great honour to be part of this innovative organization that
+        testimony:
+          It's a great honour to be part of this innovative organization that
           focuses on diverse domains. It gives me the opportunity to grow myself
           and create an impact on the niche technologies of identity and
           blockchain space. We build solutions that set standards for the
@@ -69,7 +76,8 @@ careerDaySection:
         image: /assets/vaishnavi.png
     - item:
         name: Daniel Pye
-        testimony: It was an honour and a pleasure to be part of the Mavennet team.
+        testimony:
+          It was an honour and a pleasure to be part of the Mavennet team.
           Throughout my time as a project manager, I was able to learn from and
           contribute to many of the diverse company operations and active
           projects. Among others, the friendly community you are part of and the
@@ -84,12 +92,12 @@ careerOppotunitySection:
         date: 2020-08-17T15:01:15.901Z
         title: Senior Full Stack Developer
         location: Toronto, Canada
-        link: https://mavennet.com
+        link: https://ca.indeed.com/viewjob?cmp=Tri--junction&t=Senior+Full+Stack+Developer&jk=473f4bb59e0ae598&q=mavennet&vjs=3
     - item:
         date: 2020-08-17T15:01:31.457Z
         title: Senior Product Owner
         location: Toronto, Canada
-        link: https://mavennet.com
+        link: https://ca.indeed.com/viewjob?cmp=Tri--junction&t=Senior+Product+Owner&jk=f91dcc3af0786de6&q=mavennet&vjs=3
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
   content: Send your resume to talent@mavennet.com with the type of role you'd
