@@ -81,12 +81,12 @@ careerOppotunitySection:
   title: Work With Us
   opportunitiesList:
     - item:
-        date: 2020-05-20T15:01:15.901Z
-        title: Full Stack Developer
+        date: 2020-08-17T15:01:15.901Z
+        title: Senior Full Stack Developer
         location: Toronto, Canada
     - item:
         date: 2020-05-19T15:01:31.457Z
-        title: Front End Developer
+        title: Senior Product Owner
         location: Toronto, Canada
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
