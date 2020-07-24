@@ -84,10 +84,12 @@ careerOppotunitySection:
         date: 2020-08-17T15:01:15.901Z
         title: Senior Full Stack Developer
         location: Toronto, Canada
+        link: https://ca.indeed.com/viewjob?cmp=Tri--junction&t=Senior+Full+Stack+Developer&jk=473f4bb59e0ae598&q=mavennet&vjs=3
     - item:
         date: 2020-08-17T15:01:31.457Z
         title: Senior Product Owner
         location: Toronto, Canada
+        link: https://ca.indeed.com/viewjob?cmp=Tri--junction&t=Senior+Product+Owner&jk=f91dcc3af0786de6&q=mavennet&vjs=3
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
   content: Send your resume to talent@mavennet.com with the type of role you'd
