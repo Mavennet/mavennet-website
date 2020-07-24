@@ -428,11 +428,13 @@ collections:
           - label: "Meta"
             name: "meta"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
           - label: "Main Section"
             name: "careerMainSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - { label: "Section Image", name: "image", widget: "image" }
@@ -445,6 +447,7 @@ collections:
           - label: "Principles Section"
             name: "careerPrinciplesSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Title", name: "title", object: "string" }
               - label: "Principles List"
@@ -465,6 +468,7 @@ collections:
           - label: "Who Should Join Section"
             name: "careerWhoSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - {
@@ -489,6 +493,7 @@ collections:
           - label: "A Day of a Maven Section"
             name: "careerDaySection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Section Title", name: "title" }
               - label: "Testimonials List"
@@ -514,6 +519,7 @@ collections:
           - label: "Opportunities Section"
             name: "careerOppotunitySection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - label: "Opportunities List"
@@ -534,6 +540,7 @@ collections:
           - label: "Apply for other opportunities Section"
             name: "careerOtherOpportunitiesSection"
             widget: "object"
+            collapsed: true
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
               - {
