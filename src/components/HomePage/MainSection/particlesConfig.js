@@ -1,7 +1,7 @@
 export default {
   particles: {
     number: {
-      value: 160,
+      value: 50,
       density: {
         enable: true,
         value_area: 800,
@@ -26,12 +26,12 @@ export default {
       },
     },
     opacity: {
-      value: 1,
-      random: true,
+      value: 0.5,
+      random: false,
       anim: {
-        enable: true,
+        enable: false,
         speed: 1,
-        opacity_min: 0,
+        opacity_min: 0.1,
         sync: false,
       },
     },
@@ -40,13 +40,13 @@ export default {
       random: true,
       anim: {
         enable: false,
-        speed: 4,
-        size_min: 0.3,
+        speed: 40,
+        size_min: 0.1,
         sync: false,
       },
     },
     line_linked: {
-      enable: false,
+      enable: true,
       distance: 150,
       color: "#ffffff",
       opacity: 0.4,
@@ -54,16 +54,16 @@ export default {
     },
     move: {
       enable: true,
-      speed: 1,
+      speed: 0.8,
       direction: "none",
-      random: true,
+      random: false,
       straight: false,
-      out_mode: "out",
+      out_mode: "bounce",
       bounce: false,
       attract: {
         enable: false,
-        rotateX: 600,
-        rotateY: 600,
+        rotateX: 1262.6362266116362,
+        rotateY: 1200,
       },
     },
   },
@@ -72,30 +72,30 @@ export default {
     events: {
       onhover: {
         enable: true,
-        mode: "repulse",
+        mode: "bubble",
       },
       onclick: {
         enable: true,
-        mode: "repulse",
+        mode: "push",
       },
       resize: true,
     },
     modes: {
       grab: {
-        distance: 635.3646353646353,
+        distance: 400,
         line_linked: {
           opacity: 1,
         },
       },
       bubble: {
-        distance: 250,
-        size: 0,
+        distance: 400,
+        size: 5,
         duration: 2,
-        opacity: 0,
+        opacity: 8,
         speed: 3,
       },
       repulse: {
-        distance: 111.8881118881119,
+        distance: 200,
         duration: 0.4,
       },
       push: {
