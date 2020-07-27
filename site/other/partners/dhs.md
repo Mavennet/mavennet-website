@@ -1,5 +1,5 @@
 ---
 order: 1
 title: DHS
-logo: /assets/dhs-logo.png
+logo: /assets/dhs.png
 ---
