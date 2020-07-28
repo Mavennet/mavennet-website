@@ -1,7 +1,35 @@
 import React, { createRef, useEffect, useState } from "react"
+import { navigate } from "gatsby"
 
 import Star from "../Star"
 import TextStar from "../TextStar"
+
+const starsWithText = [
+  {
+    text: "Solutions",
+    to: "/solutions",
+    posX: 100,
+    posY: 250,
+  },
+  {
+    text: "Industries",
+    to: "/industries",
+    posX: 200,
+    posY: 300,
+  },
+  {
+    text: "Approach",
+    to: "/approach",
+    posX: 600,
+    posY: 200,
+  },
+  {
+    text: "R&D",
+    to: "/r&d",
+    posX: 850,
+    posY: 400,
+  },
+]
 
 const Canvas = () => {
   const canvasRef = createRef(null)
@@ -9,33 +37,52 @@ const Canvas = () => {
   const [stars, setStars] = useState([])
 
   useEffect(() => {
+    const initTextStars = () => {
+      let textStarsList = starsWithText.map(
+        star =>
+          new TextStar(
+            star.text,
+            star.posX,
+            star.posY,
+            star.to,
+            canvasRef.current
+          )
+      )
+      setTextStars(textStarsList)
+    }
     const initStars = () => {
       let starAux = []
-      setTextStars([new TextStar(canvasRef.current)])
-      for (let i = 0; i < 100; i++) {
+
+      for (let i = 0; i < 80; i++) {
         starAux.push(
           new Star(null, null, canvasRef.current, {
             isRandomRadius: true,
           })
         )
       }
-
-      starAux.forEach(star => star.draw())
       setStars(starAux)
     }
 
     canvasRef.current.style.width = "100%"
     canvasRef.current.style.height = "100%"
-    // ...then set the internal size to match
     canvasRef.current.width = canvasRef.current.offsetWidth
     canvasRef.current.height = canvasRef.current.offsetHeight
 
     initStars()
+    initTextStars()
   }, [])
 
   useEffect(() => {
     console.log("useEffect3")
     if (typeof window === "undefined") return
+    window.requestAnimationFrame =
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      window.msRequestAnimationFrame ||
+      window.oRequestAnimationFrame ||
+      function (callback) {
+        return window.setTimeout(callback, 1000 / 60)
+      }
     window.requestAnimationFrame(startAnimation)
   }, [stars, startAnimation])
 
@@ -82,7 +129,7 @@ const Canvas = () => {
           mousePosition.y
         ) < TextStar.SHINE_RADIUS
       ) {
-        star.handleClick()
+        navigate(star.to)
       }
     })
   }
@@ -138,11 +185,22 @@ const Canvas = () => {
   }
 
   return (
-    <canvas
-      ref={canvasRef}
-      onMouseMove={handleMouseMove}
-      onClick={handleMouseClick}
-    />
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: -1,
+      }}
+    >
+      <canvas
+        ref={canvasRef}
+        onMouseMove={handleMouseMove}
+        onClick={handleMouseClick}
+      />
+    </div>
   )
 }
 

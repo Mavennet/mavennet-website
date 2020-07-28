@@ -1,29 +1,33 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 import Container from "../../base/Container"
 import Button from "../../shared/Button"
-import Particles from "react-particles-js"
-import particleConfig from "./particlesConfig"
+import Canvas from "../../InteractBg/Canvas"
 
 import backgroundMobile from "../../../assets/images/Home/mobile_background.png"
 import background from "../../../assets/images/backgrounds/home-bg.jpg"
 
 import * as S from "./styles"
 
-const particlesStyles = {
-  position: "absolute",
-  right: 0,
-  left: 0,
-  top: 0,
-  bottom: 0,
-  zIndex: -1,
-}
-
 const MainSection = ({ slogan, subtitle, ctaText }) => {
+  const [windowWidth, setWidth] = useState(0)
+
+  useEffect(() => {
+    if (typeof window === "undefined") return
+
+    const handleResize = () => setWidth(window.innerWidth)
+    window.addEventListener("resize", handleResize)
+
+    setWidth(window.innerWidth)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
   return (
     <S.MainSection background={background} backgroundMobile={backgroundMobile}>
-      <Particles style={particlesStyles} params={particleConfig} />
-      <Container>
+      {windowWidth >= 768 && <Canvas />}
+      <Container style={{ maxWidth: "790px" }}>
         <S.Slogan>{slogan}</S.Slogan>
         <S.Subtitle className="statement-medium">{subtitle}</S.Subtitle>
         <S.ButtonContainer>

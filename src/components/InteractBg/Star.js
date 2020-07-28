@@ -1,10 +1,10 @@
 class Star {
-  STAR_MAX_WIDTH = 4
+  STAR_MAX_WIDTH = 2
   DEFAULT_STAR_SPEED_MULTIPLIER = 0.3
-  SHADOW_COLOR = "black"
-  SHADOW_BLUR = 10
+  SHADOW_COLOR = "white"
+  SHADOW_BLUR = 0
 
-  static MAX_DISTANCE = 150
+  static MAX_DISTANCE = 115
 
   constructor(initialX, initialY, canvasRef, starConfig) {
     this.context = canvasRef.getContext("2d")
@@ -17,11 +17,11 @@ class Star {
     const { isRandomRadius, starRadius } = starConfig
 
     this.initialRadius = isRandomRadius
-      ? Math.random() * this.STAR_MAX_WIDTH
+      ? (Math.random() + 0.5) * this.STAR_MAX_WIDTH
       : starRadius
 
-    this.speedX = (this.DEFAULT_STAR_SPEED_MULTIPLIER - Math.random() * 0.5) / 2
-    this.speedY = (this.DEFAULT_STAR_SPEED_MULTIPLIER - Math.random() * 0.5) / 2
+    this.speedX = this.DEFAULT_STAR_SPEED_MULTIPLIER - Math.random() * 0.5
+    this.speedY = this.DEFAULT_STAR_SPEED_MULTIPLIER - Math.random() * 0.5
   }
 
   normalizeDistance(val) {
@@ -43,7 +43,7 @@ class Star {
 
   drawLine(posX, posY, distance) {
     const opacity = 1 - this.normalizeDistance(distance)
-    this.context.strokeStyle = `rgba(0, 0, 0, ${opacity})`
+    this.context.strokeStyle = `rgba(255, 255, 255, ${opacity})`
     this.context.shadowBlur = this.SHADOW_BLUR
     this.context.shadowColor = this.SHADOW_COLOR
     this.context.beginPath()
@@ -60,7 +60,7 @@ class Star {
   draw() {
     this.context.shadowBlur = null
     this.context.shadowColor = null
-    this.context.fillStyle = "black"
+    this.context.fillStyle = "rgba(255, 255, 255, .8)"
     this.context.beginPath()
     this.context.arc(this.posX, this.posY, this.initialRadius, 0, Math.PI * 2)
     this.context.fill()
