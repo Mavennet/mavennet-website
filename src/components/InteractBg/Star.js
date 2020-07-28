@@ -4,7 +4,7 @@ class Star {
   SHADOW_COLOR = "white"
   SHADOW_BLUR = 0
 
-  static MAX_DISTANCE = 115
+  static MAX_DISTANCE = 130
 
   constructor(initialX, initialY, canvasRef, starConfig) {
     this.context = canvasRef.getContext("2d")
@@ -20,8 +20,10 @@ class Star {
       ? (Math.random() + 0.5) * this.STAR_MAX_WIDTH
       : starRadius
 
-    this.speedX = this.DEFAULT_STAR_SPEED_MULTIPLIER - Math.random() * 0.5
-    this.speedY = this.DEFAULT_STAR_SPEED_MULTIPLIER - Math.random() * 0.5
+    this.speedX =
+      (this.DEFAULT_STAR_SPEED_MULTIPLIER - Math.random() * 0.5) / 1.5
+    this.speedY =
+      (this.DEFAULT_STAR_SPEED_MULTIPLIER - Math.random() * 0.5) / 1.5
   }
 
   normalizeDistance(val) {
