@@ -4,7 +4,7 @@ class Star {
   SHADOW_COLOR = "white"
   SHADOW_BLUR = 0
 
-  static MAX_DISTANCE = 130
+  static MAX_DISTANCE = 110
 
   constructor(initialX, initialY, canvasRef, starConfig) {
     this.context = canvasRef.getContext("2d")
