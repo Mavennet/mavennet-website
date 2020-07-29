@@ -42,7 +42,7 @@ const ContactUsForm = ({ onSubmit }) => {
   })
 
   return (
-    <S.ContactUsForm onSubmit={handleSubmit} name="contact-us">
+    <S.ContactUsForm onSubmit={handleSubmit}>
       <S.Row>
         <S.InputContainer column>
           <TextFieldFormik
