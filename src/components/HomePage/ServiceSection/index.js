@@ -10,14 +10,14 @@ import * as S from "./styles"
 const ServiceSection = ({ title, description, ctaText, steps }) => {
   const getItems = itemObj => {
     return itemObj.map((item, index) => (
-      <>
-        <S.ListItem key={item.item.title}>
+      <React.Fragment key={item.item.title}>
+        <S.ListItem>
           <StepItem {...item.item} />
         </S.ListItem>
         {index < itemObj.length - 1 && (
           <S.Arrow src={arrow} alt="Curved arrow" reverse={index % 2 === 0} />
         )}
-      </>
+      </React.Fragment>
     ))
   }
   return (

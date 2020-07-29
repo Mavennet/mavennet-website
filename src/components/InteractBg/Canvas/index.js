@@ -72,8 +72,12 @@ const Canvas = () => {
     initTextStars()
   }, [])
 
+  const startAnimation = () => {
+    loop()
+    window.requestAnimationFrame(startAnimation)
+  }
+
   useEffect(() => {
-    console.log("useEffect3")
     if (typeof window === "undefined") return
     window.requestAnimationFrame =
       window.webkitRequestAnimationFrame ||
@@ -132,11 +136,6 @@ const Canvas = () => {
         navigate(star.to)
       }
     })
-  }
-
-  const startAnimation = () => {
-    loop()
-    window.requestAnimationFrame(startAnimation)
   }
 
   const update = () => {
