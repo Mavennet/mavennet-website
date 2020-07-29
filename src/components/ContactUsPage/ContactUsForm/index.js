@@ -42,11 +42,7 @@ const ContactUsForm = ({ onSubmit }) => {
   })
 
   return (
-    <S.ContactUsForm
-      onSubmit={handleSubmit}
-      name="contact-us"
-      data-netlify={true}
-    >
+    <S.ContactUsForm onSubmit={handleSubmit} name="contact-us">
       <S.Row>
         <S.InputContainer column>
           <TextFieldFormik
