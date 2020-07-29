@@ -1,5 +1,7 @@
 import React from "react"
 
+import { callContactUs } from "../../../services/contact-us"
+
 import Swal from "sweetalert2"
 
 import ContactUsForm from "../ContactUsForm"
@@ -7,17 +9,8 @@ import ContactUsForm from "../ContactUsForm"
 import * as S from "./styles"
 
 const FormSection = () => {
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
-  }
   const onSubmit = (values, actions) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact-us", ...values }),
-    })
+    callContactUs(values)
       .then(() => {
         Swal.fire({
           icon: "success",
