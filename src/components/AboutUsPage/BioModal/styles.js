@@ -71,7 +71,7 @@ export const Name = styled.h3`
 
 export const Position = styled.h4`
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 34px;
 
