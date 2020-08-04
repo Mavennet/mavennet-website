@@ -16,12 +16,13 @@ export const Footer = styled.footer`
     position: absolute;
     width: 85%;
     top: 0;
-    right: 5%;
+    right: 7.5%;
     height: 0.5px;
     background-color: var(--c-s-rum);
 
     @media ${device.laptop} {
       width: 83%;
+      right: 8.5%;
     }
   }
 
