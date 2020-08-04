@@ -14,7 +14,7 @@ const FormSection = () => {
       .then(() => {
         Swal.fire({
           icon: "success",
-          title: "We have received your contact!",
+          title: "We've received your message!",
           text: "One of the members of our team will contact you soon!",
           confirmButtonColor: "#964beb",
         })
