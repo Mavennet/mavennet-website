@@ -31,6 +31,7 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
   }
 
   const getAnnouncementsList = announcementsList => {
+    const maxCharatersTitle = 60
     if (announcementsList.length === 0) return null
 
     const [firstNewsNode, ...otherNewsNodes] = announcementsList
@@ -74,7 +75,7 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
                     <S.Image src={news.image} />
                   </S.Header>
                   <S.Content>
-                    <S.CardTitle>{news.title}</S.CardTitle>
+                    <S.CardTitle>{news.title.slice(0, maxCharatersTitle)}{news.title.length > maxCharatersTitle && '...'}</S.CardTitle>
                     <S.CardDate>
                       {utcStringToFullMonthDate(news.date)}
                     </S.CardDate>
