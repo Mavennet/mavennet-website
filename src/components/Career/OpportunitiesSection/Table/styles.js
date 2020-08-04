@@ -78,6 +78,15 @@ export const Cell = styled.td`
   }
 `
 
+export const NoOpportunitiesText = styled.p`
+  font-size: 1rem;
+  line-height: 27px;
+  text-align: center;
+  background-color: var(--c-p-selago-dark);
+
+  padding: 1em 1.875em;
+`
+
 export const CTA = styled(TextArrowCTA)`
   margin: 0 0 0 auto;
 `

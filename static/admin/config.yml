@@ -508,6 +508,7 @@ collections:
             collapsed: true
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "No Opportunities Section", name: "noOpportunitiesText", widget: "string" }
               - label: "Opportunities List"
                 name: "opportunitiesList"
                 widget: "list"

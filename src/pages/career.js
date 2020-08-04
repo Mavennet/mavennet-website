@@ -96,6 +96,7 @@ export const query = graphql`
       }
       careerOppotunitySection {
         title
+        noOpportunitiesText
         opportunitiesList {
           item {
             date

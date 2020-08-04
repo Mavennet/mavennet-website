@@ -4,7 +4,7 @@ import Table from "./Table"
 
 import * as S from "./styles"
 
-const OpportunitiesSection = ({ title, opportunitiesList }, ref) => {
+const OpportunitiesSection = ({ title, opportunitiesList, noOpportunitiesText }, ref) => {
   return (
     <S.OpportunitiesSection ref={ref}>
       <S.SectionContainer>
@@ -13,6 +13,7 @@ const OpportunitiesSection = ({ title, opportunitiesList }, ref) => {
           <Table
             head={["Job Title", "Location", "Date"]}
             body={opportunitiesList}
+            noOpportunitiesText={noOpportunitiesText}
           />
         </S.TableWrapper>
       </S.SectionContainer>

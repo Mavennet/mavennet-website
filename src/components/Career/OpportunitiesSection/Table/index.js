@@ -4,7 +4,7 @@ import { utcStringToFullMonthDate } from "../../../../helpers/dateManipulation"
 
 import * as S from "./styles"
 
-const Table = ({ head, body }) => {
+const Table = ({ head, body, noOpportunitiesText }) => {
   const getTableHead = headItems => (
     <S.Head>
       <S.Row>
@@ -35,7 +35,10 @@ const Table = ({ head, body }) => {
   return (
     <S.Table>
       {getTableHead(head)}
-      {getTableBody(body)}
+      {body.length > 0 ? 
+        getTableBody(body)
+        : <S.NoOpportunitiesText>{noOpportunitiesText}</S.NoOpportunitiesText>
+      }
     </S.Table>
   )
 }

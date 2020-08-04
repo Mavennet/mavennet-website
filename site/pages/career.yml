@@ -79,6 +79,7 @@ careerDaySection:
         image: /assets/daniel-photo.jpeg
 careerOppotunitySection:
   title: Work With Us
+  noOpportunitiesText: Currently we don’t have open positions yet.
   opportunitiesList:
     - item:
         date: 2020-08-17T15:01:15.901Z
