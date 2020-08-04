@@ -24,7 +24,7 @@ const NewsSection = ({ title, ctaText, news }) => {
         <S.Title>{title}</S.Title>
         {getNewsList(news)}
         <S.CTAContainer>
-          <S.CTA text={ctaText} to="/newsroom" />
+          <S.CTA text={ctaText} to="/news" />
         </S.CTAContainer>
       </Container>
     </S.NewsSection>

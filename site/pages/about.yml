@@ -53,4 +53,4 @@ aboutLearnSection:
     - item:
         ctaText: Newsroom
         description: Stay up to date with Mavennet News
-        link: /newsroom
+        link: /news
