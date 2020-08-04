@@ -6,7 +6,8 @@ subtitle: "We have developed a constellation of solutions across three layers:
   of the future."
 solutions:
   - title: Digitalizing the Barrel of Oil
-    description: Universal end to end view of the Oil value chain, from the wellhead to the refinery.
+    description: Universal end to end view of the Oil value chain, from the wellhead
+      to the refinery.
     image: /assets/neoflow-mockup.png
     ctaImage: /assets/neoflow_logo.png
     slug: solutions/neoflow
@@ -19,12 +20,15 @@ solutions:
     sectionType: regular
   - title: First Institutional Canadian Dollar Stablecoin
     sectionType: regular
-    image: /assets/qcad.png
+    image: /assets/qcad-mockup-copy.png
     ctaImage: /assets/group-4.png
     slug: solutions/qcad
-    description: A financial rail to facilitate instant payments in Canadian dollars by using smart contracts.
+    description: A financial rail to facilitate instant payments in Canadian dollars
+      by using smart contracts.
   - title: Trust-as-a-Service
-    description: Build your own applications or extend existing ones with the Mavenstamp API, securing your data with immutable timestamps and tamper detection.
+    description: Build your own applications or extend existing ones with the
+      Mavenstamp API, securing your data with immutable timestamps and tamper
+      detection.
     image: /assets/mavenstamp-mockup.png
     ctaImage: /assets/group-9.png
     slug: solutions/mavenstamp
