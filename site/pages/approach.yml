@@ -13,10 +13,6 @@ approachStepsSection:
         - • Business Case definition
         - • Tokenomics and token launch
         - • Decentralized Identity Management
-      cta:
-        ctaText: Talk To Us
-        ctaType: solutionsCta
-        to: "/contact-us"
       description:
         It’s not just about doing things right, it’s about doing the right
         things. We have many years of experience helping organizations
@@ -31,10 +27,6 @@ approachStepsSection:
         - "• Conceptual Prototype"
         - "• Branding Development"
         - "• Usability Testing"
-      cta:
-        ctaText: View Our Solutions
-        ctaType: solutionsCta
-        to: "/solutions"
       description:
         We focus on early validation through design. A clickable concept is
         a worth a million words. It is a lot easier to react to something than
@@ -47,10 +39,6 @@ approachStepsSection:
         - "• Focus on Value"
         - "• Go-Live Plan"
         - "• Roadmap to adoption and commercial success"
-      cta:
-        ctaText: View R&D Modules
-        ctaType: solutionsCta
-        to: "/r&d"
       description: "Over the years we have develop accelerators that allow us to
         kickstart and execute complex solutions in a record time. We follow
         agile methodologies, when you are creating a ground-breaking concept not
@@ -58,9 +46,6 @@ approachStepsSection:
   - item:
       title: Support – Major Tom can hear you
       cta:
-        ctaText: Talk to Us to learn more
-        ctaType: solutionsCta
-        to: "/contact-us"
       stepsList:
         - "• Project & Product Management"
         - "• Smart Contract Auditing"

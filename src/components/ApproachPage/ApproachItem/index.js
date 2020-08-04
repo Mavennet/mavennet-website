@@ -14,8 +14,6 @@ const ApproachItem = ({ cta, stepsList, title, description, position }) => {
           </S.Step>
         ))}
       </S.StepsList>
-
-      <S.CTAButton text={cta.ctaText} to={cta.to} reverse />
     </S.ApproachItem>
   )
 }

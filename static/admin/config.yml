@@ -205,18 +205,6 @@ collections:
                   name: "stepsList"
                   widget: "list"
                   field: { label: "List Item", name: "item", widget: "string" }
-                - label: "CTA"
-                  name: "cta"
-                  widget: "object"
-                  fields:
-                    - { label: "CTA Text", name: "ctaText", widget: "string" }
-                    - { label: "CTA To", name: "to", widget: "string" }
-                    - {
-                        label: "CTA Type",
-                        name: "ctaType",
-                        widget: "select",
-                        options: ["solutionsCta", "contactUs"],
-                      }
           - label: "Contact Us Section"
             name: "approachContactUsSection"
             widget: "object"

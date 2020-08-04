@@ -35,11 +35,6 @@ export const query = graphql`
       }
       approachStepsSection {
         item {
-          cta {
-            ctaText
-            ctaType
-            to
-          }
           stepsList
           description
           title
