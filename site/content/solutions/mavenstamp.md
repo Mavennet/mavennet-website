@@ -43,6 +43,7 @@ demoSection:
   title: Stamp it. Protect It. Trust it. Ready to get control of your data?
   image: /assets/ms-mockup.png
   ctaText: Start For Free
+  demoLink: https://www.mavenstamp.com/
   textOnly: false
 testimonialSection:
   - testimony:

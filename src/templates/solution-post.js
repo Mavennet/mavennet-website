@@ -93,6 +93,7 @@ export const query = graphql`
           title
           textOnly
           ctaText
+          demoLink
           image
           backgroundImage
         }

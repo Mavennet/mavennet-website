@@ -2,7 +2,7 @@ import React from "react"
 
 import * as S from "./styles"
 
-const DemoSection = ({ title, textOnly, ctaText, image }) => {
+const DemoSection = ({ title, textOnly, ctaText, image, demoLink }) => {
   const ParentWrapper = ({ children }, textOnly) => {
     if (textOnly) {
       return <S.SectionContainer>{children}</S.SectionContainer>
@@ -17,7 +17,7 @@ const DemoSection = ({ title, textOnly, ctaText, image }) => {
       <S.TextContent textOnly={textOnly}>
         <ParentWrapper textOnly={textOnly}>
           <S.Title imageText={!textOnly}>{title}</S.Title>
-          <S.DemoButton text={ctaText} to="/contact-us" />
+          <S.DemoButton text={ctaText} to="/contact-us" url={demoLink} />
         </ParentWrapper>
       </S.TextContent>
     </S.DemoSection>

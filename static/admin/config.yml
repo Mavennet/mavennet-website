@@ -792,8 +792,8 @@ collections:
               widget: "image",
               required: false,
             }
-
           - { label: "CTA Text", name: "ctaText", widget: "string" }
+          - { label: "Demo Link", name: "demoLink", widget: "string", required: false }
       - label: "Testimonial Section"
         name: "testimonialSection"
         widget: "list"

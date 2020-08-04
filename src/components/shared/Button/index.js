@@ -5,33 +5,37 @@ import Loader from "../Loader"
 
 import * as S from "./styles"
 
-const Button = ({
+
+const ButtonClick = ({
   text,
   reverse,
   outline,
-  to,
   type,
   className,
   width,
   isLoading,
-  onClick,
-}) => {
-  return type ? (
+  onClick }) => (
     <S.Button
       as="button"
+      props
       width={width}
       type={type}
       onClick={onClick}
       reverse={reverse ? 1 : undefined}
       outline={outline ? 1 : undefined}
       className={className}
-      isLoading={isLoading}
-    >
+      isLoading={isLoading}>
       {isLoading ? <Loader /> : text}
     </S.Button>
-  ) : (
-    <S.Button
-      to={to}
+  )
+
+const LinkButton = ({ to, url, width, reverse, outline, className, text }) => {
+  if (url) {
+    return <S.Button
+      as="a"
+      target="_blank"
+      rel="noopener noreferrer"
+      href={url}
       width={width}
       reverse={reverse ? 1 : undefined}
       outline={outline ? 1 : undefined}
@@ -39,7 +43,27 @@ const Button = ({
     >
       {text}
     </S.Button>
-  )
+  }
+  return <S.Button
+    to={to}
+    width={width}
+    reverse={reverse ? 1 : undefined}
+    outline={outline ? 1 : undefined}
+    className={className}
+  >
+    {text}
+  </S.Button>
+
+}
+
+const Button = (props) => {
+  const { type } = props
+
+  if (type) {
+    return <ButtonClick {...props} />
+  }
+
+  return <LinkButton {...props} />
 }
 
 Button.propTypes = {
@@ -47,6 +71,7 @@ Button.propTypes = {
   reverse: PropTypes.bool,
   outline: PropTypes.bool,
   to: PropTypes.string,
+  url: PropTypes.string,
   handleClick: PropTypes.func,
   width: PropTypes.any,
 }
@@ -56,6 +81,7 @@ Button.defaultProps = {
   reverse: false,
   outline: false,
   to: "#",
+  url: "",
   width: "auto",
 }
 
