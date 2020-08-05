@@ -31,11 +31,11 @@ const MainSection = ({ backgroundColor, meta }) => {
               <S.ItemTitle>Project Inquires</S.ItemTitle>
               <S.ItemDescription
                 as="a"
-                href="mailto:project@mavennet.com?subject=Project Inquires"
+                href="mailto:info@mavennet.com?subject=Project Inquires"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                project@mavennet.com
+                info@mavennet.com
               </S.ItemDescription>
             </S.InfoItem>
             <S.InfoItem>
