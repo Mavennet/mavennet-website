@@ -39,6 +39,10 @@ export const Col = styled.div`
     textContent &&
     `
     margin-top: 2em;
+
+    ${Title} {
+      text-align: left;
+    }
   `}
 
   @media ${device.laptop} {
