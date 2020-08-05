@@ -32,12 +32,12 @@ export const Subtitle = styled.h1`
 
   margin-top: 1em;
 
-  max-width: 719px;
+  max-width: 950px;
 
   @media ${device.laptop} {
     font-size: 3rem;
     font-weight: bold;
-    line-height: 58px;
+    line-height: 64px;
     text-align: center;
 
     margin: 0 auto;
