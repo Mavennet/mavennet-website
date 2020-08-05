@@ -16,6 +16,7 @@ const FeatureItems = ({ title, description, image, isEven }) => {
         <S.Title data-aos="fade-up" data-aos-offset="250">
           {title}
         </S.Title>
+        <S.HorizontalUnderline data-aos="fade-up" />
         <S.Description data-aos="fade-up" data-aos-offset="250">
           {description}
         </S.Description>

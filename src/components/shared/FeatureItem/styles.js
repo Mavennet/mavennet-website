@@ -31,29 +31,22 @@ export const Title = styled.h3`
   font-size: 2.125rem;
   font-weight: 600;
   line-height: 41px;
+`
 
-  position: relative;
+export const HorizontalUnderline = styled.hr`
+  display: block;
+  width: 45%;
+  height: 4px;
+  background-color: var(--c-p-royal-purple);
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 45%;
-    height: 6px;
-    top: 110%;
-    background-color: var(--c-p-royal-purple);
-
-    @media ${device.laptop} {
-      top: 130%;
-    }
-  }
+  margin: 21px auto 0 0;
 `
 
 export const Description = styled.p`
   font-size: 1rem;
   line-height: 27px;
 
-  margin-top: 3.125em;
+  margin-top: 1.75em;
 `
 
 export const ImageContainer = styled.div`
