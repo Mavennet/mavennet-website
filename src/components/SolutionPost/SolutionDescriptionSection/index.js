@@ -68,7 +68,7 @@ const SolutionDescriptionSection = ({
         <S.Title isImageOnly={true}>{title}</S.Title>
         <S.Content isBanner={false} isImageOnly={true}>
           <S.ImageContainer isBanner={false} isImageOnly={true}>
-            <S.Image src={image} alt={`${title} image`} />
+            <S.Image src={image} alt={`${title} image`} maxWidth="80%" />
           </S.ImageContainer>
         </S.Content>
       </Container>

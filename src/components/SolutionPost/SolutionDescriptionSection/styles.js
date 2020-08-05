@@ -25,8 +25,8 @@ export const Title = styled.h2`
     text-align: left;
 
     ${({ isImageOnly }) =>
-      isImageOnly &&
-      `
+    isImageOnly &&
+    `
         text-align: center;
     `}
   }
@@ -47,8 +47,8 @@ export const Col = styled.div`
     margin-top: 0;
 
     ${({ imageContent }) =>
-      imageContent &&
-      `
+    imageContent &&
+    `
 
       padding-right: 6em;
       display: flex;
@@ -77,8 +77,8 @@ export const Content = styled.div`
 
   @media ${device.laptop} {
     ${({ isBanner }) =>
-      !isBanner &&
-      `
+    !isBanner &&
+    `
     display: flex;
     justify-content: space-between;
     
@@ -89,16 +89,16 @@ export const Content = styled.div`
 export const ImageContainer = styled.div`
   @media ${device.laptop} {
     ${({ isBanner }) =>
-      !isBanner &&
-      `
+    !isBanner &&
+    `
         width: 100%;
         max-width: 563px;
     
     `}
 
     ${({ isImageOnly }) =>
-      isImageOnly &&
-      `
+    isImageOnly &&
+    `
         width: 100%;
         max-width: 100%;
     `}
@@ -108,6 +108,14 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   width: 100%;
   object-fit: contain;
+
+  @media ${device.laptop} {
+    ${({ maxWidth }) => maxWidth && `
+      display: block;
+      margin: 0 auto;
+      width: ${maxWidth};
+    `}
+  }
 `
 
 export const PointsList = styled.ul`
@@ -118,8 +126,8 @@ export const PointsList = styled.ul`
     width: 100%;
 
     ${({ isBanner }) =>
-      isBanner &&
-      `
+    isBanner &&
+    `
         width: 100%;
         display: flex;
         flex-wrap: wrap;
