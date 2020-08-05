@@ -8,7 +8,7 @@ import SelectInputFormik from "../../shared/SelectInputFormik"
 
 import * as S from "./styles"
 
-const ContactUsForm = ({ onSubmit }) => {
+const ContactUsForm = ({ onSubmit, query }) => {
   const {
     errors,
     touched,
@@ -22,7 +22,7 @@ const ContactUsForm = ({ onSubmit }) => {
       email: "",
       company: "",
       jobTitle: "",
-      clientType: "",
+      clientType: query === 'demo' ? 'Request a Demo' : '',
       message: "",
     },
     validationSchema: Yup.object({

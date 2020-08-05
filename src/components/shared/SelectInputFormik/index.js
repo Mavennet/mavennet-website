@@ -21,15 +21,6 @@ const CssFormControl = withStyles({
     "& .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused.Mui-focused.MuiInputBase-formControl fieldset": {
       borderColor: "#6E37AB",
     },
-    // "&": {
-    //   borderColor: "#6E37AB",
-    // },
-    // "& .MuiInput-underline:after": {
-    // },
-    // "& .MuiOutlinedInput-root": {
-    //   "&.Mui-focused fieldset": {
-    //   },
-    // },
   },
 })(FormControl)
 
@@ -57,6 +48,7 @@ const SelectInputFormik = ({
         <MenuItem value="Career Inquiry">Career Inquiry</MenuItem>
         <MenuItem value="Partnership Inquiry">Partnership Inquiry</MenuItem>
         <MenuItem value="Media Inquiry">Media Inquiry</MenuItem>
+        <MenuItem value="Request a Demo">Request a Demo</MenuItem>
         <MenuItem value="Other Inquires">Other Inquires</MenuItem>
       </Select>
       <FormHelperText>{touched && errors}</FormHelperText>

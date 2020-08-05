@@ -8,7 +8,7 @@ import ContactUsForm from "../ContactUsForm"
 
 import * as S from "./styles"
 
-const FormSection = () => {
+const FormSection = ({ query }) => {
   const onSubmit = (values, actions) => {
     callContactUs(values)
       .then(() => {
@@ -37,7 +37,7 @@ const FormSection = () => {
           Send us your questions or comments and our team will contact you
           shortly.
         </S.ContactUsText>
-        <ContactUsForm onSubmit={onSubmit} />
+        <ContactUsForm onSubmit={onSubmit} query={query} />
       </S.FormSectionContainer>
     </S.FormSection>
   )

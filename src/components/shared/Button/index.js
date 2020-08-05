@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { navigate } from '@reach/router';
 
 import Loader from "../Loader"
 
@@ -29,7 +30,7 @@ const ButtonClick = ({
     </S.Button>
   )
 
-const LinkButton = ({ to, url, width, reverse, outline, className, text }) => {
+const LinkButton = ({ to, url, width, reverse, outline, className, text, params }) => {
   if (url) {
     return <S.Button
       as="a"
@@ -44,15 +45,18 @@ const LinkButton = ({ to, url, width, reverse, outline, className, text }) => {
       {text}
     </S.Button>
   }
+
+  const query = params || ''
   return <S.Button
-    to={to}
+    as="button"
+    onClick={() => navigate(`${to}${query}`)}
     width={width}
     reverse={reverse ? 1 : undefined}
     outline={outline ? 1 : undefined}
     className={className}
   >
     {text}
-  </S.Button>
+  </S.Button >
 
 }
 
