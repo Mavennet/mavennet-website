@@ -33,7 +33,7 @@ export const CircleBg = styled.path`
 
 export const Circle = styled.path`
   fill: none;
-  stroke-width: 2.8;
+  stroke-width: 3.8;
   stroke-linecap: round;
   stroke: var(--c-p-royal-purple);
   animation: ${progress} 2s ease-out forwards;
