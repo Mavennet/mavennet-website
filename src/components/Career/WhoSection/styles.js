@@ -18,7 +18,6 @@ export const Title = styled.h2`
   text-align: center;
 
   @media ${device.laptop} {
-    font-size: 3rem;
     line-height: 58px;
   }
 `
@@ -67,7 +66,7 @@ export const ImageContainer = styled.div`
     height: 200px;
     top: 25%;
     -webkit-transform: ${props =>
-      props.isEven ? "skewY(-8deg)" : "skewY(8deg)"};
+    props.isEven ? "skewY(-8deg)" : "skewY(8deg)"};
     -ms-transform: ${props => (props.isEven ? "skewY(-8deg)" : "skewY(8deg)")};
     transform: ${props => (props.isEven ? "skewY(-8deg)" : "skewY(8deg)")};
     background-color: var(${props => props.color});
@@ -82,11 +81,11 @@ export const ImageContainer = styled.div`
       height: 80%;
       top: 35%;
       ${({ isEven }) =>
-        isEven
-          ? `
+    isEven
+      ? `
         left: 3%;
       `
-          : `
+      : `
 
         left: -6%;
       `};
