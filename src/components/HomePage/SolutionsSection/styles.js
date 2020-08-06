@@ -85,14 +85,14 @@ export const Arrow = styled.div`
     @media ${device.laptop} {
       display: block;
       ${
-        isPrev
-          ? `
+    isPrev
+      ? `
           left: 3% !important;
         `
-          : `
+      : `
           right: 5% !important;
         `
-      }
+    }
     }
   `}
 `
@@ -139,8 +139,8 @@ export const SolutionIcon = styled.li`
 
   &:hover ${IconImage} {
     ${({ active }) =>
-      !active &&
-      `
+    !active &&
+    `
         transform: translate(-1px, 2px);
       `}
   }
@@ -197,6 +197,7 @@ export const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 375px;
   }
 `
 
