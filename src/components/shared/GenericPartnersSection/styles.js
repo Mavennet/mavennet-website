@@ -70,10 +70,9 @@ export const PartnersItem = styled.li`
   margin: 1.625em 1.5%;
 
   @media ${device.tablet} {
-    width: 100%;
+    width: auto;
     max-width: 200px;
-    max-height: 60px;
-    margin: 1.625em 1em 2em;
+    margin: 1.625em 2.5em 2em;
   }
 `
 
