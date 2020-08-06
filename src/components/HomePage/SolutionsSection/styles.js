@@ -208,7 +208,7 @@ export const Image = styled.img`
   margin: 0 auto;
 
   @media ${device.tablet} {
-    max-height: 375px;
+    max-height: 320px;
     max-width: 100%;
     width: auto;
   }
