@@ -57,6 +57,12 @@ demoSection:
   ctaText: Request a Demo
   backgroundImage: /assets/mt-mock-bg.png
   textOnly: false
+testimonialSection:
+  - testimony:
+      author: Cleber Matos 
+      position: --
+      companyLogo: /assets/stablecorp-logo.png
+      message: “ MetalTrail is digitizing trust in the steel value chain. This long-awaited solution will allow the steel industry not only to have complete visibility of the product’s lifecycle, but to prove origin, ownership and carbon footprint. We are excited to witness the immense competitive value that a solution like this can bring to the industry!  ”
 newsSection:
   title: Learn More About Metaltrail
   news:
