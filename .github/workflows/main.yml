@@ -29,7 +29,6 @@ jobs:
         run: npm run build --if-present
         env:
           GATSBY_MAILER_URL: ${{ secrets.GATSBY_MAILER_URL }}
-          MAILER_URL: ${{ secrets.GATSBY_MAILER_URL }}
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
         with:
