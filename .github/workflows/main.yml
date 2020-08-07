@@ -27,6 +27,9 @@ jobs:
         run: npm install
       - name: Develop build
         run: npm run build --if-present
+        env:
+          GATSBY_MAILER_URL: ${{ secrets.GATSBY_MAILER_URL }}
+          MAILER_URL: ${{ secrets.GATSBY_MAILER_URL }}
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
         with:
@@ -36,6 +39,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
-          GATSBY_MAILER_URL: ${{ secrets.GATSBY_MAILER_URL }}
-          MAILER_URL: ${{ secrets.GATSBY_MAILER_URL }}
           SOURCE_DIR: "public"
