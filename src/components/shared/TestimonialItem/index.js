@@ -9,9 +9,9 @@ const TestimonialItem = ({ author, position, message, companyLogo }) => {
       <S.ContactInfo>
         <S.PersonInfo>
           <S.Name>{author}</S.Name>
-          <S.Position>{position}</S.Position>
+          {position && <S.Position>{position}</S.Position>}
         </S.PersonInfo>
-        <S.CompanyImage src={companyLogo} alt={`${author} company`} />
+        {companyLogo && <S.CompanyImage src={companyLogo} alt={`${author} company`} />}
       </S.ContactInfo>
     </S.TestimonialItem>
   )

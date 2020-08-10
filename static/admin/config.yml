@@ -805,8 +805,8 @@ collections:
           widget: "object"
           fields:
             - { label: "Author", name: "author", widget: "string" }
-            - { label: "Position", name: "position", widget: "string" }
-            - { label: "Company Logo", name: "companyLogo", widget: "image" }
+            - { label: "Position", name: "position", widget: "string", required: false }
+            - { label: "Company Logo", name: "companyLogo", widget: "image", required: false }
             - { label: "Message", name: "message", widget: "text" }
       - label: "News Section"
         name: "newsSection"

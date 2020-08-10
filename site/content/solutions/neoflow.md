@@ -67,8 +67,6 @@ demoSection:
 testimonialSection:
   - testimony:
       author: Geoffrey Cann
-      position: --
-      companyLogo: /assets/stablecorp-logo.png
       message: “ The global oil and gas sector has an urgent need for digital transformation and interconnectedness. Mavennet is making big strides in digitizing energy, by connecting the entire value chain through an unparalleled solution that provides history that can be trusted, from the well to the pump. Neoflow is a fundamental step in transitioning towards a more responsive, collaborative and secure oil and gas industry. ”
 newsSection:
   title: Learn More About Neoflow
