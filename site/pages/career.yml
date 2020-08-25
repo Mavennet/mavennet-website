@@ -82,6 +82,11 @@ careerOppotunitySection:
   noOpportunitiesText: Currently we don’t have open positions yet.
   opportunitiesList:
     - item:
+        date: 2020-08-25T21:55:29.243Z
+        link: https://ca.indeed.com/job/business-technology-analyst-fall-internship-a41964020aa43ad6
+        title: Business Technology Analyst - Fall Internship
+        location: Toronto, ON
+    - item:
         date: 2020-08-17T15:01:15.901Z
         title: Senior Full Stack Developer
         location: Toronto, Canada
@@ -94,7 +99,7 @@ careerOppotunitySection:
     - item:
         date: 2020-08-10T04:00:00.000Z
         title: UX / UI Designer
-        location: Toronto
+        location: Toronto, ON
         link: https://ca.indeed.com/job/uxui-designer-acf0334901820a0c
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
