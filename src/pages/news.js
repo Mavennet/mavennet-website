@@ -21,7 +21,7 @@ const NewsPage = ({ data, location }) => {
 
   useEffect(() => {
     setFeaturedNews({
-      title: "Mavenet was selected a finalist for the Industry Solutions Award",
+      title: "Mavennet was selected a finalist for the Industry Solutions Award",
       data: "2020-05-29T17:32:01.703Z",
       image: newsRoomImage,
       link: "https://blockchainrevolutionglobal.com/the-eb-awards/",

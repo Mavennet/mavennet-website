@@ -124,7 +124,7 @@ export const TimelineContent = {
         },
       },
       {
-        title: "March 2019 – Mavenet partners with 3iQ",
+        title: "March 2019 – Mavennet partners with 3iQ",
         logo: ["3iq-logo.svg"],
         glyph: "3iq-logo.svg",
         alt: "3iQ Logo",
