@@ -58,7 +58,9 @@ export const AnnouncementCard = styled.a`
       `
       display: flex;
 
-
+      ${Image} {
+        object-fit: contain;
+      }
       ${Header},
       ${Content} {
         width: 50%;
