@@ -45,7 +45,7 @@ const NewsPage = ({ data, location }) => {
   return (
     <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
-      <MainSection {...newsRoomMainSection} featuredNews={featuredNews} />
+      <MainSection {...newsRoomMainSection} featuredNews={news.edges[0]} />
       <AnnouncementsSection
         announcements={news.edges}
         // {...newsRoomAnnouncementSection}

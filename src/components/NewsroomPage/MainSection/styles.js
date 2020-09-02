@@ -12,7 +12,7 @@ export const MainSection = styled(GenericMainSection)`
   padding: 7.25em 0 9.25em;
 
   @media ${device.laptop} {
-    padding: 9.25em 0 2.25em;
+    padding: 9.25em 0 9.25em;
   }
 `
 
@@ -78,15 +78,16 @@ export const CTA = styled(TextArrowCTA)`
 
 export const ImageWrapper = styled.div`
   z-index: 4;
+  display: flex;
+  align-items: center;
+
 
   @media ${device.laptop} {
-    margin-top: 4em;
     margin-right: -3em;
   }
 
   @media ${device.desktop} {
     width: 50%;
-    margin-top: 2em;
   }
 `
 
