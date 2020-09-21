@@ -87,20 +87,15 @@ careerOppotunitySection:
         title: Business Technology Analyst - Fall Internship
         location: Toronto, ON
     - item:
-        date: 2020-08-17T15:01:15.901Z
+        date: 2020-09-30T15:01:15.901Z
         title: Senior Full Stack Developer
         location: Toronto, Canada
         link: https://ca.indeed.com/job/senior-full-stack-developer-473f4bb59e0ae598
     - item:
-        date: 2020-08-17T15:01:31.457Z
+        date: 2020-09-30T15:01:31.457Z
         title: Senior Product Owner
         location: Toronto, Canada
-        link: https://ca.indeed.com/job/senior-product-owner-f91dcc3af0786de6
-    - item:
-        date: 2020-08-10T04:00:00.000Z
-        title: UX / UI Designer
-        location: Toronto, ON
-        link: https://ca.indeed.com/job/uxui-designer-acf0334901820a0c
+        link: https://ca.indeed.com/job/senior-product-owner-tracking-and-logistics-f91dcc3af0786de6?from=iaBackPress
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
   content: Send your resume to talent@mavennet.com with the type of role you'd
