@@ -292,10 +292,10 @@ export const TimelineContent = {
         logo: ["neoflow-logo.svg", "metaltrail-logo.svg"],
         glyph: "metaltrail-logo.svg",
         alt: "Metaltrail Logo",
-        relevance: RELEVANCE.MEDIUM,
+        relevance: RELEVANCE.LOW,
         bubbleStyle: BUBBLE_STYLE.LIGHT_PINK,
         position: {
-          top: "138px",
+          top: "132px",
           right: "115px",
         },
       },
@@ -305,11 +305,23 @@ export const TimelineContent = {
         glyph: "neoflow-logo.svg",
         alt: "Neoflow Logo",
         hiddenList: true,
+        relevance: RELEVANCE.HIGH,
+        bubbleStyle: BUBBLE_STYLE.DARK_PINK,
+        position: {
+          top: "155px",
+          right: "137px",
+        },
+      },
+      {
+        title: "Mavennet was selected as technical lead of the global ITEA 3 I-DELTA consortium, poised to revolutionize industrial applications of distributed ledger technologies",
+        logo: ["i-delta_logo_full.svg"],
+        glyph: "i-delta_logo_single.svg",
+        alt: "I-DELTA logo",
         relevance: RELEVANCE.MEDIUM,
         bubbleStyle: BUBBLE_STYLE.LIGHT_PINK,
         position: {
-          top: "170px",
-          right: "165px",
+          top: "187px",
+          right: "200px",
         },
       },
       {
