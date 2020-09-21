@@ -1,13 +1,16 @@
 ---
 order: 3
-name: Yayi Liu
+name: Simon Leung
 title: UX/UI Designer
-bio: "Yayi Liu, Lead UX/UI Designer, specializes in both Human-Computer
-  Interaction (HCI) and User Experience Design to innovate and develop digital
-  products. She has an excellent working knowledge in UX Research,Wireframing,
-  UI Design and Usability Testing. Yayi is a user-centered, solution-focused
-  problem-solver who combines hands-on technical and creative skills. Yayi holds
-  a bachelor’s degree in Engineering and a Master’s degree in Architecture.  "
-linkedin: yayi-liu
-image: /assets/yayi-photo.png
+bio: Simon is a UX/UI designer who values highly in connecting people closer to
+  products or services seamlessly with validated research, data-driven, and
+  iterative design solutions. At every stage of the design process, he enforced
+  best Ux practices, web accessibility standards, and consistent design
+  patterns. UX Design is always designing for humans in mind and never just for
+  pure aesthetics.  Problems should be seen as opportunities to improve and
+  iterate on better solutions. Creating great product is also a team sport, so
+  he values highly in collaborating with team members and stakeholders to
+  achieve alignment.
+linkedin: simon-ch-leung
+image: /assets/simon-purple-circle-bg.png
 ---
