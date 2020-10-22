@@ -337,6 +337,19 @@ export const TimelineContent = {
         },
       },
       {
+        title:
+          "Mavennet is awarded a contract with the US Department of Homeland Security",
+        logo: ["dhs-logo.svg"],
+        glyph: "dhs-logo.svg",
+        alt: "DHS Logo",
+        relevance: RELEVANCE.HIGH,
+        bubbleStyle: BUBBLE_STYLE.DARK_PINK,
+        position: {
+          top: "144px",
+          right: "277px",
+        },
+      },
+      {
         title: "More and more is happening!",
         logo: ["mavennet-logo.svg"],
         glyph: "mavennet-logo.svg",
