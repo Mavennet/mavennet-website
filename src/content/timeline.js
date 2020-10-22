@@ -338,10 +338,37 @@ export const TimelineContent = {
       },
       {
         title:
-          "Mavennet is awarded a contract with the US Department of Homeland Security",
+          "CEO of Mavennet, Patrick Mandic, receives Immigrant of the Year in the Canadian Supply Chain",
+        logo: ["supplychain-canada-logo.png"],
+        glyph: "supplychain-canada-logo.png",
+        alt: "Supplychain Canada Logo",
+        relevance: RELEVANCE.HIGH,
+        bubbleStyle: BUBBLE_STYLE.DARK_PINK,
+        position: {
+          top: "144px",
+          right: "277px",
+        },
+      },
+      {
+        title:
+          "DHS Awards $86K for Cross-Border Gas Import Tracking to Mavennet",
         logo: ["dhs-logo.svg"],
         glyph: "dhs-logo.svg",
         alt: "DHS Logo",
+        relevance: RELEVANCE.HIGH,
+        bubbleStyle: BUBBLE_STYLE.DARK_PINK,
+        position: {
+          top: "144px",
+          right: "277px",
+        },
+      },
+      {
+        title:
+          "DHS S&T Silicon Valley Innovation Program Makes New Phase 1 Awards to a Global Cohort of Five Blockchain Companies",
+        logo: ["dhs-logo.svg"],
+        glyph: "dhs-logo.svg",
+        alt: "DHS Logo",
+        hiddenBubble: true,
         relevance: RELEVANCE.HIGH,
         bubbleStyle: BUBBLE_STYLE.DARK_PINK,
         position: {
