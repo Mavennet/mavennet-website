@@ -25,7 +25,7 @@ firstSection:
     image: /assets/qcad-graphic.png
 featuredSection:
   featureType: imageOnly
-  image: /assets/digital-asset-kit-graphic.svg
+  image: /assets/digital-asset-kit-graphic-1.png
   title: Digital Asset Kit powered by Mavennet
 featuresSection:
   title: Key Features
@@ -55,8 +55,8 @@ testimonialSection:
       author: Roberto Durscki
       position: COO
       companyLogo: /assets/stablecorp-logo.png
-      message: “ Stablecorp is bringing to market digital assets that are dependable and
-        can power a fully digital financial ecosystem. Mavennet provided
+      message: “ Stablecorp is bringing to market digital assets that are dependable
+        and can power a fully digital financial ecosystem. Mavennet provided
         essential technical leadership and expertise to launch QCAD, an asset
         that is secure, transparent, scalable and easy to integrate to
         exchanges, wallets, custodians and beyond. We deeply enjoy working with
