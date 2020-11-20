@@ -3,6 +3,7 @@ backend:
   repo: Mavennet/mavennet-website
   branch: develop
 
+
 media_folder: static/assets
 public_folder: /assets
 

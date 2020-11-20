@@ -109,8 +109,13 @@ homeNewsSection:
   ctaText: View All News
   news:
     - item:
+        title: Mavennet BRIDGING DIGITAL ISLANDS IN THE OIL&GAS INDUSTRY, Blockchain
+          Revolution Global (BRG) 2020
+        image: /assets/maxresdefault.jpg
+        link: https://www.youtube.com/watch?v=3C48t9QJHGU&feature=youtu.be
+    - item:
         link: https://www.dhs.gov/science-and-technology/news/2020/10/09/news-release-dhs-awards-86k-cross-border-gas-import-tracking
-        title: "DHS Awards $86K for Cross-Border Gas Import Tracking to Mavennet"
+        title: DHS Awards $86K for Cross-Border Gas Import Tracking to Mavennet
         image: /assets/homeland-news.jpeg
     - item:
         title: Canada Forges $130,000 Development Deal for Steel-Tracking Blockchain
