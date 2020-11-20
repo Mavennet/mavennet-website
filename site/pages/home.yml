@@ -105,7 +105,7 @@ homePartnersSection:
         image: /assets/screen-shot-2020-05-14-at-11.00.21.png
         link: google.com.br
 homeNewsSection:
-  title: Mavennet In The News
+  title: Mavennet In The News & Media
   ctaText: View All News
   news:
     - item:

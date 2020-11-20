@@ -44,7 +44,7 @@ export const getHeaderItems = items => {
       children: [],
     },
     news: {
-      name: "News",
+      name: "News & Media",
       to: "/news",
       children: [],
     },
