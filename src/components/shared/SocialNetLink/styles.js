@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const SocialNetLink = styled.a`
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: var(--c-p-medium-purple);
 
