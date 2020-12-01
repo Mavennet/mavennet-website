@@ -17,17 +17,6 @@ const NewsPage = ({ data, location }) => {
   const { news } = data
   const { meta, newsRoomMainSection } = post
 
-  const [featuredNews, setFeaturedNews] = useState({})
-
-  useEffect(() => {
-    setFeaturedNews({
-      title: "Mavennet was selected a finalist for the Industry Solutions Award",
-      data: "2020-05-29T17:32:01.703Z",
-      image: newsRoomImage,
-      link: "https://blockchainrevolutionglobal.com/the-eb-awards/",
-    })
-  }, [])
-
   useEffect(() => {
     if (typeof window === "undefined") return
 
@@ -58,7 +47,7 @@ export default NewsPage
 
 export const query = graphql`
   query {
-    pagesYaml(meta: { title: { eq: "News" } }) {
+    pagesYaml(meta: { title: { eq: "News & Media" } }) {
       id
       meta {
         title
