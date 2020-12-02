@@ -2,7 +2,7 @@ meta:
   title: Home
 title: Home
 homeMainSection:
-  slogan: A New World of Digital Trust
+  slogan: A World of Digital Trust
   ctaText: Our Solutions
   subtitle: We are a tech product company that is not afraid of moonshots. We
     catapult enterprises to digital spaces no one has reached before.
@@ -105,7 +105,7 @@ homePartnersSection:
         image: /assets/screen-shot-2020-05-14-at-11.00.21.png
         link: google.com.br
 homeNewsSection:
-  title: Mavennet In The News & Media
+  title: News & Media
   ctaText: View All News
   news:
     - item:
