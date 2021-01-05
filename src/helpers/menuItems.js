@@ -49,7 +49,7 @@ export const getHeaderItems = items => {
       children: [],
     },
     career: {
-      name: "Career",
+      name: "Careers",
       to: "/career",
       children: [],
     },
