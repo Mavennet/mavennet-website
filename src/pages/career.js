@@ -75,7 +75,7 @@ export default CareerPage
 
 export const query = graphql`
   query {
-    pagesYaml(meta: { title: { eq: "Career" } }) {
+    pagesYaml(meta: { title: { eq: "Careers" } }) {
       id
       meta {
         title
