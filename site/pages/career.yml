@@ -49,13 +49,15 @@ careerDaySection:
   title: A Day of A Maven
   testimonialsList:
     - item:
-        name: Yayi Liu
-        position: UX/UI Designer
-        testimony: At Mavennet every day is a magical adventure. I work on solving
-          challenging and interesting problems in different areas, turn creative
-          concepts into a delightful user experience. Also, the ownership
-          culture and the collaborative team make it a fun place to work!
-        image: /assets/yayi.png
+        name: Ana Gabriel Lobo
+        testimony: For me, it’s important to be part of a purpose-driven organization
+          that is not afraid of tackling wicked problems. I love working
+          alongside an ambitious group of people who genuinely care about
+          creating impact and exponentially changing the way business is done.
+          Mavennet is a place where I can learn by doing, grow, and develop my
+          skills while helping shape industries.
+        position: Strategy & Operations Manager
+        image: /assets/1557283316889.jpeg
     - item:
         name: Vaishnavi Panchal
         position: Core Engineer
@@ -68,15 +70,18 @@ careerDaySection:
           balance.
         image: /assets/vaishnavi.jpg
     - item:
-        name: Daniel Pye
-        testimony: It was an honour and a pleasure to be part of the Mavennet team.
-          Throughout my time as a project manager, I was able to learn from and
-          contribute to many of the diverse company operations and active
-          projects. Among others, the friendly community you are part of and the
-          responsibility you are given in your work is what makes each day at
-          Mavennet unique and exciting.
-        position: Product Manager
-        image: /assets/daniel-photo.jpeg
+        name: Minakshi Talukdar
+        position: Senior Product Owner
+        testimony: It is an exceptional opportunity to be part of this enthusiastic
+          organization. The rewarding aspect is that each day comes with an
+          opportunity to access interesting & analytical problems. As the Senior
+          Product Owner in Mavennet, I completely enjoy to manage the large
+          spectrum of the Product Management starting from Ideation to
+          implementation. The entire team is very collaborative which builds an
+          amazing work environment. With our vision to establish the concept of
+          Digital Asset with Blockchain, gives an excellent opportunity to learn
+          the latest technologies.
+        image: /assets/minakshi-headshot.png
 careerOppotunitySection:
   title: Work With Us
   noOpportunitiesText: Currently we don’t have open positions yet.
