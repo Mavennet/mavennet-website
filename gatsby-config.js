@@ -4,7 +4,7 @@ module.exports = {
     description: `Mavennet Website`,
     author: `@Mavennet`,
     siteUrl: `https://www.mavennet.com`,
-    companyName: `Mavennet System Inc`,
+    companyName: `Mavennet Systems Inc`,
     // siteVerification: {
     //   google: ...,
     //   bing: ...
