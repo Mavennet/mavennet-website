@@ -49,8 +49,8 @@ const IndexPage = ({ data, location }) => {
       <SolutionsSection {...homeSolutionsSection} />
       <ServiceSection {...homeServiceSection} />
       <RAndDSection {...homeRandDSection} />
-      <PartnersSection {...homePartnersSection} partners={partnersData} />
       <AwardsSection title="Awards and Recognition" />
+      <PartnersSection {...homePartnersSection} partners={partnersData} />
       <SloganSection {...homeMainSection} />
     </Layout>
   )

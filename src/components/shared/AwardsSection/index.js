@@ -24,7 +24,7 @@ const AwardsSection = ({ title }) => {
 
   return (
     <S.AwardsSection data-aos="fade-up">
-      <Container center>
+      <Container>
         <S.Title>{title}</S.Title>
         <S.AwardsList>{getAwardsItems(awardsData)}</S.AwardsList>
       </Container>
