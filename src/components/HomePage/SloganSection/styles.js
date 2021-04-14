@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Section = styled.section`
   text-align: center;
 
-  padding: 5em 0;
+  padding: 5em 0 80px 0;
 `
 
 export const Slogan = styled.h1`
