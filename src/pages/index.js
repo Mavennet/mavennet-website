@@ -40,13 +40,12 @@ const IndexPage = ({ data, location }) => {
     homeMainSection,
     homeServiceSection,
     homeSolutionsSection,
-    homeNewsSection,
     homePartnersSection,
     homeRandDSection,
   } = post
 
   return (
-    <Layout fillFooter="#F9F5FE">
+    <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection {...homeMainSection} />
       <SolutionsSection {...homeSolutionsSection} />
@@ -54,7 +53,6 @@ const IndexPage = ({ data, location }) => {
       <RAndDSection {...homeRandDSection} />
       <PartnersSection {...homePartnersSection} partners={partnersData} />
       <AwardsSection title="Awards and Recognition" />
-      <NewsSection {...homeNewsSection} />
     </Layout>
   )
 }
