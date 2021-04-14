@@ -7,13 +7,12 @@ import "aos/dist/aos.css"
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
 
-import MainSection from "../components/HomePage/MainSection/MainSection"
 import ServiceSection from "../components/HomePage/ServiceSection"
 import SolutionsSection from "../components/HomePage/SolutionsSection"
 import PartnersSection from "../components/shared/GenericPartnersSection"
 import AwardsSection from "../components/shared/AwardsSection"
-import NewsSection from "../components/HomePage/NewsSection"
 import RAndDSection from "../components/HomePage/RAndDSection"
+import SloganSection from "../components/HomePage/SloganSection/SloganSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
 
@@ -47,12 +46,12 @@ const IndexPage = ({ data, location }) => {
   return (
     <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
-      <MainSection {...homeMainSection} />
       <SolutionsSection {...homeSolutionsSection} />
       <ServiceSection {...homeServiceSection} />
       <RAndDSection {...homeRandDSection} />
       <PartnersSection {...homePartnersSection} partners={partnersData} />
       <AwardsSection title="Awards and Recognition" />
+      <SloganSection {...homeMainSection} />
     </Layout>
   )
 }

@@ -26,6 +26,7 @@ const colors = css`
     --c-s-portage: #a18df1;
     --c-s-8870eb-dark: #8870eb;
     --c-s-royal-blue: #6c4ee4;
+    --c-s-purple: #332340;
 
     --c-a-california: #ff9d05;
     --c-a-mustard: #ffdc58;
