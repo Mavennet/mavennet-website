@@ -22,8 +22,8 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: string }
-          - label: "Main Section"
-            name: "homeMainSection"
+          - label: "Slogan Section"
+            name: "homeSloganSection"
             widget: "object"
             collapsed: true
             fields:

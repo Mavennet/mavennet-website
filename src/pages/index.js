@@ -48,7 +48,7 @@ const IndexPage = ({ data, location }) => {
 
   const {
     meta,
-    homeMainSection,
+    homeSloganSection,
     homeServiceSection,
     homeSolutionsSection,
     homePartnersSection,
@@ -65,7 +65,7 @@ const IndexPage = ({ data, location }) => {
       <RAndDSection {...homeRandDSection} />
       <AwardsSection title="Awards and Recognition" />
       <PartnersSection {...homePartnersSection} partners={partnersData} />
-      <SloganSection {...homeMainSection} />
+      <SloganSection {...homeSloganSection} />
     </Layout>
   )
 }
@@ -79,7 +79,7 @@ export const query = graphql`
       meta {
         title
       }
-      homeMainSection {
+      homeSloganSection {
         ctaText
         slogan
         subtitle
