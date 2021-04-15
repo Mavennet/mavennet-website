@@ -48,6 +48,7 @@ export const CarrouselItem = styled.div`
   background-size: cover;
 
   min-height: 100vh;
+  height: 100%;
   box-sizing: border-box;
 
   padding: 100px 0;

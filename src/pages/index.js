@@ -48,6 +48,7 @@ const IndexPage = ({ data, location }) => {
 
   const {
     meta,
+    homeMainSection,
     homeSloganSection,
     homeServiceSection,
     homeSolutionsSection,
@@ -59,6 +60,7 @@ const IndexPage = ({ data, location }) => {
     <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
       <MainSection 
+        {...homeMainSection}
         handleScrollToServiceSection={() => executeScroll(solutionsSectionRef)}/>
       <SolutionsSection {...homeSolutionsSection} ref={solutionsSectionRef}/>
       <ServiceSection {...homeServiceSection} />
@@ -78,6 +80,15 @@ export const query = graphql`
       title
       meta {
         title
+      }
+      homeMainSection {
+        highlights {
+          item {
+            title
+            highlightBackgroundImage
+            highlightImages 
+          }
+        }
       }
       homeSloganSection {
         ctaText

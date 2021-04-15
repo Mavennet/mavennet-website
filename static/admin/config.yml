@@ -22,7 +22,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: string }
-          - label: "Test Section"
+          - label: "Highlights Section"
             name: "testSection"
             widget: "object"
             collapsed: true

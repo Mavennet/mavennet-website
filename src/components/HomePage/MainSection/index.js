@@ -9,7 +9,10 @@ import award2 from '../../../assets/images/award-mock-2.png'
 
 import * as S from './styles'
 
-const MainSection = ({ handleScrollToServiceSection }) => {
+const MainSection = ({ 
+  highlights,
+  handleScrollToServiceSection 
+}) => {
 
   const settings = {
     dots: true,
@@ -18,7 +21,7 @@ const MainSection = ({ handleScrollToServiceSection }) => {
     fade: true,
     autoplay: true,
     arrows: false,
-    adaptativeHeight: false,
+    adaptativeHeight: true,
     autoplaySpeed: 7000,
     activeClassName: "slick-active",
     slidesToShow: 1,
@@ -26,48 +29,35 @@ const MainSection = ({ handleScrollToServiceSection }) => {
   }
 
   const getItems = items => {
-    return items.map(({ title, backgroundImage }) => (
-      <S.CarrouselItem backgroundImage={backgroundImage}>
-        <Container>
-          <S.Content>
-            <S.Title>{title}</S.Title>
-            <S.ImagesList>
-              <S.ImageContainer>
-                <S.Image src={award1} />
-              </S.ImageContainer>
-              <S.ImageContainer>
-                <S.Image src={award2} />
-              </S.ImageContainer>
-            </S.ImagesList>
-          </S.Content>
-        </Container>
-      </S.CarrouselItem>
-    ))
-  }
+    return items.map(({ item }) => {
+      const { highlightBackgroundImage, title, highlightImages} = item
 
-  const teste = [
-    {
-      title: "Mavennet is the winner of Mind to Market 2020 award",
-      backgroundImage: background
-    },
-    {
-      title: "Mavennet is the winner of Mind to Market 2020 award",
-      backgroundImage: background
-    },
-    {
-      title: "Mavennet is the winner of Mind to Market 2020 award",
-      backgroundImage: background
-    },
-    {
-      title: "Mavennet is the winner of Mind to Market 2020 award",
-      backgroundImage: background
-    },
-  ]
+      return (
+        <S.CarrouselItem key={title} backgroundImage={highlightBackgroundImage}>
+          <Container>
+            <S.Content>
+              <S.Title>{title}</S.Title>
+              {highlightImages && (
+                <S.ImagesList>
+                {highlightImages.map((image, index) => (
+                  <S.ImageContainer key={index}>
+                    <S.Image src={image} />
+                  </S.ImageContainer>
+                  ))}
+              </S.ImagesList> 
+              )}
+            </S.Content>
+          </Container>
+        </S.CarrouselItem>
+      )
+    })
+
+  }
 
   return (
     <S.MainSection>
         <S.CustomSlider {...settings}>
-          {getItems(teste)}
+          {getItems(highlights)}
         </S.CustomSlider>
         <S.ScrollAction onClick={handleScrollToServiceSection}>
           <S.ScrollText>scroll down</S.ScrollText>
