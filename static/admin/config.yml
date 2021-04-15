@@ -22,6 +22,27 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: string }
+          - label: "Test Section"
+            name: "testSection"
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Highlights List"
+                name: "highlights"
+                widget: "list"
+                field:
+                  label: "Highlight"
+                  name: "item"
+                  widget: "object"
+                  fields:
+                    - { label: "Highlight Title", name: "title", widget: "string" }
+                    - { label: "Highlight background image", name: "highlightBackgroundImage", widget: "image" }
+                    - label: "Highlight Images"
+                      name: "highlightImages"
+                      widget: "list"
+                      required: false
+                      field: { label: "Highlight Image", name: "highlightImage", widget: "image"}
+
           - label: "Main Section"
             name: "homeMainSection"
             widget: "object"
