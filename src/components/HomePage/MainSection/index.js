@@ -1,5 +1,6 @@
 import React from "react"
 
+
 import Container from '../../base/Container'
 
 import background from '../../../assets/images/award-main.png'
@@ -8,25 +9,66 @@ import award2 from '../../../assets/images/award-mock-2.png'
 
 import * as S from './styles'
 
-const MainSection = ({ 
-  title="Mavennet is the winner of the Mind to Market 2020 award",
-  handleScrollToServiceSection,
-  backgroundImage={background}
-}) => {
+const MainSection = ({ handleScrollToServiceSection }) => {
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    arrows: false,
+    adaptativeHeight: false,
+    autoplaySpeed: 7000,
+    activeClassName: "slick-active",
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
+  const getItems = items => {
+    return items.map(({ title, backgroundImage }) => (
+      <S.CarrouselItem backgroundImage={backgroundImage}>
+        <Container>
+          <S.Content>
+            <S.Title>{title}</S.Title>
+            <S.ImagesList>
+              <S.ImageContainer>
+                <S.Image src={award1} />
+              </S.ImageContainer>
+              <S.ImageContainer>
+                <S.Image src={award2} />
+              </S.ImageContainer>
+            </S.ImagesList>
+          </S.Content>
+        </Container>
+      </S.CarrouselItem>
+    ))
+  }
+
+  const teste = [
+    {
+      title: "Mavennet is the winner of Mind to Market 2020 award",
+      backgroundImage: background
+    },
+    {
+      title: "Mavennet is the winner of Mind to Market 2020 award",
+      backgroundImage: background
+    },
+    {
+      title: "Mavennet is the winner of Mind to Market 2020 award",
+      backgroundImage: background
+    },
+    {
+      title: "Mavennet is the winner of Mind to Market 2020 award",
+      backgroundImage: background
+    },
+  ]
+
   return (
-    <S.MainSection backgroundImage={background}>
-      <Container>
-        <S.Content>
-          <S.Title>{title}</S.Title>
-          <S.ImagesList>
-            <S.ImageContainer>
-              <S.Image src={award1} />
-            </S.ImageContainer>
-            <S.ImageContainer>
-              <S.Image src={award2} />
-            </S.ImageContainer>
-          </S.ImagesList>
-        </S.Content>
+    <S.MainSection>
+        <S.CustomSlider {...settings}>
+          {getItems(teste)}
+        </S.CustomSlider>
         <S.ScrollAction onClick={handleScrollToServiceSection}>
           <S.ScrollText>scroll down</S.ScrollText>
             <svg
@@ -45,7 +87,6 @@ const MainSection = ({
               ></path>
             </svg>
         </S.ScrollAction>
-      </Container>
     </S.MainSection>
   )
 }

@@ -1,21 +1,59 @@
 import styled from "styled-components"
 
+import Slider from "react-slick"
+
 import { device } from "../../../consts/deviceSizes"
 
 export const MainSection = styled.section`
-  box-sizing: border-box;
-  background: url(${props => props.backgroundImage}) no-repeat center center fixed; 
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+`
+
+export const CustomSlider = styled(Slider)`
+  & .slick-dots {
+    bottom: 100px;
+    left: 7.5%;
+    width: unset;
+    height: inherit !important;
+
+    display: none !important;
+
+    @media ${device.tablet} {
+      display: block !important;
+    }
+
+    @media ${device.desktop} {
+      bottom: 248px;
+      left: calc((100% - 1250px) / 2);
+    }
+  }
+
+  & .slick-dots li button:before {
+    color: var(--c-p-white);
+    opacity: .4;
+  }
+
+  & .slick-dots li.slick-active button:before {
+    color: var(--c-p-white);
+    opacity: 1;
+  }
+`
+
+export const CarrouselItem = styled.div`
+  background: url(${props => props.backgroundImage}) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 
-  padding: 100px 0;
   min-height: 100vh;
+  box-sizing: border-box;
 
-  position: relative;
+  padding: 100px 0;
 
-  @media ${device.laptop} {
+  @media ${device.desktop} {
+    height: 100vh;
     padding: 179px 0 248px;
   }
 `
@@ -89,7 +127,7 @@ export const ScrollAction = styled.div`
   }
 
   @media ${device.laptop} {
-    bottom: 88px;
+    bottom: 60px;
   }
 `
 
