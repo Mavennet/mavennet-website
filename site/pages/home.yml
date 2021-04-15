@@ -1,6 +1,14 @@
 meta:
   title: Home
 title: Home
+testSection:
+  highlights:
+    - item:
+        title: Mavennet is the winner of Mind to Market 2020 award
+        highlightBackgroundImage: /assets/award-1.png
+        highlightImages:
+          - /assets/award-mock-1.png
+          - /assets/award-mock-2.png
 homeSloganSection:
   slogan: A World of Digital Trust
   ctaText: Our Solutions
