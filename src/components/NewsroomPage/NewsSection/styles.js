@@ -45,7 +45,7 @@ export const AnnouncementsList = styled.ul`
     position: absolute;
     z-index: -1;
     content: "";
-    height: 112%;
+    height: 100%;
     top: 24px;
     right: 0;
     left: 0;
@@ -67,7 +67,7 @@ export const AnnouncementListContainer = styled(Container)`
 
 `
 
-export const AnnouncementCard = styled.a`
+export const AnnouncementCard = styled.div`
   max-width: 369px;
   margin: 0 auto;
   box-sizing: border-box;

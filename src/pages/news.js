@@ -13,7 +13,6 @@ import TwitterSection from "../components/NewsroomPage/TwitterSection"
 
 const NewsPage = ({ data, location }) => {
   const post = data.pagesYaml
-  const { news } = data
   const { meta } = post
 
   useEffect(() => {
@@ -33,9 +32,7 @@ const NewsPage = ({ data, location }) => {
   return (
     <Layout headerTheme="sticky">
       <SEO title={meta.title} pathname={location.pathname} />
-      <NewsSection
-        news={news.edges}
-      />
+      <NewsSection/>
       <TwitterSection />
     </Layout>
   )
@@ -57,22 +54,6 @@ export const query = graphql`
         featuredMedia
         featuredAwards
         featuredProfessionalAssociation
-      }
-    }
-    news: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/site/news/" } }
-      sort: { fields: frontmatter___date, order: DESC }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            image
-            title
-            date
-            link
-          }
-        }
       }
     }
   }

@@ -873,10 +873,10 @@ collections:
     identifier_field: name
     fields:
       - { label: "News Title", name: "title", widget: "string" }
+      - { label: "News Description", name: "description", widget: "string", required: false }
       - { label: "News Date", name: "date", widget: "date" }
       - { label: "News Image", name: "image", widget: "image" }
       - { label: "News Link", name: "link", widget: "string" }
-      - { label: "News order", name: "order", widget: "number" }
   - label: "Our Team"
     name: "ourTeam"
     folder: "site/company/ourTeam"

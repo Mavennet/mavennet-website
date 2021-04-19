@@ -101,6 +101,10 @@ exports.createSchemaCustomization = ({ actions }) => {
     type PagesYamlHomePartnersSection implements Node {
       ctaText: String
     }
+
+    type MarkdownRemarkFrontmatter implements Node {
+      description: String
+    }
   `
   createTypes(typeDefs)
 }
