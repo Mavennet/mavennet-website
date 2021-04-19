@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from "react"
 
 import Container from "../../base/Container"
+import Button from "../../shared/Button"
 
 import { utcStringToFullMonthDate } from "../../../helpers/dateManipulation"
 
 import * as S from "./styles"
 
-const NUM_NEWS_IN_CHUNKS = 6
+const NUM_NEWS_IN_CHUNKS = 3
 
-const AnnouncementsSection = ({ announcements, title, ctaText }) => {
+const NewsSection = ({ news, title }) => {
   const [numNewsVisible, setNumNewsVisible] = useState(NUM_NEWS_IN_CHUNKS)
   const [hasMoreNewsToShow, setHasMoreNewsToShow] = useState(false)
 
   useEffect(() => {
-    if (announcements.length > NUM_NEWS_IN_CHUNKS + 1) {
+    if (news.length > NUM_NEWS_IN_CHUNKS + 1) {
       setHasMoreNewsToShow(true)
     }
-  }, [announcements])
+  }, [news])
 
   const handleLoadMoreNews = () => {
-    const loadableNewsNumber = announcements.length - 1
+    const loadableNewsNumber = news.length - 1
     let newNewsNumber = numNewsVisible + NUM_NEWS_IN_CHUNKS
 
     if (loadableNewsNumber < newNewsNumber) {
@@ -30,30 +31,13 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
     setNumNewsVisible(newNewsNumber)
   }
 
-  const getAnnouncementsList = announcementsList => {
+  const getAnnouncementsList = newsList => {
     const maxCharatersTitle = 60
-    if (announcementsList.length === 0) return null
+    if (newsList.length === 0) return null
 
-    const [firstNewsNode, ...otherNewsNodes] = announcementsList
-    const fistNews = firstNewsNode.node.frontmatter
+    const [, ...otherNewsNodes] = newsList
     return (
       <S.AnnouncementsList>
-        <S.AnnouncementItem
-          key={fistNews.title}
-          first={true}
-          data-aos="fade-up"
-        >
-          <S.AnnouncementCard href={fistNews.link} target="_blank" first={true}>
-            <S.Header>
-              <S.Image src={fistNews.image} />
-            </S.Header>
-            <S.Content>
-              <S.CardTitle>{fistNews.title}</S.CardTitle>
-              <S.CardDate>{utcStringToFullMonthDate(fistNews.date)}</S.CardDate>
-            </S.Content>
-          </S.AnnouncementCard>
-        </S.AnnouncementItem>
-
         {otherNewsNodes
           .slice(0, numNewsVisible)
           .map((newsFrontmatter, index) => {
@@ -91,14 +75,14 @@ const AnnouncementsSection = ({ announcements, title, ctaText }) => {
   return (
     <S.AnnoucementsSection>
       <Container>
-        <S.Title>{title}</S.Title>
-        {getAnnouncementsList(announcements)}
+        <S.Title>Olha ai{title}</S.Title>
+        {getAnnouncementsList(news)}
         {hasMoreNewsToShow && (
-          <S.CTA text="Load More News" onClick={handleLoadMoreNews} />
+          <Button text="Load more articles" onClick={handleLoadMoreNews} />
         )}
       </Container>
     </S.AnnoucementsSection>
   )
 }
 
-export default AnnouncementsSection
+export default NewsSection

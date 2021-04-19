@@ -21,16 +21,6 @@ export const Title = styled.h2`
   }
 `
 
-export const CTA = styled(TextArrow)`
-  width: fit-content;
-  margin: 3.175em auto 0;
-
-  font-size: 24px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 29px;
-`
-
 export const AnnouncementsList = styled.ul`
   margin-top: 3.75em;
   display: flex;

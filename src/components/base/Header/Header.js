@@ -12,8 +12,8 @@ import { getHeaderItems, getSideDrawerItems } from "../../../helpers/menuItems"
 import themes from "./themes"
 import * as S from "./styles"
 
-const Header = ({ menuItems }) => {
-  const [currentTheme, setCurrentTheme] = useState(themes.primary)
+const Header = ({ menuItems, theme="primary"}) => {
+  const [currentTheme, setCurrentTheme] = useState(themes[theme])
 
   const [menuItemsState, setMenuItemsState] = useState([])
   const [drawerItemsState, setDrawerItemsState] = useState([])
@@ -41,6 +41,7 @@ const Header = ({ menuItems }) => {
   }, [menuItems])
 
   const checkScroll = () => {
+    if (theme === 'sticky') return
     const scroll = window.scrollY < 70
     setCurrentTheme(scroll ? themes.primary : themes.sticky)
   }

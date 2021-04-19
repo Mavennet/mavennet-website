@@ -7,10 +7,8 @@ import "aos/dist/aos.css"
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
 
-import MainSection from "../components/NewsroomPage/MainSection"
-import AnnouncementsSection from "../components/NewsroomPage/AnnouncementsSection"
+import NewsSection from "../components/NewsroomPage/NewsSection"
 
-import newsRoomImage from "../assets/innovative-blockchain-awards-finalist.jpeg"
 
 const NewsPage = ({ data, location }) => {
   const post = data.pagesYaml
@@ -32,12 +30,10 @@ const NewsPage = ({ data, location }) => {
   })
 
   return (
-    <Layout>
+    <Layout headerTheme="sticky">
       <SEO title={meta.title} pathname={location.pathname} />
-      <MainSection {...newsRoomMainSection} featuredNews={news.edges[0]} />
-      <AnnouncementsSection
-        announcements={news.edges}
-        // {...newsRoomAnnouncementSection}
+      <NewsSection
+        news={news.edges}
       />
     </Layout>
   )
