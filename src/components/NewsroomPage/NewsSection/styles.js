@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
-import TextArrow from "../../shared/TextArrow"
+import Container from "../../base/Container"
+import TextArrowCTA from "../../shared/TextArrowCTA"
 
 import { device } from "../../../consts/deviceSizes"
 
 export const AnnoucementsSection = styled.section`
-  padding: 4em 0;
+  padding: 167px 0 4em 0;
 `
 
 export const Title = styled.h2`
@@ -14,112 +15,95 @@ export const Title = styled.h2`
   line-height: 48px;
   text-align: center;
 
+
   @media ${device.laptop} {
+    text-align: left;
     font-size: 48px;
     letter-spacing: 0;
-    line-height: 64px;
+    line-height: 56px;
   }
 `
 
 export const AnnouncementsList = styled.ul`
   margin-top: 3.75em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
 
-  @media ${device.laptop} {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+  &::before {
+    position: absolute;
+    z-index: -2;
+    content: "";
+    top: 30px;
+    right: 0;
+    left: 0;
+    bottom: -68px;
+
+    transform: skewY(5deg) !important;
+    background-color: var(--c-s-iceberb);
   }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    height: 112%;
+    top: 24px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: var(--c-p-selago-dark);
+  }
+
+`
+
+export const AnnouncementListContainer = styled(Container)`
+  display: grid;
+  grid-gap: 24px;
+  grid-template-columns: repeat(auto-fill, 1fr);
+
+  @media ${device.tabletL} {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
 `
 
 export const AnnouncementCard = styled.a`
-  color: var(--c-p-haiti) !important;
-  display: block;
+  max-width: 369px;
   margin: 0 auto;
-  height: 100%;
   box-sizing: border-box;
+  background-color: var(--c-p-white);
 
-  @media ${device.laptop} {
-    ${({ first }) =>
-      first &&
-      `
-      display: flex;
+  display: flex;
+  flex-direction: column;
 
-      ${Image} {
-        object-fit: contain;
-      }
-      ${Header},
-      ${Content} {
-        width: 50%;
-        height: unset;
-      }
 
-      ${Content} {
-        padding: 3em 2em 3em 4.5em;
-        box-sizing: border-box;
-      }
+  padding: 24px;
+  box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 6px 24px rgba(0, 0, 0, 0.04), 0px 8px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
 
-      ${CardTitle} {
-        font-size: 2.125rem;
-        font-weight: 600;
-        line-height: 41px;
-        margin-top: 0;
-      }
-
-      ${CardDate} {
-        display: block;
-      }
-    `};
+  @media ${device.tabletL} {
+    margin: unset;
   }
+
 `
 
 export const CardTitle = styled.h3`
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 29px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+  color: var(--c-s-gray30);
 `
 
-export const AnnouncementItem = styled.li`
-  max-width: 354px;
+export const CardText = styled.p`
+  font-family: "Barlow" sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
 
-  border: 1px solid var(--c-p-medium-purple);
+  letter-spacing: 0.5px;
+  color: #7F738C;
 
-  ${CardTitle} {
-    padding: 0 1em;
-  }
-
-  ${AnnouncementCard} {
-    padding-bottom: 2em;
-  }
-
-  &:not(:first-child) {
-    margin-top: 3.75em;
-  }
-
-  @media ${device.laptop} {
-    width: ${props => (props.first ? "100%" : "30%")};
-    max-width: unset;
-
-    ${({ first }) =>
-      first &&
-      `
-      min-height: 315px;
-    `}
-
-    &:first-child {
-      border: unset;
-      ${CardTitle} {
-        padding: 0;
-      }
-
-      ${AnnouncementCard} {
-        padding-bottom: 0;
-      }
-    }
-  }
+  margin-top: 10px;
 `
 
 export const Header = styled.header`
@@ -135,17 +119,29 @@ export const Image = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border-radius: 16px;
 `
 
 export const Content = styled.div`
-  margin-top: 1.1875em;
+  margin-top: 10px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
 `
 
-export const CardDate = styled.p`
-  display: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 29px;
+export const LinkCTA = styled(TextArrowCTA)`
+  font-weight: 600;
+  font-size: 16px !important;
+  line-height: 20px;
 
-  margin-top: 0.8em;
+  text-align: center;
+  letter-spacing: 0.25px;
+
+
+  margin: auto 0 0;
+
+  h4 {
+    color: var(--c-p-purple-50);
+  }
 `

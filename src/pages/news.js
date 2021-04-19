@@ -8,12 +8,13 @@ import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
 
 import NewsSection from "../components/NewsroomPage/NewsSection"
+import TwitterSection from "../components/NewsroomPage/TwitterSection"
 
 
 const NewsPage = ({ data, location }) => {
   const post = data.pagesYaml
   const { news } = data
-  const { meta, newsRoomMainSection } = post
+  const { meta } = post
 
   useEffect(() => {
     if (typeof window === "undefined") return
@@ -35,6 +36,7 @@ const NewsPage = ({ data, location }) => {
       <NewsSection
         news={news.edges}
       />
+      <TwitterSection />
     </Layout>
   )
 }

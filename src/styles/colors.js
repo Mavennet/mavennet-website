@@ -15,6 +15,7 @@ const colors = css`
     --c-p-royal-purple-dark: #6e37ab;
     --c-p-meteorite: #51277b;
     --c-p-haiti: #230f32;
+    --c-p-purple-50: #791AE6;
 
     --c-s-iceberb: #e5f6f7;
     --c-s-aqua-island: #99d5d9;
@@ -24,6 +25,7 @@ const colors = css`
     --c-s-perfume: #c0b2fa;
     --c-s-portage-light: #9982f9;
     --c-s-portage: #a18df1;
+    --c-s-gray30: #4C4554;
     --c-s-8870eb-dark: #8870eb;
     --c-s-royal-blue: #6c4ee4;
     --c-s-purple: #332340;
