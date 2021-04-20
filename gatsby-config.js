@@ -82,6 +82,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `tweets`,
+        path: `${__dirname}/site/tweets/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `news`,
         path: `${__dirname}/site/company/`,
       },

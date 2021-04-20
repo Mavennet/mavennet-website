@@ -4,7 +4,6 @@ import * as S from "./styles"
 
 const MainSection = ({ title, ctaText, featuredNews }) => {
   const { image: newsImage, title: newsTitle, link: newsLink } = featuredNews.node.frontmatter
-  console.log(featuredNews)
   return (
     <S.MainSection backgroundColor="--c-p-meteorite">
       <S.MainSectionContainer>

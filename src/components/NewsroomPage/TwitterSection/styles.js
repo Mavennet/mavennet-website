@@ -24,6 +24,7 @@ export const Title = styled.h2`
 `
 
 export const CustomSlider = styled(Slider)`
+  margin-top: 60px;
   & .slick-dots li button:before {
     color: var(--c-p-selago-dark);
     opacity: .4;
@@ -38,12 +39,14 @@ export const CustomSlider = styled(Slider)`
     opacity: 1;
   }
 
-  & .slick-slide {
-    margin: 0 30px;
-  }
+  @media ${device.laptop} {
+    & .slick-slide {
+      margin: 0 30px;
+    }
 
-  & .slick-list {
-      margin: 0 -30px;
+    & .slick-list {
+        margin: 0 -30px;
+    }
   }
 `
 

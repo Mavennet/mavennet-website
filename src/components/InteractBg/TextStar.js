@@ -71,7 +71,6 @@ class TextStar {
   }
 
   handleClick() {
-    console.log("Hello world clicked")
   }
 }
 

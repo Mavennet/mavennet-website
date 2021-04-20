@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet'
 
 import Container from '../../base/Container'
 
+import { useTweetsData } from "../../../hooks/use-tweets-data"
+
 import * as S from './styles'
 
 const htmlTags = [
@@ -14,9 +16,11 @@ const htmlTags = [
 ]
 
 const TwitterSection = () => {
+  const tweetsData = useTweetsData()
+
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     autoplay: true,
     autoplaySpeed: 7000,
@@ -29,24 +33,24 @@ const TwitterSection = () => {
     appendDots: dots => <S.DotsWrapper>{dots}</S.DotsWrapper>,
     responsive: [
       {
+        breakpoint: 1280,
+          settings: {
+            slidestoshow: 3,
+          }
+      },
+
+      {
         breakpoint: 850,
           settings: {
-            slidesToShow: 3,
+            slidestoshow: 2,
           }
       },
       {
         breakpoint: 600,
           settings: {
-            slidesToShow: 2,
-          }
-      },
-      {
-        breakpoint: 480,
-          settings: {
             slidesToShow: 1,
           }
-      },
-
+      }
     ]
   }
   return (
@@ -54,10 +58,10 @@ const TwitterSection = () => {
       <Container>
         <S.Title>Follow us on Twitter</S.Title>
         <S.CustomSlider {...settings} style={{ marginTop: '60px'}}>
-          {htmlTags.map((tag, index) => (
-            <S.CardContainer key={index}>
+          {tweetsData.map(({ title, html }, index) => (
+            <S.CardContainer key={title}>
               <div dangerouslySetInnerHTML={{
-                __html: tag
+                __html: html
               }}></div>
             </S.CardContainer>
           ))}
