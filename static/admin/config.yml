@@ -885,6 +885,14 @@ collections:
     fields:
       - { label: "Tweet Title", name: "title", widget: "string" }
       - { label: "Tweet html", name: "html", widget: "string" }
+  - label: "Youtube"
+    name: "youtube"
+    folder: "site/youtube/"
+    create: true
+    identifier_field: name
+    fields:
+      - { label: "Youtube Title", name: "title", widget: "string" }
+      - { label: "Youtube url", name: "url", widget: "string" }
   - label: "Our Team"
     name: "ourTeam"
     folder: "site/company/ourTeam"

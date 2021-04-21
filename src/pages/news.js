@@ -9,6 +9,7 @@ import SEO from "../components/base/SEO"
 
 import NewsSection from "../components/NewsroomPage/NewsSection"
 import TwitterSection from "../components/NewsroomPage/TwitterSection"
+import YoutubeSection from "../components/NewsroomPage/YoutubeSection"
 
 
 const NewsPage = ({ data, location }) => {
@@ -34,6 +35,7 @@ const NewsPage = ({ data, location }) => {
       <SEO title={meta.title} pathname={location.pathname} />
       <NewsSection/>
       <TwitterSection />
+      <YoutubeSection />
     </Layout>
   )
 }
