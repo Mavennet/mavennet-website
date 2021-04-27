@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { Helmet } from 'react-helmet'
 
 import Container from '../../base/Container'
 
 import { useTweetsData } from "../../../hooks/use-tweets-data"
+import { getTweetEmbedList } from "../../../services/tweet-list"
 
 import * as S from './styles'
 
@@ -16,7 +17,18 @@ const htmlTags = [
 ]
 
 const TwitterSection = () => {
+  const [tweets, setTweets] = useState([])
   const tweetsData = useTweetsData()
+
+  useEffect(() => {
+    async function getTweet () {
+      const response = await getTweetEmbedList();
+      console.log(response.data)
+      setTweets(response.data)
+    }
+
+    getTweet()
+  }, [])
 
   const settings = {
     dots: true,
@@ -53,12 +65,14 @@ const TwitterSection = () => {
       }
     ]
   }
+  if (tweets.length === 0) return null
+
   return (
     <S.TwitterSection>
       <Container>
         <S.Title>Follow us on Twitter</S.Title>
         <S.CustomSlider {...settings} style={{ marginTop: '60px'}}>
-          {tweetsData.map(({ title, html }, index) => (
+          {tweets.map(({ title, html }, index) => (
             <S.CardContainer key={title}>
               <div dangerouslySetInnerHTML={{
                 __html: html
