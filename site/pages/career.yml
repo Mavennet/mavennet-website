@@ -91,6 +91,11 @@ careerOppotunitySection:
         link: https://ca.indeed.com/job/business-technology-analyst-internship-summer-2021-c75d39163fd1d37f
         title: Business Technology Analyst - Summer Internship
         location: Toronto, ON
+    - item:
+        date: 2021-05-17T21:33:43.678Z
+        title: Blockchain Developer
+        location: Toronto, Ontario
+        link: https://ca.indeed.com/job/blockchain-developer-ffab9baa45e5dba6
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
   content: Send your resume to talent@mavennet.com with the type of role you'd
