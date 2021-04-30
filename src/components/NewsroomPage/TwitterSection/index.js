@@ -4,14 +4,12 @@ import { Helmet } from 'react-helmet'
 
 import Container from '../../base/Container'
 
-import { useTweetsData } from "../../../hooks/use-tweets-data"
 import { getTweetEmbedList } from "../../../services/tweet-list"
 
 import * as S from './styles'
 
 const TwitterSection = () => {
   const [tweets, setTweets] = useState([])
-  const tweetsData = useTweetsData()
 
   useEffect(() => {
     async function getTweet () {
