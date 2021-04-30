@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { Helmet } from 'react-helmet'
 
 import Container from '../../base/Container'
 
-import { useYoutubeData } from "../../../hooks/use-youtube-data"
-
 import * as S from './styles'
 
 const YoutubeSection = () => {
-  const youtubeData = useYoutubeData()
+  const [youtubeVideos, setYoutubeVideos] = useState([]);
+
+  useEffect(() => {
+    async function getYoutubeVideosInfo () {
+      const response = await getYoutubeVideos();
+      setYoutubeVideos(response.data)
+    }
+  })
 
   const settings = {
     dots: true,
@@ -46,16 +51,18 @@ const YoutubeSection = () => {
       }
     ]
   }
+
+  if (youtubeVideos.length === 0) return null
   return (
     <S.TwitterSection>
       <Container>
         <S.Title>Subscribe to our channel</S.Title>
         <S.CustomSlider {...settings} style={{ marginTop: '60px'}}>
-          {youtubeData.map(({ title, url }, index) => (
+          {youtubeVideos.map(({ title, videoId }, index) => (
             <S.CardContainer key={title}>
               <iframe 
-                src={url} 
-                title="YouTube video player" 
+                src={`https://www.youtube.com/embed/${videoId}`} 
+                title={title}
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen
