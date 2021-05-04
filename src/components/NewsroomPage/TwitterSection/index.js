@@ -14,7 +14,6 @@ const TwitterSection = () => {
   useEffect(() => {
     async function getTweet () {
       const response = await getTweetEmbedList();
-      console.log(response.data)
       setTweets(response.data)
     }
 

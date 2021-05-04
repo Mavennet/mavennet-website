@@ -4,17 +4,21 @@ import { Helmet } from 'react-helmet'
 
 import Container from '../../base/Container'
 
+import { getYoutubeVideosInfo } from "../../../services/youtube-list"
+
 import * as S from './styles'
 
 const YoutubeSection = () => {
   const [youtubeVideos, setYoutubeVideos] = useState([]);
 
   useEffect(() => {
-    async function getYoutubeVideosInfo () {
-      const response = await getYoutubeVideos();
+    async function getYoutubeVideos() {
+      const response = await getYoutubeVideosInfo();
       setYoutubeVideos(response.data)
     }
-  })
+
+    getYoutubeVideos();
+  }, [])
 
   const settings = {
     dots: true,
