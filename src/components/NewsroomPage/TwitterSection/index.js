@@ -62,8 +62,8 @@ const TwitterSection = () => {
       <Container>
         <S.Title>Follow us on Twitter</S.Title>
         <S.CustomSlider {...settings} style={{ marginTop: '60px'}}>
-          {tweets.map(({ title, html }, index) => (
-            <S.CardContainer key={title}>
+          {tweets.map(({ url, html }, index) => (
+            <S.CardContainer key={url}>
               <div dangerouslySetInnerHTML={{
                 __html: html
               }}></div>
