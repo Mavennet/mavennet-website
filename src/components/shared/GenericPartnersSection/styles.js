@@ -8,32 +8,13 @@ export const GenericPartnersSection = styled.section`
   padding: 21px 0 114px;
   position: relative;
 
-  background-color: var(--c-p-selago);
-
   @media ${device.laptop} {
-    padding: 65px 0 125px;
-    background-color: unset;
-
-    &::before {
-      position: absolute;
-      z-index: -1;
-      content: "";
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      transform: skewY(-5deg) !important;
-      background-color: var(--c-p-selago-dark);
-    }
+    padding: 65px 0 72px;
   }
 `
 
 export const PartnersContainer = styled(Container)`
   width: 95%;
-
-  /* @media ${device.laptop} {
-    transform: skewY(5deg);
-  } */
 `
 
 export const Title = styled.h2`
@@ -43,11 +24,15 @@ export const Title = styled.h2`
   line-height: 56px;
   text-align: center;
 
+  margin: 0 auto;
   max-width: 80%;
 
   @media ${device.laptop} {
     font-size: 48px;
     line-height: 58px;
+    text-align: left;
+
+    margin: 0;
   }
 `
 
@@ -57,7 +42,7 @@ export const PartnersList = styled.ul`
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 `
 
@@ -72,7 +57,7 @@ export const PartnersItem = styled.li`
   @media ${device.tablet} {
     width: auto;
     max-width: 200px;
-    margin: 1.625em 2.5em 2em;
+    margin: 0 42px 56px 0;
   }
 `
 

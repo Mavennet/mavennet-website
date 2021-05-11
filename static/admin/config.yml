@@ -22,7 +22,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Title", name: "title", widget: string }
-          - label: "Test Section"
+          - label: "Highlights Section"
             name: "testSection"
             widget: "object"
             collapsed: true
@@ -43,8 +43,8 @@ collections:
                       required: false
                       field: { label: "Highlight Image", name: "highlightImage", widget: "image"}
 
-          - label: "Main Section"
-            name: "homeMainSection"
+          - label: "Slogan Section"
+            name: "homeSloganSection"
             widget: "object"
             collapsed: true
             fields:
@@ -873,10 +873,10 @@ collections:
     identifier_field: name
     fields:
       - { label: "News Title", name: "title", widget: "string" }
+      - { label: "News Description", name: "description", widget: "string", required: false }
       - { label: "News Date", name: "date", widget: "date" }
       - { label: "News Image", name: "image", widget: "image" }
       - { label: "News Link", name: "link", widget: "string" }
-      - { label: "News order", name: "order", widget: "number" }
   - label: "Our Team"
     name: "ourTeam"
     folder: "site/company/ourTeam"

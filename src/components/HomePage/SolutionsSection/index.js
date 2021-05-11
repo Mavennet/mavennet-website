@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState, useRef, useEffect, forwardRef } from "react"
 
 import Slider from "react-slick"
 
@@ -45,7 +45,7 @@ const SamplePrevArrow = props => {
   )
 }
 
-const SolutionsSection = ({ title, subtitle, solutionList }) => {
+const SolutionsSection = ({ title, subtitle, solutionList }, ref) => {
   const [currSlide, setCurrSlide] = useState(0)
   const [windowWidth, setWindowWidth] = useState(0)
 
@@ -182,7 +182,7 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
   }
 
   return (
-    <S.SolutionsSection data-aos="fade-up">
+    <S.SolutionsSection data-aos="fade-up" ref={ref}>
       <S.Header>
         <S.Title className="headline-large">{title}</S.Title>
         <S.Subtitle className="statement-medium">{subtitle}</S.Subtitle>
@@ -203,4 +203,4 @@ const SolutionsSection = ({ title, subtitle, solutionList }) => {
   )
 }
 
-export default SolutionsSection
+export default forwardRef(SolutionsSection)

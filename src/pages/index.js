@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useRef } from "react"
 import { graphql } from "gatsby"
 
 import AOS from "aos"
@@ -7,17 +7,28 @@ import "aos/dist/aos.css"
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
 
-import MainSection from "../components/HomePage/MainSection/MainSection"
+import MainSection from "../components/HomePage/MainSection"
 import ServiceSection from "../components/HomePage/ServiceSection"
 import SolutionsSection from "../components/HomePage/SolutionsSection"
 import PartnersSection from "../components/shared/GenericPartnersSection"
 import AwardsSection from "../components/shared/AwardsSection"
-import NewsSection from "../components/HomePage/NewsSection"
 import RAndDSection from "../components/HomePage/RAndDSection"
+import SloganSection from "../components/HomePage/SloganSection/SloganSection"
 
 import { usePartnersData } from "../hooks/use-partners-data"
 
+const scrollToRef = ref => 
+  window.scrollTo({
+    left: 0,
+    top: ref.current.offsetTop - 87,
+    behavior: 'smooth'
+  })
+
+
 const IndexPage = ({ data, location }) => {
+  const solutionsSectionRef = useRef(null)
+  const executeScroll = ref => scrollToRef(ref)
+
   useEffect(() => {
     if (typeof window === "undefined") return
 
@@ -38,23 +49,25 @@ const IndexPage = ({ data, location }) => {
   const {
     meta,
     homeMainSection,
+    homeSloganSection,
     homeServiceSection,
     homeSolutionsSection,
-    homeNewsSection,
     homePartnersSection,
     homeRandDSection,
   } = post
 
   return (
-    <Layout fillFooter="#F9F5FE">
+    <Layout>
       <SEO title={meta.title} pathname={location.pathname} />
-      <MainSection {...homeMainSection} />
-      <SolutionsSection {...homeSolutionsSection} />
+      <MainSection 
+        {...homeMainSection}
+        handleScrollToServiceSection={() => executeScroll(solutionsSectionRef)}/>
+      <SolutionsSection {...homeSolutionsSection} ref={solutionsSectionRef}/>
       <ServiceSection {...homeServiceSection} />
       <RAndDSection {...homeRandDSection} />
-      <PartnersSection {...homePartnersSection} partners={partnersData} />
       <AwardsSection title="Awards and Recognition" />
-      <NewsSection {...homeNewsSection} />
+      <PartnersSection {...homePartnersSection} partners={partnersData} />
+      <SloganSection {...homeSloganSection} />
     </Layout>
   )
 }
@@ -69,6 +82,15 @@ export const query = graphql`
         title
       }
       homeMainSection {
+        highlights {
+          item {
+            title
+            highlightBackgroundImage
+            highlightImages 
+          }
+        }
+      }
+      homeSloganSection {
         ctaText
         slogan
         subtitle

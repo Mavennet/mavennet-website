@@ -13,6 +13,7 @@ import GlobalStyle from "../../../styles/globalStyle"
 
 export default function Layout({
   children,
+  headerTheme,
   footerHidden,
   contactUsHidden,
   fillFooter,
@@ -86,7 +87,7 @@ export default function Layout({
           return <GlobalStyle isHtmlOverflowVisible={!isDrawerMenuOpen} />
         }}
       </StoreContext.Consumer>
-      <Header menuItems={{ ...data }} />
+      <Header menuItems={{ ...data }} theme={headerTheme}/>
       {children}
       {!footerHidden && (
         <>
