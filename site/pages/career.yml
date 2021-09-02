@@ -87,20 +87,20 @@ careerOppotunitySection:
   noOpportunitiesText: Currently we don’t have open positions yet.
   opportunitiesList:
     - item:
-        date: 2021-08-09T04:00:00.000Z
-        link: https://ca.indeed.com/job/intermediate-full-stack-engineer-862db458a93dc0bf
-        title: Intermediate Full Stack Engineer
-        location: Toronto, ON (Preferred)
-    - item:
-        date: 2021-08-09T21:33:43.678Z
+        date: 2021-10-04T21:33:43.678Z
         title: Senior Full Stack Developer
         location: Toronto, ON (Preferred)
         link: https://ca.indeed.com/job/senior-full-stack-developer-cbad98596f41c560
     - item:
-        date: 2021-08-09T18:57:50.882Z
+        date: 2021-10-04T18:57:50.882Z
         title: Senior Product Owner (Tracking and Logistics)
         link: https://ca.indeed.com/job/senior-product-owner-tracking-and-logistics-5082a09bf25a3f2b
         location: Toronto, ON (Preferred)
+    - item:
+        date: 2021-10-04T18:28:14.236Z
+        title: Business Technology, Strategy & Operations Manager
+        location: Toronto, Ontario
+        link: https://ca.indeed.com/job/business-technology-strategy-operations-manager-968e21d006115b9f
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
   content: Send your resume to talent@mavennet.com with the type of role you'd
