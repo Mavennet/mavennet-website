@@ -101,6 +101,11 @@ careerOppotunitySection:
         title: Business Technology, Strategy & Operations Manager
         location: Toronto, Ontario
         link: https://ca.indeed.com/job/business-technology-strategy-operations-manager-968e21d006115b9f
+    - item:
+        date: 2021-10-05T02:26:39.672Z
+        title: Blockchain Engineer
+        location: Toronto, Ontario
+        link: https://ca.indeed.com/viewjob?t=blockchain+developer&jk=ffab9baa45e5dba6&_ga=2.240824581.705331285.1630807936-1673273238.1624982772
 careerOtherOpportunitiesSection:
   title: Don't see anything you are looking for?
   content: Send your resume to talent@mavennet.com with the type of role you'd
