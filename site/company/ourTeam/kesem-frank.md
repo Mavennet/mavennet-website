@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 2
 name: Kesem Frank
 title: President
 bio: "Kesem Frank, Co-Founder and President, is a technology strategy expert

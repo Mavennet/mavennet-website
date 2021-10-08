@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 name: Ana Gabriel Lobo
 title: Strategy and Operations
 bio: "Ana Gabriel Lobo, Strategy & Operations Manager, is a strategist and
