@@ -1,6 +1,6 @@
 ---
 order: 10
-name: Nihal Faroop
+name: Nihal Farooq
 title: UX/UI Designer
 bio: Nihal Farooq, UX/UI Designer, is an experienced
   designer who loves creatively thinking of new solutions to make people's experience better using digital products.
