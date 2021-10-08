@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 7
 name: Yinghui Fan
 title: Senior Stack Developer
 bio: Yinghui Fan, senior full stack developer, focuses on delivering sustainable
