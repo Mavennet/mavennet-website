@@ -70,8 +70,9 @@ const Canvas = () => {
 
     initStars()
     initTextStars()
-  }, [])
+  }, []) // eslint-disable-line
 
+  // eslint-disable-next-line
   const startAnimation = () => {
     loop()
     window.requestAnimationFrame(startAnimation)

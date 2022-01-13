@@ -1,16 +1,12 @@
-import React, { useState, useEffect } from "react"
-import { graphql } from "gatsby"
-
 import AOS from "aos"
 import "aos/dist/aos.css"
-
+import { graphql } from "gatsby"
+import React, { useEffect } from "react"
 import Layout from "../components/base/Layout"
 import SEO from "../components/base/SEO"
-
 import NewsSection from "../components/NewsroomPage/NewsSection"
 import TwitterSection from "../components/NewsroomPage/TwitterSection"
 import YoutubeSection from "../components/NewsroomPage/YoutubeSection"
-
 
 const NewsPage = ({ data, location }) => {
   const post = data.pagesYaml
@@ -33,7 +29,7 @@ const NewsPage = ({ data, location }) => {
   return (
     <Layout headerTheme="sticky">
       <SEO title={meta.title} pathname={location.pathname} />
-      <NewsSection/>
+      <NewsSection />
       <TwitterSection />
       <YoutubeSection />
     </Layout>

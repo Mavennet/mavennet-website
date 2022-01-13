@@ -21,7 +21,7 @@ const FeatureTimeline = ({ items }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll)
     }
-  }, [items, visibleItemsList])
+  }, [items, visibleItemsList]) // eslint-disable-line
 
   const handleScroll = () => {
     let newArray = [...visibleItemsList]

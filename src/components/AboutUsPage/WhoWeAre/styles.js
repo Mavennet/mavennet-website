@@ -4,6 +4,7 @@ import Container from "../../base/Container"
 import TextArrowScroll from "../../shared/TextArrowScroll"
 
 import { device } from "../../../consts/deviceSizes"
+import ReactPlayer from "react-player"
 
 export const WhoWeAre = styled.section`
   padding: 2.375em 0;
@@ -48,7 +49,7 @@ export const VideoWrapper = styled.div`
   }
 `
 
-export const IFrame = styled.iframe`
+export const VideoReactPlayer = styled(ReactPlayer)`
   @media ${device.laptop} {
     height: 269px;
     width: 424px;

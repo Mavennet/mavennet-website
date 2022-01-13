@@ -13,13 +13,10 @@ const WhoWeAre = ({ title, subTitle, description, ctaText, handleClick }) => {
           <S.CTA text={ctaText} handleClick={handleClick} />
         </S.TextContent>
         <S.VideoWrapper>
-          <S.IFrame
-            id="ls_embed_1593702416"
-            src="https://livestream.com/accounts/25643695/events/8056412/videos/179195193/player?width=640&height=360&enableInfo=true&defaultDrawer=&autoPlay=false&mute=false"
-            frameborder="0"
-            scrolling="no"
-            allowFullScreen={true}
-          ></S.IFrame>
+          <S.VideoReactPlayer
+            url="https://www.youtube.com/watch?v=Oc3IDO_Lrlg"
+            controls
+          ></S.VideoReactPlayer>
         </S.VideoWrapper>
       </S.SectionContainer>
     </S.WhoWeAre>
