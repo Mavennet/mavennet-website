@@ -360,7 +360,6 @@ collections:
               - { label: "SubTitle", name: "subTitle", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "CTA Text", name: "ctaText", widget: "text" }
-
           - label: "Our Story Section"
             name: "aboutOurStorySection"
             widget: "object"
@@ -385,24 +384,18 @@ collections:
             name: "aboutPartnersSection"
             widget: "object"
             fields:
-              - { label: "Title", name: "title", widget: string }
-              - label: "CTA Text"
-                name: "ctaText"
-                wiget: "string"
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "CTA Text", name: "ctaText", widget: "string" }
           - label: "Awards Section"
             name: "aboutAwardsSection"
             widget: "object"
             fields:
               - { label: "Section Title", name: "title", widget: "string" }
-              - label: "Awards List"
-                name: "awardsList"
-                widget: "list"
-                field:
-                  widget: "relation"
-                  collection: "awards"
-                  searchFields: ["title"]
-                  valueField: "image"
-                  displayFields: ["title"]
+              - {label: "Awards List",
+                name: "awardsList",
+                widget: "list",
+                field: { name: "awardsList", widget: "relation", collection: "awards", searchFields: ["title"], valueField: "image", displayFields: ["title"]}
+                }
           - label: "Team Section"
             name: "aboutTeamSection"
             widget: "object"
@@ -679,7 +672,7 @@ collections:
       - label: "Main Section"
         name: "mainSection"
         widget: "object"
-        collapsed: "true"
+        collapsed: true
         fields:
           - { label: "Solution Image", name: "image", widget: "image" }
           - { label: "Solution Logo", name: "logo", widget: "image" }
@@ -753,7 +746,7 @@ collections:
       - label: "Featured Items Section"
         name: "featuredSection"
         widget: "object"
-        collapsed: "true"
+        collapsed: true
         required: false
         fields:
           - label: "Feature Type"
@@ -771,7 +764,7 @@ collections:
       - label: "Features Section"
         name: "featuresSection"
         widget: "object"
-        collapsed: "true"
+        collapsed: true
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - {
@@ -797,7 +790,7 @@ collections:
       - label: "Demo Section"
         name: "demoSection"
         widget: "object"
-        collapsed: "true"
+        collapsed: true
         fields:
           - { label: "Title", name: "title", widget: "text" }
           - {
@@ -819,7 +812,7 @@ collections:
       - label: "Testimonial Section"
         name: "testimonialSection"
         widget: "list"
-        collapsed: "true"
+        collapsed: true
         required: false
         field:
           label: "Testimony"
