@@ -50,7 +50,7 @@ const MainSection = ({ backgroundColor, meta }) => {
               </S.ItemDescription>
             </S.InfoItem>
           </S.Column>
-          <S.Column>
+          {/* <S.Column>
             <S.InfoItem>
               <S.ItemTitle>Office</S.ItemTitle>
               <S.ItemDescription
@@ -64,7 +64,7 @@ const MainSection = ({ backgroundColor, meta }) => {
                 M5V 2L3
               </S.ItemDescription>
             </S.InfoItem>
-          </S.Column>
+          </S.Column> */}
           <S.Column>
             <S.InfoItem>
               <S.ItemTitle>Connect with us</S.ItemTitle>
