@@ -50,21 +50,21 @@ const MainSection = ({ backgroundColor, meta }) => {
               </S.ItemDescription>
             </S.InfoItem>
           </S.Column>
-          {/* <S.Column>
+          <S.Column>
             <S.InfoItem>
               <S.ItemTitle>Office</S.ItemTitle>
               <S.ItemDescription
                 as="a"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="http://maps.google.com/?q=129 Spadina Ave, Toronto, Ontario, Canada, M5V 2L3"
+                href="https://goo.gl/maps/tMfH3S3CwZTb1pyPA"
               >
-                129 Spadina Ave, <br />
+                477 Richmond Street West, 703 <br />
                 Toronto, Ontario, Canada <br />
-                M5V 2L3
+                M5V 3E7
               </S.ItemDescription>
             </S.InfoItem>
-          </S.Column> */}
+          </S.Column>
           <S.Column>
             <S.InfoItem>
               <S.ItemTitle>Connect with us</S.ItemTitle>
