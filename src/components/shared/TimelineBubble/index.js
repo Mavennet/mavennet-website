@@ -18,7 +18,7 @@ export const TimelineBubble = ({
       isImageVisible={isImageVisible}
     >
       <S.Icon
-        src={require(`../../../assets/images/timeline/${imagePath}`)}
+        src={require(`../../../assets/images/timeline/${imagePath}`).default}
         alt={alt}
         visible={isImageVisible}
       />

@@ -7,7 +7,7 @@ const EventItem = ({ title, subtitle, logo, alt, logoStyles }) => (
     <S.ColLogo>
       {logo.map(uniqueLogo => (
         <S.Logo
-          src={require(`../../../assets/images/timeline/${uniqueLogo}`)}
+          src={require(`../../../assets/images/timeline/${uniqueLogo}`).default}
           alt={alt}
           style={logoStyles}
         />
@@ -26,7 +26,7 @@ const TimelineYear = ({ year, yearImage, events }, ref) => {
       <S.Header>
         <S.Year>{year}</S.Year>
         <S.Image
-          src={require(`../../../assets/images/timeline/${yearImage}`)}
+          src={require(`../../../assets/images/timeline/${yearImage}`).default}
           alt={year}
         />
       </S.Header>
