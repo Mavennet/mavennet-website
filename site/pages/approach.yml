@@ -2,7 +2,8 @@ meta:
   title: Approach
 title: Approach
 approachMainSection:
-  slogan: "“I know the sky is not the limit because there are footprints on the Moon — and I made some of them!” Buzz Aldrin"
+  slogan: “I know the sky is not the limit because there are footprints on the
+    Moon — and I made some of them!” Buzz Aldrin
 approachStepsSection:
   - item:
       title: Strategy - Aim for the moon
@@ -13,46 +14,44 @@ approachStepsSection:
         - • Business Case definition
         - • Tokenomics and token launch
         - • Decentralized Identity Management
-      description:
-        It’s not just about doing things right, it’s about doing the right
+      description: It’s not just about doing things right, it’s about doing the right
         things. We have many years of experience helping organizations
         conceptualize their goals, align decision makers, and formulate
         actionable strategies for success.
   - item:
       title: Design - Ready for a spacewalk?
       stepsList:
-        - "• Design Thinking"
-        - "• UX Research"
-        - "• User Experience Design"
-        - "• Conceptual Prototype"
-        - "• Branding Development"
-        - "• Usability Testing"
-      description:
-        We focus on early validation through design. A clickable concept is
+        - • Design Thinking
+        - • UX Research
+        - • User Experience Design
+        - • Conceptual Prototype
+        - • Branding Development
+        - • Usability Testing
+      description: We focus on early validation through design. A clickable concept is
         a worth a million words. It is a lot easier to react to something than
         to discuss concepts on paper. Here the end user is king.
   - item:
       title: Implementation - 3, 2, 1… Ignition!
       stepsList:
-        - "• Agile Delivery"
-        - "• ­­AI and Blockchain"
-        - "• Focus on Value"
-        - "• Go-Live Plan"
-        - "• Roadmap to adoption and commercial success"
-      description: "Over the years we have develop accelerators that allow us to
+        - • Agile Delivery
+        - • ­­AI and Blockchain
+        - • Focus on Value
+        - • Go-Live Plan
+        - • Roadmap to adoption and commercial success
+      description: "Over the years we have developed accelerators that allow us to
         kickstart and execute complex solutions in a record time. We follow
         agile methodologies, when you are creating a ground-breaking concept not
         all variables are known during the design phase. "
   - item:
       title: Support – Major Tom can hear you
-      cta:
+      cta: null
       stepsList:
-        - "• Project & Product Management"
-        - "• Smart Contract Auditing"
-        - "• Decentralized Platform Operations & Integration"
+        - • Project & Product Management
+        - • Smart Contract Auditing
+        - • Decentralized Platform Operations & Integration
       description: We accompany our clients end to end on the path of digital
         transformation, and ensure a foundation exist for their long-term
         success.
 approachContactUsSection:
-  title: "Ready For Liftoff?"
+  title: Ready For Liftoff?
   ctaText: Let's Talk
