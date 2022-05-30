@@ -1,7 +1,7 @@
 ---
 order: 7
 name: Yinghui Fan
-title: Senior Stack Developer
+title: Lead Developer
 bio: Yinghui Fan, senior full stack developer, focuses on delivering sustainable
   technical solutions those create positive impact on the society. Prior to
   Mavennet, she worked in AI and healthcare industries. She has extensive
