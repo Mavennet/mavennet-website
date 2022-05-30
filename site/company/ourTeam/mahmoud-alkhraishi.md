@@ -1,7 +1,7 @@
 ---
 order: 6
 name: Mahmoud Alkhraishi
-title: Lead Developer
+title: Director of Engineering
 bio: "Mahmoud Alkhraishi, Lead Software Developer, was previously a Blockchain
   Software Developer at Northern Block and the Co-Founder of EtherDoodle.
   Mahmoud is passionate about building scalable, reliable software and
