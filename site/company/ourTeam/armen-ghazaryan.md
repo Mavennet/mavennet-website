@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 4
 name: Armen Ghazaryan
 title: Senior Product Owner
 bio: Armen Ghazaryan, the Senior Product Owner at Mavennet, is a seasoned
