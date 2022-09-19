@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 9
 name: Surhud Bhagali
 title: Software Developer
 bio: Surhud Bhagali, software developer, focuses on the full spectrum of the

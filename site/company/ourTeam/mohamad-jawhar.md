@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 10
 name: Mohamad Jawhar
 title: Full Stack Developer
 bio: Mohamad Jawhar, Full Stack Developer, focuses on developing high

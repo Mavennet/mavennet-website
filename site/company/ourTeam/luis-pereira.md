@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 4
 name: Luis Pereira
 title: Product Owner
 bio: Luis Pereira, Product Owner, is an experienced analyst in the fintech

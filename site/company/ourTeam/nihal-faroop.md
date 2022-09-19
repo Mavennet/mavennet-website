@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 11
 name: Nihal Farooq
 title: UX/UI Designer
 bio: Nihal Farooq, UX/UI Designer, is an experienced designer who loves
