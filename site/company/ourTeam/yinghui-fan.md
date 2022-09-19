@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 8
 name: Yinghui Fan
 title: Lead Developer
 bio: Yinghui Fan, senior full stack developer, focuses on delivering sustainable

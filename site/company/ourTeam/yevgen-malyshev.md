@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 3
 name: Yevgen Malyshev
 title: Chief Product Officer
 bio: Yevgen Malyshev, Chief Product Officer, is an entrepreneur and technology
